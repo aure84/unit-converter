@@ -1,6 +1,8 @@
 import { NavLink, Link } from 'react-router'
 import './Nav.css'
 
+const LOGO_URL = '/favicon.svg'
+
 const CATEGORIES = [
   { path: '/length',       label: 'Length' },
   { path: '/weight',       label: 'Weight' },
@@ -21,6 +23,9 @@ const LEGAL_LINKS = [
 function Nav() {
   return (
     <nav className="nav" aria-label="Unit categories">
+      <Link to="/" className="nav__logo" aria-label="Convert Fast home">
+        <img src={LOGO_URL} alt="Convert Fast" width="24" height="24" />
+      </Link>
       <ul className="nav__list">
         {CATEGORIES.map(({ path, label }) => (
           <li key={path} className="nav__item">

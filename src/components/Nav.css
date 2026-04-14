@@ -1,6 +1,22 @@
 .nav {
   border-bottom: 1px solid var(--border);
-  padding: 0 12px;           /* narrower padding on tiny screens */
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 10px 4px;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+
+.nav__logo:hover {
+  opacity: 1;
 }
 
 .nav__list {
@@ -11,6 +27,7 @@
   margin: 0;
   padding: 10px 0;
   justify-content: center;
+  flex: 1;
 }
 
 .nav__item {
