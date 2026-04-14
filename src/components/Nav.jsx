@@ -24,16 +24,32 @@ function Nav() {
       <Link to="/" className="nav__logo" aria-label="Convert Fast home">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="27"
-          viewBox="0 0 48 46"
+          width="30"
+          height="30"
+          viewBox="0 0 64 64"
           fill="none"
           aria-hidden="true"
         >
-          <path
-            fill="#863bff"
-            d="M25.946 44.938c-.664.845-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.287c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.497 0-3.578-1.842-3.578H1.237c-.92 0-1.456-1.04-.92-1.788L10.013.474c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.579 1.842 3.579h11.377c.943 0 1.473 1.088.89 1.83L25.947 44.94z"
-          />
+          <defs>
+            <linearGradient id="nav-c" x1="58" y1="4" x2="10" y2="60" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stopColor="#a855f7" />
+              <stop offset="100%" stopColor="#4c1d95" />
+            </linearGradient>
+            <linearGradient id="nav-a" x1="22" y1="32" x2="50" y2="32" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stopColor="#a78bfa" />
+              <stop offset="100%" stopColor="#ede9fe" />
+            </linearGradient>
+          </defs>
+          {/* Speed lines */}
+          <line x1="1" y1="25" x2="13" y2="25" stroke="#8b5cf6" strokeWidth="2.5" strokeLinecap="round" opacity="0.55" />
+          <line x1="4" y1="32" x2="13" y2="32" stroke="#9333ea" strokeWidth="2.5" strokeLinecap="round" />
+          <line x1="1" y1="39" x2="13" y2="39" stroke="#8b5cf6" strokeWidth="2.5" strokeLinecap="round" opacity="0.55" />
+          {/* C arc */}
+          <path d="M 57 18 A 22 22 0 1 0 57 46" stroke="url(#nav-c)" strokeWidth="7" strokeLinecap="round" fill="none" />
+          {/* Back chevron */}
+          <path d="M 22 22 L 36 32 L 22 42 L 26 42 L 40 32 L 26 22 Z" fill="url(#nav-a)" opacity="0.65" />
+          {/* Front chevron */}
+          <path d="M 31 22 L 45 32 L 31 42 L 35 42 L 49 32 L 35 22 Z" fill="url(#nav-a)" />
         </svg>
       </Link>
       <ul className="nav__list">
