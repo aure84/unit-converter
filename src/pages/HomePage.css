@@ -6,7 +6,27 @@
 
 .home__subtitle {
   color: var(--text);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Intro text ─────────────────────────────────────────────────────────── */
+
+.home__intro {
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.home__intro p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+  opacity: 0.8;
+  margin: 0 0 0.875rem;
+}
+
+.home__intro p:last-child {
+  margin-bottom: 0;
 }
 
 /* ── Card Grid ──────────────────────────────────────────────────────────── */

@@ -106,6 +106,18 @@ function HomePage() {
       <h1>Unit Converter</h1>
       <p className="home__subtitle">Choose a category to start converting.</p>
 
+      <section className="home__intro">
+        <p>
+          Convert Fast is a free online unit converter that handles all the measurements you need — length, weight, temperature, volume, area, speed, time, and data storage. No sign-up, no ads in the way, just instant, accurate results.
+        </p>
+        <p>
+          Whether you need to convert kilometers to miles for a road trip, kilograms to pounds for a recipe, Celsius to Fahrenheit for the weather, or gigabytes to terabytes for storage planning — every conversion is a single click away. Each converter works in both directions, so you can type in either field and get the result instantly.
+        </p>
+        <p>
+          All conversions use precise, internationally recognized conversion factors. Our reference tables show the most common values at a glance, and every pair page includes a detailed explanation of the units and the conversion formula.
+        </p>
+      </section>
+
       <div className="home__grid">
         {CATEGORIES.map((cat) => (
           <div key={cat.id} className="home__card">
