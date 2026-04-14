@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router'
 import Converter from '../components/Converter.jsx'
+import CategoryContent from '../components/CategoryContent.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
 import { units } from '../data/units.js'
 
@@ -76,6 +77,7 @@ function CategoryPage() {
         defaultTo={defaults.to}
         initialValue={initialValue}
       />
+      <CategoryContent category={category} />
     </main>
   )
 }
