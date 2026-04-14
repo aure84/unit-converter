@@ -1,6 +1,7 @@
 import { useLocation, useParams } from 'react-router'
 import Converter from '../components/Converter.jsx'
 import ReferenceTable from '../components/ReferenceTable.jsx'
+import PairContent from '../components/PairContent.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
 import { units } from '../data/units.js'
 
@@ -115,6 +116,11 @@ function PairPage() {
         initialValue={initialValue}
       />
       <ReferenceTable
+        category={category}
+        fromUnit={from}
+        toUnit={to}
+      />
+      <PairContent
         category={category}
         fromUnit={from}
         toUnit={to}
