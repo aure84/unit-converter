@@ -1,0 +1,106 @@
+/* ── Converter Component ────────────────────────────────────────────────── */
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 480px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Each input + select pair */
+.converter__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.converter__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+.converter__select,
+.converter__input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 44px;          /* WCAG / mobile touch target */
+  padding: 0.5rem 0.75rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: #111;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.converter__select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.25rem;
+  cursor: pointer;
+}
+
+.converter__input {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Remove native number input arrows — still fully functional */
+.converter__input::-webkit-inner-spin-button,
+.converter__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.converter__input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.converter__select:focus,
+.converter__input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Arrow divider */
+.converter__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #9ca3af;
+  line-height: 1;
+  user-select: none;
+}
+
+/* ── Responsive: side-by-side on wider screens ────────────────────────── */
+
+@media (min-width: 560px) {
+  .converter {
+    flex-direction: row;
+    align-items: flex-end;
+    max-width: 680px;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .converter__field {
+    flex: 1;
+  }
+
+  .converter__arrow {
+    padding-bottom: 0.625rem; /* align with input midpoint */
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+}
