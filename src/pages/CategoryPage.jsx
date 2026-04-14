@@ -29,7 +29,7 @@ const CATEGORY_DEFAULTS = {
   weight:       { from: 'kilogram',           to: 'pound' },
   temperature:  { from: 'celsius',            to: 'fahrenheit' },
   volume:       { from: 'liter',              to: 'gallon' },
-  area:         { from: 'square_meter',       to: 'square_kilometer' },
+  area:         { from: 'square_meter',       to: 'square_foot' },
   speed:        { from: 'kilometer_per_hour', to: 'mile_per_hour' },
   time:         { from: 'second',             to: 'minute' },
   data_storage: { from: 'megabyte',           to: 'gigabyte' },

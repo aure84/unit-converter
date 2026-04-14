@@ -15,7 +15,6 @@ function formatResult(value) {
   const abs = Math.abs(value)
   if (abs === 0) return '0'
   if (abs < 0.001) return value.toExponential(3)
-  if (abs < 1) return parseFloat(value.toPrecision(6)).toString()
   return parseFloat(value.toPrecision(6)).toString()
 }
 

@@ -27,7 +27,7 @@ const PATH_TO_REGISTRY = {
 function parsePair(pair) {
   if (!pair) return { from: undefined, to: undefined }
 
-  const match = pair.match(/^(.+)-to-(.+)$/i)
+  const match = pair.match(/^(.+?)-to-(.+)$/i)
   if (!match) return { from: pair, to: undefined }
 
   const normalise = (slug) => slug.toLowerCase().replace(/[-\s]+/g, '_')

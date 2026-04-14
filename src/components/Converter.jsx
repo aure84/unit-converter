@@ -224,7 +224,7 @@ function Converter({ category, defaultFrom, defaultTo, initialValue }) {
             type="button"
             className={`converter__copy-btn${copiedSide === 'from' ? ' converter__copy-btn--copied' : ''}`}
             onClick={() => handleCopy('from')}
-            aria-label="Copy result"
+            aria-label={`Copy ${unitList.find((u) => u.id === fromUnit)?.label ?? fromUnit} value`}
             title="Copy to clipboard"
           >
             {copiedSide === 'from' ? 'Copied!' : <CopyIcon />}
@@ -266,7 +266,7 @@ function Converter({ category, defaultFrom, defaultTo, initialValue }) {
             type="button"
             className={`converter__copy-btn${copiedSide === 'to' ? ' converter__copy-btn--copied' : ''}`}
             onClick={() => handleCopy('to')}
-            aria-label="Copy result"
+            aria-label={`Copy ${unitList.find((u) => u.id === toUnit)?.label ?? toUnit} value`}
             title="Copy to clipboard"
           >
             {copiedSide === 'to' ? 'Copied!' : <CopyIcon />}

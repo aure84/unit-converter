@@ -6,6 +6,7 @@ import PairPage from './pages/PairPage.jsx'
 import PrivacyPage from './pages/PrivacyPage.jsx'
 import TermsPage from './pages/TermsPage.jsx'
 import CookiePage from './pages/CookiePage.jsx'
+import NotFoundPage from './pages/NotFoundPage.jsx'
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms"   element={<TermsPage />} />
         <Route path="/cookies" element={<CookiePage />} />
+
+        {/* 404 catch-all */}
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   )

@@ -13,24 +13,28 @@ export const units = {
   length: {
     base: 'meter',
     units: [
-      { id: 'meter',      label: 'Meter',      symbol: 'm',  factor: 1 },
-      { id: 'kilometer',  label: 'Kilometer',  symbol: 'km', factor: 1000 },
-      { id: 'centimeter', label: 'Centimeter', symbol: 'cm', factor: 0.01 },
-      { id: 'mile',       label: 'Mile',       symbol: 'mi', factor: 1609.344 },
-      { id: 'yard',       label: 'Yard',       symbol: 'yd', factor: 0.9144 },
-      { id: 'foot',       label: 'Foot',       symbol: 'ft', factor: 0.3048 },
-      { id: 'inch',       label: 'Inch',       symbol: 'in', factor: 0.0254 },
+      { id: 'meter',          label: 'Meter',          symbol: 'm',  factor: 1 },
+      { id: 'kilometer',      label: 'Kilometer',      symbol: 'km', factor: 1000 },
+      { id: 'centimeter',     label: 'Centimeter',     symbol: 'cm', factor: 0.01 },
+      { id: 'millimeter',     label: 'Millimeter',     symbol: 'mm', factor: 0.001 },
+      { id: 'mile',           label: 'Mile',           symbol: 'mi', factor: 1609.344 },
+      { id: 'yard',           label: 'Yard',           symbol: 'yd', factor: 0.9144 },
+      { id: 'foot',           label: 'Foot',           symbol: 'ft', factor: 0.3048 },
+      { id: 'inch',           label: 'Inch',           symbol: 'in', factor: 0.0254 },
+      { id: 'nautical_mile',  label: 'Nautical Mile',  symbol: 'nmi', factor: 1852 },
     ],
   },
 
   weight: {
     base: 'kilogram',
     units: [
-      { id: 'kilogram', label: 'Kilogram', symbol: 'kg', factor: 1 },
-      { id: 'gram',     label: 'Gram',     symbol: 'g',  factor: 0.001 },
-      { id: 'pound',    label: 'Pound',    symbol: 'lb', factor: 0.45359237 },
-      { id: 'ounce',    label: 'Ounce',    symbol: 'oz', factor: 0.028349523125 },
-      { id: 'ton',      label: 'Metric Ton', symbol: 't', factor: 1000 },
+      { id: 'kilogram',   label: 'Kilogram',   symbol: 'kg', factor: 1 },
+      { id: 'gram',       label: 'Gram',       symbol: 'g',  factor: 0.001 },
+      { id: 'milligram',  label: 'Milligram',  symbol: 'mg', factor: 0.000001 },
+      { id: 'pound',      label: 'Pound',      symbol: 'lb', factor: 0.45359237 },
+      { id: 'ounce',      label: 'Ounce',      symbol: 'oz', factor: 0.028349523125 },
+      { id: 'stone',      label: 'Stone',      symbol: 'st', factor: 6.35029318 },
+      { id: 'ton',        label: 'Metric Ton', symbol: 't',  factor: 1000 },
     ],
   },
 
@@ -64,10 +68,14 @@ export const units = {
   volume: {
     base: 'liter',
     units: [
-      { id: 'liter',       label: 'Liter',        symbol: 'L',   factor: 1 },
-      { id: 'milliliter',  label: 'Milliliter',   symbol: 'mL',  factor: 0.001 },
-      { id: 'gallon',      label: 'Gallon (US)',   symbol: 'gal', factor: 3.785411784 },
-      { id: 'cup',         label: 'Cup (US)',      symbol: 'cup', factor: 0.2365882365 },
+      { id: 'liter',       label: 'Liter',        symbol: 'L',    factor: 1 },
+      { id: 'milliliter',  label: 'Milliliter',   symbol: 'mL',   factor: 0.001 },
+      { id: 'gallon',      label: 'Gallon (US)',   symbol: 'gal',  factor: 3.785411784 },
+      { id: 'quart',       label: 'Quart (US)',    symbol: 'qt',   factor: 0.946352946 },
+      { id: 'pint',        label: 'Pint (US)',     symbol: 'pt',   factor: 0.473176473 },
+      { id: 'cup',         label: 'Cup (US)',      symbol: 'cup',  factor: 0.2365882365 },
+      { id: 'tablespoon',  label: 'Tablespoon',   symbol: 'tbsp', factor: 0.0147867648 },
+      { id: 'teaspoon',    label: 'Teaspoon',     symbol: 'tsp',  factor: 0.0049289216 },
       { id: 'fluid_ounce', label: 'Fluid Ounce',  symbol: 'fl oz', factor: 0.0295735296 },
     ],
   },
@@ -76,6 +84,7 @@ export const units = {
     base: 'square_meter',
     units: [
       { id: 'square_meter',     label: 'Square Meter',     symbol: 'm²',  factor: 1 },
+      { id: 'square_foot',      label: 'Square Foot',      symbol: 'ft²', factor: 0.09290304 },
       { id: 'square_kilometer', label: 'Square Kilometer', symbol: 'km²', factor: 1_000_000 },
       { id: 'square_mile',      label: 'Square Mile',      symbol: 'mi²', factor: 2_589_988.110336 },
       { id: 'acre',             label: 'Acre',             symbol: 'ac',  factor: 4046.8564224 },
@@ -109,11 +118,13 @@ export const units = {
   data_storage: {
     base: 'byte',
     units: [
+      { id: 'bit',      label: 'Bit',      symbol: 'b',  factor: 0.125 },
       { id: 'byte',     label: 'Byte',     symbol: 'B',  factor: 1 },
       { id: 'kilobyte', label: 'Kilobyte', symbol: 'KB', factor: 1_024 },
       { id: 'megabyte', label: 'Megabyte', symbol: 'MB', factor: 1_048_576 },
       { id: 'gigabyte', label: 'Gigabyte', symbol: 'GB', factor: 1_073_741_824 },
       { id: 'terabyte', label: 'Terabyte', symbol: 'TB', factor: 1_099_511_627_776 },
+      { id: 'petabyte', label: 'Petabyte', symbol: 'PB', factor: 1_125_899_906_842_624 },
     ],
   },
 };
