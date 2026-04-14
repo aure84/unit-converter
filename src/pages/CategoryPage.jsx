@@ -70,6 +70,7 @@ function CategoryPage() {
       />
       <h1>{heading}</h1>
       <Converter
+        key={category}
         category={category}
         defaultFrom={defaults.from}
         defaultTo={defaults.to}

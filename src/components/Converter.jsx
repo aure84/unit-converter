@@ -9,7 +9,6 @@ import './Converter.css'
  */
 function formatResult(value) {
   if (!isFinite(value)) return ''
-  // toPrecision gives 6 sig figs, parseFloat removes trailing zeros
   return String(parseFloat(value.toPrecision(6)))
 }
 
@@ -28,7 +27,6 @@ async function copyToClipboard(text) {
   textarea.setAttribute('readonly', '')
   textarea.style.cssText = 'position:fixed;top:-9999px;left:-9999px;opacity:0'
   document.body.appendChild(textarea)
-  // iOS requires a range selection, not just select()
   const range = document.createRange()
   range.selectNodeContents(textarea)
   const selection = window.getSelection()
@@ -59,20 +57,20 @@ function Converter({ category, defaultFrom, defaultTo, initialValue }) {
   }
 
   const [fromUnit, setFromUnit] = useState(() => resolveDefault(defaultFrom, 0))
-  const [toUnit, setToUnit] = useState(() => resolveDefault(defaultTo, 1))
-  const [fromValue, setFromValue] = useState(() => initialValue ?? '')
-  const [toValue, setToValue] = useState('')
+  const [toUnit, setToUnit]     = useState(() => resolveDefault(defaultTo, 1))
 
-  // 'from' | 'to' — tracks which input the user last typed in
-  const lastEdited = useRef('from')
+  // Single source of truth: the value the user last typed + which side they typed on.
+  // The opposite field is always derived at render time — no stale closures possible.
+  const [activeValue, setActiveValue] = useState(() => initialValue ?? '')
+  const [activeSide,  setActiveSide]  = useState('from') // 'from' | 'to'
 
   // Copy button state: null | 'from' | 'to'
   const [copiedSide, setCopiedSide] = useState(null)
   const copyTimerRef = useRef(null)
 
-  // ── Calculation helpers ──────────────────────────────────────────────────
+  // ── Calculation helper ───────────────────────────────────────────────────
 
-  const calcTo = useCallback(
+  const calcDerived = useCallback(
     (raw, fUnit, tUnit) => {
       if (raw === '' || raw === '-') return ''
       const num = parseFloat(raw)
@@ -86,15 +84,19 @@ function Converter({ category, defaultFrom, defaultTo, initialValue }) {
     [category],
   )
 
-  // ── Seed toValue when initialValue is provided ───────────────────────────
+  // ── Derive display values from single source of truth ────────────────────
+  //
+  // Because these are computed during render (not in event handlers), they
+  // always reflect the latest fromUnit / toUnit — even if the user changes
+  // the unit selector without re-typing a value.
 
-  useEffect(() => {
-    if (initialValue && initialValue !== '') {
-      setToValue(calcTo(initialValue, fromUnit, toUnit))
-    }
-    // Only run on mount — intentionally omitting deps
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  const fromValue = activeSide === 'from'
+    ? activeValue
+    : calcDerived(activeValue, toUnit, fromUnit)
+
+  const toValue = activeSide === 'to'
+    ? activeValue
+    : calcDerived(activeValue, fromUnit, toUnit)
 
   // ── URL sync (replaceState, no back-button pollution) ────────────────────
 
@@ -111,48 +113,34 @@ function Converter({ category, defaultFrom, defaultTo, initialValue }) {
   // ── Input handlers ───────────────────────────────────────────────────────
 
   function handleFromInput(e) {
-    lastEdited.current = 'from'
     const val = e.target.value
-    setFromValue(val)
-    setToValue(calcTo(val, fromUnit, toUnit))
+    setActiveSide('from')
+    setActiveValue(val)
     updateURL(val)
   }
 
   function handleToInput(e) {
-    lastEdited.current = 'to'
     const val = e.target.value
-    setToValue(val)
-    setFromValue(calcTo(val, toUnit, fromUnit))
+    setActiveSide('to')
+    setActiveValue(val)
     updateURL(val)
   }
 
-  // ── Unit select handlers — recalculate the passive field ─────────────────
+  // ── Unit select handlers — just update the unit; derived values recalc automatically ──
 
   function handleFromUnitChange(e) {
-    const newUnit = e.target.value
-    setFromUnit(newUnit)
-    if (lastEdited.current === 'from') {
-      setToValue(calcTo(fromValue, newUnit, toUnit))
-    } else {
-      setFromValue(calcTo(toValue, toUnit, newUnit))
-    }
+    setFromUnit(e.target.value)
   }
 
   function handleToUnitChange(e) {
-    const newUnit = e.target.value
-    setToUnit(newUnit)
-    if (lastEdited.current === 'from') {
-      setToValue(calcTo(fromValue, fromUnit, newUnit))
-    } else {
-      setFromValue(calcTo(toValue, newUnit, fromUnit))
-    }
+    setToUnit(e.target.value)
   }
 
   // ── Copy handler ─────────────────────────────────────────────────────────
 
   function handleCopy(side) {
-    const value = side === 'from' ? fromValue : toValue
-    const unitId = side === 'from' ? fromUnit : toUnit
+    const value  = side === 'from' ? fromValue : toValue
+    const unitId = side === 'from' ? fromUnit  : toUnit
     const symbol = unitList.find((u) => u.id === unitId)?.symbol ?? unitId
 
     if (value === '' || value == null) return

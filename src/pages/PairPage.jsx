@@ -108,6 +108,7 @@ function PairPage() {
       />
       <h1>{h1}</h1>
       <Converter
+        key={`${category}/${from}/${to}`}
         category={category}
         defaultFrom={from}
         defaultTo={to}
