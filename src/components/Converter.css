@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.375rem;
+  min-width: 0; /* prevent flex children from overflowing */
 }
 
 .converter__label {
@@ -34,7 +35,7 @@
   padding: 0.5rem 0.75rem;
   border: 1.5px solid #d1d5db;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1rem;           /* 16px — prevents iOS auto-zoom */
   background: #fff;
   color: #111;
   appearance: none;
@@ -51,7 +52,7 @@
 }
 
 .converter__input {
-  font-size: 1.25rem;
+  font-size: 1.125rem;       /* 18px — readable, still ≥16px to prevent iOS zoom */
   font-weight: 500;
 }
 
@@ -70,6 +71,65 @@
   outline: none;
   border-color: #4f46e5;
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* ── Input row: input + copy button side by side ─────────────────────── */
+
+.converter__input-row {
+  display: flex;
+  gap: 0.375rem;
+  align-items: stretch;
+  min-width: 0;
+}
+
+.converter__input-row .converter__input {
+  flex: 1;
+  min-width: 0;              /* allow shrinking below content size */
+}
+
+/* ── Copy button ─────────────────────────────────────────────────────── */
+
+.converter__copy-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 0.625rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* remove iOS tap flash */
+}
+
+.converter__copy-btn:hover {
+  color: #4f46e5;
+  border-color: #4f46e5;
+  background: rgba(79, 70, 229, 0.06);
+}
+
+.converter__copy-btn:active {
+  background: rgba(79, 70, 229, 0.12);
+}
+
+.converter__copy-btn--copied {
+  color: #059669;
+  border-color: #059669;
+  background: rgba(5, 150, 105, 0.08);
+}
+
+.converter__copy-btn--copied:hover {
+  color: #059669;
+  border-color: #059669;
+  background: rgba(5, 150, 105, 0.12);
 }
 
 /* Arrow divider */
@@ -96,11 +156,51 @@
 
   .converter__field {
     flex: 1;
+    min-width: 0;
   }
 
   .converter__arrow {
     padding-bottom: 0.625rem; /* align with input midpoint */
     font-size: 1.5rem;
     flex-shrink: 0;
+  }
+}
+
+/* ── Dark mode ───────────────────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  .converter__select,
+  .converter__input {
+    background: #1f2028;
+    border-color: #2e303a;
+    color: #f3f4f6;
+  }
+
+  .converter__select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239ca3af' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  }
+
+  .converter__copy-btn {
+    background: #1f2028;
+    border-color: #2e303a;
+    color: #9ca3af;
+  }
+
+  .converter__copy-btn:hover {
+    color: #c084fc;
+    border-color: #c084fc;
+    background: rgba(192, 132, 252, 0.1);
+  }
+
+  .converter__copy-btn--copied {
+    color: #34d399;
+    border-color: #34d399;
+    background: rgba(52, 211, 153, 0.1);
+  }
+
+  .converter__copy-btn--copied:hover {
+    color: #34d399;
+    border-color: #34d399;
+    background: rgba(52, 211, 153, 0.15);
   }
 }

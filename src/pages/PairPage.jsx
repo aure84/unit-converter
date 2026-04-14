@@ -52,8 +52,9 @@ function toTitle(key) {
 }
 
 function PairPage() {
-  const { pathname } = useLocation()
+  const { pathname, search } = useLocation()
   const { pair } = useParams()
+  const initialValue = new URLSearchParams(search).get('value') ?? undefined
   const { from, to } = parsePair(pair)
 
   // Derive category from the first path segment
@@ -109,6 +110,7 @@ function PairPage() {
         category={category}
         defaultFrom={from}
         defaultTo={to}
+        initialValue={initialValue}
       />
     </main>
   )

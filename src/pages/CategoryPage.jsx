@@ -43,7 +43,8 @@ function toTitle(key) {
 }
 
 function CategoryPage() {
-  const { pathname } = useLocation()
+  const { pathname, search } = useLocation()
+  const initialValue = new URLSearchParams(search).get('value') ?? undefined
 
   // First segment after the leading slash, e.g. "/data-storage" → "data-storage"
   const segment = pathname.split('/')[1] ?? ''
@@ -72,6 +73,7 @@ function CategoryPage() {
         category={category}
         defaultFrom={defaults.from}
         defaultTo={defaults.to}
+        initialValue={initialValue}
       />
     </main>
   )
