@@ -1,18 +1,22 @@
 import { useLocation } from 'react-router'
 import Converter from '../components/Converter.jsx'
+import SEOMeta from '../components/SEOMeta.jsx'
+import { units } from '../data/units.js'
+
+const SITE_URL = 'https://convert-fast.com'
 
 /**
  * Maps URL path segments to units registry keys.
  * Handles the data-storage → data_storage case and keeps all others identical.
  */
 const PATH_TO_REGISTRY = {
-  length:       'length',
-  weight:       'weight',
-  temperature:  'temperature',
-  volume:       'volume',
-  area:         'area',
-  speed:        'speed',
-  time:         'time',
+  length:         'length',
+  weight:         'weight',
+  temperature:    'temperature',
+  volume:         'volume',
+  area:           'area',
+  speed:          'speed',
+  time:           'time',
   'data-storage': 'data_storage',
 }
 
@@ -45,10 +49,24 @@ function CategoryPage() {
   const segment = pathname.split('/')[1] ?? ''
   const category = PATH_TO_REGISTRY[segment] ?? segment
   const defaults = CATEGORY_DEFAULTS[category] ?? {}
-  const heading = `${toTitle(category)} Converter`
+  const categoryTitle = toTitle(category)
+  const heading = `${categoryTitle} Converter`
+
+  // Build a short list of unit names for the description
+  const unitNames = units[category]?.units.map((u) => u.label) ?? []
+  const unitPreview = unitNames.slice(0, 3).join(', ')
+
+  const pageTitle = `${categoryTitle} Converter | Convert Fast`
+  const description = `Free online ${categoryTitle.toLowerCase()} converter. Convert between ${unitPreview}, and more.`
+  const canonical = `${SITE_URL}/${segment}`
 
   return (
     <main>
+      <SEOMeta
+        title={pageTitle}
+        description={description}
+        canonical={canonical}
+      />
       <h1>{heading}</h1>
       <Converter
         category={category}
