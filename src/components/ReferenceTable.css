@@ -1,0 +1,94 @@
+/* ── Reference Table ────────────────────────────────────────────────────── */
+
+.ref-table-section {
+  width: 100%;
+  max-width: 480px;
+  margin: 2rem auto 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 560px) {
+  .ref-table-section {
+    max-width: 680px;
+    padding: 0;
+  }
+}
+
+.ref-table-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  color: var(--text-h);
+}
+
+/* ── Scroll container (prevents horizontal overflow on narrow screens) ── */
+
+.ref-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+}
+
+/* ── Table ──────────────────────────────────────────────────────────────── */
+
+.ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.ref-table thead {
+  background: var(--code-bg);
+}
+
+.ref-table th {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-h);
+  font-size: 0.825rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1.5px solid var(--border);
+  white-space: nowrap;
+}
+
+.ref-table-symbol {
+  font-weight: 400;
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.ref-table td {
+  padding: 0.55rem 1rem;
+  color: var(--text-h);
+  border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Remove border on last row */
+.ref-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Alternating row colors */
+.ref-table tbody tr:nth-child(even) {
+  background: var(--code-bg);
+}
+
+.ref-table tbody tr:hover {
+  background: var(--accent-bg);
+}
+
+/* ── Dark mode ───────────────────────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  .ref-table-wrap {
+    border-color: var(--border);
+  }
+}
