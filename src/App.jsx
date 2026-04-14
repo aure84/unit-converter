@@ -3,6 +3,9 @@ import Layout from './layouts/Layout.jsx'
 import HomePage from './pages/HomePage.jsx'
 import CategoryPage from './pages/CategoryPage.jsx'
 import PairPage from './pages/PairPage.jsx'
+import PrivacyPage from './pages/PrivacyPage.jsx'
+import TermsPage from './pages/TermsPage.jsx'
+import CookiePage from './pages/CookiePage.jsx'
 
 function App() {
   return (
@@ -29,6 +32,11 @@ function App() {
         <Route path="/speed/:pair"        element={<PairPage />} />
         <Route path="/time/:pair"         element={<PairPage />} />
         <Route path="/data-storage/:pair" element={<PairPage />} />
+
+        {/* Legal pages */}
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/terms"   element={<TermsPage />} />
+        <Route path="/cookies" element={<CookiePage />} />
       </Route>
     </Routes>
   )
