@@ -3,6 +3,8 @@ import Layout from './layouts/Layout.jsx'
 import HomePage from './pages/HomePage.jsx'
 import CategoryPage from './pages/CategoryPage.jsx'
 import PairPage from './pages/PairPage.jsx'
+import BlogIndexPage from './pages/BlogIndexPage.jsx'
+import BlogPostPage from './pages/BlogPostPage.jsx'
 import PrivacyPage from './pages/PrivacyPage.jsx'
 import TermsPage from './pages/TermsPage.jsx'
 import CookiePage from './pages/CookiePage.jsx'
@@ -33,6 +35,10 @@ function App() {
         <Route path="/speed/:pair"        element={<PairPage />} />
         <Route path="/time/:pair"         element={<PairPage />} />
         <Route path="/data-storage/:pair" element={<PairPage />} />
+
+        {/* Blog */}
+        <Route path="/blog"        element={<BlogIndexPage />} />
+        <Route path="/blog/:slug"  element={<BlogPostPage />} />
 
         {/* Legal pages */}
         <Route path="/privacy" element={<PrivacyPage />} />
