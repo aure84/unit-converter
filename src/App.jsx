@@ -57,6 +57,9 @@ function App() {
         <Route path="/cooking/butter-grams-to-cups"         element={<IngredientPage ingredient="butter" />} />
         <Route path="/cooking/powdered-sugar-grams-to-cups" element={<IngredientPage ingredient="powdered_sugar" />} />
         <Route path="/cooking/honey-grams-to-cups"          element={<IngredientPage ingredient="honey" />} />
+        <Route path="/cooking/brown-sugar-grams-to-cups"    element={<IngredientPage ingredient="brown_sugar" />} />
+        <Route path="/cooking/almond-flour-grams-to-cups"   element={<IngredientPage ingredient="almond_flour" />} />
+        <Route path="/cooking/cocoa-powder-grams-to-cups"   element={<IngredientPage ingredient="cocoa_powder" />} />
 
         <Route path="/cooking/:pair"      element={<PairPage />} />
 

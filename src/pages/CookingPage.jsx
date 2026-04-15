@@ -12,6 +12,9 @@ const INGREDIENT_LINKS = [
   { to: '/cooking/butter-grams-to-cups',        label: 'Butter',         icon: '🧈' },
   { to: '/cooking/powdered-sugar-grams-to-cups',label: 'Powdered Sugar', icon: '🫙' },
   { to: '/cooking/honey-grams-to-cups',         label: 'Honey',          icon: '🍯' },
+  { to: '/cooking/brown-sugar-grams-to-cups',   label: 'Brown Sugar',    icon: '🟫' },
+  { to: '/cooking/almond-flour-grams-to-cups',  label: 'Almond Flour',   icon: '🫘' },
+  { to: '/cooking/cocoa-powder-grams-to-cups',  label: 'Cocoa Powder',   icon: '🍫' },
 ]
 
 function CookingPage() {

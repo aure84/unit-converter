@@ -9,6 +9,9 @@ export const INGREDIENT_DENSITIES = {
   butter:         { gPerCup: 227,  label: 'Butter',            symbol: 'butter' },
   powdered_sugar: { gPerCup: 120,  label: 'Powdered sugar',    symbol: 'powdered sugar' },
   honey:          { gPerCup: 340,  label: 'Honey',             symbol: 'honey' },
+  brown_sugar:    { gPerCup: 220,  label: 'Brown sugar',       symbol: 'brown sugar' },
+  almond_flour:   { gPerCup: 96,   label: 'Almond flour',      symbol: 'almond flour' },
+  cocoa_powder:   { gPerCup: 85,   label: 'Cocoa powder',      symbol: 'cocoa powder' },
 }
 
 /**
