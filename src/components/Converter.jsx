@@ -220,7 +220,21 @@ function Converter({ category, defaultFrom, defaultTo, initialValue }) {
         </div>
       </div>
 
-      <div className="converter__arrow" aria-hidden="true">⇄</div>
+      <button
+        type="button"
+        className="converter__arrow"
+        onClick={() => {
+          const newValue = activeSide === 'from' ? toValue : fromValue
+          setFromUnit(toUnit)
+          setToUnit(fromUnit)
+          setActiveSide('from')
+          setActiveValue(newValue)
+        }}
+        aria-label="Swap units"
+        title="Swap units"
+      >
+        ⇄
+      </button>
 
       <div className="converter__field">
         <label htmlFor="converter-to-select" className="converter__label">

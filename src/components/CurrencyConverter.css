@@ -21,6 +21,7 @@
   color: var(--text);
 }
 
+
 .currency-converter__swap:hover {
   border-color: var(--currency-border);
   background: var(--currency-bg);
