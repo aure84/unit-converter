@@ -21,6 +21,7 @@ const PATH_TO_REGISTRY = {
   'data-storage':  'data_storage',
   pressure:        'pressure',
   energy:          'energy',
+  power:           'power',
   'fuel-economy':  'fuel_economy',
   cooking:         'cooking',
 }
@@ -39,6 +40,7 @@ const CATEGORY_DEFAULTS = {
   time:         { from: 'second',             to: 'minute' },
   data_storage: { from: 'megabyte',           to: 'gigabyte' },
   pressure:     { from: 'bar',               to: 'psi' },
+  power:        { from: 'horsepower',        to: 'watt' },
   energy:       { from: 'kilocalorie',        to: 'kilojoule' },
   fuel_economy: { from: 'liter_per_100km',   to: 'mile_per_gallon' },
   cooking:      { from: 'cup',               to: 'milliliter' },

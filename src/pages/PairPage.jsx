@@ -21,6 +21,7 @@ const PATH_TO_REGISTRY = {
   'data-storage':  'data_storage',
   pressure:        'pressure',
   energy:          'energy',
+  power:           'power',
   'fuel-economy':  'fuel_economy',
   cooking:         'cooking',
 }

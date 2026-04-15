@@ -135,6 +135,18 @@ export const categoryContent = {
     ],
   },
 
+  power: {
+    intro:
+      'Convert watts, kilowatts, horsepower, BTU/h, and more with our free power converter. Whether you need to compare engine output, understand electricity consumption, or size an air conditioner, accurate power conversion is instant and easy.',
+    faq: [
+      { q: 'How many watts is 1 horsepower?', a: '1 mechanical horsepower (hp) equals 745.7 watts. 1 metric horsepower (PS or CV) equals 735.5 watts. The two are very close but not identical.' },
+      { q: 'How do you convert horsepower to kilowatts?', a: 'Multiply horsepower by 0.7457. For example, 100 hp × 0.7457 = 74.57 kW. This is the standard conversion for mechanical horsepower.' },
+      { q: 'What is the difference between mechanical and metric horsepower?', a: 'Mechanical horsepower (used in the US) equals 745.7 W. Metric horsepower (PS, used in Europe) equals 735.5 W. A 100 PS European engine is about 98.6 US hp.' },
+      { q: 'How many watts is 1 kilowatt?', a: '1 kilowatt (kW) equals exactly 1,000 watts. Kilowatts are used to rate electric motors, home appliances, and power plants.' },
+      { q: 'What is BTU per hour?', a: 'BTU/h (British Thermal Units per hour) measures heat output. It is used to rate air conditioners and heating systems. 1 BTU/h equals approximately 0.293 watts. A typical 12,000 BTU/h air conditioner equals about 3,517 watts (3.5 kW).' },
+    ],
+  },
+
   cooking: {
     intro:
       'Convert cups, tablespoons, teaspoons, milliliters, fluid ounces, pints, and more with our free cooking converter. Perfect for scaling recipes, adapting international cookbooks, and converting between metric and US measurements.',

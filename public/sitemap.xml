@@ -1018,6 +1018,25 @@
   <!-- Currency -->
   <url><loc>https://convert-fast.com/currency</loc><lastmod>2026-04-15</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
 
+  <!-- Power -->
+  <url><loc>https://convert-fast.com/power</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://convert-fast.com/power/horsepower-to-watt</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/watt-to-horsepower</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/horsepower-to-kilowatt</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/kilowatt-to-horsepower</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/watt-to-kilowatt</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/kilowatt-to-watt</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/horsepower-to-horsepower_metric</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/horsepower_metric-to-horsepower</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/kilowatt-to-megawatt</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/megawatt-to-kilowatt</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/btu_per_hour-to-watt</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/watt-to-btu_per_hour</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/horsepower-to-btu_per_hour</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/kilowatt-to-btu_per_hour</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/horsepower_metric-to-kilowatt</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/power/kilowatt-to-horsepower_metric</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+
   <!-- Pressure pairs -->
   <url><loc>https://convert-fast.com/pressure/pascal-to-kilopascal</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://convert-fast.com/pressure/pascal-to-megapascal</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>

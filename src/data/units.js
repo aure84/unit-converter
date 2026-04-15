@@ -170,6 +170,18 @@ export const units = {
     ],
   },
 
+  power: {
+    base: 'watt',
+    units: [
+      { id: 'watt',             label: 'Watt',                  symbol: 'W',     factor: 1 },
+      { id: 'kilowatt',         label: 'Kilowatt',              symbol: 'kW',    factor: 1_000 },
+      { id: 'megawatt',         label: 'Megawatt',              symbol: 'MW',    factor: 1_000_000 },
+      { id: 'horsepower',       label: 'Horsepower (mech.)',    symbol: 'hp',    factor: 745.69987 },
+      { id: 'horsepower_metric',label: 'Horsepower (metric)',   symbol: 'PS',    factor: 735.49875 },
+      { id: 'btu_per_hour',     label: 'BTU per Hour',          symbol: 'BTU/h', factor: 0.29307107 },
+    ],
+  },
+
   cooking: {
     base: 'milliliter',
     units: [

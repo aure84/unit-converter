@@ -94,6 +94,17 @@ const CATEGORIES = [
     ],
   },
   {
+    id: 'power',
+    path: '/power',
+    label: 'Power',
+    icon: '⚡',
+    pairs: [
+      { label: 'hp → Watts',   path: '/power/horsepower-to-watt' },
+      { label: 'kW → hp',      path: '/power/kilowatt-to-horsepower' },
+      { label: 'Watts → kW',   path: '/power/watt-to-kilowatt' },
+    ],
+  },
+  {
     id: 'pressure',
     path: '/pressure',
     label: 'Pressure',

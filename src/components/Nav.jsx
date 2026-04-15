@@ -12,6 +12,7 @@ const CATEGORIES = [
   { path: '/data-storage',  label: 'Data Storage' },
   { path: '/pressure',      label: 'Pressure' },
   { path: '/energy',        label: 'Energy' },
+  { path: '/power',         label: 'Power' },
   { path: '/fuel-economy',  label: 'Fuel Economy' },
   { path: '/cooking',       label: 'Cooking' },
   { path: '/currency',      label: 'Currency', special: true },

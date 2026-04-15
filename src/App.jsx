@@ -28,6 +28,7 @@ function App() {
         <Route path="/data-storage" element={<CategoryPage />} />
         <Route path="/pressure"     element={<CategoryPage />} />
         <Route path="/energy"       element={<CategoryPage />} />
+        <Route path="/power"        element={<CategoryPage />} />
         <Route path="/fuel-economy" element={<CategoryPage />} />
         <Route path="/cooking"      element={<CategoryPage />} />
 
@@ -45,6 +46,7 @@ function App() {
         <Route path="/data-storage/:pair" element={<PairPage />} />
         <Route path="/pressure/:pair"     element={<PairPage />} />
         <Route path="/energy/:pair"       element={<PairPage />} />
+        <Route path="/power/:pair"        element={<PairPage />} />
         <Route path="/fuel-economy/:pair" element={<PairPage />} />
         <Route path="/cooking/:pair"      element={<PairPage />} />
 
