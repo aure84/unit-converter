@@ -1,0 +1,82 @@
+/* ── Cooking Page — Ingredient Section ───────────────────────────────────── */
+
+.cooking-page__ingredients {
+  max-width: 680px;
+  margin: 2.5rem auto 0;
+  padding: 0 1rem;
+}
+
+.cooking-page__ingredients h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.cooking-page__ingredients-note {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: center;
+  margin: 0 0 1.25rem;
+}
+
+.cooking-page__ingredient-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.75rem;
+}
+
+.cooking-page__ingredient-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1rem 0.5rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s, transform 0.1s;
+}
+
+.cooking-page__ingredient-card:hover {
+  border-color: #4f46e5;
+  background: rgba(79, 70, 229, 0.04);
+  transform: translateY(-1px);
+}
+
+.cooking-page__ingredient-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.cooking-page__ingredient-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+}
+
+.cooking-page__ingredient-sub {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* ── Dark mode ───────────────────────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  .cooking-page__ingredient-card {
+    border-color: #2e303a;
+  }
+
+  .cooking-page__ingredient-card:hover {
+    border-color: #818cf8;
+    background: rgba(129, 140, 248, 0.06);
+  }
+
+  .cooking-page__ingredient-label {
+    color: #f3f4f6;
+  }
+
+  .cooking-page__ingredients-note {
+    color: #6b7280;
+  }
+}

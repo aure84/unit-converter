@@ -1,0 +1,221 @@
+/* ── Ingredient Page ─────────────────────────────────────────────────────── */
+
+.ingredient-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem;
+}
+
+.ingredient-page h1 {
+  margin-bottom: 0;
+}
+
+/* ── Quick Reference Table ───────────────────────────────────────────────── */
+
+.ingredient-page__table-section {
+  margin: 2rem 0;
+}
+
+.ingredient-page__table-section h2 {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.ingredient-page__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.ingredient-page__table th,
+.ingredient-page__table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.ingredient-page__table th {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+  background: #f9fafb;
+}
+
+.ingredient-page__table tr:last-child td {
+  border-bottom: none;
+}
+
+.ingredient-page__table tr:hover td {
+  background: #f3f4f6;
+}
+
+/* ── SEO Content ─────────────────────────────────────────────────────────── */
+
+.ingredient-page__content {
+  margin: 2rem 0;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.ingredient-page__content p {
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.ingredient-page__content a {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+/* ── FAQ ─────────────────────────────────────────────────────────────────── */
+
+.ingredient-page__faq {
+  margin: 2rem 0;
+}
+
+.ingredient-page__faq h2 {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.ingredient-page__faq-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.125rem 0;
+}
+
+.ingredient-page__faq-item:last-child {
+  border-bottom: none;
+}
+
+.ingredient-page__faq-q {
+  padding: 0.625rem 0;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.ingredient-page__faq-q::after {
+  content: '+';
+  font-size: 1.25rem;
+  color: #9ca3af;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+details[open] .ingredient-page__faq-q::after {
+  content: '−';
+}
+
+.ingredient-page__faq-a {
+  padding: 0 0 0.75rem 0;
+  margin: 0;
+  line-height: 1.6;
+  color: #4b5563;
+  text-align: left;
+}
+
+/* ── Related Links ───────────────────────────────────────────────────────── */
+
+.ingredient-page__links {
+  margin: 2rem 0;
+}
+
+.ingredient-page__links h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ingredient-page__links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ingredient-page__links a {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #4f46e5;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.ingredient-page__links a:hover {
+  border-color: #4f46e5;
+  background: rgba(79, 70, 229, 0.05);
+}
+
+/* ── Back link ───────────────────────────────────────────────────────────── */
+
+.ingredient-page__back {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+
+.ingredient-page__back a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.ingredient-page__back a:hover {
+  color: #4f46e5;
+}
+
+/* ── Dark mode ───────────────────────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  .ingredient-page__table th {
+    background: #1f2028;
+    color: #9ca3af;
+  }
+
+  .ingredient-page__table th,
+  .ingredient-page__table td {
+    border-color: #2e303a;
+  }
+
+  .ingredient-page__table tr:hover td {
+    background: #252830;
+  }
+
+  .ingredient-page__content {
+    color: #d1d5db;
+  }
+
+  .ingredient-page__faq-item {
+    border-color: #2e303a;
+  }
+
+  .ingredient-page__faq-a {
+    color: #9ca3af;
+  }
+
+  .ingredient-page__links a {
+    border-color: #2e303a;
+    color: #818cf8;
+  }
+
+  .ingredient-page__links a:hover {
+    border-color: #818cf8;
+    background: rgba(129, 140, 248, 0.08);
+  }
+
+  .ingredient-page__back a {
+    color: #6b7280;
+  }
+
+  .ingredient-page__back a:hover {
+    color: #818cf8;
+  }
+}

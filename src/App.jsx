@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router'
 import Layout from './layouts/Layout.jsx'
 import HomePage from './pages/HomePage.jsx'
 import CategoryPage from './pages/CategoryPage.jsx'
+import CookingPage from './pages/CookingPage.jsx'
+import IngredientPage from './pages/IngredientPage.jsx'
 import PairPage from './pages/PairPage.jsx'
 import CurrencyPage from './pages/CurrencyPage.jsx'
 import BlogIndexPage from './pages/BlogIndexPage.jsx'
@@ -30,7 +32,7 @@ function App() {
         <Route path="/energy"       element={<CategoryPage />} />
         <Route path="/power"        element={<CategoryPage />} />
         <Route path="/fuel-economy" element={<CategoryPage />} />
-        <Route path="/cooking"      element={<CategoryPage />} />
+        <Route path="/cooking"      element={<CookingPage />} />
 
         {/* Currency — dedicated page with live API */}
         <Route path="/currency" element={<CurrencyPage />} />
@@ -48,6 +50,14 @@ function App() {
         <Route path="/energy/:pair"       element={<PairPage />} />
         <Route path="/power/:pair"        element={<PairPage />} />
         <Route path="/fuel-economy/:pair" element={<PairPage />} />
+
+        {/* Ingredient-specific density converters (must be before generic /cooking/:pair) */}
+        <Route path="/cooking/flour-grams-to-cups"          element={<IngredientPage ingredient="flour" />} />
+        <Route path="/cooking/sugar-grams-to-cups"          element={<IngredientPage ingredient="sugar" />} />
+        <Route path="/cooking/butter-grams-to-cups"         element={<IngredientPage ingredient="butter" />} />
+        <Route path="/cooking/powdered-sugar-grams-to-cups" element={<IngredientPage ingredient="powdered_sugar" />} />
+        <Route path="/cooking/honey-grams-to-cups"          element={<IngredientPage ingredient="honey" />} />
+
         <Route path="/cooking/:pair"      element={<PairPage />} />
 
         {/* Blog */}
