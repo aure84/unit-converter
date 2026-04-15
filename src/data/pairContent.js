@@ -73,6 +73,38 @@ export const unitDescriptions = {
   gigabyte: 'equal to 1,024 megabytes, the standard unit for storage devices, RAM, and large file collections',
   terabyte: 'equal to 1,024 gigabytes, used for hard drives, cloud storage plans, and large data archives',
   petabyte: 'equal to 1,024 terabytes, used by data centers, cloud providers, and internet infrastructure',
+
+  // Pressure
+  pascal:      'the SI unit of pressure, equal to one newton per square meter, used in science, weather forecasting, and engineering',
+  kilopascal:  'equal to 1,000 pascals, commonly used for tire pressure, weather reports, and fluid dynamics in metric countries',
+  megapascal:  'equal to 1,000,000 pascals, used in hydraulics, material strength testing, and high-pressure engineering applications',
+  bar:         'equal to 100,000 pascals, widely used for tire pressure, gas pressure, and industrial applications in Europe and internationally',
+  psi:         'pounds per square inch — the standard pressure unit in the United States, used for tire pressure, blood pressure, and pneumatic systems',
+  atmosphere:  'equal to 101,325 pascals, representing average atmospheric pressure at sea level, used as a reference in chemistry and diving',
+  torr:        'equal to 1/760 of an atmosphere (133.322 Pa), used in vacuum science, laboratory settings, and medical blood pressure measurement',
+
+  // Energy
+  joule:        'the SI unit of energy, equal to one newton-meter, used in physics, engineering, and as the basis for all other energy units',
+  kilojoule:    'equal to 1,000 joules, commonly used in nutrition (food energy), chemistry, and engineering calculations',
+  calorie:      'equal to 4.184 joules, the energy needed to raise 1 gram of water by 1°C; used in chemistry and as a sub-unit of food energy',
+  kilocalorie:  'equal to 1,000 calories (4,184 joules), the standard unit for food energy — what is commonly called a "calorie" on nutrition labels',
+  watt_hour:    'equal to 3,600 joules, used for measuring electrical energy consumption, especially in small appliances and battery capacity',
+  kilowatt_hour:'equal to 3,600,000 joules (3.6 MJ), the standard unit for household electricity consumption and billing',
+  btu:          'British Thermal Unit — equal to 1,055 joules, used in the US for heating, cooling, and HVAC system ratings',
+
+  // Fuel economy
+  km_per_liter:       'kilometers per liter — a fuel economy metric expressing how many kilometers a vehicle travels on one liter of fuel, common in Asia and Latin America',
+  mile_per_gallon:    'miles per gallon (US) — the standard US fuel economy rating, measuring how many miles a vehicle travels per US gallon (3.785 L) of fuel',
+  mile_per_gallon_uk: 'miles per gallon (UK/Imperial) — the British fuel economy rating using the larger Imperial gallon (4.546 L), giving higher numbers than US mpg for the same vehicle',
+  liter_per_100km:    'liters per 100 kilometers — the European standard for fuel consumption, measuring how many liters are needed to travel 100 km; lower is more efficient',
+
+  // Power
+  watt:             'the SI unit of power, equal to one joule per second, used for electrical appliances, light bulbs, and all power ratings',
+  kilowatt:         'equal to 1,000 watts, the standard unit for electric motors, EV power output, and home power consumption',
+  megawatt:         'equal to 1,000,000 watts, used to rate power plants, wind turbines, and large industrial installations',
+  horsepower:       'mechanical horsepower (hp) — equal to 745.7 watts, the traditional US unit for engine power in cars, trucks, and machinery',
+  horsepower_metric:'metric horsepower (PS/CV) — equal to 735.5 watts, the European standard for engine power ratings; slightly less than mechanical hp',
+  btu_per_hour:     'British Thermal Units per hour (Btu/h) — used to rate air conditioners, heaters, and HVAC equipment in the United States',
 }
 
 /** Format a multiplier for readable display (up to 6 sig figs, no trailing zeros). */
@@ -80,6 +112,16 @@ function fmt(value) {
   if (!isFinite(value)) return '?'
   if (value === Math.round(value)) return value.toLocaleString('en-US')
   return String(parseFloat(value.toPrecision(6)))
+}
+
+// Pairs where the relationship is inverse (not linear) — can't say "1 X = Y Z"
+const INVERSE_PAIR_FORMULAS = {
+  'mile_per_gallon|liter_per_100km':    'divide 235.215 by the mpg value: L/100km = 235.215 ÷ mpg. For example, 30 mpg = 235.215 ÷ 30 = 7.84 L/100km',
+  'liter_per_100km|mile_per_gallon':    'divide 235.215 by the L/100km value: mpg = 235.215 ÷ L/100km. For example, 8 L/100km = 235.215 ÷ 8 = 29.4 mpg',
+  'mile_per_gallon_uk|liter_per_100km': 'divide 282.481 by the mpg (UK) value: L/100km = 282.481 ÷ mpg. For example, 40 mpg UK = 282.481 ÷ 40 = 7.06 L/100km',
+  'liter_per_100km|mile_per_gallon_uk': 'divide 282.481 by the L/100km value: mpg (UK) = 282.481 ÷ L/100km. For example, 7 L/100km = 282.481 ÷ 7 = 40.4 mpg UK',
+  'km_per_liter|liter_per_100km':       'divide 100 by the km/L value: L/100km = 100 ÷ km/L. For example, 15 km/L = 100 ÷ 15 = 6.67 L/100km',
+  'liter_per_100km|km_per_liter':       'divide 100 by the L/100km value: km/L = 100 ÷ L/100km. For example, 8 L/100km = 100 ÷ 8 = 12.5 km/L',
 }
 
 /** Build a plain-English formula sentence for the pair. */
@@ -100,6 +142,12 @@ function formulaText(fromUnit, toUnit, category) {
       : `Use the standard temperature conversion formula between ${fromUnit.label} and ${toUnit.label}.`
   }
 
+  // Inverse (non-linear) pairs
+  const inverseFn = INVERSE_PAIR_FORMULAS[`${fromUnit.id}|${toUnit.id}`]
+  if (inverseFn) {
+    return `To convert ${fromUnit.label} to ${toUnit.label}, ${inverseFn}.`
+  }
+
   const multiplier = fromUnit.factor / toUnit.factor
   if (multiplier >= 1) {
     return `To convert ${fromUnit.label} to ${toUnit.label}, multiply the value by ${fmt(multiplier)}.`
@@ -107,9 +155,11 @@ function formulaText(fromUnit, toUnit, category) {
   return `To convert ${fromUnit.label} to ${toUnit.label}, divide the value by ${fmt(1 / multiplier)} (multiply by ${fmt(multiplier)}).`
 }
 
-/** Calculate "1 fromUnit = X toUnit" as a readable string. */
+/** Calculate "1 fromUnit = X toUnit" as a readable string. Returns null for inverse/formula-based pairs. */
 function oneConversion(fromUnit, toUnit, category) {
   if (category === 'temperature') return null
+  if (INVERSE_PAIR_FORMULAS[`${fromUnit.id}|${toUnit.id}`]) return null
+  if (typeof fromUnit.toBase === 'function' || typeof toUnit.toBase === 'function') return null
   return fmt(fromUnit.factor / toUnit.factor)
 }
 
