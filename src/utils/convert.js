@@ -25,14 +25,15 @@ export function convert(value, fromUnitId, toUnitId, category) {
   // Same unit — no conversion needed
   if (fromUnitId === toUnitId) return value;
 
-  // Temperature: formula-based (base = Celsius)
-  if (category === 'temperature') {
-    const celsius = from.toBase(value);
-    return to.fromBase(celsius);
+  // Formula-based units (e.g. temperature, L/100km): use toBase/fromBase functions.
+  // A category is formula-based if ANY of its units defines toBase/fromBase.
+  const isFormulaBased = typeof from.toBase === 'function' || typeof to.toBase === 'function';
+  if (isFormulaBased) {
+    const toBaseFn   = typeof from.toBase === 'function' ? from.toBase   : (v) => v * from.factor;
+    const fromBaseFn = typeof to.fromBase === 'function' ? to.fromBase   : (v) => v / to.factor;
+    return fromBaseFn(toBaseFn(value));
   }
 
   // Linear units: value -> base -> target
-  // base_value = value * from.factor
-  // result     = base_value / to.factor
   return (value * from.factor) / to.factor;
 }

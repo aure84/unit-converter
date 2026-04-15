@@ -312,16 +312,60 @@ So that I can look up a value at a glance without typing
 
 ---
 
+## Sprint 4 — Must Have
+
+---
+
+### 15. New Categories — Pressure, Energy, Fuel Economy, Cooking
+**Priority:** HIGH
+**Effort:** M (3 pts)
+**MoSCoW:** Must
+
+**User Story:**
+As a user
+I want to convert pressure, energy, fuel economy and cooking units
+So that the site covers more search queries and generates more SEO landing pages
+
+**Acceptance Criteria:**
+- 4 új kategória hozzáadva a `units.js`-hez: `pressure`, `energy`, `fuel_economy`, `cooking`
+- Min. 5 egység kategóriánként
+- Default pair minden kategóriához meghatározva
+- Nav frissítve (12 kategória)
+- Sitemap.xml frissítve az új pair oldalakkal
+- Minden új kategóriához category page és per-pair SEO oldalak generálódnak
+
+---
+
+### 16. Currency Converter — Frankfurter API
+**Priority:** HIGH
+**Effort:** M (3 pts)
+**MoSCoW:** Must
+
+**User Story:**
+As a user
+I want to convert currencies with daily-updated exchange rates
+So that I can quickly check exchange rates without leaving the site
+
+**Acceptance Criteria:**
+- Frankfurter API integrálva (`https://api.frankfurter.app/latest`)
+- Min. 15 valuta támogatva (USD, EUR, GBP, JPY, HUF, CHF, CAD, AUD, CNY, SEK, NOK, DKK, PLN, CZK, RON)
+- Rate-ek localStorage-ban cache-elve (24 órás TTL)
+- Loading state megjelenítve rate fetch közben
+- API hiba esetén graceful fallback ("Rates unavailable, please try again later")
+- Utolsó frissítés dátuma megjelenítve a converter alatt
+- Currency kategória oldalon és per-pair oldalakon is működik
+
+---
+
 ## Won't Have (v1)
 
 The following are explicitly out of scope per DEC-002. They will not be added to this backlog until a new decision log entry approves them:
 
 - User accounts, saved history, or favorites
-- Currency or cryptocurrency conversion (requires live external API — adds cost and maintenance)
+- Cryptocurrency conversion
 - Internationalization (i18n) or multi-language support
 - PWA / offline mode / service worker
 - Custom unit builder (user-defined units)
-- Blog or CMS content layer
 - Dark mode toggle
 
 ---
@@ -344,8 +388,10 @@ The following are explicitly out of scope per DEC-002. They will not be added to
 | 12 | Core Web Vitals | 3 | Should |
 | 13 | Homepage Directory | 2 | Could |
 | 14 | Reference Table | 2 | Could |
-| | **Total** | **35** | |
+| 15 | New Categories (Pressure, Energy, Fuel Economy, Cooking) | 3 | Must (Sprint 4) |
+| 16 | Currency Converter (Frankfurter API) | 3 | Must (Sprint 4) |
+| | **Total** | **41** | |
 
-**Must Have:** 22 pts
+**Must Have:** 28 pts
 **Should Have:** 9 pts
 **Could Have:** 4 pts

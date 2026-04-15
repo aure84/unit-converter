@@ -63,6 +63,17 @@
   border-color: var(--accent-border);
 }
 
+.nav__link--currency {
+  color: var(--currency);
+}
+
+.nav__link--currency:hover,
+.nav__link--currency.nav__link--active {
+  color: var(--currency);
+  background: var(--currency-bg);
+  border-color: var(--currency-border);
+}
+
 /* 320px — tightest screen, keep everything wrapping cleanly */
 @media (max-width: 380px) {
   .nav {

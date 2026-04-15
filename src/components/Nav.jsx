@@ -2,14 +2,19 @@ import { NavLink, Link } from 'react-router'
 import './Nav.css'
 
 const CATEGORIES = [
-  { path: '/length',       label: 'Length' },
-  { path: '/weight',       label: 'Weight' },
-  { path: '/temperature',  label: 'Temperature' },
-  { path: '/volume',       label: 'Volume' },
-  { path: '/area',         label: 'Area' },
-  { path: '/speed',        label: 'Speed' },
-  { path: '/time',         label: 'Time' },
-  { path: '/data-storage', label: 'Data Storage' },
+  { path: '/length',        label: 'Length' },
+  { path: '/weight',        label: 'Weight' },
+  { path: '/temperature',   label: 'Temperature' },
+  { path: '/volume',        label: 'Volume' },
+  { path: '/area',          label: 'Area' },
+  { path: '/speed',         label: 'Speed' },
+  { path: '/time',          label: 'Time' },
+  { path: '/data-storage',  label: 'Data Storage' },
+  { path: '/pressure',      label: 'Pressure' },
+  { path: '/energy',        label: 'Energy' },
+  { path: '/fuel-economy',  label: 'Fuel Economy' },
+  { path: '/cooking',       label: 'Cooking' },
+  { path: '/currency',      label: 'Currency', special: true },
 ]
 
 const LEGAL_LINKS = [
@@ -54,13 +59,16 @@ function Nav() {
         </svg>
       </Link>
       <ul className="nav__list">
-        {CATEGORIES.map(({ path, label }) => (
+        {CATEGORIES.map(({ path, label, special }) => (
           <li key={path} className="nav__item">
             <NavLink
               to={path}
-              className={({ isActive }) =>
-                isActive ? 'nav__link nav__link--active' : 'nav__link'
-              }
+              className={({ isActive }) => {
+                let cls = 'nav__link'
+                if (special) cls += ' nav__link--currency'
+                if (isActive) cls += ' nav__link--active'
+                return cls
+              }}
             >
               {label}
             </NavLink>

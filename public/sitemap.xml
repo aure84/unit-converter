@@ -961,4 +961,61 @@
     <lastmod>2026-04-14</lastmod>
     <priority>0.6</priority>
   </url>
+
+  <!-- Pressure -->
+  <url><loc>https://convert-fast.com/pressure</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://convert-fast.com/pressure/bar-to-psi</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/psi-to-bar</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/pascal-to-bar</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/bar-to-pascal</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/atmosphere-to-bar</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/bar-to-atmosphere</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/atmosphere-to-psi</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/psi-to-atmosphere</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/kilopascal-to-psi</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/psi-to-kilopascal</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/pascal-to-kilopascal</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/torr-to-pascal</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/pressure/megapascal-to-psi</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+
+  <!-- Energy -->
+  <url><loc>https://convert-fast.com/energy</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://convert-fast.com/energy/kilocalorie-to-kilojoule</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/kilojoule-to-kilocalorie</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/joule-to-calorie</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/calorie-to-joule</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/kilowatt_hour-to-kilojoule</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/kilojoule-to-kilowatt_hour</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/joule-to-kilojoule</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/btu-to-kilojoule</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/kilojoule-to-btu</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/kilocalorie-to-joule</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/energy/watt_hour-to-kilowatt_hour</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+
+  <!-- Fuel Economy -->
+  <url><loc>https://convert-fast.com/fuel-economy</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://convert-fast.com/fuel-economy/liter_per_100km-to-mile_per_gallon</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/fuel-economy/mile_per_gallon-to-liter_per_100km</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/fuel-economy/km_per_liter-to-mile_per_gallon</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/fuel-economy/mile_per_gallon-to-km_per_liter</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/fuel-economy/liter_per_100km-to-km_per_liter</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/fuel-economy/mile_per_gallon-to-mile_per_gallon_uk</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+
+  <!-- Cooking -->
+  <url><loc>https://convert-fast.com/cooking</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://convert-fast.com/cooking/cup-to-milliliter</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/milliliter-to-cup</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/tablespoon-to-milliliter</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/teaspoon-to-tablespoon</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/tablespoon-to-teaspoon</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/cup-to-liter</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/fluid_ounce-to-milliliter</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/cup-to-fluid_ounce</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/pint-to-cup</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/quart-to-cup</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://convert-fast.com/cooking/gallon-to-liter</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
+
+  <!-- Currency -->
+  <url><loc>https://convert-fast.com/currency</loc><lastmod>2026-04-15</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+
 </urlset>

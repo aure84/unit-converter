@@ -127,6 +127,63 @@ export const units = {
       { id: 'petabyte', label: 'Petabyte', symbol: 'PB', factor: 1_125_899_906_842_624 },
     ],
   },
+
+  pressure: {
+    base: 'pascal',
+    units: [
+      { id: 'pascal',      label: 'Pascal',                symbol: 'Pa',  factor: 1 },
+      { id: 'kilopascal',  label: 'Kilopascal',            symbol: 'kPa', factor: 1_000 },
+      { id: 'megapascal',  label: 'Megapascal',            symbol: 'MPa', factor: 1_000_000 },
+      { id: 'bar',         label: 'Bar',                   symbol: 'bar', factor: 100_000 },
+      { id: 'psi',         label: 'Pound per sq. inch',    symbol: 'psi', factor: 6_894.757 },
+      { id: 'atmosphere',  label: 'Atmosphere',            symbol: 'atm', factor: 101_325 },
+      { id: 'torr',        label: 'Torr (mmHg)',           symbol: 'Torr', factor: 133.322 },
+    ],
+  },
+
+  energy: {
+    base: 'joule',
+    units: [
+      { id: 'joule',       label: 'Joule',          symbol: 'J',    factor: 1 },
+      { id: 'kilojoule',   label: 'Kilojoule',      symbol: 'kJ',   factor: 1_000 },
+      { id: 'calorie',     label: 'Calorie',         symbol: 'cal',  factor: 4.184 },
+      { id: 'kilocalorie', label: 'Kilocalorie',     symbol: 'kcal', factor: 4_184 },
+      { id: 'watt_hour',   label: 'Watt-hour',       symbol: 'Wh',   factor: 3_600 },
+      { id: 'kilowatt_hour', label: 'Kilowatt-hour', symbol: 'kWh',  factor: 3_600_000 },
+      { id: 'btu',         label: 'BTU',             symbol: 'BTU',  factor: 1_055.06 },
+    ],
+  },
+
+  fuel_economy: {
+    base: 'km_per_liter',
+    units: [
+      { id: 'km_per_liter',      label: 'Kilometer per Liter', symbol: 'km/L',    factor: 1 },
+      { id: 'mile_per_gallon',   label: 'Miles per Gallon (US)', symbol: 'mpg',   factor: 0.425144 },
+      { id: 'mile_per_gallon_uk', label: 'Miles per Gallon (UK)', symbol: 'mpg (UK)', factor: 0.354006 },
+      {
+        id: 'liter_per_100km',
+        label: 'Liters per 100 km',
+        symbol: 'L/100km',
+        toBase:   (v) => 100 / v,
+        fromBase: (v) => 100 / v,
+      },
+    ],
+  },
+
+  cooking: {
+    base: 'milliliter',
+    units: [
+      { id: 'milliliter',  label: 'Milliliter',     symbol: 'mL',   factor: 1 },
+      { id: 'liter',       label: 'Liter',          symbol: 'L',    factor: 1_000 },
+      { id: 'teaspoon',    label: 'Teaspoon',       symbol: 'tsp',  factor: 4.92892 },
+      { id: 'tablespoon',  label: 'Tablespoon',     symbol: 'tbsp', factor: 14.7868 },
+      { id: 'fluid_ounce', label: 'Fluid Ounce',    symbol: 'fl oz', factor: 29.5735 },
+      { id: 'cup',         label: 'Cup (US)',        symbol: 'cup',  factor: 236.588 },
+      { id: 'pint',        label: 'Pint (US)',       symbol: 'pt',   factor: 473.176 },
+      { id: 'quart',       label: 'Quart (US)',      symbol: 'qt',   factor: 946.353 },
+      { id: 'gallon',      label: 'Gallon (US)',     symbol: 'gal',  factor: 3_785.41 },
+    ],
+  },
 };
 
 /**

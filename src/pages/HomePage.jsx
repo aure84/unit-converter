@@ -93,6 +93,61 @@ const CATEGORIES = [
       { label: 'KB → MB', path: '/data-storage/kilobyte-to-megabyte' },
     ],
   },
+  {
+    id: 'pressure',
+    path: '/pressure',
+    label: 'Pressure',
+    icon: '🔵',
+    pairs: [
+      { label: 'bar → psi',     path: '/pressure/bar-to-psi' },
+      { label: 'psi → bar',     path: '/pressure/psi-to-bar' },
+      { label: 'atm → bar',     path: '/pressure/atmosphere-to-bar' },
+    ],
+  },
+  {
+    id: 'energy',
+    path: '/energy',
+    label: 'Energy',
+    icon: '⚡',
+    pairs: [
+      { label: 'kcal → kJ',   path: '/energy/kilocalorie-to-kilojoule' },
+      { label: 'kJ → kcal',   path: '/energy/kilojoule-to-kilocalorie' },
+      { label: 'kWh → MJ',    path: '/energy/kilowatt_hour-to-kilojoule' },
+    ],
+  },
+  {
+    id: 'fuel-economy',
+    path: '/fuel-economy',
+    label: 'Fuel Economy',
+    icon: '⛽',
+    pairs: [
+      { label: 'L/100km → mpg', path: '/fuel-economy/liter_per_100km-to-mile_per_gallon' },
+      { label: 'mpg → L/100km', path: '/fuel-economy/mile_per_gallon-to-liter_per_100km' },
+      { label: 'km/L → mpg',    path: '/fuel-economy/km_per_liter-to-mile_per_gallon' },
+    ],
+  },
+  {
+    id: 'cooking',
+    path: '/cooking',
+    label: 'Cooking',
+    icon: '🍳',
+    pairs: [
+      { label: 'Cup → mL',    path: '/cooking/cup-to-milliliter' },
+      { label: 'tbsp → mL',   path: '/cooking/tablespoon-to-milliliter' },
+      { label: 'tsp → tbsp',  path: '/cooking/teaspoon-to-tablespoon' },
+    ],
+  },
+  {
+    id: 'currency',
+    path: '/currency',
+    label: 'Currency',
+    icon: '💱',
+    pairs: [
+      { label: 'USD → EUR', path: '/currency' },
+      { label: 'EUR → GBP', path: '/currency' },
+      { label: 'USD → HUF', path: '/currency' },
+    ],
+  },
 ]
 
 function HomePage() {

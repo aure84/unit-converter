@@ -11,14 +11,18 @@ const SITE_URL = 'https://convert-fast.com'
  * Handles the data-storage → data_storage case and keeps all others identical.
  */
 const PATH_TO_REGISTRY = {
-  length:         'length',
-  weight:         'weight',
-  temperature:    'temperature',
-  volume:         'volume',
-  area:           'area',
-  speed:          'speed',
-  time:           'time',
-  'data-storage': 'data_storage',
+  length:          'length',
+  weight:          'weight',
+  temperature:     'temperature',
+  volume:          'volume',
+  area:            'area',
+  speed:           'speed',
+  time:            'time',
+  'data-storage':  'data_storage',
+  pressure:        'pressure',
+  energy:          'energy',
+  'fuel-economy':  'fuel_economy',
+  cooking:         'cooking',
 }
 
 /**
@@ -34,6 +38,10 @@ const CATEGORY_DEFAULTS = {
   speed:        { from: 'kilometer_per_hour', to: 'mile_per_hour' },
   time:         { from: 'second',             to: 'minute' },
   data_storage: { from: 'megabyte',           to: 'gigabyte' },
+  pressure:     { from: 'bar',               to: 'psi' },
+  energy:       { from: 'kilocalorie',        to: 'kilojoule' },
+  fuel_economy: { from: 'liter_per_100km',   to: 'mile_per_gallon' },
+  cooking:      { from: 'cup',               to: 'milliliter' },
 }
 
 /**

@@ -3,6 +3,7 @@ import Layout from './layouts/Layout.jsx'
 import HomePage from './pages/HomePage.jsx'
 import CategoryPage from './pages/CategoryPage.jsx'
 import PairPage from './pages/PairPage.jsx'
+import CurrencyPage from './pages/CurrencyPage.jsx'
 import BlogIndexPage from './pages/BlogIndexPage.jsx'
 import BlogPostPage from './pages/BlogPostPage.jsx'
 import PrivacyPage from './pages/PrivacyPage.jsx'
@@ -16,7 +17,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<HomePage />} />
 
-        {/* Explicit category routes (8 total) */}
+        {/* Explicit category routes (12 total) */}
         <Route path="/length"       element={<CategoryPage />} />
         <Route path="/weight"       element={<CategoryPage />} />
         <Route path="/temperature"  element={<CategoryPage />} />
@@ -25,6 +26,13 @@ function App() {
         <Route path="/speed"        element={<CategoryPage />} />
         <Route path="/time"         element={<CategoryPage />} />
         <Route path="/data-storage" element={<CategoryPage />} />
+        <Route path="/pressure"     element={<CategoryPage />} />
+        <Route path="/energy"       element={<CategoryPage />} />
+        <Route path="/fuel-economy" element={<CategoryPage />} />
+        <Route path="/cooking"      element={<CategoryPage />} />
+
+        {/* Currency — dedicated page with live API */}
+        <Route path="/currency" element={<CurrencyPage />} />
 
         {/* Pair sub-routes per category */}
         <Route path="/length/:pair"       element={<PairPage />} />
@@ -35,6 +43,10 @@ function App() {
         <Route path="/speed/:pair"        element={<PairPage />} />
         <Route path="/time/:pair"         element={<PairPage />} />
         <Route path="/data-storage/:pair" element={<PairPage />} />
+        <Route path="/pressure/:pair"     element={<PairPage />} />
+        <Route path="/energy/:pair"       element={<PairPage />} />
+        <Route path="/fuel-economy/:pair" element={<PairPage />} />
+        <Route path="/cooking/:pair"      element={<PairPage />} />
 
         {/* Blog */}
         <Route path="/blog"        element={<BlogIndexPage />} />

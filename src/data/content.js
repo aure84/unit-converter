@@ -98,4 +98,64 @@ export const categoryContent = {
       { q: 'How many GB is a typical HD movie?', a: 'A typical HD (1080p) movie is 4–8 GB. A 4K movie can be 15–25 GB depending on compression.' },
     ],
   },
+
+  pressure: {
+    intro:
+      'Convert pascals, bar, psi, atmospheres, torr, and more with our free pressure converter. Whether you need to check tire pressure, read a weather report, or work with industrial specifications, accurate pressure conversion is instant and easy.',
+    faq: [
+      { q: 'How many psi is 1 bar?', a: '1 bar equals 14.5038 psi (pounds per square inch). Bar is common in European tire pressure ratings, while psi is standard in the US.' },
+      { q: 'What is standard atmospheric pressure?', a: 'Standard atmospheric pressure is 1 atm = 101,325 Pa = 1.01325 bar = 14.696 psi. It is the average air pressure at sea level.' },
+      { q: 'What is the difference between bar and psi?', a: 'Bar and psi both measure pressure, but use different scales. 1 bar ≈ 14.5 psi. Bar is used in most of the world; psi is common in the US and UK.' },
+      { q: 'What is a pascal?', a: 'A pascal (Pa) is the SI unit of pressure, equal to 1 newton per square meter. Atmospheric pressure is about 101,325 Pa or 101.325 kPa.' },
+      { q: 'What tire pressure is recommended in bar vs psi?', a: 'Most car tires are inflated to 2.0–2.5 bar (29–36 psi). Always check the sticker inside your car door for the manufacturer\'s recommended pressure.' },
+    ],
+  },
+
+  energy: {
+    intro:
+      'Convert joules, kilocalories, kilowatt-hours, BTUs, and more with our free energy converter. Essential for nutrition tracking, electricity bills, physics homework, and engineering calculations.',
+    faq: [
+      { q: 'How many joules are in a calorie?', a: '1 calorie (thermochemical) equals 4.184 joules. The food calorie (kilocalorie) equals 4,184 joules or 4.184 kJ.' },
+      { q: 'What is the difference between a calorie and a kilocalorie?', a: 'A food calorie (written as "Calorie" with a capital C or "kcal") equals 1,000 small calories. Nutrition labels use kilocalories (kcal).' },
+      { q: 'How many kJ are in 1 kcal?', a: '1 kilocalorie (kcal) equals 4.184 kilojoules (kJ). Both are commonly used in nutrition: kcal in the US, kJ in Australia and many other countries.' },
+      { q: 'What is a kilowatt-hour?', a: 'A kilowatt-hour (kWh) is the energy used by a 1,000-watt appliance running for 1 hour. It equals 3,600,000 joules (3.6 MJ) and is the standard unit on electricity bills.' },
+      { q: 'What is a BTU?', a: 'A British Thermal Unit (BTU) is the energy needed to heat 1 pound of water by 1°F. 1 BTU equals approximately 1,055 joules. BTUs are used to rate air conditioners and heating systems.' },
+    ],
+  },
+
+  fuel_economy: {
+    intro:
+      'Convert miles per gallon (mpg), liters per 100 km (L/100km), and kilometers per liter (km/L) instantly. Our fuel economy converter helps you compare car efficiency across US, European, and metric standards.',
+    faq: [
+      { q: 'How do you convert mpg to L/100km?', a: 'Divide 235.215 by the mpg value. For example, 30 mpg = 235.215 ÷ 30 = 7.84 L/100km. Note that mpg and L/100km are inversely related — a higher mpg means a lower L/100km.' },
+      { q: 'How do you convert L/100km to mpg?', a: 'Divide 235.215 by the L/100km value. For example, 8 L/100km = 235.215 ÷ 8 = 29.4 mpg.' },
+      { q: 'What is a good fuel economy in L/100km?', a: 'A fuel-efficient compact car typically achieves 5–7 L/100km. SUVs and trucks often use 9–14 L/100km. Electric vehicles are rated separately in kWh/100km.' },
+      { q: 'What is the difference between US mpg and UK mpg?', a: 'The US gallon (3.785 L) is smaller than the UK imperial gallon (4.546 L), so UK mpg figures are about 20% higher for the same vehicle. Always check which gallon standard is used.' },
+      { q: 'How do you convert km/L to L/100km?', a: 'Divide 100 by the km/L value. For example, 15 km/L = 100 ÷ 15 = 6.67 L/100km. The two scales are simply reciprocals of each other.' },
+    ],
+  },
+
+  cooking: {
+    intro:
+      'Convert cups, tablespoons, teaspoons, milliliters, fluid ounces, pints, and more with our free cooking converter. Perfect for scaling recipes, adapting international cookbooks, and converting between metric and US measurements.',
+    faq: [
+      { q: 'How many tablespoons are in a cup?', a: 'There are 16 tablespoons in 1 US cup. 1 tablespoon equals 3 teaspoons or approximately 14.79 ml.' },
+      { q: 'How many ml is a cup?', a: '1 US cup equals 236.588 ml. In metric recipes, a cup is often rounded to 240 ml or 250 ml depending on the country.' },
+      { q: 'How many teaspoons are in a tablespoon?', a: 'There are 3 teaspoons in 1 tablespoon. 1 teaspoon equals approximately 4.93 ml.' },
+      { q: 'How many ml is a fluid ounce?', a: '1 US fluid ounce equals 29.5735 ml. The UK imperial fluid ounce is slightly different at 28.4131 ml.' },
+      { q: 'How many cups are in a pint?', a: 'There are 2 cups in 1 US pint (473 ml). A US pint equals 16 fluid ounces. The UK imperial pint is larger at 20 fluid ounces (568 ml).' },
+    ],
+  },
+
+  currency: {
+    intro:
+      'Convert between US dollars, euros, British pounds, Japanese yen, Hungarian forint, and 10+ more currencies with daily-updated exchange rates. Our currency converter uses ECB data via Frankfurter API — free, accurate, and no sign-up required.',
+    faq: [
+      { q: 'How often are the exchange rates updated?', a: 'Exchange rates are updated daily using data from the European Central Bank (ECB) via the Frankfurter API. Rates are cached in your browser for 24 hours to minimize unnecessary requests.' },
+      { q: 'Are the exchange rates accurate?', a: 'The rates come from the European Central Bank (ECB) daily reference rates, which are widely used as a reliable benchmark. However, actual bank and exchange bureau rates will differ due to fees and spreads.' },
+      { q: 'Why is my converted amount different from what my bank charges?', a: 'Banks and exchange bureaus apply their own conversion fees and spreads on top of the mid-market rate. The rate shown here is the mid-market (interbank) rate — the fairest reference point for comparison.' },
+      { q: 'Which currencies are supported?', a: 'We support 15 major currencies: USD, EUR, GBP, JPY, HUF, CHF, CAD, AUD, CNY, SEK, NOK, DKK, PLN, CZK, and RON. More currencies may be added in future updates.' },
+      { q: 'What does ECB data mean?', a: 'ECB stands for European Central Bank. It publishes official daily reference exchange rates for major world currencies, which are used by financial institutions, governments, and businesses across Europe.' },
+    ],
+  },
 }
