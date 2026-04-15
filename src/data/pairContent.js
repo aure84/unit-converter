@@ -114,6 +114,38 @@ function fmt(value) {
   return String(parseFloat(value.toPrecision(6)))
 }
 
+// Extra FAQ items injected for specific high-value pairs
+const PAIR_EXTRA_FAQ = {
+  'bar|psi': [
+    {
+      q: 'What is the correct tire pressure in psi and bar?',
+      a: 'Most passenger car tires are inflated to 30–35 psi (2.1–2.4 bar). SUVs and light trucks typically use 35–44 psi (2.4–3.0 bar). Always check the sticker inside your driver\'s door or the owner\'s manual for your vehicle\'s recommended pressure.',
+    },
+    {
+      q: 'What is 2.2 bar in psi?',
+      a: '2.2 bar equals approximately 31.9 psi. This is a common front tire pressure for many European cars. To convert, multiply bar by 14.5038: 2.2 × 14.5038 = 31.9 psi.',
+    },
+    {
+      q: 'What is 2.5 bar in psi?',
+      a: '2.5 bar equals approximately 36.3 psi. This is a typical rear tire pressure for many cars, especially when carrying heavier loads.',
+    },
+  ],
+  'psi|bar': [
+    {
+      q: 'What is 32 psi in bar?',
+      a: '32 psi equals approximately 2.21 bar. This is one of the most common tire pressures for passenger vehicles in the United States.',
+    },
+    {
+      q: 'What is 35 psi in bar?',
+      a: '35 psi equals approximately 2.41 bar. This is a common tire pressure for SUVs and light trucks.',
+    },
+    {
+      q: 'What tire pressure should I use?',
+      a: 'The recommended tire pressure for your vehicle is printed on the sticker inside the driver\'s door jamb (not on the tire itself). Most passenger cars run 30–35 psi (2.1–2.4 bar); SUVs typically use 35–44 psi (2.4–3.0 bar).',
+    },
+  ],
+}
+
 // Pairs where the relationship is inverse (not linear) — can't say "1 X = Y Z"
 const INVERSE_PAIR_FORMULAS = {
   'mile_per_gallon|liter_per_100km':    'divide 235.215 by the mpg value: L/100km = 235.215 ÷ mpg. For example, 30 mpg = 235.215 ÷ 30 = 7.84 L/100km',
@@ -212,5 +244,8 @@ export function generatePairContent(category, fromUnit, toUnit) {
     },
   ].filter(Boolean)
 
-  return { intro, faq }
+  // Inject pair-specific extra FAQ items if available
+  const extraFaq = PAIR_EXTRA_FAQ[`${fromUnit.id}|${toUnit.id}`] ?? []
+
+  return { intro, faq: [...faq, ...extraFaq] }
 }
