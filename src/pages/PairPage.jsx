@@ -11,14 +11,18 @@ const SITE_URL = 'https://convert-fast.com'
  * Maps URL path segments to units registry keys.
  */
 const PATH_TO_REGISTRY = {
-  length:         'length',
-  weight:         'weight',
-  temperature:    'temperature',
-  volume:         'volume',
-  area:           'area',
-  speed:          'speed',
-  time:           'time',
-  'data-storage': 'data_storage',
+  length:          'length',
+  weight:          'weight',
+  temperature:     'temperature',
+  volume:          'volume',
+  area:            'area',
+  speed:           'speed',
+  time:            'time',
+  'data-storage':  'data_storage',
+  pressure:        'pressure',
+  energy:          'energy',
+  'fuel-economy':  'fuel_economy',
+  cooking:         'cooking',
 }
 
 /**
