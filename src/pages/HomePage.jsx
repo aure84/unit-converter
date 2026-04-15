@@ -193,7 +193,7 @@ function HomePage() {
             </Link>
             <ul className="home__quick-links">
               {cat.pairs.map((pair) => (
-                <li key={pair.path}>
+                <li key={pair.label}>
                   <Link to={pair.path} className="home__quick-link">
                     {pair.label}
                   </Link>

@@ -107,7 +107,7 @@ export const units = {
     units: [
       { id: 'second', label: 'Second', symbol: 's',   factor: 1 },
       { id: 'minute', label: 'Minute', symbol: 'min', factor: 60 },
-      { id: 'hour',   label: 'Hour',   symbol: 'hr',  factor: 3600 },
+      { id: 'hour',   label: 'Hour',   symbol: 'h',   factor: 3600 },
       { id: 'day',    label: 'Day',    symbol: 'd',   factor: 86_400 },
       { id: 'week',   label: 'Week',   symbol: 'wk',  factor: 604_800 },
       { id: 'month',  label: 'Month',  symbol: 'mo',  factor: 2_629_746 },   // avg 30.4375 days
@@ -118,7 +118,7 @@ export const units = {
   data_storage: {
     base: 'byte',
     units: [
-      { id: 'bit',      label: 'Bit',      symbol: 'b',  factor: 0.125 },
+      { id: 'bit',      label: 'Bit',      symbol: 'bit', factor: 0.125 },
       { id: 'byte',     label: 'Byte',     symbol: 'B',  factor: 1 },
       { id: 'kilobyte', label: 'Kilobyte', symbol: 'KB', factor: 1_024 },
       { id: 'megabyte', label: 'Megabyte', symbol: 'MB', factor: 1_048_576 },
@@ -150,7 +150,7 @@ export const units = {
       { id: 'kilocalorie', label: 'Kilocalorie',     symbol: 'kcal', factor: 4_184 },
       { id: 'watt_hour',   label: 'Watt-hour',       symbol: 'Wh',   factor: 3_600 },
       { id: 'kilowatt_hour', label: 'Kilowatt-hour', symbol: 'kWh',  factor: 3_600_000 },
-      { id: 'btu',         label: 'BTU',             symbol: 'BTU',  factor: 1_055.06 },
+      { id: 'btu',         label: 'Btu',             symbol: 'Btu',  factor: 1_055.06 },
     ],
   },
 
@@ -178,7 +178,7 @@ export const units = {
       { id: 'megawatt',         label: 'Megawatt',              symbol: 'MW',    factor: 1_000_000 },
       { id: 'horsepower',       label: 'Horsepower (mech.)',    symbol: 'hp',    factor: 745.69987 },
       { id: 'horsepower_metric',label: 'Horsepower (metric)',   symbol: 'PS',    factor: 735.49875 },
-      { id: 'btu_per_hour',     label: 'BTU per Hour',          symbol: 'BTU/h', factor: 0.29307107 },
+      { id: 'btu_per_hour',     label: 'Btu per Hour',          symbol: 'Btu/h', factor: 0.29307107 },
     ],
   },
 
