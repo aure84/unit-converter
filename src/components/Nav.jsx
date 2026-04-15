@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { NavLink, Link } from 'react-router'
 import './Nav.css'
 
@@ -26,9 +27,14 @@ const LEGAL_LINKS = [
 ]
 
 function Nav() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  // Close menu on navigation
+  const close = () => setIsOpen(false)
+
   return (
-    <nav className="nav" aria-label="Unit categories">
-      <Link to="/" className="nav__logo" aria-label="Convert Fast home">
+    <nav className={`nav${isOpen ? ' nav--open' : ''}`} aria-label="Unit categories">
+      <Link to="/" className="nav__logo" aria-label="Convert Fast home" onClick={close}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
@@ -64,6 +70,7 @@ function Nav() {
           <li key={path} className="nav__item">
             <NavLink
               to={path}
+              onClick={close}
               className={({ isActive }) => {
                 let cls = 'nav__link'
                 if (special) cls += ' nav__link--currency'
@@ -76,6 +83,17 @@ function Nav() {
           </li>
         ))}
       </ul>
+
+      <button
+        className="nav__hamburger"
+        aria-label={isOpen ? 'Close menu' : 'Open menu'}
+        aria-expanded={isOpen}
+        onClick={() => setIsOpen((v) => !v)}
+      >
+        <span className="nav__hamburger-icon" aria-hidden="true">
+          {isOpen ? '✕' : '☰'}
+        </span>
+      </button>
     </nav>
   )
 }
