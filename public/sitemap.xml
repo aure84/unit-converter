@@ -994,12 +994,6 @@
 
   <!-- Fuel Economy -->
   <url><loc>https://convert-fast.com/fuel-economy</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
-  <url><loc>https://convert-fast.com/fuel-economy/liter_per_100km-to-mile_per_gallon</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://convert-fast.com/fuel-economy/mile_per_gallon-to-liter_per_100km</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://convert-fast.com/fuel-economy/km_per_liter-to-mile_per_gallon</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://convert-fast.com/fuel-economy/mile_per_gallon-to-km_per_liter</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://convert-fast.com/fuel-economy/liter_per_100km-to-km_per_liter</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://convert-fast.com/fuel-economy/mile_per_gallon-to-mile_per_gallon_uk</loc><lastmod>2026-04-15</lastmod><priority>0.6</priority></url>
 
   <!-- Cooking -->
   <url><loc>https://convert-fast.com/cooking</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>

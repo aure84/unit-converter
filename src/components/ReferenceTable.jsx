@@ -4,6 +4,16 @@ import './ReferenceTable.css'
 
 const COMMON_VALUES = [1, 2, 5, 10, 20, 50, 100, 500, 1000]
 
+// Context-specific presets for pairs where generic values are not useful
+const PAIR_OVERRIDES = {
+  'bar|psi':                           [1.5, 1.8, 2.0, 2.2, 2.4, 2.5, 2.6, 2.8, 3.0],
+  'psi|bar':                           [22, 26, 29, 32, 35, 36, 38, 40, 44],
+  'mile_per_gallon|liter_per_100km':   [15, 20, 25, 30, 35, 40, 45, 50, 60],
+  'liter_per_100km|mile_per_gallon':   [4, 5, 6, 7, 8, 9, 10, 12, 15],
+  'mile_per_gallon_uk|liter_per_100km': [15, 20, 25, 30, 35, 40, 45, 50, 60],
+  'liter_per_100km|mile_per_gallon_uk': [4, 5, 6, 7, 8, 9, 10, 12, 15],
+}
+
 /**
  * Format a converted number for display.
  * - Small results (<0.001): exponential notation
@@ -28,7 +38,9 @@ function ReferenceTable({ category, fromUnit, toUnit }) {
 
   if (!fromInfo || !toInfo) return null
 
-  const rows = COMMON_VALUES.map((val) => {
+  const values = PAIR_OVERRIDES[`${fromUnit}|${toUnit}`] ?? COMMON_VALUES
+
+  const rows = values.map((val) => {
     let result
     try {
       result = convert(val, fromUnit, toUnit, category)
