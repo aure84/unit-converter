@@ -11,10 +11,11 @@ const OG_IMAGE = 'https://convert-fast.com/og-image.png'
  *   canonical    — <link rel="canonical"> href (required)
  *   ogTitle      — og:title (falls back to title)
  *   ogDescription — og:description (falls back to description)
+ *   ogType       — og:type (defaults to "website"; use "article" for blog posts)
  *   jsonLd       — object to serialise as JSON-LD (optional)
  *   noindex      — add noindex meta tag (optional)
  */
-function SEOMeta({ title, description, canonical, ogTitle, ogDescription, jsonLd, noindex }) {
+function SEOMeta({ title, description, canonical, ogTitle, ogDescription, ogType, jsonLd, noindex }) {
   const resolvedOgTitle = ogTitle ?? title
   const resolvedOgDesc = ogDescription ?? description
 
@@ -26,7 +27,7 @@ function SEOMeta({ title, description, canonical, ogTitle, ogDescription, jsonLd
       {noindex && <meta name="robots" content="noindex" />}
 
       {/* Open Graph */}
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={ogType ?? 'website'} />
       <meta property="og:site_name" content="Convert Fast" />
       <meta property="og:title" content={resolvedOgTitle} />
       <meta property="og:description" content={resolvedOgDesc} />

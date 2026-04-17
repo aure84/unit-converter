@@ -48,6 +48,7 @@ function BlogPostPage() {
         title={`${post.title} | Convert Fast`}
         description={post.description}
         canonical={`${SITE_URL}/blog/${post.slug}`}
+        ogType="article"
         jsonLd={jsonLd}
       />
 
