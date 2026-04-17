@@ -73,6 +73,21 @@ function CategoryPage() {
   const description = `Free online ${categoryTitle.toLowerCase()} converter. Convert between ${unitPreview}, and more.`
   const canonical = `${SITE_URL}/${segment}`
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: heading,
+    url: canonical,
+    description,
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'All',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+  }
+
   const catFaq = categoryContent[category]?.faq ?? []
   const faqJsonLd = catFaq.length > 0 ? {
     '@context': 'https://schema.org',
@@ -90,7 +105,7 @@ function CategoryPage() {
         title={pageTitle}
         description={description}
         canonical={canonical}
-        jsonLd={faqJsonLd ?? undefined}
+        jsonLd={faqJsonLd ? [jsonLd, faqJsonLd] : jsonLd}
       />
       <h1>{heading}</h1>
       <Converter
