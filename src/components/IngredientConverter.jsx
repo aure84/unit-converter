@@ -58,13 +58,24 @@ function IngredientConverter({ ingredient, initialGrams }) {
     setActiveValue(e.target.value)
   }
 
+  function handleSwap() {
+    if (activeSide === 'grams') {
+      setActiveSide('cups')
+      setActiveValue(calcCups(activeValue))
+    } else {
+      setActiveSide('grams')
+      setActiveValue(calcGrams(activeValue))
+    }
+  }
+
   if (!density) return null
 
   return (
     <div className="ingredient-converter">
       <div className="ingredient-converter__field">
-        <label className="ingredient-converter__label">Grams (g)</label>
+        <label className="ingredient-converter__label" htmlFor="ingredient-grams">Grams (g)</label>
         <input
+          id="ingredient-grams"
           type="number"
           className="ingredient-converter__input"
           value={gramsValue}
@@ -72,15 +83,22 @@ function IngredientConverter({ ingredient, initialGrams }) {
           placeholder="0"
           inputMode="decimal"
           min="0"
-          aria-label="Grams"
         />
       </div>
 
-      <div className="ingredient-converter__arrow" aria-hidden="true">⇄</div>
+      <button
+        type="button"
+        className="ingredient-converter__swap"
+        onClick={handleSwap}
+        aria-label="Swap units"
+      >
+        ⇄
+      </button>
 
       <div className="ingredient-converter__field">
-        <label className="ingredient-converter__label">Cups (US)</label>
+        <label className="ingredient-converter__label" htmlFor="ingredient-cups">Cups (US)</label>
         <input
+          id="ingredient-cups"
           type="number"
           className="ingredient-converter__input"
           value={cupsValue}
@@ -88,7 +106,6 @@ function IngredientConverter({ ingredient, initialGrams }) {
           placeholder="0"
           inputMode="decimal"
           min="0"
-          aria-label="Cups"
         />
       </div>
 
