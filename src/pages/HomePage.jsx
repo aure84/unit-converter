@@ -123,7 +123,7 @@ const CATEGORIES = [
     pairs: [
       { label: 'kcal → kJ',   path: '/energy/kilocalorie-to-kilojoule' },
       { label: 'kJ → kcal',   path: '/energy/kilojoule-to-kilocalorie' },
-      { label: 'kWh → MJ',    path: '/energy/kilowatt_hour-to-kilojoule' },
+      { label: 'kWh → kJ',    path: '/energy/kilowatt_hour-to-kilojoule' },
     ],
   },
   {
@@ -174,7 +174,7 @@ function HomePage() {
 
       <section className="home__intro">
         <p>
-          Convert Fast is a free online unit converter that handles all the measurements you need — length, weight, temperature, volume, area, speed, time, and data storage. No sign-up, no ads in the way, just instant, accurate results.
+          Convert Fast is a free online unit converter that handles all the measurements you need — length, weight, temperature, volume, area, speed, time, and data storage. No sign-up required, just instant, accurate results.
         </p>
         <p>
           Whether you need to convert kilometers to miles for a road trip, kilograms to pounds for a recipe, Celsius to Fahrenheit for the weather, or gigabytes to terabytes for storage planning — every conversion is a single click away. Each converter works in both directions, so you can type in either field and get the result instantly.

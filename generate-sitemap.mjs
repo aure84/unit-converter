@@ -6,7 +6,7 @@
 import fs from 'fs';
 
 const BASE = 'https://convert-fast.com';
-const TODAY = '2026-04-15';
+const TODAY = new Date().toISOString().slice(0, 10);
 
 function url(loc, priority, changefreq) {
   const cf = changefreq ? `\n    <changefreq>${changefreq}</changefreq>` : '';

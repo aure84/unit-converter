@@ -8,6 +8,7 @@ function NotFoundPage() {
         title="Page Not Found | Convert Fast"
         description="The page you are looking for does not exist."
         canonical="https://convert-fast.com/404"
+        noindex
       />
       <h1>404 — Page Not Found</h1>
       <p>The page you are looking for does not exist.</p>
