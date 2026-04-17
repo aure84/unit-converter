@@ -3,7 +3,8 @@ import Converter from '../components/Converter.jsx'
 import ReferenceTable from '../components/ReferenceTable.jsx'
 import PairContent from '../components/PairContent.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
-import { units } from '../data/units.js'
+import { units, getUnit } from '../data/units.js'
+import { generatePairContent } from '../data/pairContent.js'
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -104,13 +105,27 @@ function PairPage() {
     },
   }
 
+  const fromObj = getUnit(category, from)
+  const toObj   = getUnit(category, to)
+  const { faq } = (fromObj && toObj) ? generatePairContent(category, fromObj, toObj) : { faq: [] }
+
+  const faqJsonLd = faq.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  } : null
+
   return (
     <main>
       <SEOMeta
         title={pageTitle}
         description={description}
         canonical={canonical}
-        jsonLd={jsonLd}
+        jsonLd={faqJsonLd ? [jsonLd, faqJsonLd] : jsonLd}
       />
       <h1>{h1}</h1>
       <Converter

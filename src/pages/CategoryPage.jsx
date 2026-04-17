@@ -3,6 +3,7 @@ import Converter from '../components/Converter.jsx'
 import CategoryContent from '../components/CategoryContent.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
 import { units } from '../data/units.js'
+import { categoryContent } from '../data/content.js'
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -72,12 +73,24 @@ function CategoryPage() {
   const description = `Free online ${categoryTitle.toLowerCase()} converter. Convert between ${unitPreview}, and more.`
   const canonical = `${SITE_URL}/${segment}`
 
+  const catFaq = categoryContent[category]?.faq ?? []
+  const faqJsonLd = catFaq.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: catFaq.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  } : null
+
   return (
     <main>
       <SEOMeta
         title={pageTitle}
         description={description}
         canonical={canonical}
+        jsonLd={faqJsonLd ?? undefined}
       />
       <h1>{heading}</h1>
       <Converter

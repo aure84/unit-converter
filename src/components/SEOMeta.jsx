@@ -30,11 +30,11 @@ function SEOMeta({ title, description, canonical, ogTitle, ogDescription, jsonLd
       <meta property="og:url" content={canonical} />
 
       {/* JSON-LD */}
-      {jsonLd && (
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
+      {jsonLd && (Array.isArray(jsonLd) ? jsonLd : [jsonLd]).map((ld, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(ld)}
         </script>
-      )}
+      ))}
     </Helmet>
   )
 }
