@@ -25,6 +25,11 @@ function BlogPostPage() {
     description: post.description,
     datePublished: post.date,
     dateModified: post.date,
+    author: {
+      '@type': 'Organization',
+      name: 'Convert Fast',
+      url: SITE_URL,
+    },
     url: `${SITE_URL}/blog/${post.slug}`,
     publisher: {
       '@type': 'Organization',
