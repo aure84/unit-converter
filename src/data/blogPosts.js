@@ -708,6 +708,79 @@ export const blogPosts = [
       { label: 'Power Converter', path: '/power' },
     ],
   },
+
+  {
+    slug: 'degrees-to-radians',
+    title: 'How to Convert Degrees to Radians (and Back)',
+    date: '2026-04-19',
+    description: 'Learn how to convert degrees to radians with the exact formula, common reference values, and real-world examples from trigonometry, engineering, and navigation.',
+    intro: 'Degrees and radians both measure angles, but they appear in very different contexts. Degrees are what most people learn in school — a right angle is 90°, a full circle is 360°. Radians are the standard in mathematics, physics, and engineering — a full circle is 2π. Knowing how to switch between them is essential for anyone working with trigonometry, programming, or technical fields.',
+    sections: [
+      {
+        heading: 'What Is a Degree?',
+        paragraphs: [
+          'A degree (°) divides a full circle into 360 equal parts. The choice of 360 goes back to ancient Babylon, which used a base-60 number system. 360 has many divisors (2, 3, 4, 5, 6, 8, 9, 10, 12…), making it easy to divide circles into equal slices without fractions.',
+          'Degrees are used in everyday geometry, geography (latitude and longitude), construction, navigation, and most school mathematics. A right angle is 90°, a straight line is 180°, and a full rotation is 360°.',
+        ],
+      },
+      {
+        heading: 'What Is a Radian?',
+        paragraphs: [
+          'A radian (rad) is the SI unit of angle. One radian is the angle at the center of a circle subtended by an arc equal in length to the radius. Because the circumference of a circle is 2π times the radius, a full circle contains exactly 2π radians — approximately 6.2832 rad.',
+          'Radians make mathematical formulas simpler. The derivative of sin(x) is cos(x) only when x is in radians. Arc length equals radius × angle in radians. In physics and engineering, radians simplify wave equations, rotational motion, and signal processing. Most programming languages and calculators use radians by default in trigonometric functions.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          'The relationship between degrees and radians comes from the full circle: 360° = 2π radians, so 180° = π radians.',
+          'To convert degrees to radians: multiply by π/180 (approximately 0.017453).',
+          'Example: 90° × π/180 = π/2 ≈ 1.5708 radians.',
+          'To convert radians to degrees: multiply by 180/π (approximately 57.2958).',
+          'Example: 1 radian × 180/π ≈ 57.296°.',
+          'A quick check: 180° = π ≈ 3.14159 rad. If your result is close to this relationship, you are on the right track.',
+        ],
+      },
+      {
+        heading: 'Common Angle Reference Values',
+        paragraphs: ['These are the angle values you will see most often in trigonometry and engineering:'],
+        list: [
+          '0° = 0 radians',
+          '30° = π/6 ≈ 0.5236 radians',
+          '45° = π/4 ≈ 0.7854 radians',
+          '60° = π/3 ≈ 1.0472 radians',
+          '90° = π/2 ≈ 1.5708 radians',
+          '120° = 2π/3 ≈ 2.0944 radians',
+          '180° = π ≈ 3.14159 radians',
+          '270° = 3π/2 ≈ 4.7124 radians',
+          '360° = 2π ≈ 6.2832 radians',
+        ],
+      },
+      {
+        heading: 'Real-World Examples',
+        paragraphs: [
+          'Programming: JavaScript\'s Math.sin(), Math.cos(), and Math.atan2() all use radians. To compute sin(45°) in code, you write Math.sin(45 * Math.PI / 180). Forgetting to convert is one of the most common trigonometry bugs.',
+          'Navigation and maps: GPS coordinates use decimal degrees. Bearing angles (compass headings) use degrees. When computing great-circle distances between two points on Earth, the formulas internally convert to radians.',
+          'Physics and engineering: Angular velocity is measured in radians per second (rad/s). A motor spinning at 3,000 RPM rotates at 3,000 × 2π/60 ≈ 314.16 rad/s.',
+          'Construction and carpentry: Angles in blueprints, roof pitches, and miter cuts are nearly always expressed in degrees. Radians appear only in structural engineering calculations.',
+        ],
+      },
+      {
+        heading: 'What About Gradians?',
+        paragraphs: [
+          'A third unit — the gradian (grad or gon) — divides a full circle into 400 parts. A right angle is exactly 100 gradians. Gradians are used in surveying and some European engineering traditions because they simplify decimal calculations for right-angle geometry.',
+          'To convert degrees to gradians: multiply by 10/9. For example, 90° × 10/9 = 100 grad.',
+          'Gradians rarely appear outside of surveying and specialized technical fields. For most purposes, you only need degrees and radians.',
+        ],
+      },
+    ],
+    conclusion: 'The core formula is simple: degrees × π/180 = radians, and radians × 180/π = degrees. Memorize the key reference values (90° = π/2, 180° = π, 360° = 2π) and you can convert most common angles in your head. Use our free angle converter for any value instantly.',
+    relatedLinks: [
+      { label: 'Degrees to Radians Converter', path: '/angle/degree-to-radian' },
+      { label: 'Radians to Degrees Converter', path: '/angle/radian-to-degree' },
+      { label: 'Angle Converter', path: '/angle' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */

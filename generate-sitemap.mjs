@@ -36,6 +36,13 @@ sections.push([
   url(`${BASE}/blog/celsius-to-fahrenheit`, '0.7', 'monthly'),
   url(`${BASE}/blog/data-storage-units`,    '0.7', 'monthly'),
   url(`${BASE}/blog/speed-units`,           '0.7', 'monthly'),
+  url(`${BASE}/blog/gallons-to-liters`,     '0.7', 'monthly'),
+  url(`${BASE}/blog/meters-to-feet`,        '0.7', 'monthly'),
+  url(`${BASE}/blog/psi-to-bar`,            '0.7', 'monthly'),
+  url(`${BASE}/blog/cups-to-ml`,            '0.7', 'monthly'),
+  url(`${BASE}/blog/mpg-to-l100km`,         '0.7', 'monthly'),
+  url(`${BASE}/blog/horsepower-to-kw`,      '0.7', 'monthly'),
+  url(`${BASE}/blog/degrees-to-radians`,    '0.7', 'monthly'),
 ].join('\n'));
 
 // ── Length ───────────────────────────────────────────────────────────────────
