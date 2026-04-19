@@ -7,7 +7,7 @@ const BASE = 'http://localhost:5173';
 test('homepage loads and shows all categories', async ({ page }) => {
   await page.goto(BASE);
   await expect(page).toHaveTitle(/Unit Converter/);
-  for (const cat of ['Length', 'Weight', 'Temperature', 'Volume', 'Area', 'Speed', 'Time', 'Data Storage', 'Pressure', 'Energy', 'Power', 'Fuel Economy', 'Cooking', 'Currency']) {
+  for (const cat of ['Length', 'Weight', 'Temperature', 'Volume', 'Area', 'Speed', 'Time', 'Data Storage', 'Pressure', 'Energy', 'Power', 'Fuel Economy', 'Cooking', 'Angle', 'Frequency', 'Currency']) {
     await expect(page.getByText(cat).first()).toBeVisible();
   }
 });
@@ -144,11 +144,11 @@ test('unknown pair shows friendly error, not crash', async ({ page }) => {
 
 // ── Category pages ──────────────────────────────────────────────────────────
 
-test('all 14 category pages load without error', async ({ page }) => {
+test('all 16 category pages load without error', async ({ page }) => {
   const categories = [
     'length', 'weight', 'temperature', 'volume', 'area',
     'speed', 'time', 'data-storage', 'pressure', 'energy',
-    'power', 'fuel-economy', 'cooking', 'currency',
+    'power', 'fuel-economy', 'cooking', 'angle', 'frequency', 'currency',
   ];
   for (const cat of categories) {
     await page.goto(`${BASE}/${cat}`);
