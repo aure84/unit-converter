@@ -132,7 +132,7 @@ sections.push([
 ].join('\n'));
 
 // ── Cooking ──────────────────────────────────────────────────────────────────
-const cookingUnits = ['milliliter','liter','teaspoon','tablespoon','fluid_ounce','cup','pint','quart','gallon'];
+const cookingUnits = ['milliliter','liter','teaspoon','tablespoon','fluid_ounce','cup','pint','quart','gallon','gram_water'];
 sections.push([
   `  <!-- Cooking -->`,
   url(`${BASE}/cooking`, '0.8'),
@@ -171,6 +171,22 @@ sections.push([
   `  <!-- Frequency -->`,
   url(`${BASE}/frequency`, '0.8'),
   pairs('frequency', frequencyUnits),
+].join('\n'));
+
+// ── Shoe Size ─────────────────────────────────────────────────────────────────
+const shoeSizeUnits = ['eu','us_men','us_women','uk','foot_cm'];
+sections.push([
+  `  <!-- Shoe Size -->`,
+  url(`${BASE}/shoe-size`, '0.8'),
+  pairs('shoe-size', shoeSizeUnits),
+].join('\n'));
+
+// ── Torque ───────────────────────────────────────────────────────────────────
+const torqueUnits = ['newton_meter','foot_pound','inch_pound','kilogram_force_meter','kilogram_force_centimeter','newton_centimeter'];
+sections.push([
+  `  <!-- Torque -->`,
+  url(`${BASE}/torque`, '0.8'),
+  pairs('torque', torqueUnits),
 ].join('\n'));
 
 // ── Currency ─────────────────────────────────────────────────────────────────

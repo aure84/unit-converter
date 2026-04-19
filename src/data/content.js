@@ -260,6 +260,47 @@ export const categoryContent = {
       { q: 'How many teaspoons are in a tablespoon?', a: 'There are 3 teaspoons in 1 tablespoon. 1 teaspoon equals approximately 4.93 ml.' },
       { q: 'How many ml is a fluid ounce?', a: '1 US fluid ounce equals 29.5735 ml. The UK imperial fluid ounce is slightly different at 28.4131 ml.' },
       { q: 'How many cups are in a pint?', a: 'There are 2 cups in 1 US pint (473 ml). A US pint equals 16 fluid ounces. The UK imperial pint is larger at 20 fluid ounces (568 ml).' },
+      { q: 'How many grams are in a cup of water?', a: '1 US cup of water equals 236.6 grams (ml). For other ingredients, the gram weight depends on density — use the ingredient-specific converters for flour, sugar, butter, and more.' },
+    ],
+  },
+
+  shoe_size: {
+    h1: 'How Do You Convert EU Shoe Size to US?',
+    intro:
+      'Convert shoe sizes between EU, US Men\'s, US Women\'s, UK, and foot length in centimeters. Our free shoe size converter instantly translates between all major sizing systems so you can buy footwear from any country with confidence.',
+    explanation:
+      'Shoe sizing systems differ by country and gender. EU sizes use a numeric scale (36–47 for adults), US sizes use a different scale with separate men\'s and women\'s ranges, and UK sizes are close to US Men\'s but shifted by half a size. All systems can be converted through EU size as a common reference. Sizes shown are approximate — fit can vary by brand and style.',
+    examples: [
+      { label: 'EU 42', to: "US Men's 9 / US Women's 11 / UK 8" },
+      { label: 'EU 38', to: "US Men's 5 / US Women's 7 / UK 5" },
+      { label: 'EU 40', to: '25.4 cm foot length' },
+    ],
+    faq: [
+      { q: 'How do I convert EU shoe size to US?', a: 'Subtract 33 for US Men\'s (EU 42 → US Men\'s 9) or subtract 31 for US Women\'s (EU 42 → US Women\'s 11). Use the converter above for any size.' },
+      { q: 'How do I convert US shoe size to UK?', a: 'UK men\'s sizes are 0.5 less than US Men\'s. For example, US Men\'s 9 equals UK 8.5. Women\'s sizes differ more — US Women\'s 11 equals UK 8.5.' },
+      { q: 'What is EU size 40 in US?', a: 'EU 40 equals US Men\'s 7 or US Women\'s 9. In UK sizes, EU 40 corresponds to UK 6.5.' },
+      { q: 'What is EU size 42 in US?', a: 'EU 42 equals US Men\'s 9 or US Women\'s 11. In UK sizes, EU 42 corresponds to UK 8.5.' },
+      { q: 'How do I measure my foot size in cm?', a: 'Stand on a piece of paper and trace your foot. Measure the longest distance from heel to toe. EU 42 corresponds to approximately 26.7 cm foot length.' },
+    ],
+  },
+
+  torque: {
+    h1: 'How Do You Convert Nm to ft-lb?',
+    intro:
+      'Convert torque between Newton-meters (N·m), foot-pounds (ft·lb), inch-pounds (in·lb), kilogram-force meters, and more. Our free torque converter is essential for mechanics, engineers, and DIY enthusiasts working with bolt specifications and engine data.',
+    explanation:
+      'Torque is a rotational force — the product of a force and the distance at which it is applied. 1 foot-pound (ft·lb) equals 1.35582 Newton-meters. Bolt specifications in Europe use N·m; US manuals typically use ft·lb or in·lb. Kilogram-force meters (kgf·m) appear in older Japanese and European specifications.',
+    examples: [
+      { label: '100 N·m', to: '73.76 ft·lb' },
+      { label: '1 ft·lb', to: '1.356 N·m' },
+      { label: '1 kgf·m', to: '9.807 N·m' },
+    ],
+    faq: [
+      { q: 'How do you convert Nm to ft-lb?', a: 'Multiply Newton-meters by 0.7376. For example, 100 N·m × 0.7376 = 73.76 ft·lb. To convert ft·lb to N·m, multiply by 1.35582.' },
+      { q: 'How do you convert ft-lb to in-lb?', a: 'Multiply foot-pounds by 12. For example, 10 ft·lb = 120 in·lb. Inch-pounds are used for smaller fasteners and precision torque specifications.' },
+      { q: 'What is the difference between Nm and kgf·m?', a: '1 kgf·m equals 9.80665 N·m. Kilogram-force meters appear in older torque specifications and some Japanese vehicle manuals.' },
+      { q: 'What torque is used for lug nuts?', a: 'Most passenger car lug nuts require 80–120 N·m (60–90 ft·lb). Always check your vehicle\'s owner manual for the exact specification, as over-torquing can damage wheel hubs.' },
+      { q: 'What is torque used for?', a: 'Torque specifications are used in automotive (cylinder head bolts, lug nuts), construction (structural bolts), and manufacturing. Proper torque ensures fasteners are tightened without stripping threads or causing fatigue failure.' },
     ],
   },
 

@@ -35,6 +35,8 @@ function App() {
         <Route path="/cooking"      element={<CookingPage />} />
         <Route path="/angle"        element={<CategoryPage />} />
         <Route path="/frequency"    element={<CategoryPage />} />
+        <Route path="/shoe-size"    element={<CategoryPage />} />
+        <Route path="/torque"       element={<CategoryPage />} />
 
         {/* Currency — dedicated page with live API */}
         <Route path="/currency" element={<CurrencyPage />} />
@@ -66,6 +68,8 @@ function App() {
         <Route path="/cooking/:pair"      element={<PairPage />} />
         <Route path="/angle/:pair"        element={<PairPage />} />
         <Route path="/frequency/:pair"    element={<PairPage />} />
+        <Route path="/shoe-size/:pair"    element={<PairPage />} />
+        <Route path="/torque/:pair"       element={<PairPage />} />
 
         {/* Blog */}
         <Route path="/blog"        element={<BlogIndexPage />} />

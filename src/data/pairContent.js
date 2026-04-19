@@ -114,6 +114,24 @@ export const unitDescriptions = {
   terahertz: 'equal to 1,000,000,000,000 hertz; used in scientific research, medical imaging, and security scanning',
   rpm:       'revolutions per minute — measures rotational speed of engines, motors, hard drives, and turbines; 1 RPM equals 1/60 Hz',
 
+  // Cooking (water-equivalent weight)
+  gram_water: 'equal to 1 milliliter of water — useful for converting cooking liquid measurements between grams and volume units such as cups, tablespoons, and teaspoons',
+
+  // Shoe sizes
+  eu:       'the European shoe sizing standard, a numeric scale where adults typically range from EU 36 to EU 47, derived from the Paris point system',
+  us_men:   "the US Men's shoe sizing scale, running approximately 33 sizes below the EU equivalent (e.g., EU 42 = US Men's 9)",
+  us_women: "the US Women's shoe sizing scale, running approximately 31 sizes below the EU equivalent and 2 sizes above US Men's (e.g., EU 42 = US Women's 11)",
+  uk:       'the UK shoe sizing scale, similar to US Men\'s but half a size smaller (e.g., US Men\'s 9 = UK 8.5); UK women\'s sizes differ from US Women\'s',
+  foot_cm:  'the foot length in centimeters measured from heel to toe while standing — the most universal way to determine shoe size across all systems',
+
+  // Torque
+  newton_meter:              'the SI unit of torque, equal to a force of one newton applied at one meter distance; used in European vehicle specifications and engineering',
+  foot_pound:                'equal to 1.35582 N·m — the standard torque unit in US automotive manuals for lug nuts, cylinder heads, and structural bolts',
+  inch_pound:                'equal to 1/12 of a foot-pound (0.11299 N·m) — used for smaller fasteners, precision instruments, and light-duty torque specifications',
+  kilogram_force_meter:      'equal to 9.80665 N·m — used in older Japanese and European torque specifications, representing the torque of 1 kgf applied at 1 meter',
+  kilogram_force_centimeter: 'equal to 0.0980665 N·m — used for very small torque values in fine machinery and older metric specifications',
+  newton_centimeter:         'equal to 0.01 N·m — used for miniature fasteners, electronics assembly, and precision instrument specifications',
+
   // Power
   watt:             'the SI unit of power, equal to one joule per second, used for electrical appliances, light bulbs, and all power ratings',
   kilowatt:         'equal to 1,000 watts, the standard unit for electric motors, EV power output, and home power consumption',
@@ -164,6 +182,27 @@ const PAIR_EXTRA_FAQ = {
 
 // Pairs where the relationship is inverse (not linear) — can't say "1 X = Y Z"
 const INVERSE_PAIR_FORMULAS = {
+  // Shoe size conversions (additive offsets through EU base)
+  'eu|us_men':        "subtract 33 from the EU size: US Men = EU − 33. For example, EU 42 → US Men's 9",
+  'us_men|eu':        "add 33 to the US Men's size: EU = US Men + 33. For example, US Men's 9 → EU 42",
+  'eu|us_women':      "subtract 31 from the EU size: US Women = EU − 31. For example, EU 39 → US Women's 8",
+  'us_women|eu':      "add 31 to the US Women's size: EU = US Women + 31. For example, US Women's 8 → EU 39",
+  'eu|uk':            'subtract 33.5 from the EU size: UK = EU − 33.5. For example, EU 42 → UK 8.5',
+  'uk|eu':            'add 33.5 to the UK size: EU = UK + 33.5. For example, UK 8.5 → EU 42',
+  'eu|foot_cm':       'divide the EU size by 1.575: cm = EU ÷ 1.575. For example, EU 42 → 26.7 cm',
+  'foot_cm|eu':       'multiply the foot length in cm by 1.575: EU = cm × 1.575. For example, 26.7 cm → EU 42',
+  'us_men|us_women':  "add 2 to the US Men's size: US Women = US Men + 2. For example, US Men's 9 → US Women's 11",
+  'us_women|us_men':  "subtract 2 from the US Women's size: US Men = US Women − 2. For example, US Women's 11 → US Men's 9",
+  'us_men|uk':        "subtract 0.5 from the US Men's size: UK = US Men − 0.5. For example, US Men's 9 → UK 8.5",
+  'uk|us_men':        "add 0.5 to the UK size: US Men = UK + 0.5. For example, UK 8.5 → US Men's 9",
+  'us_women|uk':      "subtract 2.5 from the US Women's size: UK = US Women − 2.5. For example, US Women's 11 → UK 8.5",
+  'uk|us_women':      "add 2.5 to the UK size: US Women = UK + 2.5. For example, UK 8.5 → US Women's 11",
+  'us_men|foot_cm':   "add 33 to get the EU size, then divide by 1.575: cm = (US Men + 33) ÷ 1.575. For example, US Men's 9 → EU 42 → 26.7 cm",
+  'foot_cm|us_men':   "multiply by 1.575 to get the EU size, then subtract 33: US Men = (cm × 1.575) − 33. For example, 26.7 cm → EU 42 → US Men's 9",
+  'us_women|foot_cm': "add 31 to get the EU size, then divide by 1.575: cm = (US Women + 31) ÷ 1.575. For example, US Women's 8 → EU 39 → 24.8 cm",
+  'foot_cm|us_women': "multiply by 1.575 to get the EU size, then subtract 31: US Women = (cm × 1.575) − 31. For example, 24.8 cm → EU 39 → US Women's 8",
+  'uk|foot_cm':       'add 33.5 to get the EU size, then divide by 1.575: cm = (UK + 33.5) ÷ 1.575. For example, UK 8.5 → EU 42 → 26.7 cm',
+  'foot_cm|uk':       'multiply by 1.575 to get the EU size, then subtract 33.5: UK = (cm × 1.575) − 33.5. For example, 26.7 cm → EU 42 → UK 8.5',
   'mile_per_gallon|liter_per_100km':    'divide 235.215 by the mpg value: L/100km = 235.215 ÷ mpg. For example, 30 mpg = 235.215 ÷ 30 = 7.84 L/100km',
   'liter_per_100km|mile_per_gallon':    'divide 235.215 by the L/100km value: mpg = 235.215 ÷ L/100km. For example, 8 L/100km = 235.215 ÷ 8 = 29.4 mpg',
   'mile_per_gallon_uk|liter_per_100km': 'divide 282.481 by the mpg (UK) value: L/100km = 282.481 ÷ mpg. For example, 40 mpg UK = 282.481 ÷ 40 = 7.06 L/100km',

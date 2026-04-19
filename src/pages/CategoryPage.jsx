@@ -27,6 +27,8 @@ const PATH_TO_REGISTRY = {
   cooking:         'cooking',
   angle:           'angle',
   frequency:       'frequency',
+  'shoe-size':     'shoe_size',
+  torque:          'torque',
 }
 
 /**
@@ -49,6 +51,8 @@ const CATEGORY_DEFAULTS = {
   cooking:      { from: 'cup',               to: 'milliliter' },
   angle:        { from: 'degree',            to: 'radian' },
   frequency:    { from: 'hertz',             to: 'kilohertz' },
+  shoe_size:    { from: 'eu',               to: 'us_men' },
+  torque:       { from: 'newton_meter',     to: 'foot_pound' },
 }
 
 /**

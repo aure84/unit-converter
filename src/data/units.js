@@ -218,6 +218,30 @@ export const units = {
       { id: 'pint',        label: 'Pint (US)',       symbol: 'pt',   factor: 473.176 },
       { id: 'quart',       label: 'Quart (US)',      symbol: 'qt',   factor: 946.353 },
       { id: 'gallon',      label: 'Gallon (US)',     symbol: 'gal',  factor: 3_785.41 },
+      { id: 'gram_water',  label: 'Gram (water)',    symbol: 'g',    factor: 1 },
+    ],
+  },
+
+  shoe_size: {
+    base: 'eu',
+    units: [
+      { id: 'eu',       label: 'EU',              symbol: 'EU',   toBase: v => v,         fromBase: v => v },
+      { id: 'us_men',   label: "US Men's",        symbol: 'US M', toBase: v => v + 33,    fromBase: v => v - 33 },
+      { id: 'us_women', label: "US Women's",      symbol: 'US W', toBase: v => v + 31,    fromBase: v => v - 31 },
+      { id: 'uk',       label: 'UK',              symbol: 'UK',   toBase: v => v + 33.5,  fromBase: v => v - 33.5 },
+      { id: 'foot_cm',  label: 'Foot Length (cm)', symbol: 'cm',  toBase: v => v * 1.575, fromBase: v => v / 1.575 },
+    ],
+  },
+
+  torque: {
+    base: 'newton_meter',
+    units: [
+      { id: 'newton_meter',              label: 'Newton-Meter',              symbol: 'N·m',    factor: 1 },
+      { id: 'foot_pound',                label: 'Foot-Pound',                symbol: 'ft·lb',  factor: 1.3558179 },
+      { id: 'inch_pound',                label: 'Inch-Pound',                symbol: 'in·lb',  factor: 0.1129848 },
+      { id: 'kilogram_force_meter',      label: 'Kilogram-Force Meter',      symbol: 'kgf·m',  factor: 9.80665 },
+      { id: 'kilogram_force_centimeter', label: 'Kilogram-Force Centimeter', symbol: 'kgf·cm', factor: 0.0980665 },
+      { id: 'newton_centimeter',         label: 'Newton-Centimeter',         symbol: 'N·cm',   factor: 0.01 },
     ],
   },
 };

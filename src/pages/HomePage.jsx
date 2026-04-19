@@ -181,6 +181,28 @@ const CATEGORIES = [
       { label: 'USD → HUF', path: '/currency' },
     ],
   },
+  {
+    id: 'shoe-size',
+    path: '/shoe-size',
+    label: 'Shoe Size',
+    icon: '👟',
+    pairs: [
+      { label: 'EU → US Men\'s',   path: '/shoe-size/eu-to-us_men' },
+      { label: 'EU → US Women\'s', path: '/shoe-size/eu-to-us_women' },
+      { label: 'EU → UK',          path: '/shoe-size/eu-to-uk' },
+    ],
+  },
+  {
+    id: 'torque',
+    path: '/torque',
+    label: 'Torque',
+    icon: '🔩',
+    pairs: [
+      { label: 'Nm → ft·lb',   path: '/torque/newton_meter-to-foot_pound' },
+      { label: 'ft·lb → Nm',   path: '/torque/foot_pound-to-newton_meter' },
+      { label: 'Nm → in·lb',   path: '/torque/newton_meter-to-inch_pound' },
+    ],
+  },
 ]
 
 function HomePage() {
