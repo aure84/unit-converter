@@ -149,6 +149,28 @@ const CATEGORIES = [
     ],
   },
   {
+    id: 'angle',
+    path: '/angle',
+    label: 'Angle',
+    icon: '📐',
+    pairs: [
+      { label: 'Degrees → Radians', path: '/angle/degree-to-radian' },
+      { label: 'Radians → Degrees', path: '/angle/radian-to-degree' },
+      { label: 'Degrees → Gradians', path: '/angle/degree-to-gradian' },
+    ],
+  },
+  {
+    id: 'frequency',
+    path: '/frequency',
+    label: 'Frequency',
+    icon: '📡',
+    pairs: [
+      { label: 'Hz → kHz',   path: '/frequency/hertz-to-kilohertz' },
+      { label: 'MHz → GHz',  path: '/frequency/megahertz-to-gigahertz' },
+      { label: 'RPM → Hz',   path: '/frequency/rpm-to-hertz' },
+    ],
+  },
+  {
     id: 'currency',
     path: '/currency',
     label: 'Currency',

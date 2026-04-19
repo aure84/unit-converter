@@ -33,6 +33,8 @@ function App() {
         <Route path="/power"        element={<CategoryPage />} />
         <Route path="/fuel-economy" element={<CategoryPage />} />
         <Route path="/cooking"      element={<CookingPage />} />
+        <Route path="/angle"        element={<CategoryPage />} />
+        <Route path="/frequency"    element={<CategoryPage />} />
 
         {/* Currency — dedicated page with live API */}
         <Route path="/currency" element={<CurrencyPage />} />
@@ -62,6 +64,8 @@ function App() {
         <Route path="/cooking/cocoa-powder-grams-to-cups"   element={<IngredientPage ingredient="cocoa_powder" />} />
 
         <Route path="/cooking/:pair"      element={<PairPage />} />
+        <Route path="/angle/:pair"        element={<PairPage />} />
+        <Route path="/frequency/:pair"    element={<PairPage />} />
 
         {/* Blog */}
         <Route path="/blog"        element={<BlogIndexPage />} />

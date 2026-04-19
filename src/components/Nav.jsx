@@ -16,6 +16,8 @@ const CATEGORIES = [
   { path: '/power',         label: 'Power' },
   { path: '/fuel-economy',  label: 'Fuel Economy' },
   { path: '/cooking',       label: 'Cooking' },
+  { path: '/angle',         label: 'Angle' },
+  { path: '/frequency',     label: 'Frequency' },
   { path: '/currency',      label: 'Currency', special: true },
 ]
 

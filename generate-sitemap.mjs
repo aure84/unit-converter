@@ -150,6 +150,22 @@ sections.push([
   pairs('power', powerUnits),
 ].join('\n'));
 
+// ── Angle ─────────────────────────────────────────────────────────────────────
+const angleUnits = ['degree','radian','gradian','arcminute','arcsecond','turn'];
+sections.push([
+  `  <!-- Angle -->`,
+  url(`${BASE}/angle`, '0.8'),
+  pairs('angle', angleUnits),
+].join('\n'));
+
+// ── Frequency ────────────────────────────────────────────────────────────────
+const frequencyUnits = ['hertz','kilohertz','megahertz','gigahertz','terahertz','rpm'];
+sections.push([
+  `  <!-- Frequency -->`,
+  url(`${BASE}/frequency`, '0.8'),
+  pairs('frequency', frequencyUnits),
+].join('\n'));
+
 // ── Currency ─────────────────────────────────────────────────────────────────
 sections.push([
   `  <!-- Currency -->`,

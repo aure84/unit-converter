@@ -25,6 +25,8 @@ const PATH_TO_REGISTRY = {
   power:           'power',
   'fuel-economy':  'fuel_economy',
   cooking:         'cooking',
+  angle:           'angle',
+  frequency:       'frequency',
 }
 
 /**
@@ -45,6 +47,8 @@ const CATEGORY_DEFAULTS = {
   energy:       { from: 'kilocalorie',        to: 'kilojoule' },
   fuel_economy: { from: 'liter_per_100km',   to: 'mile_per_gallon' },
   cooking:      { from: 'cup',               to: 'milliliter' },
+  angle:        { from: 'degree',            to: 'radian' },
+  frequency:    { from: 'hertz',             to: 'kilohertz' },
 }
 
 /**

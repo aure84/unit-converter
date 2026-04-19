@@ -98,6 +98,22 @@ export const unitDescriptions = {
   mile_per_gallon_uk: 'miles per gallon (UK/Imperial) — the British fuel economy rating using the larger Imperial gallon (4.546 L), giving higher numbers than US mpg for the same vehicle',
   liter_per_100km:    'liters per 100 kilometers — the European standard for fuel consumption, measuring how many liters are needed to travel 100 km; lower is more efficient',
 
+  // Angle
+  degree:    'the most common unit of angle, dividing a full circle into 360 equal parts; used in everyday geometry, navigation, and trigonometry',
+  radian:    'the SI unit of angle, where one radian equals the angle subtended by an arc equal in length to the radius; a full circle is 2π radians',
+  gradian:   'divides a full circle into 400 equal parts; 90° equals 100 gradians; used in surveying and some European engineering fields',
+  arcminute: '1/60 of a degree, used in astronomy, navigation, and optics; there are 3,600 arcminutes in a full degree circle (21,600 in a circle)',
+  arcsecond: '1/3,600 of a degree or 1/60 of an arcminute; used in high-precision astronomy, geodesy, and telescope optics',
+  turn:      'one complete rotation of 360 degrees or 2π radians; also called a revolution or full circle',
+
+  // Frequency
+  hertz:     'the SI unit of frequency, equal to one cycle per second; used for electrical signals, sound waves, and all periodic phenomena',
+  kilohertz: 'equal to 1,000 hertz; used for AM radio frequencies, audio processing, and some data transmission rates',
+  megahertz: 'equal to 1,000,000 hertz; used for FM radio, Wi-Fi, CPU clock speeds, and wireless communication',
+  gigahertz: 'equal to 1,000,000,000 hertz; used for modern CPU and GPU clock speeds, 5G networks, and microwave communications',
+  terahertz: 'equal to 1,000,000,000,000 hertz; used in scientific research, medical imaging, and security scanning',
+  rpm:       'revolutions per minute — measures rotational speed of engines, motors, hard drives, and turbines; 1 RPM equals 1/60 Hz',
+
   // Power
   watt:             'the SI unit of power, equal to one joule per second, used for electrical appliances, light bulbs, and all power ratings',
   kilowatt:         'equal to 1,000 watts, the standard unit for electric motors, EV power output, and home power consumption',

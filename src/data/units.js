@@ -182,6 +182,30 @@ export const units = {
     ],
   },
 
+  angle: {
+    base: 'degree',
+    units: [
+      { id: 'degree',     label: 'Degree',     symbol: '°',    factor: 1 },
+      { id: 'radian',     label: 'Radian',     symbol: 'rad',  factor: 57.29577951 },
+      { id: 'gradian',    label: 'Gradian',    symbol: 'grad', factor: 0.9 },
+      { id: 'arcminute',  label: 'Arcminute',  symbol: "'",    factor: 1 / 60 },
+      { id: 'arcsecond',  label: 'Arcsecond',  symbol: '"',    factor: 1 / 3600 },
+      { id: 'turn',       label: 'Turn',       symbol: 'tr',   factor: 360 },
+    ],
+  },
+
+  frequency: {
+    base: 'hertz',
+    units: [
+      { id: 'hertz',      label: 'Hertz',      symbol: 'Hz',  factor: 1 },
+      { id: 'kilohertz',  label: 'Kilohertz',  symbol: 'kHz', factor: 1_000 },
+      { id: 'megahertz',  label: 'Megahertz',  symbol: 'MHz', factor: 1_000_000 },
+      { id: 'gigahertz',  label: 'Gigahertz',  symbol: 'GHz', factor: 1_000_000_000 },
+      { id: 'terahertz',  label: 'Terahertz',  symbol: 'THz', factor: 1_000_000_000_000 },
+      { id: 'rpm',        label: 'RPM',        symbol: 'rpm', factor: 1 / 60 },
+    ],
+  },
+
   cooking: {
     base: 'milliliter',
     units: [

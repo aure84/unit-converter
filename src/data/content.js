@@ -263,6 +263,46 @@ export const categoryContent = {
     ],
   },
 
+  angle: {
+    h1: 'How Do You Convert Degrees to Radians?',
+    intro:
+      'Convert degrees, radians, gradians, arcminutes, arcseconds, and turns with our free angle converter. Used in mathematics, engineering, navigation, and astronomy.',
+    explanation:
+      'Degrees are the most familiar unit: a full circle is 360°. Radians are the SI unit for angles — one full circle is 2π radians (≈ 6.2832). To convert degrees to radians, multiply by π/180. Gradians divide the circle into 400 parts and are common in surveying.',
+    examples: [
+      { label: '90°', to: '1.5708 radians' },
+      { label: '1 radian', to: '57.296°' },
+      { label: '180°', to: '200 gradians' },
+    ],
+    faq: [
+      { q: 'How do you convert degrees to radians?', a: 'Multiply degrees by π/180. For example, 90° × π/180 = 1.5708 radians.' },
+      { q: 'How do you convert radians to degrees?', a: 'Multiply radians by 180/π. For example, 1 radian × 180/π ≈ 57.296°.' },
+      { q: 'What is a gradian?', a: 'A gradian (grad) divides a full circle into 400 equal parts. 90° equals 100 grad. Gradians are used in surveying and some European engineering fields.' },
+      { q: 'What is an arcminute?', a: 'An arcminute is 1/60 of a degree. There are 60 arcminutes in one degree and 3,600 arcseconds in one degree. Arcminutes and arcseconds are used in astronomy and navigation.' },
+      { q: 'How many degrees is one full turn?', a: 'One full turn (revolution) equals 360 degrees, 2π radians, or 400 gradians.' },
+    ],
+  },
+
+  frequency: {
+    h1: 'How Do You Convert Hz to kHz?',
+    intro:
+      'Convert hertz, kilohertz, megahertz, gigahertz, terahertz, and RPM with our free frequency converter. Used in electronics, audio engineering, radio communications, and mechanics.',
+    explanation:
+      'Frequency measures how many cycles occur per second. 1 hertz (Hz) = 1 cycle per second. Prefixes scale up: 1 kHz = 1,000 Hz, 1 MHz = 1,000,000 Hz. RPM (revolutions per minute) is used in motors and engines — 1 RPM equals 1/60 Hz.',
+    examples: [
+      { label: '1 kHz', to: '1,000 Hz' },
+      { label: '1 MHz', to: '1,000 kHz' },
+      { label: '3,000 RPM', to: '50 Hz' },
+    ],
+    faq: [
+      { q: 'How do you convert Hz to kHz?', a: 'Divide the number of hertz by 1,000. For example, 5,000 Hz ÷ 1,000 = 5 kHz.' },
+      { q: 'How do you convert kHz to MHz?', a: 'Divide kilohertz by 1,000. For example, 2,400 kHz ÷ 1,000 = 2.4 MHz.' },
+      { q: 'What is RPM in Hz?', a: 'RPM (revolutions per minute) divided by 60 gives Hz. For example, 3,000 RPM ÷ 60 = 50 Hz.' },
+      { q: 'What frequency is human hearing?', a: 'Humans typically hear between 20 Hz and 20,000 Hz (20 kHz). Audio equipment is usually specified across this range.' },
+      { q: 'What is the difference between MHz and GHz?', a: '1 GHz equals 1,000 MHz. CPU speeds are measured in GHz (e.g., a 3.5 GHz processor runs 3,500,000,000 cycles per second).' },
+    ],
+  },
+
   currency: {
     h1: 'How Do I Convert Between Currencies?',
     intro:
