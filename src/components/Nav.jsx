@@ -18,6 +18,8 @@ const CATEGORIES = [
   { path: '/cooking',       label: 'Cooking' },
   { path: '/angle',         label: 'Angle' },
   { path: '/frequency',     label: 'Frequency' },
+  { path: '/shoe-size',     label: 'Shoe Size' },
+  { path: '/torque',        label: 'Torque' },
   { path: '/currency',      label: 'Currency', special: true },
 ]
 
