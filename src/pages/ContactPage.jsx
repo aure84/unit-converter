@@ -25,6 +25,9 @@ function ContactPage() {
         <p>
           <a href="mailto:contact@convert-fast.com"><strong>contact@convert-fast.com</strong></a>
         </p>
+        <p style={{ fontSize: 13, color: '#6b7280', marginTop: 4 }}>
+          We use your email only to reply and don't store it beyond that conversation. See our <Link to="/privacy">Privacy Policy</Link>.
+        </p>
       </section>
 
       <section>

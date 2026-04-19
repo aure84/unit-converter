@@ -16,7 +16,7 @@ function AboutPage() {
 
       <section>
         <p>
-          Convert Fast is a free online unit converter that handles all the measurements you need — length, weight, temperature, volume, area, speed, time, data storage, and more. Every conversion is instant, accurate, and works in both directions. No account required.
+          Convert Fast is a free online unit converter that handles all the measurements you need — length, weight, temperature, volume, area, speed, time, data storage, and more. Every conversion uses internationally recognized factors and works in both directions. No account required.
         </p>
       </section>
 
