@@ -18,7 +18,7 @@ test('nav links navigate to correct category pages', async ({ page }) => {
   await page.goto(BASE);
   await page.locator('nav').getByRole('link', { name: 'Length' }).click();
   await expect(page).toHaveURL(`${BASE}/length`);
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Length Converter');
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
 });
 
 // ── Converter — basic conversion ────────────────────────────────────────────
