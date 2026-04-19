@@ -72,6 +72,7 @@ function CategoryPage() {
   const pageTitle = `${categoryTitle} Converter | Convert Fast`
   const description = `Free online ${categoryTitle.toLowerCase()} converter. Convert between ${unitPreview}, and more.`
   const canonical = `${SITE_URL}/${segment}`
+  const h1 = categoryContent[category]?.h1 ?? heading
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -107,7 +108,7 @@ function CategoryPage() {
         canonical={canonical}
         jsonLd={faqJsonLd ? [jsonLd, faqJsonLd] : jsonLd}
       />
-      <h1>{heading}</h1>
+      <h1>{h1}</h1>
       <Converter
         key={category}
         category={category}
