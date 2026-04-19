@@ -347,6 +347,367 @@ export const blogPosts = [
       { label: 'Speed Converter', path: '/speed' },
     ],
   },
+
+  {
+    slug: 'gallons-to-liters',
+    title: 'How to Convert Gallons to Liters (and Back)',
+    date: '2026-04-19',
+    description: 'Learn how to convert US gallons to liters with the exact formula, quick reference values, and real-world examples. Includes a free online converter.',
+    intro: 'Whether you are filling up a car in a country that sells fuel by the liter, scaling a large recipe, or comparing container sizes, knowing how to convert between gallons and liters is one of the most practical everyday conversions. This guide covers the formula, the US vs UK gallon difference, and common reference values.',
+    sections: [
+      {
+        heading: 'What Is a Gallon?',
+        paragraphs: [
+          'A gallon is a unit of volume used primarily in the United States and, to a lesser extent, the United Kingdom. The two countries use different definitions of the gallon — a fact that causes frequent confusion.',
+          'The US liquid gallon equals exactly 3.785411784 liters. It is used for fuel, milk, paint, and other liquids in the United States.',
+          'The UK imperial gallon equals exactly 4.54609 liters — about 20% larger than the US gallon. It appears on older British measurements and is still used in some Commonwealth countries.',
+        ],
+      },
+      {
+        heading: 'What Is a Liter?',
+        paragraphs: [
+          'A liter (L) is the standard metric unit of volume, equal to exactly 1,000 milliliters or 1 cubic decimeter. It is used worldwide for liquids in everyday contexts — fuel, beverages, cooking, and more.',
+          'Most countries sell gasoline and diesel by the liter. A standard water bottle is 500 ml (0.5 L). A large soda bottle is typically 2 liters.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          'US gallons to liters: multiply by 3.78541. For example, 5 gal × 3.78541 = 18.927 L.',
+          'Liters to US gallons: multiply by 0.264172. For example, 20 L × 0.264172 = 5.283 gal.',
+          'UK gallons to liters: multiply by 4.54609. For example, 5 UK gal × 4.54609 = 22.730 L.',
+          'A useful mental shortcut for US gallons: multiply by 3.8 for a quick estimate. It is 0.4% low but good enough for everyday use.',
+        ],
+      },
+      {
+        heading: 'Common Gallon to Liter Conversions',
+        paragraphs: ['Quick reference for the most frequently needed values (US gallons):'],
+        list: [
+          '1 gallon = 3.785 liters',
+          '2 gallons = 7.571 liters',
+          '5 gallons = 18.927 liters',
+          '10 gallons = 37.854 liters',
+          '1 liter = 0.264 gallons',
+          '10 liters = 2.642 gallons',
+          '20 liters = 5.283 gallons',
+        ],
+      },
+      {
+        heading: 'Real-World Examples',
+        paragraphs: [
+          'Fuel: A US car with a 15-gallon tank holds about 56.8 liters. If European fuel costs €1.60/L, that fill-up would cost about €91.',
+          'Beverages: A US gallon of milk is 3.785 L. A 2-liter soda bottle is about 0.53 US gallons.',
+          'Recipes: A US recipe calling for 1 gallon of liquid requires 3.785 L — roughly four standard metric bottles.',
+          'Swimming pools: A small backyard pool holding 5,000 gallons contains about 18,927 liters.',
+        ],
+      },
+    ],
+    conclusion: '1 US gallon = 3.78541 liters. 1 UK imperial gallon = 4.54609 liters. Always confirm which gallon standard is being used before converting — the 20% difference matters for fuel economy comparisons and large-scale recipes. Use our free volume converter for instant results.',
+    relatedLinks: [
+      { label: 'Gallons to Liters Converter', path: '/volume/gallon-to-liter' },
+      { label: 'Liters to Gallons Converter', path: '/volume/liter-to-gallon' },
+      { label: 'Volume Converter', path: '/volume' },
+    ],
+  },
+
+  {
+    slug: 'meters-to-feet',
+    title: 'How to Convert Meters to Feet (and Back)',
+    date: '2026-04-19',
+    description: 'Learn how to convert meters to feet with the exact formula, quick reference table, and practical examples for height, athletics, and construction.',
+    intro: 'Meters and feet are the two most commonly used units for measuring height and medium distances. Whether you are reading an elevation sign in a national park, comparing your height to an international standard, or working on a construction project that crosses unit systems, this guide gives you everything you need to convert accurately.',
+    sections: [
+      {
+        heading: 'What Is a Meter?',
+        paragraphs: [
+          'A meter (m) is the SI base unit of length, defined since 1983 as the distance light travels in 1/299,792,458 of a second. It is the standard unit for height, room dimensions, athletic distances, and most engineering work outside the United States.',
+          'One meter is slightly longer than a yard (0.914 m) and about 3.28 feet.',
+        ],
+      },
+      {
+        heading: 'What Is a Foot?',
+        paragraphs: [
+          'A foot (ft) is an imperial unit of length equal to exactly 0.3048 meters or 12 inches. It is the standard unit for height measurement in the United States and is still used for altitude in aviation worldwide.',
+          'Human height in the US is given in feet and inches. Aircraft cruise altitudes are measured in feet. Building floor heights are commonly expressed in feet in American construction.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 meter = 3.28084 feet (exact: 1/0.3048). To convert meters to feet, multiply by 3.28084.',
+          '1 foot = 0.3048 meters. To convert feet to meters, multiply by 0.3048.',
+          'Mental shortcut: multiply meters by 3.3 for a quick estimate. The result is about 0.6% high — close enough for everyday use.',
+          'For feet and inches: first convert feet to meters (multiply by 0.3048), then convert inches to meters (multiply by 0.0254), then add the two results.',
+        ],
+      },
+      {
+        heading: 'Common Meter to Foot Conversions',
+        paragraphs: ['Quick reference:'],
+        list: [
+          '1 m = 3.281 ft',
+          '1.70 m = 5 ft 7 in (average adult height)',
+          '1.83 m = 6 ft 0 in',
+          '100 m = 328.08 ft (sprint distance)',
+          '1,000 m = 3,280.8 ft (1 kilometer)',
+          '1,609 m = 5,280 ft (1 mile)',
+          '8,849 m = 29,032 ft (height of Mount Everest)',
+        ],
+      },
+      {
+        heading: 'Real-World Examples',
+        paragraphs: [
+          'Height: 1.75 m (average adult male worldwide) = 5 ft 9 in. NBA minimum height for centers is often around 2.0 m = 6 ft 7 in.',
+          'Athletics: The 100 m sprint is 328 feet. A standard Olympic swimming pool is 50 m = 164 ft long.',
+          'Aviation: Aircraft cruising altitudes are expressed in feet. A typical cruising altitude of 35,000 ft = 10,668 m.',
+          'Construction: A standard ceiling height of 8 ft = 2.44 m. A 10 ft ceiling = 3.05 m.',
+        ],
+      },
+    ],
+    conclusion: '1 meter = 3.28084 feet. 1 foot = 0.3048 meters. For quick mental math, multiply meters by 3.3. Use our free length converter to switch between meters, feet, and any other length unit instantly.',
+    relatedLinks: [
+      { label: 'Meters to Feet Converter', path: '/length/meter-to-foot' },
+      { label: 'Feet to Meters Converter', path: '/length/foot-to-meter' },
+      { label: 'Length Converter', path: '/length' },
+    ],
+  },
+
+  {
+    slug: 'psi-to-bar',
+    title: 'How to Convert PSI to Bar (and Back)',
+    date: '2026-04-19',
+    description: 'Learn how to convert PSI to bar and bar to PSI with the exact formula, tire pressure reference values, and practical examples for cars and bikes.',
+    intro: 'PSI (pounds per square inch) and bar are the two most common pressure units for everyday use — mainly for tire inflation, but also for cooking (pressure cookers), weather, and industrial applications. This guide explains both units, gives you the conversion formula, and provides a practical tire pressure reference.',
+    sections: [
+      {
+        heading: 'What Is PSI?',
+        paragraphs: [
+          'PSI stands for pounds per square inch. It measures how many pounds of force are applied per square inch of area. It is the standard pressure unit in the United States and is used for tire pressure, blood pressure (alongside mmHg), air compressors, and hydraulics.',
+          '1 PSI = 6,894.757 pascals (the SI unit of pressure).',
+        ],
+      },
+      {
+        heading: 'What Is Bar?',
+        paragraphs: [
+          'Bar is a metric pressure unit equal to exactly 100,000 pascals (100 kPa). It is slightly less than standard atmospheric pressure (1 atm = 1.01325 bar). Bar is the standard tire pressure unit in Europe and most of the world outside the US.',
+          'Tire pressure gauges in Europe show bar. Weather pressure maps use hectopascals (hPa), which equal millibar — 1,013 hPa = 1.013 bar at sea level.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 bar = 14.5038 PSI. To convert bar to PSI, multiply by 14.5038.',
+          '1 PSI = 0.0689476 bar. To convert PSI to bar, multiply by 0.0689476.',
+          'Mental shortcut: 1 bar ≈ 14.5 PSI. For a quick estimate, multiply bar by 14.5 or divide PSI by 14.5.',
+        ],
+      },
+      {
+        heading: 'Tire Pressure Reference',
+        paragraphs: ['Recommended tire pressure varies by vehicle — always check the sticker inside your driver door. Common ranges:'],
+        list: [
+          '2.0 bar = 29 PSI (low end for passenger cars)',
+          '2.2 bar = 32 PSI (common for compact cars)',
+          '2.4 bar = 35 PSI (common for sedans and SUVs)',
+          '2.5 bar = 36 PSI (higher end for passenger cars)',
+          '4.5–6.0 bar = 65–87 PSI (road bicycle tires)',
+          '1.5–2.5 bar = 22–36 PSI (mountain bike tires)',
+        ],
+      },
+      {
+        heading: 'Other Pressure Reference Points',
+        paragraphs: [
+          'Atmospheric pressure at sea level: 1.01325 bar = 14.696 PSI.',
+          'Pressure cooker: typically 0.8–1.0 bar (11.6–14.5 PSI) above atmospheric pressure.',
+          'Scuba tank: 200–300 bar (2,900–4,350 PSI).',
+          'Blood pressure (systolic, healthy adult): about 120 mmHg = 0.16 bar = 2.32 PSI.',
+        ],
+      },
+    ],
+    conclusion: '1 bar = 14.5038 PSI. 1 PSI = 0.0689476 bar. For tire pressure: most cars use 2.0–2.5 bar (29–36 PSI). Always check your vehicle\'s recommended pressure on the door sticker — overinflation and underinflation both reduce safety and fuel efficiency. Use our free pressure converter for instant results.',
+    relatedLinks: [
+      { label: 'PSI to Bar Converter', path: '/pressure/psi-to-bar' },
+      { label: 'Bar to PSI Converter', path: '/pressure/bar-to-psi' },
+      { label: 'Pressure Converter', path: '/pressure' },
+    ],
+  },
+
+  {
+    slug: 'cups-to-ml',
+    title: 'How to Convert Cups to Milliliters (and Back)',
+    date: '2026-04-19',
+    description: 'Learn how to convert US cups to milliliters with the exact formula, cooking reference table, and tips for adapting international recipes.',
+    intro: 'Cups and milliliters are both common volume units in cooking and baking, but they come from different measurement traditions. American recipes use cups; European and Australian recipes use milliliters or grams. This guide gives you the exact conversion, a quick reference table, and practical tips for adapting recipes across systems.',
+    sections: [
+      {
+        heading: 'What Is a Cup?',
+        paragraphs: [
+          'A cup is a volume unit used in US cooking and baking. 1 US cup equals exactly 236.588 milliliters (or approximately 236.6 ml). It equals 16 tablespoons, 48 teaspoons, or 8 fluid ounces.',
+          'Note: the "metric cup" used in Australia and Canada equals 250 ml — slightly larger than the US cup. Some recipes from these countries use the metric cup, so check the source before converting.',
+        ],
+      },
+      {
+        heading: 'What Is a Milliliter?',
+        paragraphs: [
+          'A milliliter (mL) is one-thousandth of a liter, equal to exactly 1 cubic centimeter (cm³). It is the standard liquid volume unit in the metric system and is used for cooking, medicine, and laboratory measurements worldwide.',
+          'Most kitchen measuring jugs outside the US are marked in milliliters. A standard teaspoon holds about 5 ml; a tablespoon holds about 15 ml.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 US cup = 236.588 ml. To convert cups to ml, multiply by 236.588.',
+          '1 ml = 0.004227 US cups. To convert ml to cups, divide by 236.588.',
+          'Mental shortcut: 1 cup ≈ 240 ml. This rounds up by about 1.4% — close enough for most cooking, but use the exact value for precision baking.',
+        ],
+      },
+      {
+        heading: 'Cooking Reference Table',
+        paragraphs: ['Common cup fractions in milliliters:'],
+        list: [
+          '⅛ cup = 30 ml',
+          '¼ cup = 59 ml',
+          '⅓ cup = 79 ml',
+          '½ cup = 118 ml',
+          '⅔ cup = 158 ml',
+          '¾ cup = 177 ml',
+          '1 cup = 237 ml',
+          '2 cups = 473 ml',
+        ],
+      },
+      {
+        heading: 'Tips for Converting Recipes',
+        paragraphs: [
+          'Dry ingredients: cups measure volume, not weight. For dry ingredients like flour, ml-to-cup conversion is less reliable than weight (grams). A cup of flour is about 125 g, but it varies significantly depending on how the flour is scooped.',
+          'Liquids: for liquids, ml and cup conversions are accurate and reliable. 1 cup of water = 236.6 ml = 236.6 g.',
+          'Australian and Canadian recipes: if a recipe says "1 cup" and comes from Australia, use 250 ml instead of 237 ml to be accurate.',
+        ],
+      },
+    ],
+    conclusion: '1 US cup = 236.588 ml. For quick cooking: use 240 ml as an approximation. For Australian/Canadian recipes, use 250 ml per cup. For precision baking with dry ingredients, convert to grams instead of milliliters for the most accurate results. Use our free cooking converter for instant results.',
+    relatedLinks: [
+      { label: 'Cups to mL Converter', path: '/cooking/cup-to-milliliter' },
+      { label: 'mL to Cups Converter', path: '/cooking/milliliter-to-cup' },
+      { label: 'Cooking Converter', path: '/cooking' },
+    ],
+  },
+
+  {
+    slug: 'mpg-to-l100km',
+    title: 'How to Convert MPG to L/100km (and Back)',
+    date: '2026-04-19',
+    description: 'Learn how to convert miles per gallon (MPG) to liters per 100 km and back, with the exact formula, a reference table, and tips on comparing car fuel efficiency.',
+    intro: 'Miles per gallon (MPG) and liters per 100 kilometers (L/100km) both measure fuel economy, but they work in opposite directions — a higher MPG means better efficiency, while a lower L/100km means better efficiency. This makes direct comparison tricky. This guide explains both units, gives the exact conversion formula, and provides a practical reference table.',
+    sections: [
+      {
+        heading: 'What Is MPG?',
+        paragraphs: [
+          'Miles per gallon (MPG) measures how many miles a vehicle travels on one gallon of fuel. A higher number means better fuel economy. It is the standard fuel efficiency unit in the United States.',
+          'US EPA fuel economy ratings use MPG. A fuel-efficient compact car might achieve 35–45 MPG combined. A typical SUV gets 20–28 MPG. Hybrid vehicles can reach 50+ MPG.',
+          'Note: US MPG uses the US gallon (3.785 L). UK MPG uses the imperial gallon (4.546 L) — so UK MPG figures are about 20% higher than US MPG for the same vehicle.',
+        ],
+      },
+      {
+        heading: 'What Is L/100km?',
+        paragraphs: [
+          'Liters per 100 kilometers (L/100km) measures how many liters of fuel a vehicle consumes per 100 km traveled. A lower number means better fuel economy — the opposite logic from MPG.',
+          'L/100km is the standard fuel efficiency unit in Europe, Australia, Canada, and most of the world. A fuel-efficient car achieves 5–7 L/100km. An SUV might use 9–12 L/100km.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          'MPG and L/100km are inversely related. The conversion constant is 235.215 (derived from liters per US gallon × km per mile).',
+          'MPG to L/100km: divide 235.215 by the MPG value. Example: 30 MPG = 235.215 ÷ 30 = 7.84 L/100km.',
+          'L/100km to MPG: divide 235.215 by the L/100km value. Example: 8 L/100km = 235.215 ÷ 8 = 29.4 MPG.',
+        ],
+      },
+      {
+        heading: 'MPG to L/100km Reference Table',
+        paragraphs: ['Common values for US MPG:'],
+        list: [
+          '20 MPG = 11.76 L/100km (typical truck/large SUV)',
+          '25 MPG = 9.41 L/100km (typical mid-size SUV)',
+          '30 MPG = 7.84 L/100km (typical sedan)',
+          '35 MPG = 6.72 L/100km (efficient compact)',
+          '40 MPG = 5.88 L/100km (hybrid)',
+          '50 MPG = 4.70 L/100km (efficient hybrid)',
+          '60 MPG = 3.92 L/100km (top hybrid efficiency)',
+        ],
+      },
+      {
+        heading: 'US MPG vs UK MPG',
+        paragraphs: [
+          'Because the UK imperial gallon (4.546 L) is larger than the US gallon (3.785 L), a UK MPG figure is about 20% higher than US MPG for the same vehicle.',
+          'To convert UK MPG to L/100km, use 282.48 instead of 235.215 as the conversion constant. For most comparisons, stick to L/100km as the common language between US and European efficiency ratings.',
+        ],
+      },
+    ],
+    conclusion: 'MPG and L/100km are inversely related — use 235.215 as the conversion constant for US gallons. To convert: divide 235.215 by the MPG value to get L/100km, or divide 235.215 by L/100km to get MPG. Use our free fuel economy converter for instant results.',
+    relatedLinks: [
+      { label: 'MPG to L/100km Converter', path: '/fuel-economy/mile_per_gallon-to-liter_per_100km' },
+      { label: 'L/100km to MPG Converter', path: '/fuel-economy/liter_per_100km-to-mile_per_gallon' },
+      { label: 'Fuel Economy Converter', path: '/fuel-economy' },
+    ],
+  },
+
+  {
+    slug: 'horsepower-to-kw',
+    title: 'How to Convert Horsepower to Kilowatts (and Back)',
+    date: '2026-04-19',
+    description: 'Learn how to convert horsepower to kilowatts with the exact formula, the difference between mechanical and metric horsepower, and a practical car power reference table.',
+    intro: 'Horsepower and kilowatts are both units of power — the rate at which energy is produced or consumed. Cars sold in the US and UK are rated in horsepower (hp), while European manufacturers use kilowatts (kW) or metric horsepower (PS). Electric vehicles are increasingly rated in kW. This guide explains both units, the mechanical vs metric horsepower difference, and gives you the exact conversion formula.',
+    sections: [
+      {
+        heading: 'What Is Horsepower?',
+        paragraphs: [
+          'Horsepower (hp) was originally defined by James Watt in the 18th century to compare steam engine output to the power of draft horses. It became the standard for rating engine power in the US and UK.',
+          '1 mechanical horsepower (hp) = 745.69987 watts. This is the standard used in the US for car engine ratings.',
+          '1 metric horsepower (PS or CV) = 735.49875 watts. PS (from the German "Pferdestärke") is used by most European car manufacturers. The two are very similar but not identical — 100 PS ≈ 98.6 hp.',
+        ],
+      },
+      {
+        heading: 'What Is a Kilowatt?',
+        paragraphs: [
+          'A kilowatt (kW) equals exactly 1,000 watts. It is the SI-derived unit of power and is used worldwide for electrical systems, industrial motors, and increasingly for car engine ratings.',
+          'Electric vehicles are always rated in kW (and sometimes kWh for battery capacity). Many European countries now show both kW and PS in car specifications.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          'Mechanical hp to kW: multiply by 0.7457. Example: 200 hp × 0.7457 = 149.1 kW.',
+          'kW to mechanical hp: multiply by 1.341. Example: 150 kW × 1.341 = 201.2 hp.',
+          'Metric hp (PS) to kW: multiply by 0.7355. Example: 200 PS × 0.7355 = 147.1 kW.',
+          'kW to PS: multiply by 1.3596. Example: 150 kW × 1.3596 = 203.9 PS.',
+        ],
+      },
+      {
+        heading: 'Car Power Reference Table',
+        paragraphs: ['Common engine outputs in both units (mechanical hp):'],
+        list: [
+          '100 hp = 74.6 kW (small city car)',
+          '150 hp = 111.9 kW (typical compact sedan)',
+          '200 hp = 149.1 kW (performance compact)',
+          '300 hp = 223.7 kW (sports car)',
+          '400 hp = 298.3 kW (high-performance)',
+          '500 hp = 372.9 kW (supercar territory)',
+          '1,000 hp = 745.7 kW (hypercar)',
+        ],
+      },
+      {
+        heading: 'Electric Vehicle Power',
+        paragraphs: [
+          'Electric motors produce power measured in kW. A base Tesla Model 3 produces about 283 kW (380 hp). The Porsche Taycan Turbo S produces 560 kW (750 hp) in boost mode.',
+          'Unlike combustion engines, electric motors produce maximum torque instantly and can sustain peak power for longer periods, making raw horsepower comparisons with combustion engines somewhat misleading.',
+        ],
+      },
+    ],
+    conclusion: '1 mechanical hp = 0.7457 kW. 1 kW = 1.341 hp. For metric horsepower (PS): 1 PS = 0.7355 kW. The difference between hp and PS is small (about 1.4%) but matters for precise engineering specifications. Use our free power converter for instant results.',
+    relatedLinks: [
+      { label: 'Horsepower to kW Converter', path: '/power/horsepower-to-kilowatt' },
+      { label: 'kW to Horsepower Converter', path: '/power/kilowatt-to-horsepower' },
+      { label: 'Power Converter', path: '/power' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */
