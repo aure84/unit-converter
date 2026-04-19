@@ -11,6 +11,8 @@ import BlogPostPage from './pages/BlogPostPage.jsx'
 import PrivacyPage from './pages/PrivacyPage.jsx'
 import TermsPage from './pages/TermsPage.jsx'
 import CookiePage from './pages/CookiePage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 
 function App() {
@@ -76,6 +78,8 @@ function App() {
         <Route path="/blog/:slug"  element={<BlogPostPage />} />
 
         {/* Legal pages */}
+        <Route path="/about"   element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms"   element={<TermsPage />} />
         <Route path="/cookies" element={<CookiePage />} />
