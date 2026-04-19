@@ -79,6 +79,38 @@
   color: var(--accent);
 }
 
+.blog-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.blog-tag--how-to {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.blog-tag--quick-ref {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.blog-tag--fail {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .blog-tag--how-to  { background: #1e1b4b; color: #a5b4fc; }
+  .blog-tag--quick-ref { background: #052e16; color: #86efac; }
+  .blog-tag--fail    { background: #450a0a; color: #fca5a5; }
+}
+
 /* ── Blog Post ───────────────────────────────────────────────────────────── */
 
 .blog-post {

@@ -5,6 +5,17 @@ import './BlogPage.css'
 
 const SITE_URL = 'https://convert-fast.com'
 
+const TAG_CLASS = {
+  'How-To Guide':    'blog-tag--how-to',
+  'Quick Reference': 'blog-tag--quick-ref',
+  'Conversion Fail': 'blog-tag--fail',
+}
+
+function BlogTag({ tag }) {
+  if (!tag) return null
+  return <span className={`blog-tag ${TAG_CLASS[tag] ?? ''}`}>{tag}</span>
+}
+
 function BlogPostPage() {
   const { slug } = useParams()
   const post = getPostBySlug(slug)
@@ -13,7 +24,7 @@ function BlogPostPage() {
     return (
       <main className="blog-post">
         <h1>Article Not Found</h1>
-        <p>This article does not exist. <Link to="/blog">Back to guides →</Link></p>
+        <p>This article does not exist. <Link to="/blog">Back to Blog →</Link></p>
       </main>
     )
   }
@@ -55,13 +66,14 @@ function BlogPostPage() {
       <nav className="blog-post__breadcrumb" aria-label="Breadcrumb">
         <Link to="/">Home</Link>
         <span aria-hidden="true"> › </span>
-        <Link to="/blog">Guides</Link>
+        <Link to="/blog">Blog</Link>
         <span aria-hidden="true"> › </span>
         <span>{post.title}</span>
       </nav>
 
       <article className="blog-post__article">
         <header className="blog-post__header">
+          <BlogTag tag={post.tag} />
           <h1>{post.title}</h1>
           <time className="blog-post__date" dateTime={post.date}>
             {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
@@ -106,7 +118,7 @@ function BlogPostPage() {
       </article>
 
       <div className="blog-post__back">
-        <Link to="/blog">← Back to all guides</Link>
+        <Link to="/blog">← Back to Blog</Link>
       </div>
     </main>
   )

@@ -5,25 +5,37 @@ import './BlogPage.css'
 
 const SITE_URL = 'https://convert-fast.com'
 
+const TAG_CLASS = {
+  'How-To Guide':    'blog-tag--how-to',
+  'Quick Reference': 'blog-tag--quick-ref',
+  'Conversion Fail': 'blog-tag--fail',
+}
+
+function BlogTag({ tag }) {
+  if (!tag) return null
+  return <span className={`blog-tag ${TAG_CLASS[tag] ?? ''}`}>{tag}</span>
+}
+
 function BlogIndexPage() {
   return (
     <main className="blog-index">
       <SEOMeta
-        title="Unit Conversion Guides | Convert Fast Blog"
-        description="Step-by-step guides for the most common unit conversions — kilometers to miles, kg to lbs, Celsius to Fahrenheit, data storage units, and more."
+        title="Blog | Convert Fast"
+        description="Unit conversion guides, quick references, and real-world conversion disaster stories — from Mars Climate Orbiter to the Gimli Glider."
         canonical={`${SITE_URL}/blog`}
       />
-      <h1>Unit Conversion Guides</h1>
+      <h1>Blog</h1>
       <p className="blog-index__subtitle">
-        In-depth guides for the most common unit conversions, with formulas, examples, and reference tables.
+        Conversion guides, quick references, and the stories of when unit errors changed history.
       </p>
       <ul className="blog-index__list">
         {blogPosts.map((post) => (
           <li key={post.slug} className="blog-index__item">
             <Link to={`/blog/${post.slug}`} className="blog-index__link">
+              <BlogTag tag={post.tag} />
               <h2 className="blog-index__post-title">{post.title}</h2>
               <p className="blog-index__post-desc">{post.description}</p>
-              <span className="blog-index__read-more">Read guide →</span>
+              <span className="blog-index__read-more">Read →</span>
             </Link>
           </li>
         ))}

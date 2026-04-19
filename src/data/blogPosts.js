@@ -6,6 +6,7 @@ export const blogPosts = [
   {
     slug: 'kilometers-to-miles',
     title: 'How to Convert Kilometers to Miles (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-15',
     description: 'Learn how to convert kilometers to miles with the exact formula, quick reference values, and real-world examples. Includes a free online converter.',
     intro: 'Whether you are planning a road trip, reading a foreign speed limit sign, or following a running training plan, knowing how to convert kilometers to miles is one of the most useful everyday conversions. This guide explains the formula, shows common values, and gives you real-world context for both units.',
@@ -74,6 +75,7 @@ export const blogPosts = [
   {
     slug: 'kg-to-lbs',
     title: 'How to Convert Kilograms to Pounds (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-15',
     description: 'Convert kilograms to pounds with the exact formula, body weight examples, and a full reference table. Free kg to lbs converter included.',
     intro: 'Kilograms and pounds are the two most widely used units for measuring weight. If you travel internationally, follow fitness programs from other countries, or shop for products with foreign labeling, knowing how to convert between kg and lbs is essential. This guide covers everything you need.',
@@ -142,6 +144,7 @@ export const blogPosts = [
   {
     slug: 'celsius-to-fahrenheit',
     title: 'How to Convert Celsius to Fahrenheit (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-15',
     description: 'Learn the Celsius to Fahrenheit formula with step-by-step examples, common temperature reference points, and a free online temperature converter.',
     intro: 'Temperature is one of the trickiest unit conversions because it involves more than just multiplication — there is also an offset to account for. This guide explains the Celsius and Fahrenheit scales, walks through the conversion formula step by step, and gives you the key reference temperatures to know by heart.',
@@ -210,6 +213,7 @@ export const blogPosts = [
   {
     slug: 'data-storage-units',
     title: 'How Big Is a Gigabyte? Data Storage Units Explained',
+    tag: 'Quick Reference',
     date: '2026-04-15',
     description: 'Understand bits, bytes, kilobytes, megabytes, gigabytes, and terabytes. Learn how data storage units work and how to convert between them.',
     intro: 'When you buy a phone with "128 GB storage" or pay for "1 TB of cloud backup," do you know exactly what those numbers mean? Data storage units can be confusing because they are based on powers of two rather than tens — and because marketing sometimes blurs the line between decimal and binary definitions. This guide clears it all up.',
@@ -280,6 +284,7 @@ export const blogPosts = [
   {
     slug: 'speed-units',
     title: 'How Do You Convert mph, km/h, m/s, and Knots?',
+    tag: 'Quick Reference',
     date: '2026-04-15',
     description: 'Understand the four main speed units — mph, km/h, m/s, and knots — with conversion formulas, real-world examples, and a free speed converter.',
     intro: 'Speed is measured differently depending on where you are and what you are doing. A car speedometer in Germany shows km/h, while one in the US shows mph. A ship\'s navigator tracks speed in knots. A physics textbook uses meters per second. This guide explains all four units, how they relate to each other, and when each is used.',
@@ -351,6 +356,7 @@ export const blogPosts = [
   {
     slug: 'gallons-to-liters',
     title: 'How to Convert Gallons to Liters (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-19',
     description: 'Learn how to convert US gallons to liters with the exact formula, quick reference values, and real-world examples. Includes a free online converter.',
     intro: 'Whether you are filling up a car in a country that sells fuel by the liter, scaling a large recipe, or comparing container sizes, knowing how to convert between gallons and liters is one of the most practical everyday conversions. This guide covers the formula, the US vs UK gallon difference, and common reference values.',
@@ -413,6 +419,7 @@ export const blogPosts = [
   {
     slug: 'meters-to-feet',
     title: 'How to Convert Meters to Feet (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-19',
     description: 'Learn how to convert meters to feet with the exact formula, quick reference table, and practical examples for height, athletics, and construction.',
     intro: 'Meters and feet are the two most commonly used units for measuring height and medium distances. Whether you are reading an elevation sign in a national park, comparing your height to an international standard, or working on a construction project that crosses unit systems, this guide gives you everything you need to convert accurately.',
@@ -474,6 +481,7 @@ export const blogPosts = [
   {
     slug: 'psi-to-bar',
     title: 'How to Convert PSI to Bar (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-19',
     description: 'Learn how to convert PSI to bar and bar to PSI with the exact formula, tire pressure reference values, and practical examples for cars and bikes.',
     intro: 'PSI (pounds per square inch) and bar are the two most common pressure units for everyday use — mainly for tire inflation, but also for cooking (pressure cookers), weather, and industrial applications. This guide explains both units, gives you the conversion formula, and provides a practical tire pressure reference.',
@@ -533,6 +541,7 @@ export const blogPosts = [
   {
     slug: 'cups-to-ml',
     title: 'How to Convert Cups to Milliliters (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-19',
     description: 'Learn how to convert US cups to milliliters with the exact formula, cooking reference table, and tips for adapting international recipes.',
     intro: 'Cups and milliliters are both common volume units in cooking and baking, but they come from different measurement traditions. American recipes use cups; European and Australian recipes use milliliters or grams. This guide gives you the exact conversion, a quick reference table, and practical tips for adapting recipes across systems.',
@@ -593,6 +602,7 @@ export const blogPosts = [
   {
     slug: 'mpg-to-l100km',
     title: 'How to Convert MPG to L/100km (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-19',
     description: 'Learn how to convert miles per gallon (MPG) to liters per 100 km and back, with the exact formula, a reference table, and tips on comparing car fuel efficiency.',
     intro: 'Miles per gallon (MPG) and liters per 100 kilometers (L/100km) both measure fuel economy, but they work in opposite directions — a higher MPG means better efficiency, while a lower L/100km means better efficiency. This makes direct comparison tricky. This guide explains both units, gives the exact conversion formula, and provides a practical reference table.',
@@ -652,6 +662,7 @@ export const blogPosts = [
   {
     slug: 'horsepower-to-kw',
     title: 'How to Convert Horsepower to Kilowatts (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-19',
     description: 'Learn how to convert horsepower to kilowatts with the exact formula, the difference between mechanical and metric horsepower, and a practical car power reference table.',
     intro: 'Horsepower and kilowatts are both units of power — the rate at which energy is produced or consumed. Cars sold in the US and UK are rated in horsepower (hp), while European manufacturers use kilowatts (kW) or metric horsepower (PS). Electric vehicles are increasingly rated in kW. This guide explains both units, the mechanical vs metric horsepower difference, and gives you the exact conversion formula.',
@@ -712,6 +723,7 @@ export const blogPosts = [
   {
     slug: 'degrees-to-radians',
     title: 'How to Convert Degrees to Radians (and Back)',
+    tag: 'How-To Guide',
     date: '2026-04-19',
     description: 'Learn how to convert degrees to radians with the exact formula, common reference values, and real-world examples from trigonometry, engineering, and navigation.',
     intro: 'Degrees and radians both measure angles, but they appear in very different contexts. Degrees are what most people learn in school — a right angle is 90°, a full circle is 360°. Radians are the standard in mathematics, physics, and engineering — a full circle is 2π. Knowing how to switch between them is essential for anyone working with trigonometry, programming, or technical fields.',
@@ -833,6 +845,7 @@ export const blogPosts = [
   {
     slug: 'gimli-glider',
     title: 'The Gimli Glider: When a Boeing 767 Ran Out of Fuel Mid-Flight',
+    tag: 'Conversion Fail',
     date: '2026-04-20',
     description: 'In 1983, an Air Canada Boeing 767 ran out of fuel at 41,000 feet because ground crew confused kilograms with pounds. The plane glided 100 miles to an emergency landing — with 69 people on board.',
     intro: 'On July 23, 1983, Air Canada Flight 143 — a brand-new Boeing 767 — ran out of fuel at 41,000 feet over northern Canada. All engines went silent. For the next 17 minutes, the plane glided without power over 100 miles of Canadian wilderness, carrying 61 passengers and 8 crew. The cause was a unit conversion error: ground crew calculated the fuel load in pounds when they should have used kilograms. The plane had exactly half the fuel it needed.',
@@ -881,6 +894,7 @@ export const blogPosts = [
   {
     slug: 'columbus-unit-error',
     title: 'How a Unit Conversion Error Sent Columbus to the Wrong Continent',
+    tag: 'Conversion Fail',
     date: '2026-04-20',
     description: 'Christopher Columbus reached America partly because he confused two different definitions of a "mile." His unit error made the Earth appear 25% smaller than it actually is.',
     intro: 'Christopher Columbus did not prove the Earth was round — educated Europeans already knew that. What Columbus got spectacularly wrong was the size of the Earth, and specifically the distance from Europe to Asia going west. His error was not a matter of courage or vision. It was a unit conversion mistake: he confused two different definitions of a "mile" and concluded the Earth was roughly 25% smaller than it actually is. He sailed west expecting Asia and found a continent nobody in Europe knew existed.',
@@ -930,6 +944,7 @@ export const blogPosts = [
   {
     slug: 'nm-to-ft-lb',
     title: 'How to Convert Nm to ft-lb (and ft-lb to Nm)',
+    tag: 'How-To Guide',
     date: '2026-04-20',
     description: 'Learn how to convert Newton-meters to foot-pounds and back. Includes the exact formula, a quick reference table, and real-world torque values for cars and bolts.',
     intro: 'Whether you are tightening lug nuts, following a cylinder head torque spec, or comparing engine output from a European and American source, you will run into Newton-meters and foot-pounds. This guide explains the conversion formula, gives you a reference table, and shows where each unit is used.',
@@ -1000,6 +1015,7 @@ export const blogPosts = [
   {
     slug: 'shoe-size-guide',
     title: 'Shoe Size Conversion Guide: EU, US, and UK Sizes Explained',
+    tag: 'Quick Reference',
     date: '2026-04-20',
     description: 'Convert shoe sizes between EU, US Men\'s, US Women\'s, and UK with exact formulas and a reference table. Never order the wrong size when shopping internationally.',
     intro: 'Buying shoes online from a foreign retailer — or checking a size chart from a brand you haven\'t tried before — can be confusing when the sizing system is different from what you are used to. This guide explains how EU, US, and UK shoe sizes relate to each other and gives you the formulas and reference tables to convert between them.',
@@ -1067,6 +1083,7 @@ export const blogPosts = [
   {
     slug: 'cooking-measurements',
     title: 'Cooking Measurement Conversion Guide: Cups, Tablespoons, ml, and Grams',
+    tag: 'Quick Reference',
     date: '2026-04-20',
     description: 'Convert between cups, tablespoons, teaspoons, fluid ounces, milliliters, and grams. Includes a quick reference table and tips for scaling recipes.',
     intro: 'Recipe conversions are one of the most common everyday unit problems. American recipes use cups and tablespoons; European recipes use grams and milliliters; and scaling a recipe up or down requires converting between them. This guide covers the exact conversion factors, a quick reference table, and the key difference between measuring liquids and dry ingredients.',
