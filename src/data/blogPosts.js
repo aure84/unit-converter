@@ -781,6 +781,205 @@ export const blogPosts = [
       { label: 'Angle Converter', path: '/angle' },
     ],
   },
+
+  {
+    slug: 'nm-to-ft-lb',
+    title: 'How to Convert Nm to ft-lb (and ft-lb to Nm)',
+    date: '2026-04-20',
+    description: 'Learn how to convert Newton-meters to foot-pounds and back. Includes the exact formula, a quick reference table, and real-world torque values for cars and bolts.',
+    intro: 'Whether you are tightening lug nuts, following a cylinder head torque spec, or comparing engine output from a European and American source, you will run into Newton-meters and foot-pounds. This guide explains the conversion formula, gives you a reference table, and shows where each unit is used.',
+    sections: [
+      {
+        heading: 'What Is a Newton-Meter (Nm)?',
+        paragraphs: [
+          'A Newton-meter (N·m) is the SI unit of torque — the rotational equivalent of a force. One Newton-meter is the torque produced by a force of one Newton applied perpendicular to a lever arm one meter long.',
+          'Newton-meters are used in most of the world for engine specifications, bolt torque values, and engineering calculations. If you are reading a European or Japanese vehicle manual, torque will almost certainly be listed in Nm.',
+        ],
+      },
+      {
+        heading: 'What Is a Foot-Pound (ft·lb)?',
+        paragraphs: [
+          'A foot-pound (ft·lb) is the imperial unit of torque used primarily in the United States. It represents the torque produced by a force of one pound applied at a distance of one foot.',
+          'American automotive manuals, torque wrenches sold in the US, and engine specifications from US manufacturers use foot-pounds. Smaller values — such as those for interior trim bolts or electronic connectors — are often listed in inch-pounds (in·lb), where 1 ft·lb = 12 in·lb.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          'The exact conversion factor is: 1 ft·lb = 1.35582 Nm, or equivalently, 1 Nm = 0.73756 ft·lb.',
+          'To convert Nm to ft·lb: multiply by 0.7376. Example: 100 Nm × 0.7376 = 73.76 ft·lb.',
+          'To convert ft·lb to Nm: multiply by 1.3558. Example: 80 ft·lb × 1.3558 = 108.5 Nm.',
+          'Quick mental shortcut: divide Nm by 1.36 for ft·lb, or multiply ft·lb by 1.36 for Nm. This gives results within 0.03% of the exact value.',
+        ],
+      },
+      {
+        heading: 'Nm to ft·lb Reference Table',
+        paragraphs: ['Common torque values converted between both systems:'],
+        list: [
+          '10 Nm = 7.4 ft·lb',
+          '20 Nm = 14.8 ft·lb',
+          '50 Nm = 36.9 ft·lb',
+          '80 Nm = 59.0 ft·lb',
+          '100 Nm = 73.8 ft·lb',
+          '120 Nm = 88.5 ft·lb',
+          '150 Nm = 110.6 ft·lb',
+          '200 Nm = 147.5 ft·lb',
+        ],
+      },
+      {
+        heading: 'Real-World Torque Values',
+        paragraphs: [
+          'Lug nuts (wheel bolts): Most passenger cars require 80–120 Nm (59–89 ft·lb). Always check the sticker inside the driver\'s door jamb or the owner\'s manual — over-torquing can warp brake rotors or strip threads.',
+          'Spark plugs: Typically 15–30 Nm (11–22 ft·lb) depending on thread size. Aluminum cylinder heads require less torque than cast iron.',
+          'Cylinder head bolts: Usually 50–100 Nm (37–74 ft·lb) in multiple stages. Many modern engines use torque-to-yield (TTY) bolts that must be replaced after removal.',
+          'Engine output: A typical family car produces 150–250 Nm (110–184 ft·lb) of torque. Sports cars often exceed 400 Nm (295 ft·lb), while diesel trucks can exceed 1,000 Nm (737 ft·lb).',
+        ],
+      },
+      {
+        heading: 'Inch-Pounds vs Foot-Pounds',
+        paragraphs: [
+          'For small fasteners — interior trim, electronics, small engine components — torque values are often given in inch-pounds (in·lb) rather than foot-pounds.',
+          'The conversion is simple: 1 ft·lb = 12 in·lb. So 18 in·lb = 1.5 ft·lb = 2.03 Nm.',
+          'When a spec sheet says "15 in·lb," do not confuse it with 15 ft·lb — that would be eight times too much and could strip the fastener.',
+        ],
+      },
+    ],
+    conclusion: 'The key number to remember: 1 ft·lb ≈ 1.356 Nm. For quick mental math, dividing Nm by 1.36 gives ft·lb within rounding error. Use our free torque converter for any exact value, and always double-check critical torque specs against your vehicle\'s service manual. Always consult a qualified mechanic for safety-critical fasteners.',
+    relatedLinks: [
+      { label: 'Nm to ft·lb Converter', path: '/torque/newton_meter-to-foot_pound' },
+      { label: 'ft·lb to Nm Converter', path: '/torque/foot_pound-to-newton_meter' },
+      { label: 'Torque Converter', path: '/torque' },
+    ],
+  },
+
+  {
+    slug: 'shoe-size-guide',
+    title: 'Shoe Size Conversion Guide: EU, US, and UK Sizes Explained',
+    date: '2026-04-20',
+    description: 'Convert shoe sizes between EU, US Men\'s, US Women\'s, and UK with exact formulas and a reference table. Never order the wrong size when shopping internationally.',
+    intro: 'Buying shoes online from a foreign retailer — or checking a size chart from a brand you haven\'t tried before — can be confusing when the sizing system is different from what you are used to. This guide explains how EU, US, and UK shoe sizes relate to each other and gives you the formulas and reference tables to convert between them.',
+    sections: [
+      {
+        heading: 'How Shoe Size Systems Work',
+        paragraphs: [
+          'There are three major shoe sizing systems: EU (European), US (split into Men\'s and Women\'s), and UK. Each uses a different numeric scale, but all are ultimately based on foot length — the distance from heel to toe while standing.',
+          'EU sizes use the Paris point system, where 1 Paris point = 2/3 of a centimeter. UK sizes use a system derived from barleycorns (1/3 of an inch). US sizes use a similar barleycorn base but with different starting points for men and women.',
+          'Note that shoe sizes are approximate — fit varies by brand, shoe style, and last shape. Always check a brand\'s specific size chart when available.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formulas',
+        paragraphs: [
+          'EU to US Men\'s: subtract 33. Example: EU 42 − 33 = US Men\'s 9.',
+          'EU to US Women\'s: subtract 31. Example: EU 39 − 31 = US Women\'s 8.',
+          'EU to UK: subtract 33.5. Example: EU 42 − 33.5 = UK 8.5.',
+          'US Men\'s to US Women\'s: add 2. Example: US Men\'s 9 + 2 = US Women\'s 11.',
+          'US Men\'s to UK: subtract 0.5. Example: US Men\'s 9 − 0.5 = UK 8.5.',
+          'EU to foot length (cm): divide by 1.575. Example: EU 42 ÷ 1.575 ≈ 26.7 cm.',
+        ],
+      },
+      {
+        heading: 'EU to US and UK Size Chart',
+        paragraphs: ['Common sizes for adult shoes:'],
+        list: [
+          'EU 36 = US Women\'s 5 / US Men\'s 3.5 / UK 3.5 / 22.9 cm',
+          'EU 38 = US Women\'s 7 / US Men\'s 5 / UK 5 / 24.1 cm',
+          'EU 39 = US Women\'s 8 / US Men\'s 6 / UK 6 / 24.8 cm',
+          'EU 40 = US Women\'s 9 / US Men\'s 7 / UK 6.5 / 25.4 cm',
+          'EU 41 = US Women\'s 10 / US Men\'s 8 / UK 7.5 / 26.0 cm',
+          'EU 42 = US Women\'s 11 / US Men\'s 9 / UK 8.5 / 26.7 cm',
+          'EU 43 = US Women\'s 12 / US Men\'s 10 / UK 9 / 27.3 cm',
+          'EU 44 = US Men\'s 11 / UK 10 / 27.9 cm',
+          'EU 45 = US Men\'s 12 / UK 11 / 28.6 cm',
+        ],
+      },
+      {
+        heading: 'How to Measure Your Foot Size',
+        paragraphs: [
+          'Place a blank sheet of paper on a hard floor. Stand on it with your full weight and trace the outline of your foot with a pencil held vertically.',
+          'Measure the longest distance from the heel mark to the toe mark. This is your foot length in centimeters.',
+          'Multiply by 1.575 to get your EU size. For example, 26.7 cm × 1.575 ≈ EU 42.',
+          'Always measure both feet — most people have one foot slightly larger than the other. Use the larger measurement to choose your size.',
+        ],
+      },
+      {
+        heading: 'Why US Men\'s and Women\'s Sizes Differ',
+        paragraphs: [
+          'US women\'s sizes run about 1.5 sizes larger than US men\'s for the same foot length. This is a historical convention, not a reflection of actual foot width or shape.',
+          'Practically: a US Women\'s size 9 is the same physical length as a US Men\'s size 7. Both equal approximately EU 40 (25.4 cm foot length).',
+          'Some brands — especially athletic and workwear — sell shoes in one unisex scale (usually men\'s). Women buying unisex shoes typically go 1.5 sizes down from their women\'s size.',
+        ],
+      },
+    ],
+    conclusion: 'The most reliable way to find your size in any system is to measure your foot length in centimeters, then convert using the formula: EU size = foot length (cm) × 1.575. From EU, you can reach any other system with simple addition or subtraction. Use our free shoe size converter for instant results.',
+    relatedLinks: [
+      { label: 'EU to US Men\'s Converter', path: '/shoe-size/eu-to-us_men' },
+      { label: 'EU to US Women\'s Converter', path: '/shoe-size/eu-to-us_women' },
+      { label: 'Shoe Size Converter', path: '/shoe-size' },
+    ],
+  },
+
+  {
+    slug: 'cooking-measurements',
+    title: 'Cooking Measurement Conversion Guide: Cups, Tablespoons, ml, and Grams',
+    date: '2026-04-20',
+    description: 'Convert between cups, tablespoons, teaspoons, fluid ounces, milliliters, and grams. Includes a quick reference table and tips for scaling recipes.',
+    intro: 'Recipe conversions are one of the most common everyday unit problems. American recipes use cups and tablespoons; European recipes use grams and milliliters; and scaling a recipe up or down requires converting between them. This guide covers the exact conversion factors, a quick reference table, and the key difference between measuring liquids and dry ingredients.',
+    sections: [
+      {
+        heading: 'US Cooking Volume Units',
+        paragraphs: [
+          'American recipes use a system of nested volume units: teaspoon (tsp), tablespoon (tbsp), fluid ounce (fl oz), cup, pint, quart, and gallon.',
+          'The relationships are fixed: 1 tablespoon = 3 teaspoons. 1 cup = 16 tablespoons = 8 fluid ounces = 236.6 ml. 1 pint = 2 cups. 1 quart = 4 cups. 1 gallon = 16 cups.',
+          'These units measure volume, not weight. A cup of water weighs 236.6 grams, but a cup of flour weighs only about 125 grams because flour is less dense.',
+        ],
+      },
+      {
+        heading: 'Quick Conversion Table',
+        paragraphs: ['All values are for liquids (water). Dry ingredient weights will differ.'],
+        list: [
+          '1 teaspoon = 4.93 ml',
+          '1 tablespoon = 14.79 ml = 3 teaspoons',
+          '1 fluid ounce = 29.57 ml = 2 tablespoons',
+          '¼ cup = 59.1 ml = 4 tablespoons',
+          '½ cup = 118.3 ml = 8 tablespoons',
+          '1 cup = 236.6 ml = 16 tablespoons',
+          '2 cups = 473.2 ml = 1 pint',
+          '4 cups = 946.4 ml = 1 quart',
+        ],
+      },
+      {
+        heading: 'Grams vs. Milliliters in Cooking',
+        paragraphs: [
+          'For water and thin liquids (milk, juice, broth), grams and milliliters are interchangeable: 1 ml of water = 1 gram. So 240 ml = 240 grams for water.',
+          'For everything else, the conversion depends on density. Common examples: 1 cup of all-purpose flour = 125 grams. 1 cup of granulated sugar = 200 grams. 1 cup of butter = 227 grams. 1 cup of honey = 340 grams.',
+          'This is why baking recipes from professional sources use grams — measuring by weight is more precise and reproducible than measuring by volume, especially for flour (which compacts differently depending on how you scoop).',
+        ],
+      },
+      {
+        heading: 'Scaling Recipes',
+        paragraphs: [
+          'To halve a recipe, divide all quantities by 2. To double it, multiply by 2. Most conversions are straightforward, but some measurements get awkward: half of ¾ cup is 6 tablespoons, which is easier to measure than ⅜ cup.',
+          'Useful scaled measurements: ⅓ cup = 5 tablespoons + 1 teaspoon. ¾ cup = 12 tablespoons. ⅔ cup = 10 tablespoons + 2 teaspoons.',
+          'For large-scale cooking, convert everything to grams first — it is easier to multiply 125 g × 3.5 than to figure out what 3.5 cups of flour looks like.',
+        ],
+      },
+      {
+        heading: 'UK vs. US Measurements',
+        paragraphs: [
+          'UK tablespoons are slightly larger than US tablespoons: 1 UK tablespoon = 17.76 ml vs. 14.79 ml in the US. For most recipes the difference is negligible, but it matters in precise baking.',
+          'The UK cup is not a standard unit — British recipes rarely use cups, preferring grams and milliliters. When a UK recipe does mention cups, it usually means 250 ml (vs. the US 236.6 ml).',
+          'Australian tablespoons are larger still: 1 Australian tablespoon = 20 ml = 4 teaspoons (vs. 3 in the US). Always check which country a recipe comes from.',
+        ],
+      },
+    ],
+    conclusion: 'For liquids: 1 cup = 236.6 ml, 1 tablespoon = 14.79 ml, 1 teaspoon = 4.93 ml. For dry ingredients, weight in grams is more accurate than volume. Weights are approximate and vary by ingredient density and measuring technique. Use our free cooking converter for any combination instantly.',
+    relatedLinks: [
+      { label: 'Cups to ml Converter', path: '/cooking/cup-to-milliliter' },
+      { label: 'Tablespoons to ml Converter', path: '/cooking/tablespoon-to-milliliter' },
+      { label: 'Cooking Converter', path: '/cooking' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */

@@ -43,6 +43,9 @@ sections.push([
   url(`${BASE}/blog/mpg-to-l100km`,         '0.7', 'monthly'),
   url(`${BASE}/blog/horsepower-to-kw`,      '0.7', 'monthly'),
   url(`${BASE}/blog/degrees-to-radians`,    '0.7', 'monthly'),
+  url(`${BASE}/blog/nm-to-ft-lb`,           '0.7', 'monthly'),
+  url(`${BASE}/blog/shoe-size-guide`,        '0.7', 'monthly'),
+  url(`${BASE}/blog/cooking-measurements`,   '0.7', 'monthly'),
 ].join('\n'));
 
 // ── Length ───────────────────────────────────────────────────────────────────
