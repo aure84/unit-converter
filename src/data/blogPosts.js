@@ -73,7 +73,7 @@ export const blogPosts = [
 
   {
     slug: 'kg-to-lbs',
-    title: 'Kilograms to Pounds: The Complete Conversion Guide',
+    title: 'How to Convert Kilograms to Pounds (and Back)',
     date: '2026-04-15',
     description: 'Convert kilograms to pounds with the exact formula, body weight examples, and a full reference table. Free kg to lbs converter included.',
     intro: 'Kilograms and pounds are the two most widely used units for measuring weight. If you travel internationally, follow fitness programs from other countries, or shop for products with foreign labeling, knowing how to convert between kg and lbs is essential. This guide covers everything you need.',
@@ -141,7 +141,7 @@ export const blogPosts = [
 
   {
     slug: 'celsius-to-fahrenheit',
-    title: 'Celsius to Fahrenheit: How Temperature Conversion Works',
+    title: 'How to Convert Celsius to Fahrenheit (and Back)',
     date: '2026-04-15',
     description: 'Learn the Celsius to Fahrenheit formula with step-by-step examples, common temperature reference points, and a free online temperature converter.',
     intro: 'Temperature is one of the trickiest unit conversions because it involves more than just multiplication — there is also an offset to account for. This guide explains the Celsius and Fahrenheit scales, walks through the conversion formula step by step, and gives you the key reference temperatures to know by heart.',
@@ -209,7 +209,7 @@ export const blogPosts = [
 
   {
     slug: 'data-storage-units',
-    title: 'Data Storage Units Explained: Bits, Bytes, GB, TB and More',
+    title: 'How Big Is a Gigabyte? Data Storage Units Explained',
     date: '2026-04-15',
     description: 'Understand bits, bytes, kilobytes, megabytes, gigabytes, and terabytes. Learn how data storage units work and how to convert between them.',
     intro: 'When you buy a phone with "128 GB storage" or pay for "1 TB of cloud backup," do you know exactly what those numbers mean? Data storage units can be confusing because they are based on powers of two rather than tens — and because marketing sometimes blurs the line between decimal and binary definitions. This guide clears it all up.',
@@ -279,7 +279,7 @@ export const blogPosts = [
 
   {
     slug: 'speed-units',
-    title: 'Speed Units Explained: mph, km/h, m/s, and Knots',
+    title: 'How Do You Convert mph, km/h, m/s, and Knots?',
     date: '2026-04-15',
     description: 'Understand the four main speed units — mph, km/h, m/s, and knots — with conversion formulas, real-world examples, and a free speed converter.',
     intro: 'Speed is measured differently depending on where you are and what you are doing. A car speedometer in Germany shows km/h, while one in the US shows mph. A ship\'s navigator tracks speed in knots. A physics textbook uses meters per second. This guide explains all four units, how they relate to each other, and when each is used.',
