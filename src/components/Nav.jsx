@@ -24,7 +24,7 @@ const CATEGORIES = [
 ]
 
 const LEGAL_LINKS = [
-  { path: '/blog',    label: 'Guides' },
+  { path: '/blog',    label: 'Blog' },
   { path: '/about',   label: 'About' },
   { path: '/contact', label: 'Contact' },
   { path: '/privacy', label: 'Privacy Policy' },

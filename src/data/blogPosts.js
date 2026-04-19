@@ -783,6 +783,151 @@ export const blogPosts = [
   },
 
   {
+    slug: 'mars-climate-orbiter',
+    title: 'The $327 Million Unit Conversion Mistake: NASA\'s Mars Climate Orbiter',
+    date: '2026-04-20',
+    description: 'In 1999, NASA lost a $327 million spacecraft because one team used metric units and another used imperial. The story of the Mars Climate Orbiter is the most expensive unit conversion error in history.',
+    intro: 'On September 23, 1999, NASA\'s Mars Climate Orbiter fired its main engine to enter orbit around Mars. It never came back. The spacecraft — nine months into its journey, 416 million miles from Earth — flew too close to the Martian atmosphere and was destroyed. The cause: one engineering team at NASA\'s Jet Propulsion Laboratory was sending thruster data in metric units, while another team\'s software at Lockheed Martin expected imperial units. Nobody caught it for nine months.',
+    sections: [
+      {
+        heading: 'What Went Wrong',
+        paragraphs: [
+          'The Mars Climate Orbiter was designed to study Martian weather and act as a communication relay for future landers. At $327.6 million, it represented years of work by hundreds of engineers.',
+          'The navigation software on the spacecraft expected force data in newton-seconds (the metric SI unit). The ground software sending the data was outputting pound-force seconds (the imperial unit). 1 pound-force second equals 4.448 newton-seconds — so every thruster firing command was off by a factor of 4.448.',
+          'Over nine months of travel, these small errors accumulated. By the time the orbiter reached Mars, its trajectory was shifted by roughly 170 kilometers. Instead of entering a safe orbit at 150–170 km altitude, it approached at around 57 km — deep enough in the atmosphere to be destroyed by friction and aerodynamic stress.',
+        ],
+      },
+      {
+        heading: 'How It Was Missed',
+        paragraphs: [
+          'The mismatch was not caught because the two software systems — one from NASA\'s JPL, one from Lockheed Martin — were developed independently and tested separately. Each worked correctly in isolation. The error only manifested when they communicated with each other in space.',
+          'Reviewers noticed the trajectory was slightly off weeks before arrival, but the deviations were within a range that could have been caused by other factors. The root cause was not identified in time.',
+          'NASA\'s internal review found the failure resulted from inadequate systems-engineering verification and validation — a process failure, not just a math error.',
+        ],
+      },
+      {
+        heading: 'The Exact Conversion That Failed',
+        paragraphs: [
+          'The unit at the center of the failure was angular momentum: specifically, the small-force thruster impulse data transmitted from Earth.',
+          'Lockheed Martin\'s software output the value in pound-force seconds (lbf·s). NASA\'s navigation software expected newton-seconds (N·s).',
+          '1 lbf·s = 4.44822 N·s. Every command was therefore interpreted as 4.44822 times smaller than intended. Over thousands of corrections across a nine-month flight, this compounded into a fatal trajectory error.',
+        ],
+      },
+      {
+        heading: 'The Aftermath',
+        paragraphs: [
+          'The loss of the Mars Climate Orbiter prompted NASA to enforce a strict "metric-only" policy for all future space missions.',
+          'The companion spacecraft, Mars Polar Lander, was lost two months later — though for unrelated reasons. The two losses back-to-back prompted a broad review of NASA\'s "faster, better, cheaper" approach to mission design.',
+          'The incident is now a standard case study in software engineering, systems integration, and the importance of interface specifications. It is taught in engineering programs worldwide as an example of how a simple unit mismatch can cascade into catastrophic failure.',
+        ],
+      },
+    ],
+    conclusion: 'A single unconverted unit — pound-force seconds sent where newton-seconds were expected — destroyed a $327 million spacecraft. The lesson is not just about unit conversion. It is about never assuming two systems speak the same language, even when built by the same organization. Always verify units at every interface.',
+    relatedLinks: [
+      { label: 'Force / Pressure Converter', path: '/pressure' },
+      { label: 'Length Converter', path: '/length' },
+      { label: 'Unit Converter Home', path: '/' },
+    ],
+  },
+
+  {
+    slug: 'gimli-glider',
+    title: 'The Gimli Glider: When a Boeing 767 Ran Out of Fuel Mid-Flight',
+    date: '2026-04-20',
+    description: 'In 1983, an Air Canada Boeing 767 ran out of fuel at 41,000 feet because ground crew confused kilograms with pounds. The plane glided 100 miles to an emergency landing — with 69 people on board.',
+    intro: 'On July 23, 1983, Air Canada Flight 143 — a brand-new Boeing 767 — ran out of fuel at 41,000 feet over northern Canada. All engines went silent. For the next 17 minutes, the plane glided without power over 100 miles of Canadian wilderness, carrying 61 passengers and 8 crew. The cause was a unit conversion error: ground crew calculated the fuel load in pounds when they should have used kilograms. The plane had exactly half the fuel it needed.',
+    sections: [
+      {
+        heading: 'The Setup: A New Plane and a Broken Gauge',
+        paragraphs: [
+          'The Boeing 767 was one of Canada\'s first metric aircraft. Fuel on older planes was measured in pounds; the 767 used kilograms, reflecting Canada\'s shift to the metric system. The fuel quantity indication system (FQIS) on this particular aircraft was malfunctioning, so ground crew had to calculate the fuel load manually.',
+          'To calculate fuel volume, you need to know the density of jet fuel — its specific gravity — to convert from volume (liters) to mass (kg or lbs). The correct specific gravity for the fuel was 0.803 kg per liter.',
+          'This is where the error entered: the fuelers used 1.77 — the conversion factor for pounds per liter, not kilograms per liter. They were working in pounds. The aircraft required kilograms.',
+        ],
+      },
+      {
+        heading: 'The Exact Calculation Error',
+        paragraphs: [
+          'The plane needed 22,300 kg of fuel for the flight from Montreal to Edmonton.',
+          'The ground crew measured the fuel already on board in liters, then multiplied by 1.77 (lbs/liter) instead of 0.803 (kg/liter) to get the weight. This gave them a number in pounds, not kilograms.',
+          'Because 1 kg = 2.2 lbs, their fuel reading appeared more than twice as heavy as the actual fuel on board. The plane departed with 22,300 pounds of fuel — just over 10,000 kg — instead of the required 22,300 kg. It had 45% of the fuel it needed.',
+        ],
+      },
+      {
+        heading: 'The Glide',
+        paragraphs: [
+          'Both engines flamed out over Red Lake, Ontario. The cockpit went dark — many instruments, including the altitude indicator, are powered by the engines. The pilots had never trained for a complete dual-engine failure in a jet aircraft.',
+          'Captain Robert Pearson had gliding experience in small aircraft. He calculated a glide ratio — the 767 could travel roughly 12 miles for every mile of altitude lost. From 41,000 feet, that gave them about 100 miles of range.',
+          'The crew diverted to Gimli, Manitoba — a former Royal Canadian Air Force base that had been partially converted into a motorsport racing venue. The runway was shorter than ideal and had cars and people on it from a racing event that day. Pearson executed a forward slip maneuver to lose altitude rapidly and landed without engine power, nose gear, or full brakes. There were minor injuries but no fatalities.',
+        ],
+      },
+      {
+        heading: 'Why Multiple Checks Failed',
+        paragraphs: [
+          'Three separate people — the fueler, the first officer, and the captain — all checked the fuel calculation and missed the error. Each was working from the same incorrect assumption: that the number they were looking at was in the correct units.',
+          'The FQIS malfunction had created a situation where manual calculation was required, but no written procedure existed for the metric conversion. The 767 was new; the ground crew were accustomed to the older imperial-unit aircraft.',
+          'The accident investigation found systemic failures: inadequate training on the new metric system, no clear procedure for manual fuel calculations, and a broken instrument that should have grounded the aircraft.',
+        ],
+      },
+    ],
+    conclusion: 'The Gimli Glider is a reminder that unit errors do not announce themselves. The numbers looked right — because everyone was checking internal consistency, not unit consistency. The plane landed safely only because of extraordinary piloting skill. The fix was procedural: clear written standards specifying units at every step of fuel calculation.',
+    relatedLinks: [
+      { label: 'Weight Converter (kg to lbs)', path: '/weight/kilogram-to-pound' },
+      { label: 'Volume Converter', path: '/volume' },
+      { label: 'Fuel Economy Converter', path: '/fuel-economy' },
+    ],
+  },
+
+  {
+    slug: 'columbus-unit-error',
+    title: 'How a Unit Conversion Error Sent Columbus to the Wrong Continent',
+    date: '2026-04-20',
+    description: 'Christopher Columbus reached America partly because he confused two different definitions of a "mile." His unit error made the Earth appear 25% smaller than it actually is.',
+    intro: 'Christopher Columbus did not prove the Earth was round — educated Europeans already knew that. What Columbus got spectacularly wrong was the size of the Earth, and specifically the distance from Europe to Asia going west. His error was not a matter of courage or vision. It was a unit conversion mistake: he confused two different definitions of a "mile" and concluded the Earth was roughly 25% smaller than it actually is. He sailed west expecting Asia and found a continent nobody in Europe knew existed.',
+    sections: [
+      {
+        heading: 'The Two "Miles" That Changed History',
+        paragraphs: [
+          'In the 15th century, the word "mile" did not have a single fixed meaning. Different cultures used different standards. Two were relevant to Columbus\'s calculation.',
+          'The Roman mile (mille passuum) was approximately 1,480 meters — close to today\'s international mile of 1,609 meters.',
+          'The Arabic mile, used by the Islamic geographer al-Farghani in his influential calculations of the Earth\'s circumference, was approximately 1,973 meters — about 33% longer than the Roman mile.',
+        ],
+      },
+      {
+        heading: 'The Calculation',
+        paragraphs: [
+          'Al-Farghani had calculated — correctly — that one degree of latitude at the equator equals 56⅔ Arabic miles. Columbus read this figure but applied the shorter Roman mile instead of the longer Arabic mile.',
+          'Using the Roman mile of 1,480 m: 56.67 × 1,480 m = 83,870 m per degree, giving a total Earth circumference of about 30,200 km.',
+          'The actual circumference of the Earth is approximately 40,075 km. Columbus\'s figure was about 25% too small.',
+          'This made the westward distance from the Canary Islands to Japan appear to be roughly 3,700 km. The actual distance — across the Pacific — is about 19,600 km. Columbus was off by a factor of more than five.',
+        ],
+      },
+      {
+        heading: 'Why Experts Rejected Him',
+        paragraphs: [
+          'The Portuguese royal commission that evaluated Columbus\'s proposal in 1484 rejected it — not because they thought the Earth was flat, but because their calculations were correct. Their geographers used the Arabic mile properly and concluded the westward route to Asia was impossibly long for the ships and supplies of the time. They were right.',
+          'Spain\'s Queen Isabella ultimately funded the voyage, in part because Columbus was persuasive and the potential reward was enormous. But Spain\'s own experts were also skeptical.',
+          'Columbus went to his grave believing he had reached islands off the coast of Asia. He never accepted that he had found a previously unknown continent.',
+        ],
+      },
+      {
+        heading: 'The Irony',
+        paragraphs: [
+          'Columbus\'s unit error saved his life. If he had correctly calculated the Earth\'s circumference, he would have known the voyage was impossible with 15th-century ships — too far, too little food and water, no way to survive the crossing.',
+          'The Americas were, from Columbus\'s perspective, an accident: land that happened to exist at roughly the distance where he expected to find Asia. Without that landmass, his crew would have mutinied or starved long before reaching Japan.',
+          'The lesson is not comforting: sometimes a wrong calculation leads somewhere interesting. But you cannot plan for lucky continents. The Mars Climate Orbiter and Gimli Glider had no such fortune.',
+        ],
+      },
+    ],
+    conclusion: 'Columbus confused the Arabic mile (1,973 m) with the Roman mile (1,480 m) — a 33% difference that made the Earth appear 25% smaller than it is. The error led him to underestimate the westward distance to Asia by a factor of five. He reached a continent he did not know existed, then spent the rest of his life insisting it was Asia. Unit errors do not always destroy spacecraft or strand planes — sometimes they accidentally reshape history.',
+    relatedLinks: [
+      { label: 'Length Converter', path: '/length' },
+      { label: 'km to Miles Converter', path: '/length/kilometer-to-mile' },
+      { label: 'Unit Converter Home', path: '/' },
+    ],
+  },
+
+  {
     slug: 'nm-to-ft-lb',
     title: 'How to Convert Nm to ft-lb (and ft-lb to Nm)',
     date: '2026-04-20',
