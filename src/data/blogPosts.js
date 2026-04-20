@@ -1344,6 +1344,140 @@ export const blogPosts = [
       { label: 'Length Converter', path: '/length' },
     ],
   },
+  {
+    slug: 'liters-to-ml',
+    title: 'How to Convert Liters to Milliliters (and Back)',
+    tag: 'How-To Guide',
+    date: '2026-04-20',
+    description: 'Learn how to convert liters to milliliters with the exact formula, beverage reference table, and practical examples for cooking, medicine, and everyday use.',
+    intro: 'Liters and milliliters are both metric volume units used worldwide for beverages, cooking, medicine, and laboratory measurements. The conversion is simple — there are exactly 1,000 milliliters in a liter — but the relationship between these units shows up in ways that are easy to overlook. This guide explains both units and gives you quick reference values for everyday contexts.',
+    sections: [
+      {
+        heading: 'What Is a Liter?',
+        paragraphs: [
+          'A liter (L) is the base metric unit for measuring liquid volume. It is equal to exactly 1,000 milliliters, 1 cubic decimeter (dm³), or 0.001 cubic meters.',
+          'Everyday items measured in liters: water bottles (0.5 L, 1 L, 1.5 L), soda bottles (2 L), car engine displacement (1.6 L, 2.0 L), milk cartons (1 L), and fuel (sold by the liter in most countries).',
+        ],
+      },
+      {
+        heading: 'What Is a Milliliter?',
+        paragraphs: [
+          'A milliliter (mL) is one-thousandth of a liter, equal to exactly 1 cubic centimeter (cm³). It is the standard unit for small liquid volumes in cooking, medicine, and laboratory measurements.',
+          'Everyday items measured in milliliters: medicine doses (5 mL = 1 teaspoon), espresso shot (30 mL), wine glass (150–250 mL), and can of soda (330 mL or 355 mL).',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 liter = 1,000 milliliters (exact, by definition).',
+          'To convert liters to milliliters: multiply by 1,000. For example, 1.5 L × 1,000 = 1,500 mL.',
+          'To convert milliliters to liters: divide by 1,000. For example, 750 mL ÷ 1,000 = 0.75 L.',
+          'In practice: move the decimal point three places right to go from liters to milliliters, and three places left to go from milliliters to liters.',
+        ],
+      },
+      {
+        heading: 'Beverage Reference Table',
+        paragraphs: ['Common drink volumes in both units:'],
+        list: [
+          'Espresso shot: 30 mL = 0.030 L',
+          'Small juice glass: 150 mL = 0.15 L',
+          'Wine glass (standard pour): 150–250 mL = 0.15–0.25 L',
+          'Can of soda (US): 355 mL = 0.355 L',
+          'Can of soda (EU): 330 mL = 0.330 L',
+          'Standard water bottle: 500 mL = 0.5 L',
+          'Large soda bottle: 2,000 mL = 2 L',
+          'Wine bottle: 750 mL = 0.75 L',
+        ],
+      },
+      {
+        heading: 'Medicine and Dosing',
+        paragraphs: [
+          'Medicine doses for liquids are always given in milliliters. Common reference points:',
+        ],
+        list: [
+          '1 teaspoon (tsp) = 4.93 mL ≈ 5 mL',
+          '1 tablespoon (tbsp) = 14.79 mL ≈ 15 mL',
+          '1 fluid ounce = 29.57 mL ≈ 30 mL',
+          'Standard syringe dose: 1–10 mL',
+          'IV bag: 250 mL, 500 mL, or 1,000 mL (1 L)',
+        ],
+      },
+      {
+        heading: 'Cooking and Baking',
+        paragraphs: [
+          'European and Australian recipes use milliliters for liquids. A recipe calling for "250 mL of milk" requires a quarter liter — roughly equivalent to 1 US cup (236.6 mL).',
+          'For cooking, the liter/milliliter system is more precise and easier to scale than the US cup system. 500 mL is exactly half a liter; half a cup is 118 mL, which requires knowing the cup definition to work with.',
+        ],
+      },
+    ],
+    conclusion: '1 liter = 1,000 milliliters exactly. To convert L to mL, multiply by 1,000. To convert mL to L, divide by 1,000. The conversion is among the simplest in the metric system — just shift the decimal point three places. Use our free volume converter for any liquid measurement instantly.',
+    relatedLinks: [
+      { label: 'Liters to Milliliters Converter', path: '/volume/liter-to-milliliter' },
+      { label: 'Milliliters to Liters Converter', path: '/volume/milliliter-to-liter' },
+      { label: 'Volume Converter', path: '/volume' },
+    ],
+  },
+  {
+    slug: 'acres-to-sq-meters',
+    title: 'How to Convert Acres to Square Meters (and Back)',
+    tag: 'How-To Guide',
+    date: '2026-04-20',
+    description: 'Learn how to convert acres to square meters with the exact formula, a comparison to football fields and hectares, and practical examples for real estate and land measurement.',
+    intro: 'Acres and square meters measure land area, but they come from completely different measurement traditions. The United States uses acres for real estate and agriculture; most of the world uses square meters and hectares. This guide explains the exact conversion, gives you visual reference points for scale, and covers the relationship between acres, hectares, and square meters.',
+    sections: [
+      {
+        heading: 'What Is an Acre?',
+        paragraphs: [
+          'An acre is a unit of area used primarily in the United States, UK, and some other countries for measuring land. 1 acre = 4,046.856 square meters = 43,560 square feet.',
+          'The word "acre" comes from Old English, meaning "open field." Historically, it was defined as the amount of land a yoke of oxen could plow in one day — roughly a strip 1 furlong (201 meters) long by 1 chain (20.1 meters) wide.',
+          'In the US, real estate listings use acres for plots. A quarter-acre lot is common in suburban neighborhoods. Farms are measured in hundreds or thousands of acres.',
+        ],
+      },
+      {
+        heading: 'What Is a Square Meter?',
+        paragraphs: [
+          'A square meter (m²) is the SI unit of area, equal to the area of a square with sides of exactly 1 meter. It is used worldwide for floor plans, room sizes, and small to medium land parcels.',
+          'For larger land areas, the hectare (ha) is commonly used: 1 hectare = 10,000 m² = 2.471 acres. Farms and large properties in metric countries are measured in hectares.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 acre = 4,046.856 square meters (exact: 1 acre = 43,560 ft², and 1 ft = 0.3048 m, so 43,560 × 0.3048² = 4,046.856).',
+          'To convert acres to square meters: multiply by 4,046.856. For example, 2 acres × 4,046.856 = 8,093.7 m².',
+          'To convert square meters to acres: divide by 4,046.856 (or multiply by 0.000247105). For example, 10,000 m² ÷ 4,046.856 = 2.471 acres.',
+          'Acres to hectares: multiply by 0.404686. Or simply: 1 hectare = 2.471 acres.',
+        ],
+      },
+      {
+        heading: 'Visual Reference Points',
+        paragraphs: ['Real-world comparisons to understand scale:'],
+        list: [
+          '1 acre ≈ 4,047 m² (about 0.4 hectares)',
+          '1 acre ≈ 90% of a US football field (including end zones: 1.32 acres)',
+          '1 acre ≈ 16 tennis courts',
+          '0.25 acre ≈ 1,012 m² (typical suburban US lot)',
+          '1 hectare = 2.471 acres = 10,000 m²',
+          '1 km² = 100 hectares = 247.1 acres',
+          'Central Park, NYC: 843 acres = 341 hectares = 3.41 km²',
+        ],
+      },
+      {
+        heading: 'Real Estate Conversions',
+        paragraphs: [
+          'When comparing US and international property listings, the acre-to-hectare conversion is the most useful: a 5-acre farm is 2.02 hectares; a 1-hectare vineyard is 2.47 acres.',
+          'Square footage to square meters: US home sizes in square feet ÷ 10.764 = m². A 2,000 sq ft house = 185.8 m².',
+          'For land purchases in countries that use m²: multiply the asking price per m² by 4,046.856 to get the equivalent price per acre.',
+        ],
+      },
+    ],
+    conclusion: '1 acre = 4,046.856 square meters = 0.4047 hectares. To convert, multiply acres by 4,047 for m², or multiply by 0.4047 for hectares. The most useful comparison: 1 acre is roughly the size of a US football field without the end zones. Use our free area converter for instant results in any unit combination.',
+    relatedLinks: [
+      { label: 'Acres to Square Meters Converter', path: '/area/acre-to-square_meter' },
+      { label: 'Square Meters to Acres Converter', path: '/area/square_meter-to-acre' },
+      { label: 'Area Converter', path: '/area' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */
