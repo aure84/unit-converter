@@ -1607,6 +1607,121 @@ export const blogPosts = [
       { label: 'Energy Converter', path: '/energy' },
     ],
   },
+  {
+    slug: 'vasa-warship',
+    title: 'The Warship That Sank Because Two Teams Used Different Rulers',
+    tag: 'Conversion Fail',
+    date: '2026-04-20',
+    description: 'In 1628, the Swedish warship Vasa sank on its maiden voyage. Archaeologists later found the cause: two construction crews used rulers of different lengths, building the ship asymmetrically.',
+    intro: 'On August 10, 1628, the Swedish warship Vasa — one of the most powerful warships in the world at the time — sailed out of Stockholm harbor on its maiden voyage. It traveled about 1,300 meters before water began pouring in through the gun ports. Within 20 minutes, the Vasa had sunk in full view of the watching crowd. More than 30 people died. The investigation that followed revealed a contributing cause that would not be confirmed until archaeologists examined the ship 333 years later: two construction teams had been building the ship using rulers of different lengths.',
+    sections: [
+      {
+        heading: 'The Ship',
+        paragraphs: [
+          'The Vasa was built between 1626 and 1628 on the orders of Swedish King Gustav II Adolf. At 69 meters long, armed with 64 bronze cannons on two gun decks, it was among the most heavily armed warships of its era.',
+          'The ship was also top-heavy. Two gun decks stacked above the waterline created a high center of gravity. Stability tests conducted before departure — rocking the ship by having men run back and forth across the deck — were stopped after three runs because the ship began listing dangerously. The admiral in charge chose to proceed anyway.',
+        ],
+      },
+      {
+        heading: 'The Sinking',
+        paragraphs: [
+          'The Vasa left the harbor on a calm August day with sails partially set. A gust of wind heeled the ship to port. Water entered through the open gun ports on the lower deck. The Vasa did not recover.',
+          'At the inquiry, officers and builders blamed each other. No one was punished — the king himself had pushed the ship\'s specifications to include two gun decks, and no one had been willing to tell him it was unsafe.',
+        ],
+      },
+      {
+        heading: 'The Ruler Discovery',
+        paragraphs: [
+          'The Vasa was salvaged in 1961 and is now preserved in the Vasa Museum in Stockholm. During archaeological examination, researchers made an unusual find: four rulers used by the construction workers.',
+          'Two rulers were calibrated in Swedish feet — each foot divided into 12 Swedish inches, measuring approximately 26.0 cm per foot.',
+          'Two rulers were calibrated in Amsterdam feet — each foot divided into 11 Amsterdam inches, measuring approximately 25.6 cm per foot.',
+          'The port (left) side of the ship was built using Swedish measurements. The starboard (right) side was built using Amsterdam measurements. The port side came out measurably heavier.',
+        ],
+      },
+      {
+        heading: 'How Much Did It Matter?',
+        paragraphs: [
+          'The unit discrepancy was not the sole cause of the Vasa\'s sinking — the ship was fundamentally too top-heavy for its design. But it contributed to the port-side asymmetry that made an already unstable ship worse.',
+          'The Vasa\'s case illustrates a systemic problem: two construction teams, working on the same ship, never verified that they were measuring in the same units. The error was invisible until archaeologists dug it up three centuries later.',
+          'The Mars Climate Orbiter (1999) repeated the same failure: two engineering teams using different unit systems, no interface check. The Orbiter cost $327 million. The Vasa cost 40,000 pieces of silver and more than 30 lives.',
+        ],
+      },
+      {
+        heading: 'The Vasa Today',
+        paragraphs: [
+          'The Vasa Museum in Stockholm is one of Scandinavia\'s most visited attractions. The ship is 95% original — preserved by the cold, low-salinity waters of the Baltic Sea. Visitors can see the original timbers, cannons, carved decorations, and the two measuring sticks that helped explain why it sank.',
+          'The Vasa is a unique artifact: the only 17th-century warship preserved in its original condition anywhere in the world.',
+        ],
+      },
+    ],
+    conclusion: 'The Vasa sank partly because two construction crews used rulers of different lengths — Swedish feet and Amsterdam feet — without ever checking that they were measuring in the same units. The same category of error has since destroyed a $327 million spacecraft (Mars Climate Orbiter) and nearly killed 69 people on a 767 (Gimli Glider). The lesson has not changed in 400 years: always verify units at every interface.',
+    relatedLinks: [
+      { label: 'Length Converter', path: '/length' },
+      { label: 'Meters to Feet Converter', path: '/length/meter-to-foot' },
+      { label: 'Unit Converter Home', path: '/' },
+    ],
+  },
+  {
+    slug: 'hard-drive-space',
+    title: 'Why Your 1 TB Hard Drive Only Shows 931 GB',
+    tag: 'Conversion Fail',
+    date: '2026-04-20',
+    description: 'You bought a 1 TB hard drive but your computer shows 931 GB. No storage was removed. The discrepancy is a unit conversion difference between how manufacturers and operating systems count bytes.',
+    intro: 'You buy a "1 TB" external hard drive, plug it in, and your computer reports 931 GB. You have not been cheated. No one removed 69 GB of storage. What happened is a unit conversion disagreement — one that has persisted for decades because manufacturers and operating systems define "terabyte" differently. This is one of the most common and misunderstood unit conversion issues in everyday technology.',
+    sections: [
+      {
+        heading: 'Two Definitions of "Terabyte"',
+        paragraphs: [
+          'Storage manufacturers define 1 TB as exactly 1,000,000,000,000 bytes — that is, 10¹² bytes, a round number in the decimal (base-10) system.',
+          'Operating systems — particularly Windows — define 1 TB as 1,099,511,627,776 bytes — that is, 2⁴⁰ bytes, a round number in the binary (base-2) system that computers actually use.',
+          'The difference: 1,099,511,627,776 ÷ 1,000,000,000,000 = 1.0995. So a drive with 1,000,000,000,000 bytes shows as 1,000,000,000,000 ÷ 1,099,511,627,776 = 0.9095 TB = approximately 931 GB on Windows.',
+        ],
+      },
+      {
+        heading: 'Why Computers Use Binary',
+        paragraphs: [
+          'Computer memory and storage are built from transistors that are either on or off — binary digits (bits). Doubling is natural: 1 KB = 1,024 bytes (2¹⁰), 1 MB = 1,048,576 bytes (2²⁰), 1 GB = 1,073,741,824 bytes (2³⁰), 1 TB = 1,099,511,627,776 bytes (2⁴⁰).',
+          'Early in computing history, the terms "kilobyte," "megabyte," and so on were informally used to mean the nearest power of 2, even though the SI prefixes kilo, mega, giga strictly mean 10³, 10⁶, 10⁹. Storage manufacturers eventually adopted the strict SI definitions — giving their drives larger apparent capacities — while operating systems kept the binary interpretation.',
+        ],
+      },
+      {
+        heading: 'The IEC Solution (Mostly Ignored)',
+        paragraphs: [
+          'In 1998, the International Electrotechnical Commission (IEC) introduced new prefixes to resolve the ambiguity: kibibyte (KiB = 1,024 bytes), mebibyte (MiB = 1,048,576 bytes), gibibyte (GiB = 1,073,741,824 bytes), tebibyte (TiB = 1,099,511,627,776 bytes).',
+          'The IEC definition: "gigabyte" (GB) = exactly 1,000,000,000 bytes; "gibibyte" (GiB) = exactly 1,073,741,824 bytes.',
+          'In practice, almost no one uses "gibibyte" in everyday speech. Windows still reports drive sizes in GiB but labels them GB. Linux and some technical documentation use GiB correctly. macOS switched to decimal in 2009.',
+        ],
+      },
+      {
+        heading: 'macOS vs Windows',
+        paragraphs: [
+          'Since macOS 10.6 (Snow Leopard, 2009), Apple\'s operating system reports drive sizes using decimal (SI) definitions. A 1 TB drive shows as 1 TB on a Mac.',
+          'Windows still uses binary definitions. A 1 TB drive (1,000,000,000,000 bytes) shows as approximately 931 GB on Windows.',
+          'This means the same physical drive will display a different number depending on whether you plug it into a Mac or a Windows PC — not because anything changed, but because the two systems define "gigabyte" differently.',
+        ],
+      },
+      {
+        heading: 'How Much Storage Are You Actually Getting?',
+        paragraphs: [
+          'You are getting exactly what you paid for — 1,000,000,000,000 bytes of storage capacity. The manufacturer\'s label is accurate by the SI definition.',
+          'The "missing" space is not missing — it is a display artifact. You can store exactly the same amount of data regardless of whether the drive shows 931 GB or 1 TB.',
+        ],
+        list: [
+          '500 GB drive → Windows shows ~466 GB',
+          '1 TB drive → Windows shows ~931 GB',
+          '2 TB drive → Windows shows ~1,862 GB',
+          '4 TB drive → Windows shows ~3,725 GB',
+          '1 TB drive → macOS shows 1 TB',
+        ],
+      },
+    ],
+    conclusion: 'Your 1 TB drive shows 931 GB on Windows because manufacturers define 1 TB as 10¹² bytes while Windows defines 1 TB as 2⁴⁰ bytes — a 9.95% difference. No storage is missing. macOS switched to the manufacturer\'s decimal definition in 2009, so the same drive shows 1 TB there. The IEC introduced the "tebibyte" (TiB) to resolve this, but almost nobody uses the term. The confusion persists.',
+    relatedLinks: [
+      { label: 'GB to TB Converter', path: '/data-storage/gigabyte-to-terabyte' },
+      { label: 'MB to GB Converter', path: '/data-storage/megabyte-to-gigabyte' },
+      { label: 'Data Storage Converter', path: '/data-storage' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */
