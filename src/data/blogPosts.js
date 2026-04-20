@@ -1478,6 +1478,135 @@ export const blogPosts = [
       { label: 'Area Converter', path: '/area' },
     ],
   },
+  {
+    slug: 'hours-to-minutes',
+    title: 'How to Convert Hours to Minutes (and Seconds)',
+    tag: 'How-To Guide',
+    date: '2026-04-20',
+    description: 'Learn how to convert hours to minutes and seconds with exact formulas, a quick reference table, and tips for decimal hours and time tracking.',
+    intro: 'Hours and minutes are the units we use every day to schedule, plan, and measure time — but converting between them requires careful arithmetic, especially with mixed values like 2.5 hours or 1 hour 45 minutes. This guide explains the exact relationships, covers decimal hours (used in time tracking and spreadsheets), and gives you a quick reference table for the most common values.',
+    sections: [
+      {
+        heading: 'The Basic Relationships',
+        paragraphs: [
+          '1 hour = 60 minutes (exact).',
+          '1 minute = 60 seconds.',
+          '1 hour = 3,600 seconds (60 × 60).',
+          'To convert hours to minutes: multiply by 60. For example, 3 hours × 60 = 180 minutes.',
+          'To convert minutes to hours: divide by 60. For example, 150 minutes ÷ 60 = 2.5 hours = 2 hours 30 minutes.',
+        ],
+      },
+      {
+        heading: 'Why 60 Minutes in an Hour?',
+        paragraphs: [
+          'The division of hours into 60 minutes (and minutes into 60 seconds) comes from the ancient Babylonian sexagesimal (base-60) number system. The Babylonians used base-60 because it divides evenly by 2, 3, 4, 5, 6, 10, 12, 15, 20, and 30 — far more divisors than base-10.',
+          'This system was transmitted to ancient Greece and then to medieval Europe through Arabic astronomy, and it has remained the standard for time measurement ever since. Despite metric efforts (the French Revolutionary calendar tried a 10-hour day with 100-minute hours in the 1790s), 60-based time proved too entrenched to replace.',
+        ],
+      },
+      {
+        heading: 'Decimal Hours',
+        paragraphs: [
+          'Spreadsheets, time-tracking software, and billing systems often use decimal hours rather than hours and minutes. 1.5 hours means 1 hour and 30 minutes; 0.25 hours means 15 minutes.',
+          'To convert decimal hours to hours and minutes: take the decimal part and multiply by 60. For example, 2.75 hours → 0.75 × 60 = 45 minutes → 2 hours 45 minutes.',
+          'To convert hours and minutes to decimal hours: divide the minutes by 60 and add to the hours. For example, 1 hour 20 minutes → 20 ÷ 60 = 0.333 → 1.333 hours.',
+        ],
+      },
+      {
+        heading: 'Quick Reference Table',
+        paragraphs: ['Common time conversions:'],
+        list: [
+          '15 min = 0.25 hours',
+          '30 min = 0.5 hours',
+          '45 min = 0.75 hours',
+          '90 min = 1.5 hours',
+          '120 min = 2 hours',
+          '150 min = 2.5 hours',
+          '180 min = 3 hours',
+          '240 min = 4 hours',
+        ],
+      },
+      {
+        heading: 'Time in Everyday Contexts',
+        paragraphs: [
+          'Flight times: A 2-hour 45-minute flight is 165 minutes. Connecting flight calculations add minutes directly: a 45-minute layover after a 1h 55m flight followed by a 3h 10m leg totals 355 minutes = 5 hours 55 minutes.',
+          'Cooking and baking: A recipe that cooks for 1 hour 15 minutes at 180°C requires 75 minutes of oven time.',
+          'Exercise: A 90-minute training session is 1.5 hours. At an average pace of 10 km/h, that covers 15 km.',
+          'Time billing: 2 hours 20 minutes billed at $150/hour = 2.333 hours × $150 = $350.',
+        ],
+      },
+    ],
+    conclusion: '1 hour = 60 minutes = 3,600 seconds. To convert hours to minutes, multiply by 60. For decimal hours, multiply the decimal part by 60 to get minutes. For time billing and spreadsheets, use decimal hours: 1 hour 45 minutes = 1.75 hours. Use our free time converter for any combination instantly.',
+    relatedLinks: [
+      { label: 'Hours to Minutes Converter', path: '/time/hour-to-minute' },
+      { label: 'Minutes to Hours Converter', path: '/time/minute-to-hour' },
+      { label: 'Time Converter', path: '/time' },
+    ],
+  },
+  {
+    slug: 'joules-to-calories',
+    title: 'How to Convert Joules to Calories (and Back)',
+    tag: 'How-To Guide',
+    date: '2026-04-20',
+    description: 'Learn how to convert joules to calories with exact formulas, the difference between small calories and food Calories (kcal), and practical examples for nutrition and physics.',
+    intro: 'Joules and calories are both units of energy, but they appear in very different contexts. Physics and engineering use joules (the SI unit). Nutrition labels use Calories — which are actually kilocalories. Chemistry uses small calories. Understanding the difference between a "calorie" and a "Calorie" is one of the most common sources of confusion in science and nutrition. This guide clears it up.',
+    sections: [
+      {
+        heading: 'What Is a Joule?',
+        paragraphs: [
+          'A joule (J) is the SI unit of energy, defined as the energy transferred when a force of one newton acts through a distance of one meter. It is used in physics, engineering, and chemistry for all forms of energy: mechanical, electrical, thermal, and chemical.',
+          'Reference points: a 1-watt device uses 1 joule per second; lifting a 100g apple 1 meter requires about 1 joule; a standard AA battery stores roughly 10,000 joules; an adult human needs about 8,000,000 joules (8 MJ) of food energy per day.',
+        ],
+      },
+      {
+        heading: 'Small Calorie vs Food Calorie',
+        paragraphs: [
+          'The calorie (cal) — also called the small calorie or gram calorie — is defined as the energy needed to raise 1 gram of water by 1°C. 1 calorie = 4.184 joules.',
+          'The food Calorie (Cal, with a capital C) — also written as kilocalorie (kcal) — is 1,000 small calories. 1 kcal = 4,184 joules.',
+          'This is the critical distinction: when a nutrition label says a serving contains "200 Calories," it means 200 kilocalories = 200,000 small calories = 836,800 joules.',
+          'In everyday speech, "calories" in food contexts always means kilocalories. A food calorie and a physics calorie are not the same unit.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 calorie (cal) = 4.184 joules (thermochemical calorie).',
+          '1 kilocalorie (kcal) = 4,184 joules.',
+          'To convert joules to calories: divide by 4.184. For example, 1,000 J ÷ 4.184 = 239 cal.',
+          'To convert joules to kilocalories: divide by 4,184. For example, 1,000,000 J ÷ 4,184 = 239 kcal.',
+          'To convert calories to joules: multiply by 4.184. For example, 500 cal × 4.184 = 2,092 J.',
+          'To convert food Calories (kcal) to joules: multiply by 4,184. For example, 200 kcal × 4,184 = 836,800 J.',
+        ],
+      },
+      {
+        heading: 'Nutrition Reference Points',
+        paragraphs: ['Common food energy values converted to joules:'],
+        list: [
+          '1 food Calorie (kcal) = 4,184 J',
+          '100 kcal (small snack) = 418,400 J',
+          '500 kcal (main meal) = 2,092,000 J (2.09 MJ)',
+          '2,000 kcal (daily intake) = 8,368,000 J (8.37 MJ)',
+          '1 gram of fat = 9 kcal = 37,656 J',
+          '1 gram of carbohydrate = 4 kcal = 16,736 J',
+          '1 gram of protein = 4 kcal = 16,736 J',
+        ],
+      },
+      {
+        heading: 'Other Calorie Definitions',
+        paragraphs: [
+          'The 15°C calorie (cal₁₅) = 4.18580 J — energy to raise water from 14.5°C to 15.5°C. Used in some older scientific literature.',
+          'The International Table calorie (calIT) = 4.1868 J — used by the International Steam Table Conference.',
+          'For everyday nutrition and most chemistry problems, use the thermochemical calorie (1 cal = 4.184 J). The differences between calorie definitions are less than 0.1% and only matter in precision engineering.',
+        ],
+      },
+    ],
+    conclusion: '1 calorie (small cal) = 4.184 joules. 1 food Calorie (kcal) = 4,184 joules. The critical distinction: nutrition labels use kilocalories (kcal), not small calories — so a 300-Calorie meal contains 1,255,200 joules. To convert kcal to joules, multiply by 4,184. Use our free energy converter for any combination instantly.',
+    relatedLinks: [
+      { label: 'Joules to Calories Converter', path: '/energy/joule-to-calorie' },
+      { label: 'Calories to Joules Converter', path: '/energy/calorie-to-joule' },
+      { label: 'Kilocalories to Joules Converter', path: '/energy/kilocalorie-to-joule' },
+      { label: 'Energy Converter', path: '/energy' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */
