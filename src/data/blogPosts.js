@@ -1142,6 +1142,208 @@ export const blogPosts = [
       { label: 'Cooking Converter', path: '/cooking' },
     ],
   },
+  {
+    slug: 'inches-to-cm',
+    title: 'How to Convert Inches to Centimeters (and Back)',
+    tag: 'How-To Guide',
+    date: '2026-04-20',
+    description: 'Learn how to convert inches to centimeters with the exact formula, height reference table, and tips for screen sizes and everyday measurements.',
+    intro: 'Inches and centimeters are the two most common units for measuring short distances in everyday life — height, screen sizes, rulers, clothing measurements. The United States uses inches; almost everywhere else uses centimeters. This guide gives you the exact conversion, a height reference table, and practical tips for the most common use cases.',
+    sections: [
+      {
+        heading: 'What Is an Inch?',
+        paragraphs: [
+          'An inch (in or ″) is an imperial unit of length equal to exactly 2.54 centimeters. It is the standard unit for short measurements in the United States — height, screen sizes, pipe diameters, and most hardware.',
+          'The inch has been defined in terms of the metric system since 1959, when the international yard and pound agreement fixed 1 inch = 2.54 cm exactly. Before that, slight variations existed between the US and UK definitions.',
+        ],
+      },
+      {
+        heading: 'What Is a Centimeter?',
+        paragraphs: [
+          'A centimeter (cm) is one-hundredth of a meter. It is the standard unit for short lengths in the metric system — height, clothing sizes, room dimensions, and most everyday measurements outside the United States.',
+          'One centimeter is roughly the width of a fingernail. A standard school ruler is 30 cm long, which equals about 11.8 inches.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 inch = 2.54 centimeters (exact, by international definition).',
+          'To convert inches to centimeters: multiply by 2.54. For example, 6 inches × 2.54 = 15.24 cm.',
+          'To convert centimeters to inches: divide by 2.54 (or multiply by 0.393701). For example, 30 cm ÷ 2.54 = 11.81 inches.',
+          'Mental shortcut: multiply inches by 2.5 for a quick estimate. The result is about 1.6% low — close enough for casual use.',
+        ],
+      },
+      {
+        heading: 'Height Conversion Reference',
+        paragraphs: ['Common heights in feet/inches and centimeters:'],
+        list: [
+          '5\'0″ (60 in) = 152.4 cm',
+          '5\'4″ (64 in) = 162.6 cm',
+          '5\'6″ (66 in) = 167.6 cm',
+          '5\'8″ (68 in) = 172.7 cm',
+          '5\'10″ (70 in) = 177.8 cm',
+          '6\'0″ (72 in) = 182.9 cm',
+          '6\'2″ (74 in) = 187.9 cm',
+          '6\'4″ (76 in) = 193.0 cm',
+        ],
+      },
+      {
+        heading: 'Screen Size and Tech Measurements',
+        paragraphs: [
+          'Screen sizes are always measured in inches diagonally — even in countries that otherwise use centimeters. A 27-inch monitor measures 68.6 cm diagonally. A 65-inch TV is 165.1 cm.',
+          'Other tech measurements in inches: hard drive disk diameter (3.5″ or 2.5″), camera sensor sizes, paper sizes (US Letter is 8.5 × 11 inches = 21.6 × 27.9 cm).',
+          'Clothing: US measurements for waist, chest, and inseam are in inches. EU clothing uses centimeters. A 32-inch waist is 81.3 cm.',
+        ],
+      },
+      {
+        heading: 'Converting Feet and Inches to Centimeters',
+        paragraphs: [
+          'To convert a height given in feet and inches (e.g., 5\'9″) to centimeters:',
+          '1. Convert feet to inches: 5 × 12 = 60 inches.',
+          '2. Add the remaining inches: 60 + 9 = 69 inches total.',
+          '3. Multiply by 2.54: 69 × 2.54 = 175.3 cm.',
+        ],
+      },
+    ],
+    conclusion: '1 inch = 2.54 cm exactly. To convert, multiply inches by 2.54 — or divide centimeters by 2.54 for the reverse. For screen sizes, always use the exact value. For quick mental math, multiplying by 2.5 gives a result within 1.6%. Use our free length converter for any value instantly.',
+    relatedLinks: [
+      { label: 'Inches to Centimeters Converter', path: '/length/inch-to-centimeter' },
+      { label: 'Centimeters to Inches Converter', path: '/length/centimeter-to-inch' },
+      { label: 'Length Converter', path: '/length' },
+    ],
+  },
+  {
+    slug: 'oz-to-grams',
+    title: 'How to Convert Ounces to Grams (and Back)',
+    tag: 'How-To Guide',
+    date: '2026-04-20',
+    description: 'Convert ounces to grams with the exact formula, common food weight reference table, and the difference between avoirdupois and troy ounces.',
+    intro: 'Ounces and grams are both units for measuring small weights, but they come from different measurement traditions. US food labels, recipes, and postal scales use ounces. The rest of the world uses grams. This guide explains the exact conversion, clarifies the avoirdupois vs troy ounce distinction, and gives you a practical food weight reference.',
+    sections: [
+      {
+        heading: 'Which Ounce Are We Talking About?',
+        paragraphs: [
+          'There are two ounces in common use, and they are not equal.',
+          'The avoirdupois ounce (oz) is the everyday ounce used for food, body weight, and general measurement. 1 avoirdupois ounce = 28.3495 grams. This is the ounce on your kitchen scale and US food labels.',
+          'The troy ounce (oz t) is used exclusively for precious metals — gold, silver, platinum. 1 troy ounce = 31.1035 grams, about 10% heavier than the avoirdupois ounce. When a jeweler or commodity market quotes a price per ounce, they always mean troy ounces.',
+          'Unless you are dealing with precious metals, you are working with avoirdupois ounces.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 avoirdupois ounce = 28.3495 grams.',
+          'To convert ounces to grams: multiply by 28.3495. For example, 4 oz × 28.3495 = 113.4 g.',
+          'To convert grams to ounces: divide by 28.3495 (or multiply by 0.035274). For example, 250 g ÷ 28.3495 = 8.82 oz.',
+          'Mental shortcut: multiply ounces by 28 for a quick estimate. The result is about 1.2% low — fine for casual use.',
+        ],
+      },
+      {
+        heading: 'Common Food Weight Conversions',
+        paragraphs: ['Everyday reference values:'],
+        list: [
+          '1 oz = 28.35 g (one slice of bread)',
+          '2 oz = 56.7 g (small chicken breast portion)',
+          '4 oz = 113.4 g (quarter pound)',
+          '8 oz = 226.8 g (half pound)',
+          '16 oz = 453.6 g (1 pound)',
+          '100 g = 3.53 oz',
+          '200 g = 7.05 oz',
+          '500 g = 17.64 oz (about 1.1 lb)',
+        ],
+      },
+      {
+        heading: 'US Food Labels and Serving Sizes',
+        paragraphs: [
+          'US food labels show weight in both ounces and grams. A can of tuna labeled "5 oz (142g)" uses the avoirdupois ounce. The grams figure is the authoritative measurement — the oz value is rounded.',
+          'Cereal boxes, snack bags, and deli counters in the US use ounces. European products use grams. When adapting a recipe from one system to the other, use the exact conversion factor for baking — rounding to 28 g per oz can introduce measurable error over large quantities.',
+        ],
+      },
+      {
+        heading: 'Cooking and Baking Reference',
+        paragraphs: [
+          'Key ingredient conversions (1 oz = 28.35 g):',
+        ],
+        list: [
+          '1 oz all-purpose flour ≈ 28 g',
+          '1 oz granulated sugar ≈ 28 g',
+          '1 oz butter ≈ 28 g',
+          '1 oz cream cheese ≈ 28 g',
+          '1 oz chocolate ≈ 28 g',
+          '1 oz shredded cheese ≈ 28 g',
+        ],
+      },
+    ],
+    conclusion: '1 avoirdupois ounce = 28.3495 grams. For precious metals, 1 troy ounce = 31.1035 grams. For everyday cooking and food weights, multiply ounces by 28.35 or divide grams by 28.35. Use our free weight converter for precise results in both directions.',
+    relatedLinks: [
+      { label: 'Ounces to Grams Converter', path: '/weight/ounce-to-gram' },
+      { label: 'Grams to Ounces Converter', path: '/weight/gram-to-ounce' },
+      { label: 'Weight Converter', path: '/weight' },
+    ],
+  },
+  {
+    slug: 'feet-to-inches',
+    title: 'How to Convert Feet to Inches (and Back)',
+    tag: 'How-To Guide',
+    date: '2026-04-20',
+    description: 'Learn how to convert feet to inches with the exact formula, height reference table, and tips for expressing measurements in the US imperial system.',
+    intro: 'Feet and inches are the two primary units for measuring height and short distances in the United States. While the relationship is simple — there are exactly 12 inches in a foot — converting between them becomes less obvious when dealing with mixed measurements like 5 feet 9 inches or decimal feet like 5.75 ft. This guide covers all the cases.',
+    sections: [
+      {
+        heading: 'The Basic Relationship',
+        paragraphs: [
+          '1 foot = 12 inches (exact, by definition). 1 inch = 1/12 foot = 0.08333... feet.',
+          'To convert feet to inches: multiply by 12. For example, 6 ft × 12 = 72 inches.',
+          'To convert inches to feet: divide by 12. For example, 66 inches ÷ 12 = 5.5 feet = 5 feet 6 inches.',
+        ],
+      },
+      {
+        heading: 'Why 12 Inches in a Foot?',
+        paragraphs: [
+          'The foot was historically based on the length of a human foot — a convenient body-based measurement used across ancient civilizations. The division into 12 inches comes from the Roman uncia (one-twelfth).',
+          '12 is a practical divisor: it divides evenly into halves (6), thirds (4), quarters (3), sixths (2), and twelfths (1) — useful for carpentry and trade before decimal arithmetic was common.',
+          'The barleycorn system further divided the inch into thirds (3 barleycorns = 1 inch), making 36 barleycorns in a foot. This system persists in US shoe sizing, where one shoe size equals one barleycorn (1/3 inch).',
+        ],
+      },
+      {
+        heading: 'Converting Mixed Feet and Inches',
+        paragraphs: [
+          'To convert a height like 5 feet 9 inches to total inches: (5 × 12) + 9 = 60 + 9 = 69 inches.',
+          'To convert total inches back to feet and inches: 69 ÷ 12 = 5 remainder 9 → 5 feet 9 inches.',
+          'To convert decimal feet to feet and inches: 5.75 ft → 0.75 × 12 = 9 inches → 5 feet 9 inches.',
+          'To convert feet and inches to decimal feet: 5 ft 9 in → 9 ÷ 12 = 0.75 → 5.75 ft.',
+        ],
+      },
+      {
+        heading: 'Height Reference Table',
+        paragraphs: ['Common heights in feet/inches and total inches:'],
+        list: [
+          '5\'0″ = 60 inches',
+          '5\'3″ = 63 inches',
+          '5\'6″ = 66 inches',
+          '5\'9″ = 69 inches',
+          '6\'0″ = 72 inches',
+          '6\'3″ = 75 inches',
+          '6\'6″ = 78 inches',
+        ],
+      },
+      {
+        heading: 'Construction and Measurement Contexts',
+        paragraphs: [
+          'In US construction, measurements are typically given in feet and inches (e.g., a ceiling that is 8 ft 0 in high, a doorway that is 6 ft 8 in tall). Blueprints and building codes use feet and inches rather than decimal feet.',
+          'Lumber is sold in nominal lengths in feet (8 ft, 10 ft, 12 ft) but actual dimensions use inches (a "2×4" board is actually 1.5 inches × 3.5 inches).',
+          'Aviation: runway lengths and altitudes use feet. A typical cruising altitude of 35,000 ft = 420,000 inches. Obstacle clearance heights are given in feet.',
+        ],
+      },
+    ],
+    conclusion: '1 foot = 12 inches exactly. To convert feet to inches, multiply by 12. For mixed measurements (e.g., 5\'9″), convert feet to inches first then add the remaining inches: (5 × 12) + 9 = 69 inches. Use our free length converter for instant results.',
+    relatedLinks: [
+      { label: 'Feet to Inches Converter', path: '/length/foot-to-inch' },
+      { label: 'Inches to Feet Converter', path: '/length/inch-to-foot' },
+      { label: 'Inches to Centimeters Converter', path: '/length/inch-to-centimeter' },
+      { label: 'Length Converter', path: '/length' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */
