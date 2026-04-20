@@ -49,6 +49,15 @@ sections.push([
   url(`${BASE}/blog/nm-to-ft-lb`,           '0.7', 'monthly'),
   url(`${BASE}/blog/shoe-size-guide`,        '0.7', 'monthly'),
   url(`${BASE}/blog/cooking-measurements`,   '0.7', 'monthly'),
+  url(`${BASE}/blog/inches-to-cm`,           '0.7', 'monthly'),
+  url(`${BASE}/blog/oz-to-grams`,            '0.7', 'monthly'),
+  url(`${BASE}/blog/feet-to-inches`,         '0.7', 'monthly'),
+  url(`${BASE}/blog/liters-to-ml`,           '0.7', 'monthly'),
+  url(`${BASE}/blog/acres-to-sq-meters`,     '0.7', 'monthly'),
+  url(`${BASE}/blog/hours-to-minutes`,       '0.7', 'monthly'),
+  url(`${BASE}/blog/joules-to-calories`,     '0.7', 'monthly'),
+  url(`${BASE}/blog/vasa-warship`,           '0.7', 'monthly'),
+  url(`${BASE}/blog/hard-drive-space`,       '0.7', 'monthly'),
 ].join('\n'));
 
 // ── Length ───────────────────────────────────────────────────────────────────
