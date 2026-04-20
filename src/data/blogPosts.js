@@ -1422,7 +1422,7 @@ export const blogPosts = [
     title: 'How to Convert Acres to Square Meters (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-20',
-    description: 'Learn how to convert acres to square meters with the exact formula, a comparison to football fields and hectares, and practical examples for real estate and land measurement.',
+    description: 'Convert acres to square meters with the exact formula, a football-field comparison, and practical examples for real estate and land measurement.',
     intro: 'Acres and square meters measure land area, but they come from completely different measurement traditions. The United States uses acres for real estate and agriculture; most of the world uses square meters and hectares. This guide explains the exact conversion, gives you visual reference points for scale, and covers the relationship between acres, hectares, and square meters.',
     sections: [
       {
@@ -1547,7 +1547,7 @@ export const blogPosts = [
     title: 'How to Convert Joules to Calories (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-20',
-    description: 'Learn how to convert joules to calories with exact formulas, the difference between small calories and food Calories (kcal), and practical examples for nutrition and physics.',
+    description: 'Convert joules to calories with exact formulas, plus the difference between small calories and food Calories (kcal), with nutrition examples.',
     intro: 'Joules and calories are both units of energy, but they appear in very different contexts. Physics and engineering use joules (the SI unit). Nutrition labels use Calories — which are actually kilocalories. Chemistry uses small calories. Understanding the difference between a "calorie" and a "Calorie" is one of the most common sources of confusion in science and nutrition. This guide clears it up.',
     sections: [
       {
@@ -1612,7 +1612,7 @@ export const blogPosts = [
     title: 'The Warship That Sank Because Two Teams Used Different Rulers',
     tag: 'Conversion Fail',
     date: '2026-04-20',
-    description: 'In 1628, the Swedish warship Vasa sank on its maiden voyage. Archaeologists later found the cause: two construction crews used rulers of different lengths, building the ship asymmetrically.',
+    description: 'The Swedish warship Vasa sank in 1628. Archaeologists later found a contributing cause: two crews built it using rulers of different lengths.',
     intro: 'On August 10, 1628, the Swedish warship Vasa — one of the most powerful warships in the world at the time — sailed out of Stockholm harbor on its maiden voyage. It traveled about 1,300 meters before water began pouring in through the gun ports. Within 20 minutes, the Vasa had sunk in full view of the watching crowd. More than 30 people died. The investigation that followed revealed a contributing cause that would not be confirmed until archaeologists examined the ship 333 years later: two construction teams had been building the ship using rulers of different lengths.',
     sections: [
       {
@@ -1666,7 +1666,7 @@ export const blogPosts = [
     title: 'Why Your 1 TB Hard Drive Only Shows 931 GB',
     tag: 'Conversion Fail',
     date: '2026-04-20',
-    description: 'You bought a 1 TB hard drive but your computer shows 931 GB. No storage was removed. The discrepancy is a unit conversion difference between how manufacturers and operating systems count bytes.',
+    description: 'Your 1 TB hard drive shows 931 GB because manufacturers and operating systems define "terabyte" differently. No storage is missing.',
     intro: 'You buy a "1 TB" external hard drive, plug it in, and your computer reports 931 GB. You have not been cheated. No one removed 69 GB of storage. What happened is a unit conversion disagreement — one that has persisted for decades because manufacturers and operating systems define "terabyte" differently. This is one of the most common and misunderstood unit conversion issues in everyday technology.',
     sections: [
       {
