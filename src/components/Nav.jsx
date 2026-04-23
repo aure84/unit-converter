@@ -1,6 +1,19 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { NavLink, Link } from 'react-router'
 import './Nav.css'
+
+function useTheme() {
+  const [theme, setTheme] = useState(
+    () => document.documentElement.getAttribute('data-theme') || 'dark'
+  )
+  const toggle = () => {
+    const next = theme === 'dark' ? 'light' : 'dark'
+    document.documentElement.setAttribute('data-theme', next)
+    localStorage.setItem('cf-theme', next)
+    setTheme(next)
+  }
+  return [theme, toggle]
+}
 
 const CATEGORIES = [
   { path: '/length',        label: 'Length' },
@@ -34,8 +47,8 @@ const LEGAL_LINKS = [
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
+  const [theme, toggleTheme] = useTheme()
 
-  // Close menu on navigation
   const close = () => setIsOpen(false)
 
   return (
@@ -89,6 +102,14 @@ function Nav() {
           </li>
         ))}
       </ul>
+
+      <button
+        className="nav__theme-toggle"
+        aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+        onClick={toggleTheme}
+      >
+        {theme === 'dark' ? '☀' : '☾'}
+      </button>
 
       <button
         className="nav__hamburger"

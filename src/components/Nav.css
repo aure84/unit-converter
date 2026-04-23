@@ -74,6 +74,31 @@
   border-color: var(--currency-border);
 }
 
+/* ── Theme toggle ─────────────────────────────────────────────────────────── */
+
+.nav__theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1;
+  transition: background 0.15s, border-color 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav__theme-toggle:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+}
+
 /* ── Hamburger button (hidden on desktop) ─────────────────────────────────── */
 
 .nav__hamburger {
