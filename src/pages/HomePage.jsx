@@ -1,7 +1,18 @@
 import { Link } from 'react-router'
 import SEOMeta from '../components/SEOMeta.jsx'
+import { blogPosts } from '../data/blogPosts.js'
 import './HomePage.css'
 import './BlogPage.css'
+
+const TAG_CLASS = {
+  'How-To Guide':    'blog-tag--how-to',
+  'Quick Reference': 'blog-tag--quick-ref',
+  'Conversion Fail': 'blog-tag--fail',
+}
+
+const FEATURED_POSTS = [...blogPosts]
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 3)
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -206,29 +217,6 @@ const CATEGORIES = [
   },
 ]
 
-const FEATURED_POSTS = [
-  {
-    slug: 'mars-climate-orbiter',
-    tag: 'Conversion Fail',
-    tagClass: 'blog-tag--fail',
-    title: 'The $327 Million Unit Error: Mars Climate Orbiter',
-    desc: 'How a single imperial/metric mix-up destroyed NASA\'s Mars orbiter.',
-  },
-  {
-    slug: 'celsius-to-fahrenheit',
-    tag: 'How-To Guide',
-    tagClass: 'blog-tag--how-to',
-    title: 'Celsius to Fahrenheit: The Complete Guide',
-    desc: 'The formula, quick mental shortcuts, and the most common reference points.',
-  },
-  {
-    slug: 'shoe-size-guide',
-    tag: 'Quick Reference',
-    tagClass: 'blog-tag--quick-ref',
-    title: 'Shoe Size Conversion Guide',
-    desc: 'EU, US Men\'s, US Women\'s, UK, and foot length — all in one place.',
-  },
-]
 
 function HomePage() {
   return (
@@ -261,9 +249,9 @@ function HomePage() {
         <div className="home__blog-strip-grid">
           {FEATURED_POSTS.map((post) => (
             <Link key={post.slug} to={`/blog/${post.slug}`} className="home__blog-card">
-              <span className={`blog-tag ${post.tagClass}`}>{post.tag}</span>
+              <span className={`blog-tag ${TAG_CLASS[post.tag] ?? ''}`}>{post.tag}</span>
               <p className="home__blog-card-title">{post.title}</p>
-              <p className="home__blog-card-desc">{post.desc}</p>
+              <p className="home__blog-card-desc">{post.description}</p>
               <span className="home__blog-card-read">Read →</span>
             </Link>
           ))}
