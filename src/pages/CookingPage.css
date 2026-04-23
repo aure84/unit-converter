@@ -62,21 +62,19 @@
 
 /* ── Dark mode ───────────────────────────────────────────────────────────── */
 
-@media (prefers-color-scheme: dark) {
-  .cooking-page__ingredient-card {
-    border-color: #2e303a;
-  }
+[data-theme="dark"] .cooking-page__ingredient-card {
+  border-color: #2e303a;
+}
 
-  .cooking-page__ingredient-card:hover {
-    border-color: #818cf8;
-    background: rgba(129, 140, 248, 0.06);
-  }
+[data-theme="dark"] .cooking-page__ingredient-card:hover {
+  border-color: #818cf8;
+  background: rgba(129, 140, 248, 0.06);
+}
 
-  .cooking-page__ingredient-label {
-    color: #f3f4f6;
-  }
+[data-theme="dark"] .cooking-page__ingredient-label {
+  color: #f3f4f6;
+}
 
-  .cooking-page__ingredients-note {
-    color: #6b7280;
-  }
+[data-theme="dark"] .cooking-page__ingredients-note {
+  color: #6b7280;
 }

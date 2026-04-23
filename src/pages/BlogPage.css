@@ -39,10 +39,8 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-@media (prefers-color-scheme: dark) {
-  .blog-index__item:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
-  }
+[data-theme="dark"] .blog-index__item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
 .blog-index__link {
@@ -105,11 +103,9 @@
   color: #991b1b;
 }
 
-@media (prefers-color-scheme: dark) {
-  .blog-tag--how-to  { background: #1e1b4b; color: #a5b4fc; }
-  .blog-tag--quick-ref { background: #052e16; color: #86efac; }
-  .blog-tag--fail    { background: #450a0a; color: #fca5a5; }
-}
+[data-theme="dark"] .blog-tag--how-to  { background: #1e1b4b; color: #a5b4fc; }
+[data-theme="dark"] .blog-tag--quick-ref { background: #052e16; color: #86efac; }
+[data-theme="dark"] .blog-tag--fail    { background: #450a0a; color: #fca5a5; }
 
 /* ── Blog Post ───────────────────────────────────────────────────────────── */
 

@@ -49,10 +49,8 @@
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  .currency-converter__error {
-    color: #fcd34d;
-    background: rgba(251, 191, 36, 0.08);
-    border-color: rgba(251, 191, 36, 0.25);
-  }
+[data-theme="dark"] .currency-converter__error {
+  color: #fcd34d;
+  background: rgba(251, 191, 36, 0.08);
+  border-color: rgba(251, 191, 36, 0.25);
 }

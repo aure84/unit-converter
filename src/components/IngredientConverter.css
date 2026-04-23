@@ -115,18 +115,16 @@
 
 /* ── Dark mode ───────────────────────────────────────────────────────── */
 
-@media (prefers-color-scheme: dark) {
-  .ingredient-converter__input {
-    background: #1f2028;
-    border-color: #2e303a;
-    color: #f3f4f6;
-  }
+[data-theme="dark"] .ingredient-converter__input {
+  background: #1f2028;
+  border-color: #2e303a;
+  color: #f3f4f6;
+}
 
-  .ingredient-converter__label {
-    color: #9ca3af;
-  }
+[data-theme="dark"] .ingredient-converter__label {
+  color: #9ca3af;
+}
 
-  .ingredient-converter__hint {
-    color: #6b7280;
-  }
+[data-theme="dark"] .ingredient-converter__hint {
+  color: #6b7280;
 }

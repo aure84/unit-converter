@@ -87,8 +87,6 @@
 
 /* ── Dark mode ───────────────────────────────────────────────────────────── */
 
-@media (prefers-color-scheme: dark) {
-  .ref-table-wrap {
-    border-color: var(--border);
-  }
+[data-theme="dark"] .ref-table-wrap {
+  border-color: var(--border);
 }
