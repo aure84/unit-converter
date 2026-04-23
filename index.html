@@ -13,11 +13,29 @@
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
     <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGFSH2W20K"></script>
+    <!-- Google Consent Mode v2 — must be first, before any gtag calls -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+      if (localStorage.getItem('cookieConsent') === 'granted') {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          analytics_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted'
+        });
+      }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGFSH2W20K"></script>
+    <script>
       gtag('js', new Date());
       gtag('config', 'G-NGFSH2W20K');
     </script>
