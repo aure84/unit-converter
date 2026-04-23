@@ -1797,6 +1797,93 @@ export const blogPosts = [
       { label: 'Weight Converter', path: '/weight' },
     ],
   },
+
+  {
+    slug: 'metric-to-imperial',
+    title: 'Metric to Imperial: The Complete Conversion Guide',
+    tag: 'How-To Guide',
+    date: '2026-04-24',
+    description: 'Convert between metric and imperial units for length, weight, volume, and temperature. Exact formulas, quick mental shortcuts, and reference tables for the most common conversions.',
+    intro: 'Most of the world uses metric. The United States uses imperial — and the UK uses a mix of both. If you travel, cook from foreign recipes, follow international sports results, or read product specs from another country, you will constantly run into conversions. This guide covers every major metric-to-imperial conversion in one place: the exact formulas, the quick mental shortcuts, and the reference values you will actually use.',
+    sections: [
+      {
+        heading: 'Length: Meters, Kilometers, Centimeters',
+        paragraphs: [
+          'The meter is the base unit of length in the metric system. 1 meter = 3.28084 feet = 39.3701 inches. 1 kilometer = 0.621371 miles. 1 centimeter = 0.393701 inches.',
+          'To convert meters to feet, multiply by 3.281. To convert kilometers to miles, multiply by 0.621 (or take 62% of the value). To convert centimeters to inches, divide by 2.54.',
+          'Going the other way: 1 foot = 0.3048 meters. 1 mile = 1.60934 kilometers. 1 inch = 2.54 centimeters exactly.',
+        ],
+        list: [
+          '5 km = 3.1 miles (a 5K race)',
+          '100 km/h = 62.1 mph',
+          '1.80 m = 5 ft 11 in',
+          '30 cm = 11.8 inches',
+          '10 cm = 3.94 inches',
+        ],
+      },
+      {
+        heading: 'Weight: Kilograms and Grams',
+        paragraphs: [
+          '1 kilogram = 2.20462 pounds. 1 gram = 0.035274 ounces. To convert kg to lbs, multiply by 2.205. For a quick estimate, double the kg value and add 10% — this gives a result within 0.5%.',
+          'To convert grams to ounces, divide by 28.35. To convert pounds to kilograms, divide by 2.205 (or multiply by 0.4536).',
+        ],
+        list: [
+          '70 kg = 154.3 lbs',
+          '100 g = 3.53 oz',
+          '1 lb = 453.6 g',
+          '500 g = 1.1 lbs',
+          '1 stone (UK) = 6.35 kg = 14 lbs',
+        ],
+      },
+      {
+        heading: 'Volume: Liters and Milliliters',
+        paragraphs: [
+          '1 liter = 0.264172 US gallons = 1.05669 US quarts = 33.814 US fluid ounces. 1 milliliter = 0.033814 US fluid ounces — so 1 fluid ounce = 29.5735 ml.',
+          'US and UK (imperial) gallons differ: 1 US gallon = 3.785 liters, 1 UK gallon = 4.546 liters. Always check which gallon a recipe or fuel economy figure uses.',
+          'For cooking: 1 US cup = 236.6 ml. 1 tablespoon = 14.79 ml. 1 teaspoon = 4.93 ml.',
+        ],
+        list: [
+          '1 liter = 0.264 US gallons',
+          '1 US gallon = 3.785 liters',
+          '500 ml = 16.9 fl oz (standard water bottle)',
+          '1 cup (US) = 240 ml',
+          '1 fl oz = 29.6 ml',
+        ],
+      },
+      {
+        heading: 'Temperature: Celsius and Fahrenheit',
+        paragraphs: [
+          'To convert Celsius to Fahrenheit: multiply by 9/5, then add 32. Quick shortcut: double the Celsius value and add 30 for an estimate accurate to about 5°F.',
+          'To convert Fahrenheit to Celsius: subtract 32, then multiply by 5/9.',
+          'Key reference points: 0°C = 32°F (water freezes), 100°C = 212°F (water boils), 37°C = 98.6°F (body temperature), 20°C = 68°F (comfortable room).',
+        ],
+        list: [
+          '−40°C = −40°F (the only point where they are equal)',
+          '0°C = 32°F',
+          '20°C = 68°F',
+          '37°C = 98.6°F',
+          '100°C = 212°F',
+        ],
+      },
+      {
+        heading: 'Quick Mental Shortcuts',
+        paragraphs: [
+          'km to miles: multiply by 0.6 — 3.5% low but good enough for road signs.',
+          'kg to lbs: double and add 10% — e.g., 80 kg → 160 + 16 = 176 lbs (exact: 176.4).',
+          'Celsius to Fahrenheit: double and add 30 — e.g., 25°C → 50 + 30 = 80°F (exact: 77°F).',
+          'Liters to US gallons: divide by 4 — e.g., 40 L ÷ 4 = 10 gal (exact: 10.57).',
+          'cm to inches: divide by 2.5 — e.g., 30 cm ÷ 2.5 = 12 in (exact: 11.81).',
+        ],
+      },
+    ],
+    conclusion: 'The five conversions you will use most: km × 0.621 = miles, kg × 2.205 = lbs, °C × 9/5 + 32 = °F, liters × 0.264 = US gallons, cm ÷ 2.54 = inches. For exact results on any value, use the free converters below.',
+    relatedLinks: [
+      { label: 'Length Converter', path: '/length' },
+      { label: 'Weight Converter', path: '/weight' },
+      { label: 'Volume Converter', path: '/volume' },
+      { label: 'Temperature Converter', path: '/temperature' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */

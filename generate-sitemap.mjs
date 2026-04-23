@@ -58,6 +58,8 @@ sections.push([
   url(`${BASE}/blog/joules-to-calories`,     '0.7', 'monthly'),
   url(`${BASE}/blog/vasa-warship`,           '0.7', 'monthly'),
   url(`${BASE}/blog/hard-drive-space`,       '0.7', 'monthly'),
+  url(`${BASE}/blog/stone-to-kg`,            '0.7', 'monthly'),
+  url(`${BASE}/blog/metric-to-imperial`,     '0.7', 'monthly'),
 ].join('\n'));
 
 // ── Length ───────────────────────────────────────────────────────────────────
