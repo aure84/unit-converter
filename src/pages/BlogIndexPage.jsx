@@ -29,7 +29,7 @@ function BlogIndexPage() {
         Conversion guides, quick references, and the stories of when unit errors changed history.
       </p>
       <ul className="blog-index__list">
-        {blogPosts.map((post) => (
+        {[...blogPosts].sort((a, b) => b.date.localeCompare(a.date)).map((post) => (
           <li key={post.slug} className="blog-index__item">
             <Link to={`/blog/${post.slug}`} className="blog-index__link">
               <BlogTag tag={post.tag} />
