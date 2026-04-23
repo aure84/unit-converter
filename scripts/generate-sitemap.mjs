@@ -1,10 +1,8 @@
 /**
  * generate-sitemap.mjs
  *
- * Reads the units registry and writes public/sitemap.xml containing:
- *   - Homepage (priority 1.0)
- *   - All 8 category pages (priority 0.8)
- *   - Every from→to pair within each category, excluding same-unit pairs (priority 0.6)
+ * Imports units from src/data/units.js and blog posts from src/data/blogPosts.js,
+ * then writes public/sitemap.xml.
  *
  * Run with: node scripts/generate-sitemap.mjs
  */
@@ -15,32 +13,24 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
+const { units } = await import(resolve(__dirname, '../src/data/units.js'))
 const { blogPosts } = await import(resolve(__dirname, '../src/data/blogPosts.js'))
 
-const units = {
-  length: ['meter', 'kilometer', 'centimeter', 'mile', 'yard', 'foot', 'inch'],
-  weight: ['kilogram', 'gram', 'pound', 'ounce', 'ton', 'stone'],
-  temperature: ['celsius', 'fahrenheit', 'kelvin'],
-  volume: ['liter', 'milliliter', 'gallon', 'cup', 'fluid_ounce'],
-  area: ['square_meter', 'square_kilometer', 'square_mile', 'acre', 'hectare'],
-  speed: ['meter_per_second', 'kilometer_per_hour', 'mile_per_hour', 'knot'],
-  time: ['second', 'minute', 'hour', 'day', 'week', 'month', 'year'],
-  data_storage: ['byte', 'kilobyte', 'megabyte', 'gigabyte', 'terabyte'],
-  pressure: ['pascal', 'bar', 'psi', 'atmosphere', 'torr'],
-  energy: ['joule', 'kilojoule', 'calorie', 'kilocalorie', 'watt_hour', 'kilowatt_hour', 'btu'],
-  fuel_economy: ['mpg', 'l_per_100km', 'km_per_liter'],
-  power: ['watt', 'kilowatt', 'megawatt', 'horsepower', 'ps', 'btu_per_hour'],
-  torque: ['newton_meter', 'foot_pound', 'inch_pound', 'kgf_meter', 'kgf_cm', 'newton_cm'],
-}
+// Ingredient pages in the cooking category (special routes, not unit pairs)
+const COOKING_INGREDIENT_SLUGS = [
+  'flour-grams-to-cups',
+  'sugar-grams-to-cups',
+  'butter-grams-to-cups',
+  'brown-sugar-grams-to-cups',
+  'almond-flour-grams-to-cups',
+  'cocoa-powder-grams-to-cups',
+  'powdered-sugar-grams-to-cups',
+  'honey-grams-to-cups',
+]
 
-/** Convert a registry key to its URL segment (data_storage → data-storage). */
+/** Convert a registry key to its URL segment (shoe_size → shoe-size). */
 function toUrlSegment(key) {
   return key.replace(/_/g, '-')
-}
-
-/** Convert a unit id to a URL-safe slug segment (underscores → hyphens). */
-function toSlug(id) {
-  return id.replace(/_/g, '-')
 }
 
 const SITE_URL = 'https://convert-fast.com'
@@ -51,22 +41,31 @@ const urls = []
 // Homepage
 urls.push({ loc: `${SITE_URL}/`, priority: '1.0' })
 
-// Category pages + pair pages
-for (const [category, unitIds] of Object.entries(units)) {
+// Category pages + pair pages (all categories from units.js)
+for (const [category, data] of Object.entries(units)) {
   const segment = toUrlSegment(category)
+  const unitIds = data.units.map((u) => u.id)
 
-  // Category page
   urls.push({ loc: `${SITE_URL}/${segment}`, priority: '0.8' })
+
+  // Ingredient pages for cooking (before unit pairs)
+  if (category === 'cooking') {
+    for (const slug of COOKING_INGREDIENT_SLUGS) {
+      urls.push({ loc: `${SITE_URL}/cooking/${slug}`, priority: '0.7' })
+    }
+  }
 
   // All ordered pairs (from ≠ to)
   for (const from of unitIds) {
     for (const to of unitIds) {
       if (from === to) continue
-      const pair = `${toSlug(from)}-to-${toSlug(to)}`
-      urls.push({ loc: `${SITE_URL}/${segment}/${pair}`, priority: '0.6' })
+      urls.push({ loc: `${SITE_URL}/${segment}/${from}-to-${to}`, priority: '0.6' })
     }
   }
 }
+
+// Currency page (standalone, not in units registry)
+urls.push({ loc: `${SITE_URL}/currency`, priority: '0.8' })
 
 // Blog index + individual posts
 urls.push({ loc: `${SITE_URL}/blog`, priority: '0.8' })
