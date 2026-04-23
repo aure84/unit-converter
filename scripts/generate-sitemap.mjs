@@ -13,17 +13,24 @@ import { writeFileSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-// Inline the units data to avoid JSX/import issues in a plain Node script.
-// This mirrors src/data/units.js exactly (ids only — labels not needed here).
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const { blogPosts } = await import(resolve(__dirname, '../src/data/blogPosts.js'))
+
 const units = {
   length: ['meter', 'kilometer', 'centimeter', 'mile', 'yard', 'foot', 'inch'],
-  weight: ['kilogram', 'gram', 'pound', 'ounce', 'ton'],
+  weight: ['kilogram', 'gram', 'pound', 'ounce', 'ton', 'stone'],
   temperature: ['celsius', 'fahrenheit', 'kelvin'],
   volume: ['liter', 'milliliter', 'gallon', 'cup', 'fluid_ounce'],
   area: ['square_meter', 'square_kilometer', 'square_mile', 'acre', 'hectare'],
   speed: ['meter_per_second', 'kilometer_per_hour', 'mile_per_hour', 'knot'],
   time: ['second', 'minute', 'hour', 'day', 'week', 'month', 'year'],
   data_storage: ['byte', 'kilobyte', 'megabyte', 'gigabyte', 'terabyte'],
+  pressure: ['pascal', 'bar', 'psi', 'atmosphere', 'torr'],
+  energy: ['joule', 'kilojoule', 'calorie', 'kilocalorie', 'watt_hour', 'kilowatt_hour', 'btu'],
+  fuel_economy: ['mpg', 'l_per_100km', 'km_per_liter'],
+  power: ['watt', 'kilowatt', 'megawatt', 'horsepower', 'ps', 'btu_per_hour'],
+  torque: ['newton_meter', 'foot_pound', 'inch_pound', 'kgf_meter', 'kgf_cm', 'newton_cm'],
 }
 
 /** Convert a registry key to its URL segment (data_storage → data-storage). */
@@ -37,7 +44,7 @@ function toSlug(id) {
 }
 
 const SITE_URL = 'https://convert-fast.com'
-const LASTMOD = '2026-04-14'
+const LASTMOD = new Date().toISOString().slice(0, 10)
 
 const urls = []
 
@@ -61,6 +68,12 @@ for (const [category, unitIds] of Object.entries(units)) {
   }
 }
 
+// Blog index + individual posts
+urls.push({ loc: `${SITE_URL}/blog`, priority: '0.8' })
+for (const post of blogPosts) {
+  urls.push({ loc: `${SITE_URL}/blog/${post.slug}`, priority: '0.7' })
+}
+
 // Build XML
 const urlEntries = urls
   .map(
@@ -75,7 +88,6 @@ ${urlEntries}
 </urlset>
 `
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
 const outPath = resolve(__dirname, '../public/sitemap.xml')
 writeFileSync(outPath, xml, 'utf8')
 

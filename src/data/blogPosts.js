@@ -1722,6 +1722,80 @@ export const blogPosts = [
       { label: 'Data Storage Converter', path: '/data-storage' },
     ],
   },
+
+  {
+    slug: 'stone-to-kg',
+    title: 'How to Convert Stone to Kilograms (and Back)',
+    tag: 'How-To Guide',
+    date: '2026-04-23',
+    description: 'Learn how to convert stone to kilograms with the exact formula, a body weight reference table, and tips used by UK doctors and the NHS.',
+    intro: 'Stone is a unit of body weight used almost exclusively in the United Kingdom and Ireland. If you have ever visited a UK doctor, stepped on a British bathroom scale, or read a health article from a British source, you have seen weight expressed in stone — often written as "11 st 4 lbs" or simply "12 stone." This guide explains what a stone is, how to convert it to kilograms and back, and why the unit persists in British culture despite the rest of the metric world moving on.',
+    sections: [
+      {
+        heading: 'What Is a Stone?',
+        paragraphs: [
+          'A stone (st) is a unit of weight equal to exactly 14 pounds or 6.35029 kilograms. It has been used in the British Isles for centuries — originally as a measure for commodities like wool and meat, with the exact value varying by trade. The 14-pound stone was standardized in England in 1835 under the Weights and Measures Act.',
+          'Today, stone survives almost entirely as a unit for human body weight in the UK and Ireland. Road signs, food packaging, and scientific data all use metric units in Britain — but ask someone their weight and they will almost always answer in stone and pounds.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 stone = 14 pounds = 6.35029 kilograms.',
+          'To convert stone to kilograms: multiply by 6.35029. For example, 11 stone × 6.35029 = 69.85 kg.',
+          'To convert kilograms to stone: divide by 6.35029. For example, 75 kg ÷ 6.35029 = 11.81 stone (or 11 stone 11 lbs).',
+          'For mixed stone-and-pounds values (e.g., 11 st 6 lbs): first convert the pounds to a decimal fraction of a stone (6 ÷ 14 = 0.429), then add to the stone value (11.429 st), then multiply by 6.35029. Result: 11.429 × 6.35029 = 72.58 kg.',
+          'Quick mental shortcut: multiply stone by 6.35 for a fast estimate. The error is less than 0.01%, making it accurate enough for any everyday purpose.',
+        ],
+      },
+      {
+        heading: 'Body Weight Reference Table',
+        paragraphs: ['Common body weight values in stone and their kilogram equivalents:'],
+        list: [
+          '8 st = 50.8 kg',
+          '9 st = 57.2 kg',
+          '10 st = 63.5 kg',
+          '11 st = 69.9 kg',
+          '12 st = 76.2 kg',
+          '13 st = 82.6 kg',
+          '14 st = 88.9 kg',
+          '15 st = 95.3 kg',
+          '16 st = 101.6 kg',
+        ],
+      },
+      {
+        heading: 'Stone in the NHS and UK Healthcare',
+        paragraphs: [
+          'The UK National Health Service (NHS) uses both stone and kilograms in patient-facing materials. BMI calculators on the NHS website accept weight input in stone and pounds as well as kilograms. Most GP surgeries record weight in kilograms for clinical records, but communicate results to patients in stone because that is what patients understand.',
+          'NHS healthy weight guidelines define a healthy BMI range of 18.5–24.9. For a person who is 5 ft 9 in (175 cm) tall, the healthy weight range in stone is roughly 8 st 7 lbs to 11 st 7 lbs (54–73 kg).',
+          'This dual-unit approach is common in UK health contexts: clinical measurements stay in metric, but patient communication uses stone. Understanding both conversions is useful if you receive a UK health report or use a British fitness app.',
+        ],
+      },
+      {
+        heading: 'Why the UK Still Uses Stone',
+        paragraphs: [
+          'Britain officially adopted the metric system for most purposes in the 1970s, but body weight in stone proved resistant to change. Unlike road distances (still in miles) or temperature (Fahrenheit is rarely used), stone has no metric equivalent that maps neatly onto everyday speech.',
+          'A weight of "11 stone 4" is specific, familiar, and tied to body image for millions of people. The kilogram equivalent — 71.7 kg — carries no equivalent cultural resonance. Metrication of body weight has simply not happened because there has been no strong pressure to make it happen.',
+          'Irish usage mirrors the UK. In Australia, Canada, and the US, stone is essentially unknown — weight is expressed in kilograms or pounds.',
+        ],
+      },
+      {
+        heading: 'Converting Stone to Pounds',
+        paragraphs: [
+          'Because 1 stone = 14 pounds, converting stone to pounds is straightforward: multiply by 14.',
+          'For example, 12 stone = 12 × 14 = 168 pounds. To go the other way, divide pounds by 14 and express the remainder as pounds: 175 lbs ÷ 14 = 12 remainder 7 → 12 stone 7 lbs.',
+          'To convert stone to grams: multiply by 6,350.29. To convert grams to stone: divide by 6,350.29.',
+        ],
+      },
+    ],
+    conclusion: '1 stone = 6.35029 kg = 14 pounds. To convert stone to kilograms, multiply by 6.35029. To convert kilograms to stone, divide by 6.35029. For mixed stone-and-pound weights, convert pounds to a decimal fraction of a stone first (pounds ÷ 14), then multiply the total by 6.35029. Use our free weight converter for instant results in any direction.',
+    relatedLinks: [
+      { label: 'Stone to Kilogram Converter', path: '/weight/stone-to-kilogram' },
+      { label: 'Kilogram to Stone Converter', path: '/weight/kilogram-to-stone' },
+      { label: 'Kilograms to Pounds Converter', path: '/weight/kilogram-to-pound' },
+      { label: 'Weight Converter', path: '/weight' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */
