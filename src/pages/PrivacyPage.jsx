@@ -111,7 +111,7 @@ function PrivacyPage() {
           </li>
           <li>
             <strong>Advertising cookies</strong> — your consent, which you can withdraw at any
-            time via Google Ad Settings or our cookie preference tool.
+            time via the cookie consent banner or Google Ad Settings.
           </li>
         </ul>
       </section>

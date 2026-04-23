@@ -56,7 +56,7 @@ function CookiePage() {
                 <td>2 years</td>
               </tr>
               <tr>
-                <td><code>_ga_XXXXXXXX</code></td>
+                <td><code>_ga_NGFSH2W20K</code></td>
                 <td>Stores and updates a unique value for each page visited (session state).</td>
                 <td>2 years</td>
               </tr>
@@ -144,21 +144,53 @@ function CookiePage() {
       </section>
 
       <section>
-        <h2>5. Cookie consent (EU/EEA visitors)</h2>
+        <h2>5. Functional storage</h2>
+        <p>
+          We store your theme preference (light or dark mode) in your browser's local storage.
+          This is a functional setting that does not track or identify you.
+        </p>
+        <div className="legal-page__table-wrap">
+          <table className="legal-page__table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Purpose</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>cf-theme</code></td>
+                <td>Stores your light/dark mode preference (localStorage, not a cookie).</td>
+                <td>Persistent</td>
+              </tr>
+              <tr>
+                <td><code>cookieConsent</code></td>
+                <td>Stores whether you have accepted or rejected analytics and advertising cookies (localStorage).</td>
+                <td>Persistent</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. Cookie consent (EU/EEA visitors)</h2>
         <p>
           If you are visiting from the European Union, European Economic Area, or another
-          jurisdiction that requires consent for non-essential cookies, a consent banner will
-          be displayed on your first visit. Analytics and advertising cookies will only be
-          activated after you have given your consent.
+          jurisdiction that requires consent for non-essential cookies, a consent banner is
+          displayed on your first visit. Analytics and advertising cookies are only activated
+          after you accept.
         </p>
         <p>
-          You may change or withdraw your consent at any time by clearing cookies in your
-          browser and revisiting the site to see the consent prompt again.
+          To withdraw consent, click <strong>Reject</strong> on the banner (clear your{' '}
+          <code>cookieConsent</code> localStorage entry to see the banner again) or use the
+          opt-out tools listed in section 7 below.
         </p>
       </section>
 
       <section>
-        <h2>6. How to opt out</h2>
+        <h2>7. How to opt out</h2>
         <p>You have several ways to control or disable cookies:</p>
         <ul>
           <li>
@@ -212,7 +244,7 @@ function CookiePage() {
       </section>
 
       <section>
-        <h2>7. Changes to this policy</h2>
+        <h2>8. Changes to this policy</h2>
         <p>
           We may update this Cookie Policy as our use of cookies changes or as required by law.
           The "last updated" date at the top of this page will reflect any revisions.
@@ -220,7 +252,7 @@ function CookiePage() {
       </section>
 
       <section>
-        <h2>8. Contact</h2>
+        <h2>9. Contact</h2>
         <p>
           Questions about cookies? Email us at{' '}
           <a href={`mailto:${CONTACT}`}>{CONTACT}</a>. For privacy-related requests, see our{' '}

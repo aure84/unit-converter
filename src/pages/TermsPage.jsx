@@ -27,9 +27,11 @@ function TermsPage() {
       <section>
         <h2>2. Description of the service</h2>
         <p>
-          Convert Fast provides a free online unit conversion tool covering length, weight,
-          temperature, volume, area, speed, time, and data storage. The service is provided
-          as-is, at no charge, with no registration required.
+          Convert Fast provides a free online unit conversion tool covering multiple measurement
+          categories including length, weight, temperature, volume, area, speed, time, data
+          storage, pressure, energy, power, fuel economy, cooking, angle, frequency, shoe size,
+          torque, and currency. The service is provided as-is, at no charge, with no registration
+          required.
         </p>
       </section>
 
