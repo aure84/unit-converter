@@ -64,7 +64,7 @@ sections.push([
 
 // ── Length ───────────────────────────────────────────────────────────────────
 // Selective pairs (high-value only — same as original sitemap)
-const lengthUnits = ['meter','kilometer','centimeter','mile','yard','foot','inch'];
+const lengthUnits = ['meter','kilometer','centimeter','millimeter','mile','nautical_mile','yard','foot','inch'];
 sections.push([
   `  <!-- Length -->`,
   url(`${BASE}/length`, '0.8'),
@@ -72,7 +72,7 @@ sections.push([
 ].join('\n'));
 
 // ── Weight ───────────────────────────────────────────────────────────────────
-const weightUnits = ['kilogram','gram','pound','ounce','ton'];
+const weightUnits = ['kilogram','gram','milligram','pound','ounce','stone','ton'];
 sections.push([
   `  <!-- Weight -->`,
   url(`${BASE}/weight`, '0.8'),
@@ -87,7 +87,7 @@ sections.push([
 ].join('\n'));
 
 // ── Volume ───────────────────────────────────────────────────────────────────
-const volumeUnits = ['liter','milliliter','gallon','cup','fluid_ounce'];
+const volumeUnits = ['liter','milliliter','gallon','quart','pint','cup','fluid_ounce','tablespoon','teaspoon'];
 sections.push([
   `  <!-- Volume -->`,
   url(`${BASE}/volume`, '0.8'),
@@ -117,7 +117,7 @@ sections.push([
 ].join('\n'));
 
 // ── Data Storage ─────────────────────────────────────────────────────────────
-const dataUnits = ['byte','kilobyte','megabyte','gigabyte','terabyte'];
+const dataUnits = ['bit','byte','kilobyte','megabyte','gigabyte','terabyte','petabyte'];
 sections.push([
   `  <!-- Data Storage -->`,
   url(`${BASE}/data-storage`, '0.8'),
