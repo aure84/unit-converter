@@ -2121,6 +2121,10 @@ export const blogPosts = [
 
   {
     slug: 'metric-to-imperial',
+    image: {
+      url: 'https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=1200&auto=format&fit=crop&q=80',
+      alt: 'World globe map',
+    },
     title: 'Metric to Imperial: The Complete Conversion Guide',
     tag: 'How-To Guide',
     date: '2026-04-24',
