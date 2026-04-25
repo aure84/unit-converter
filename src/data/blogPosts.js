@@ -1460,6 +1460,10 @@ export const blogPosts = [
   },
   {
     slug: 'oz-to-grams',
+    image: {
+      url: 'https://images.unsplash.com/photo-1749638587910-0d8364f8565b?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Kitchen food scale',
+    },
     title: 'How to Convert Ounces to Grams (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-20',
