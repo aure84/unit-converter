@@ -749,6 +749,10 @@ export const blogPosts = [
 
   {
     slug: 'mpg-to-l100km',
+    image: {
+      url: 'https://images.unsplash.com/photo-1567777176186-dfa735f1fe20?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Car refueling at gas station',
+    },
     title: 'How to Convert MPG to L/100km (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-19',
