@@ -434,6 +434,28 @@ const CATEGORY_FAQ = {
       a: 'Electric vehicles (EVs) use 15–20 kWh per 100 km, which is equivalent to about 1.5–2 L/100km of gasoline in energy terms — roughly 4–5× more efficient than combustion engines. At an electricity price of €0.30/kWh, driving 100 km costs about €4.50–6.00, compared to €12–16 for a petrol car at €1.60/L and 8 L/100km.',
     },
   ],
+  shoe_size: [
+    {
+      q: 'How do I convert US shoe size to EU?',
+      a: 'For men: add 33 to the US size (US 10 ≈ EU 43). For women: add 31 to the US size (US 8 ≈ EU 39). These are approximations — sizing varies by brand. When buying shoes online, always check the brand\'s specific size chart and consider measuring your foot length in cm for the most accurate fit.',
+    },
+    {
+      q: 'What is the difference between UK and US shoe sizes?',
+      a: 'Men\'s UK sizes are 1 size smaller than US (US 10 = UK 9). Women\'s UK sizes are 2 sizes smaller than US (US 8 = UK 6). Both US and UK sizes use the same scale but start at different points. EU sizes are the same for men and women, making them easier to use internationally.',
+    },
+    {
+      q: 'How do I measure my foot size at home?',
+      a: 'Stand on a piece of paper, trace around your foot, then measure the longest distance from heel to toe in centimeters. EU size ≈ foot length in cm × 1.5 + 2, or look up a size chart. Feet are often slightly different sizes — always fit to the larger foot. Feet also tend to swell during the day, so measure in the afternoon.',
+    },
+    {
+      q: 'What EU shoe size is a child\'s US size 3?',
+      a: 'US children\'s size 3 corresponds to approximately EU 35. Children\'s sizing varies more by age and brand than adult sizing. For growing children, a thumb\'s width (about 1 cm) of space at the toe is recommended to allow for growth without the shoe being so large it causes tripping.',
+    },
+    {
+      q: 'Are shoe sizes the same for running shoes and casual shoes?',
+      a: 'Not always. Running shoes are often recommended in a half-size to full size larger than casual shoes because feet swell during exercise and you need toe clearance when running downhill. Boots may require a half size up if worn with thick socks. Always try on athletic footwear with the socks you intend to wear during activity.',
+    },
+  ],
   torque: [
     {
       q: 'What is a typical tightening torque for car wheel bolts?',
