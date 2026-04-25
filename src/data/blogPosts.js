@@ -1320,6 +1320,10 @@ export const blogPosts = [
 
   {
     slug: 'cooking-measurements',
+    image: {
+      url: 'https://images.unsplash.com/photo-1608019527897-238a401a7b7c?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Baking ingredients and flour',
+    },
     title: 'Cooking Measurement Conversion Guide: Cups, Tablespoons, ml, and Grams',
     tag: 'Quick Reference',
     date: '2026-04-20',
