@@ -684,6 +684,10 @@ export const blogPosts = [
 
   {
     slug: 'cups-to-ml',
+    image: {
+      url: 'https://images.unsplash.com/photo-1586808777178-8bf146c39bc7?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Measuring cups for cooking',
+    },
     title: 'How to Convert Cups to Milliliters (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-19',
