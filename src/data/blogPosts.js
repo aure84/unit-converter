@@ -1810,6 +1810,10 @@ export const blogPosts = [
   },
   {
     slug: 'joules-to-calories',
+    image: {
+      url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Healthy food nutrition',
+    },
     title: 'How to Convert Joules to Calories (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-20',
