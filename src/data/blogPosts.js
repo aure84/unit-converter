@@ -1533,6 +1533,10 @@ export const blogPosts = [
   },
   {
     slug: 'feet-to-inches',
+    image: {
+      url: 'https://images.unsplash.com/photo-1703756291638-b1774ae3c186?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Tape measure on floor',
+    },
     title: 'How to Convert Feet to Inches (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-20',
