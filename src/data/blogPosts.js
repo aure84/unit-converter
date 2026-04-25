@@ -878,6 +878,10 @@ export const blogPosts = [
 
   {
     slug: 'degrees-to-radians',
+    image: {
+      url: 'https://images.unsplash.com/photo-1609155035300-15e1ffa95f12?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Geometry math compass drawing',
+    },
     title: 'How to Convert Degrees to Radians (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-19',
