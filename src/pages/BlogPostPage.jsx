@@ -80,6 +80,15 @@ function BlogPostPage() {
           </time>
         </header>
 
+        {post.image && (
+          <img
+            src={post.image.url}
+            alt={post.image.alt}
+            className="blog-post__hero"
+            loading="lazy"
+          />
+        )}
+
         <p className="blog-post__intro">{post.intro}</p>
 
         {post.sections.map((section) => (

@@ -145,6 +145,15 @@
   line-height: 1.2;
 }
 
+.blog-post__hero {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  display: block;
+}
+
 .blog-post__date {
   display: block;
   font-size: 13px;

@@ -911,6 +911,10 @@ export const blogPosts = [
     title: 'The $327 Million Unit Conversion Mistake: NASA\'s Mars Climate Orbiter',
     tag: 'Conversion Fail',
     date: '2026-04-20',
+    image: {
+      url: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Mars planet viewed from space',
+    },
     description: 'In 1999, NASA lost a $327 million spacecraft because one team used metric units and another used imperial. The story of the Mars Climate Orbiter is the most expensive unit conversion error in history.',
     intro: 'On September 23, 1999, NASA\'s Mars Climate Orbiter fired its main engine to enter orbit around Mars. It never came back. The spacecraft — nine months into its journey, 416 million miles from Earth — flew too close to the Martian atmosphere and was destroyed by aerodynamic stress and heat. The cause was not a software bug in the traditional sense, and not a hardware failure. It was a unit mismatch: one engineering team at NASA\'s Jet Propulsion Laboratory was sending thruster data in metric units (newton-seconds), while another team\'s software at Lockheed Martin expected imperial units (pound-force seconds). Nobody caught it for nine months.',
     sections: [
