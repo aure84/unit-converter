@@ -1795,7 +1795,7 @@ export const blogPosts = [
       {
         heading: 'The Sinking',
         paragraphs: [
-          'The Vasa left the harbor on a calm August day with sails partially set. A gust of wind heeled the ship to port. Water entered through the open gun ports on the lower deck. The Vasa did not recover.',
+          'The Vasa left Stockholm harbor on August 10, 1628, on a calm summer afternoon with sails partially set and gun ports open for a ceremonial salute. A gust of wind heeled the ship to port. Water poured through the open lower gun ports, which sat only about 1.2 meters above the waterline when the ship was fully loaded. The Vasa did not recover.',
           'At the inquiry, officers and builders blamed each other. No one was punished — the king himself had pushed the ship\'s specifications to include two gun decks, and no one had been willing to tell him it was unsafe.',
         ],
       },
@@ -1811,20 +1811,36 @@ export const blogPosts = [
       {
         heading: 'How Much Did It Matter?',
         paragraphs: [
-          'The unit discrepancy was not the sole cause of the Vasa\'s sinking — the ship was fundamentally too top-heavy for its design. But it contributed to the port-side asymmetry that made an already unstable ship worse.',
-          'The Vasa\'s case illustrates a systemic problem: two construction teams, working on the same ship, never verified that they were measuring in the same units. The error was invisible until archaeologists dug it up three centuries later.',
-          'The Mars Climate Orbiter (1999) repeated the same failure: two engineering teams using different unit systems, no interface check. The Orbiter cost $327 million. The Vasa cost 40,000 pieces of silver and more than 30 lives.',
+          'The unit discrepancy was not the sole cause of the Vasa\'s sinking — the ship was fundamentally too top-heavy for its design, a consequence of the king demanding two gun decks on a hull that had been designed for one. But the asymmetry between the port and starboard sides, caused by the different ruler lengths, added measurable additional weight to the heavier port side and worsened an already critical stability deficit.',
+          'The Vasa\'s case illustrates a systemic problem: two construction teams, working on the same ship, never verified that they were measuring in the same units. Neither team was using a wrong ruler — both rulers were accurate representations of their respective local standards. The error was in the interface between the two teams, and it was invisible until archaeologists measured the hull three centuries later.',
+          'The Mars Climate Orbiter (1999) repeated the same failure mode: two engineering teams using different unit systems with no interface specification to catch the mismatch. The Orbiter cost $327 million. The Vasa cost 40,000 pieces of silver and more than 30 lives.',
+        ],
+      },
+      {
+        heading: 'Why Nobody Spoke Up',
+        paragraphs: [
+          'The Vasa\'s stability problem was not a secret. The pre-departure test — 30 men running back and forth across the deck in three passes — caused the ship to heel so severely that the test was stopped to prevent it from capsizing at the dock. The admiral in charge of the Swedish Navy, Flemming, witnessed this and made the decision to sail anyway. The king had ordered the ship to sea, and no one in the chain of command was willing to deliver the news that his flagship was unsafe.',
+          'This dynamic — organizational pressure overriding engineering judgment — is a recurring feature in major engineering disasters. The Space Shuttle Challenger launched in 1986 despite engineers at Morton Thiokol explicitly warning the night before that O-ring seals were not rated for the cold temperatures forecast at launch. The Vasa\'s officers faced a similar choice between speaking and sailing, and chose to sail.',
+          'The master shipbuilder, Henrik Hybertsson, had died before the ship was completed. His successor, Hein Jacobsson, took over a project already underway with fixed dimensions. When the ship\'s dimensions appeared unstable, there was no one with the original authority to change them — and the king was expecting delivery.',
+        ],
+      },
+      {
+        heading: 'The Salvage',
+        paragraphs: [
+          'The Vasa lay at the bottom of Stockholm harbor for 333 years. In 1956, amateur archaeologist Anders Franzén located the wreck using a coring device. A salvage operation was planned and executed over five years, using a network of tunnels drilled under the hull so that pontoons could be used to lift the ship gradually off the seabed.',
+          'On April 24, 1961, the Vasa broke the surface for the first time since 1628. The cold, low-salinity waters of the Baltic had preserved the wood almost perfectly — the hull was 95% intact. Over the following years, more than 14,000 objects were recovered from the wreck, including the four rulers that revealed the unit mismatch.',
+          'The ship was treated with polyethylene glycol for 17 years to replace the water in the wood cells and prevent the timbers from drying out and cracking. It was moved to the purpose-built Vasa Museum in 1990, where it has been on display ever since in a climate-controlled environment at 18°C and 55% humidity.',
         ],
       },
       {
         heading: 'The Vasa Today',
         paragraphs: [
-          'The Vasa Museum in Stockholm is one of Scandinavia\'s most visited attractions. The ship is 95% original — preserved by the cold, low-salinity waters of the Baltic Sea. Visitors can see the original timbers, cannons, carved decorations, and the two measuring sticks that helped explain why it sank.',
-          'The Vasa is a unique artifact: the only 17th-century warship preserved in its original condition anywhere in the world.',
+          'The Vasa Museum in Stockholm is one of Scandinavia\'s most visited attractions, drawing over a million visitors per year. The ship is 95% original — preserved by the cold, low-salinity waters of the Baltic Sea. Visitors can see the original timbers, cannons, carved decorations, personal belongings of the crew, and the four measuring sticks that helped explain why the ship was asymmetric.',
+          'The Vasa is a unique artifact: the only 17th-century warship preserved in its original condition anywhere in the world. It is also a detailed record of a unit error that contributed to one of history\'s most spectacular maritime failures — visible, touchable, and measurable in both Swedish and Amsterdam feet.',
         ],
       },
     ],
-    conclusion: 'The Vasa sank partly because two construction crews used rulers of different lengths — Swedish feet and Amsterdam feet — without ever checking that they were measuring in the same units. The same category of error has since destroyed a $327 million spacecraft (Mars Climate Orbiter) and nearly killed 69 people on a 767 (Gimli Glider). The lesson has not changed in 400 years: always verify units at every interface.',
+    conclusion: 'The Vasa sank on its maiden voyage in 1628, 1,300 meters from the dock, in full view of a crowd that had come to watch it depart. The contributing cause — two construction crews using rulers of different lengths, Swedish feet on the port side and Amsterdam feet on the starboard side, without ever checking they were working in the same units — was not discovered until archaeologists found four measuring sticks at the bottom of Stockholm harbor in the 1960s. The same category of error has since destroyed a $327 million spacecraft (Mars Climate Orbiter, 1999) and nearly killed 69 people on a powerless Boeing 767 (Gimli Glider, 1983). The lesson has not changed in 400 years: always verify units at every interface between teams, systems, or traditions. A number without a unit is not a measurement.',
     relatedLinks: [
       { label: 'Length Converter', path: '/length' },
       { label: 'Meters to Feet Converter', path: '/length/meter-to-foot' },
