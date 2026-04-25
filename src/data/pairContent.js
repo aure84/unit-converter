@@ -181,7 +181,7 @@ const PAIR_EXTRA_FAQ = {
 }
 
 // Real-world FAQ items shown on all pair pages within a category
-const CATEGORY_FAQ = {
+export const CATEGORY_FAQ = {
   weight: [
     {
       q: 'How much does a 55-inch TV weigh?',
