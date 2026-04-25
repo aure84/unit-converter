@@ -538,6 +538,10 @@ export const blogPosts = [
 
   {
     slug: 'meters-to-feet',
+    image: {
+      url: 'https://images.unsplash.com/photo-1550985543-49bee3167284?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Measuring tape ruler',
+    },
     title: 'How to Convert Meters to Feet (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-19',
