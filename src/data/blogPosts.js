@@ -989,6 +989,10 @@ export const blogPosts = [
     title: 'The Gimli Glider: When a Boeing 767 Ran Out of Fuel Mid-Flight',
     tag: 'Conversion Fail',
     date: '2026-04-20',
+    image: {
+      url: 'https://images.unsplash.com/photo-1525396524423-64f7b55f5b33?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Commercial airplane in flight',
+    },
     description: 'In 1983, an Air Canada Boeing 767 ran out of fuel at 41,000 feet because ground crew confused kilograms with pounds. The plane glided 100 miles to an emergency landing — with 69 people on board.',
     intro: 'On July 23, 1983, Air Canada Flight 143 — a brand-new Boeing 767 — ran out of fuel at 41,000 feet over northern Canada. All engines went silent. For the next 17 minutes, the plane glided without power over 100 miles of Canadian wilderness, carrying 61 passengers and 8 crew. The cause was a unit conversion error: ground crew calculated the fuel load in pounds when they should have used kilograms. Because a pound is approximately 2.2 times lighter than a kilogram, the plane departed with roughly 22,300 pounds of fuel instead of the required 22,300 kilograms — less than half of what it needed to reach Edmonton. The aircraft became the world\'s largest glider at 41,000 feet, and landed only because of one pilot\'s gliding experience and an abandoned airstrip in rural Manitoba.',
     sections: [
