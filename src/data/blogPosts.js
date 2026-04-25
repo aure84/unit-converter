@@ -1051,22 +1051,22 @@ export const blogPosts = [
     tag: 'Conversion Fail',
     date: '2026-04-20',
     description: 'Christopher Columbus reached America partly because he confused two different definitions of a "mile." His unit error made the Earth appear 25% smaller than it actually is.',
-    intro: 'Christopher Columbus did not prove the Earth was round — educated Europeans already knew that. What Columbus got spectacularly wrong was the size of the Earth, and specifically the distance from Europe to Asia going west. His error was not a matter of courage or vision. It was a unit conversion mistake: he confused two different definitions of a "mile" and concluded the Earth was roughly 25% smaller than it actually is. He sailed west expecting Asia and found a continent nobody in Europe knew existed.',
+    intro: 'Christopher Columbus did not prove the Earth was round — educated Europeans already knew that. Eratosthenes had calculated the Earth\'s circumference with reasonable accuracy in the 3rd century BCE. What Columbus got spectacularly wrong was the size of the Earth, and specifically the distance from Europe to Asia going west. His error was not a matter of courage or vision. It was a unit conversion mistake: he confused two different definitions of a "mile" and concluded the Earth was roughly 25% smaller than it actually is. The Portuguese royal commission that reviewed his proposal in 1484 rejected it — not because they thought the Earth was flat, but because their unit math was correct and they could see the voyage was impossible. Columbus found a backer anyway, sailed west expecting Asia, and found a continent nobody in Europe knew existed. The wrong number changed the world.',
     sections: [
       {
         heading: 'The Two "Miles" That Changed History',
         paragraphs: [
           'In the 15th century, the word "mile" did not have a single fixed meaning. Different cultures used different standards. Two were relevant to Columbus\'s calculation.',
-          'The Roman mile (mille passuum) was approximately 1,480 meters — close to today\'s international mile of 1,609 meters.',
-          'The Arabic mile, used by the Islamic geographer al-Farghani in his influential calculations of the Earth\'s circumference, was approximately 1,973 meters — about 33% longer than the Roman mile.',
+          'The Roman mile (mille passuum) was approximately 1,480 meters — somewhat shorter than today\'s international mile of 1,609 meters, which was standardized much later.',
+          'The Arabic mile, used by the Islamic geographer al-Farghani (also known as Alfraganus) in his 9th-century astronomical treatise, was approximately 1,973 meters — about 33% longer than the Roman mile. Al-Farghani\'s work was translated into Latin and widely read in medieval Europe. Columbus owned a copy and made extensive margin notes in it.',
         ],
       },
       {
         heading: 'The Calculation',
         paragraphs: [
-          'Al-Farghani had calculated — correctly — that one degree of latitude at the equator equals 56⅔ Arabic miles. Columbus read this figure but applied the shorter Roman mile instead of the longer Arabic mile.',
+          'Al-Farghani had calculated — correctly — that one degree of latitude at the equator equals 56⅔ Arabic miles. This was a well-regarded figure in medieval geography. Columbus read this in a Latin translation and accepted the 56⅔ number, but applied the shorter Roman mile to it instead of the Arabic mile al-Farghani had used.',
           'Using the Roman mile of 1,480 m: 56.67 × 1,480 m = 83,870 m per degree, giving a total Earth circumference of about 30,200 km.',
-          'The actual circumference of the Earth is approximately 40,075 km. Columbus\'s figure was about 25% too small.',
+          'The actual circumference of the Earth at the equator is approximately 40,075 km. Columbus\'s figure of 30,200 km was about 25% too small.',
           'This made the westward distance from the Canary Islands to Japan appear to be roughly 3,700 km. The actual distance — across the Pacific — is about 19,600 km. Columbus was off by a factor of more than five.',
         ],
       },
@@ -1074,8 +1074,8 @@ export const blogPosts = [
         heading: 'Why Experts Rejected Him',
         paragraphs: [
           'The Portuguese royal commission that evaluated Columbus\'s proposal in 1484 rejected it — not because they thought the Earth was flat, but because their calculations were correct. Their geographers used the Arabic mile properly and concluded the westward route to Asia was impossibly long for the ships and supplies of the time. They were right.',
-          'Spain\'s Queen Isabella ultimately funded the voyage, in part because Columbus was persuasive and the potential reward was enormous. But Spain\'s own experts were also skeptical.',
-          'Columbus went to his grave believing he had reached islands off the coast of Asia. He never accepted that he had found a previously unknown continent.',
+          'Spain\'s Queen Isabella ultimately funded the voyage after a second review in 1492, in part because Columbus was persuasive, the potential reward was enormous, and Portugal had just found a viable sea route to Asia around Africa. Spain needed an alternative. But Spain\'s own experts were also skeptical about Columbus\'s numbers.',
+          'Columbus went to his grave in 1506 believing he had reached islands off the coast of Asia. He never accepted that he had found a previously unknown continent. In his final years he lobbied repeatedly for the titles and share of revenues promised in the original agreement with Spain — both of which the Spanish crown contested and largely denied.',
         ],
       },
       {
@@ -1086,8 +1086,24 @@ export const blogPosts = [
           'The lesson is not comforting: sometimes a wrong calculation leads somewhere interesting. But you cannot plan for lucky continents. The Mars Climate Orbiter and Gimli Glider had no such fortune.',
         ],
       },
+      {
+        heading: 'The Voyage and the Mutiny That Almost Was',
+        paragraphs: [
+          'Columbus left the Canary Islands on September 6, 1492, heading due west with three ships and about 90 men. His crew expected to reach Japan (which he called Cipangu, following Marco Polo\'s name) within roughly 30 days, based on his calculated distance of about 3,700 km. By early October — five weeks into the voyage with no land in sight — the crew was threatening to turn back.',
+          'Columbus had, in fact, already passed the point where Japan should have been by his own calculations. He kept this from the crew and continued west. On October 7, a flock of birds flying southwest prompted a course correction. On October 12, land was sighted — what is now the Bahamas, at a distance of roughly 6,000 km from the Canaries.',
+          'Columbus was still about 13,600 km short of Japan. He had found the Bahamas at roughly the distance his unit-error calculation predicted for the edge of Asia, and he interpreted this as confirmation that his numbers were correct. He spent three more voyages exploring the Caribbean and the coast of South America, looking for the gold-roofed palaces Marco Polo had described in Cathay. They were never found because they were on the other side of an ocean and a continent Columbus did not know existed.',
+        ],
+      },
+      {
+        heading: 'Why Unit Consistency Matters Even in History',
+        paragraphs: [
+          'The Columbus unit error is unusual among famous conversion failures because the outcome was accidental discovery rather than disaster. But the underlying mechanism is identical to the Mars Climate Orbiter or the Gimli Glider: a measurement made in one unit system was interpreted as if it were in another, producing a number that seemed plausible but was wrong.',
+          'Al-Farghani\'s original Arabic text was accurate. His measurement of 56⅔ miles per degree was correct when applied to the Arabic mile of approximately 1,973 meters. Columbus, reading a translation, applied the number to the shorter Roman mile of roughly 1,480 meters — a 25% reduction in the Earth\'s apparent size that made an impossible voyage seem merely difficult.',
+          'The parallel with modern engineering failures is exact. Lockheed Martin\'s navigation software output for the Mars Climate Orbiter was correct within its own unit system. The Canadian fuel density factor of 0.803 kg/liter was correct for metric calculations. In each case, the individual inputs were right. The error was in the interface — the point where one set of numbers, defined in one unit system, was fed into a calculation expecting another.',
+        ],
+      },
     ],
-    conclusion: 'Columbus confused the Arabic mile (1,973 m) with the Roman mile (1,480 m) — a 33% difference that made the Earth appear 25% smaller than it is. The error led him to underestimate the westward distance to Asia by a factor of five. He reached a continent he did not know existed, then spent the rest of his life insisting it was Asia. Unit errors do not always destroy spacecraft or strand planes — sometimes they accidentally reshape history.',
+    conclusion: 'Columbus confused the Arabic mile (1,973 m) with the Roman mile (1,480 m) — a 33% difference that made the Earth appear 25% smaller than it is. The error led him to underestimate the westward distance to Asia by a factor of five. Every expert who reviewed his proposal and used the correct units concluded the voyage was impossible. They were right about the math. They simply did not know a continent existed in the way. Columbus reached the Bahamas on October 12, 1492, then spent the rest of his life insisting it was Asia. The continent was eventually named after Amerigo Vespucci, who recognized it for what it was. Unit errors do not always destroy spacecraft or strand planes — sometimes, under very specific conditions involving unknown landmasses, they accidentally reshape history.',
     relatedLinks: [
       { label: 'Length Converter', path: '/length' },
       { label: 'km to Miles Converter', path: '/length/kilometer-to-mile' },
