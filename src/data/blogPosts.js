@@ -1055,6 +1055,10 @@ export const blogPosts = [
 
   {
     slug: 'columbus-unit-error',
+    image: {
+      url: 'https://images.unsplash.com/photo-1518065896235-a4c93e088e7a?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Antique compass on old map',
+    },
     title: 'How a Unit Conversion Error Sent Columbus to the Wrong Continent',
     tag: 'Conversion Fail',
     date: '2026-04-20',
