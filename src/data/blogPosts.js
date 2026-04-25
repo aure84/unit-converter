@@ -272,6 +272,10 @@ export const blogPosts = [
 
   {
     slug: 'data-storage-units',
+    image: {
+      url: 'https://images.unsplash.com/photo-1762163516269-3c143e04175c?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Data center server storage',
+    },
     title: 'How Big Is a Gigabyte? Data Storage Units Explained',
     tag: 'Quick Reference',
     date: '2026-04-15',
