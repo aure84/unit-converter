@@ -620,6 +620,10 @@ export const blogPosts = [
 
   {
     slug: 'psi-to-bar',
+    image: {
+      url: 'https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Car tire pressure check',
+    },
     title: 'How to Convert PSI to Bar (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-19',
