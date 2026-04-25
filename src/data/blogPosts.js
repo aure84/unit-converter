@@ -1386,6 +1386,10 @@ export const blogPosts = [
   },
   {
     slug: 'inches-to-cm',
+    image: {
+      url: 'https://images.unsplash.com/photo-1523901839036-a3030662f220?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Ruler and tape measure',
+    },
     title: 'How to Convert Inches to Centimeters (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-20',
