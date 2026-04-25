@@ -1677,6 +1677,10 @@ export const blogPosts = [
   },
   {
     slug: 'acres-to-sq-meters',
+    image: {
+      url: 'https://images.unsplash.com/photo-1560559383-338dc7faf062?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Green farmland field landscape',
+    },
     title: 'How to Convert Acres to Square Meters (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-20',
