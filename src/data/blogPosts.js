@@ -183,6 +183,10 @@ export const blogPosts = [
 
   {
     slug: 'celsius-to-fahrenheit',
+    image: {
+      url: 'https://images.unsplash.com/photo-1740560516658-5a94b0b715ed?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Thermometer temperature',
+    },
     title: 'How to Convert Celsius to Fahrenheit (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-15',
