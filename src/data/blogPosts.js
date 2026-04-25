@@ -1865,6 +1865,10 @@ export const blogPosts = [
   },
   {
     slug: 'hard-drive-space',
+    image: {
+      url: 'https://images.unsplash.com/photo-1589995186011-a7b485edc4bf?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Hard drive storage device',
+    },
     title: 'Why Your 1 TB Hard Drive Only Shows 931 GB',
     tag: 'Conversion Fail',
     date: '2026-04-20',
