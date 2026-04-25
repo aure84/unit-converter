@@ -434,6 +434,28 @@ const CATEGORY_FAQ = {
       a: 'Electric vehicles (EVs) use 15–20 kWh per 100 km, which is equivalent to about 1.5–2 L/100km of gasoline in energy terms — roughly 4–5× more efficient than combustion engines. At an electricity price of €0.30/kWh, driving 100 km costs about €4.50–6.00, compared to €12–16 for a petrol car at €1.60/L and 8 L/100km.',
     },
   ],
+  angle: [
+    {
+      q: 'How many degrees is a right angle?',
+      a: 'A right angle is exactly 90 degrees. It is the angle formed at the corner of a square or rectangle. In radians, 90° = π/2 ≈ 1.5708 rad. Right angles are fundamental in construction, carpentry, and engineering — a "square" corner between two walls or a floor and wall is always 90°.',
+    },
+    {
+      q: 'What is a 45-degree angle used for in everyday life?',
+      a: 'A 45° angle is half a right angle and appears frequently in construction (roof pitches, mitre cuts for picture frames and door frames), sports (the optimal launch angle for maximum projectile range is 45°), and road design. In radians, 45° = π/4 ≈ 0.7854 rad.',
+    },
+    {
+      q: 'How steep is a 10-degree slope?',
+      a: 'A 10° slope rises about 17.6 cm for every 1 meter of horizontal distance (tan 10° ≈ 0.176). Roads rarely exceed 10°; mountain roads reach 12–15°. A typical staircase is about 35–40°. Wheelchair ramps are usually limited to 4.8° (1:12 ratio). Ski runs range from 18° (beginner) to 45°+ (expert).',
+    },
+    {
+      q: 'What is the difference between degrees and radians?',
+      a: 'Degrees divide a circle into 360 equal parts; radians measure angles by the arc length on a unit circle. A full circle = 360° = 2π radians ≈ 6.2832 rad. To convert: multiply degrees by π/180 to get radians, or multiply radians by 180/π to get degrees. Radians are used in mathematics and physics; degrees in everyday life and navigation.',
+    },
+    {
+      q: 'What angle is a typical roof pitch?',
+      a: 'Roof pitch is often expressed as rise:run (e.g., 4:12 means 4 inches rise per 12 inches run). Common pitches in degrees: low slope 10–20°, standard residential 25–35°, steep 40–50°. A 4:12 pitch ≈ 18.4°, a 6:12 pitch ≈ 26.6°, a 12:12 pitch = 45°. Steeper roofs shed snow and rain better but cost more to build.',
+    },
+  ],
   frequency: [
     {
       q: 'What frequency is human hearing?',
