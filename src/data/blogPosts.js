@@ -455,6 +455,10 @@ export const blogPosts = [
 
   {
     slug: 'gallons-to-liters',
+    image: {
+      url: 'https://images.unsplash.com/photo-1637905351378-67232a5f0c9b?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Water pouring into glass',
+    },
     title: 'How to Convert Gallons to Liters (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-19',
