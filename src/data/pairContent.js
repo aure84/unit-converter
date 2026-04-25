@@ -434,6 +434,28 @@ const CATEGORY_FAQ = {
       a: 'Electric vehicles (EVs) use 15–20 kWh per 100 km, which is equivalent to about 1.5–2 L/100km of gasoline in energy terms — roughly 4–5× more efficient than combustion engines. At an electricity price of €0.30/kWh, driving 100 km costs about €4.50–6.00, compared to €12–16 for a petrol car at €1.60/L and 8 L/100km.',
     },
   ],
+  frequency: [
+    {
+      q: 'What frequency is human hearing?',
+      a: 'Humans can typically hear sounds between 20 Hz and 20,000 Hz (20 kHz). Low frequencies (20–200 Hz) are bass sounds like a bass guitar or thunder. Mid frequencies (200 Hz–2 kHz) cover most speech and instruments. High frequencies (2–20 kHz) include treble, sibilance, and high-pitched sounds. Hearing range narrows with age, especially above 10 kHz.',
+    },
+    {
+      q: 'What is the frequency of mains electricity?',
+      a: 'Mains electricity runs at 50 Hz in Europe, Africa, Asia, and Australia, and at 60 Hz in North America and parts of South America. This is why some appliances (like motors and clocks) can malfunction if used in a country with a different frequency, even with a voltage adapter.',
+    },
+    {
+      q: 'What does CPU frequency (GHz) mean?',
+      a: 'CPU frequency measures how many cycles per second a processor executes. 1 GHz = 1,000,000,000 Hz. A 3.5 GHz processor completes 3.5 billion cycles per second. Higher frequency generally means faster performance, but modern CPUs also depend on architecture, core count, and cache. Typical consumer CPUs range from 2.5–5.5 GHz.',
+    },
+    {
+      q: 'What frequency is 5G vs 4G?',
+      a: '4G LTE operates primarily between 700 MHz and 2.6 GHz. 5G uses three bands: low-band (600–900 MHz, similar range to 4G), mid-band (2.5–6 GHz, better speed), and high-band/mmWave (24–100 GHz, very fast but short range). Higher frequency means faster data but shorter range and poorer building penetration.',
+    },
+    {
+      q: 'What is the frequency of visible light?',
+      a: 'Visible light ranges from about 400 THz (red, 700 nm wavelength) to 750 THz (violet, 400 nm). Infrared light is below 400 THz (too low to see), ultraviolet above 750 THz (too high to see). 1 THz = 1,000,000,000,000 Hz. Light frequency determines its color — higher frequency shifts toward blue/violet, lower toward red.',
+    },
+  ],
   shoe_size: [
     {
       q: 'How do I convert US shoe size to EU?',
