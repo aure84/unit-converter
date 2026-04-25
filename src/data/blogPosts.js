@@ -1173,6 +1173,10 @@ export const blogPosts = [
 
   {
     slug: 'nm-to-ft-lb',
+    image: {
+      url: 'https://images.unsplash.com/photo-1615746363486-92cd8c5e0a90?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Torque wrench mechanic tools',
+    },
     title: 'How to Convert Nm to ft-lb (and ft-lb to Nm)',
     tag: 'How-To Guide',
     date: '2026-04-20',
