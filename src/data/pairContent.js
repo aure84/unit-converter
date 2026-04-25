@@ -180,6 +180,262 @@ const PAIR_EXTRA_FAQ = {
   ],
 }
 
+// Real-world FAQ items shown on all pair pages within a category
+const CATEGORY_FAQ = {
+  weight: [
+    {
+      q: 'How much does a 55-inch TV weigh?',
+      a: 'A typical 55-inch LED/OLED TV weighs between 15 and 25 kg (33–55 lbs), depending on the brand and panel type. OLED TVs tend to be lighter than LED models of the same size. Without a stand, most 55-inch TVs are closer to 15–18 kg.',
+    },
+    {
+      q: 'How heavy is a carry-on suitcase?',
+      a: 'An empty carry-on suitcase typically weighs 2–4 kg (4.5–9 lbs). Most airlines allow carry-on bags up to 7–10 kg (15–22 lbs) total weight. Hard-shell suitcases tend to be heavier than soft-shell ones of the same size.',
+    },
+    {
+      q: 'How much does a laptop weigh?',
+      a: 'Most laptops weigh between 1.2 and 2.5 kg (2.6–5.5 lbs). Ultrabooks and thin-and-light models typically weigh under 1.5 kg (3.3 lbs). Gaming laptops with larger screens and cooling systems often weigh 2.5–3.5 kg (5.5–7.7 lbs).',
+    },
+    {
+      q: 'How heavy is a bag of sugar or flour?',
+      a: 'Standard bags of sugar and flour are sold in 1 kg (2.2 lbs) and 2 kg (4.4 lbs) sizes in most countries. In the US, flour is commonly sold in 5 lb (2.27 kg) bags, and sugar in 4 lb (1.81 kg) or 5 lb (2.27 kg) bags.',
+    },
+    {
+      q: 'What is the average weight of a car?',
+      a: 'A typical compact car (e.g., VW Golf, Toyota Corolla) weighs around 1,300–1,500 kg (2,900–3,300 lbs). Mid-size SUVs weigh 1,800–2,200 kg (4,000–4,900 lbs). Electric vehicles tend to be heavier due to the battery pack — a Tesla Model 3 weighs about 1,830 kg (4,030 lbs).',
+    },
+  ],
+
+  length: [
+    {
+      q: 'How big is a 27-inch monitor in centimeters?',
+      a: 'A 27-inch monitor measures 27 inches diagonally, which is 68.6 cm. The actual screen dimensions depend on the aspect ratio — a 16:9 widescreen at 27 inches is approximately 59.8 cm wide and 33.6 cm tall.',
+    },
+    {
+      q: 'How tall is an average door?',
+      a: 'A standard interior door in the US is 80 inches tall (6 ft 8 in = 203 cm) and 32–36 inches wide (81–91 cm). In Europe, standard door heights are typically 200–210 cm (about 79–83 inches).',
+    },
+    {
+      q: 'How long is an iPhone?',
+      a: 'iPhone sizes vary by model. The iPhone 15 is 147.6 mm (5.81 in) tall. The iPhone 15 Plus is 160.9 mm (6.33 in). The iPhone 15 Pro Max is 159.9 mm (6.29 in) tall and 76.7 mm (3.02 in) wide.',
+    },
+    {
+      q: 'How long is an average car?',
+      a: 'A typical compact car is about 4.2–4.5 m (165–177 inches) long. Mid-size sedans are 4.6–4.9 m (181–193 inches). Large SUVs can reach 5.0–5.3 m (197–209 inches). A standard parking space is usually 4.8–5.4 m (16–18 ft) long.',
+    },
+    {
+      q: 'How tall is a standard ceiling?',
+      a: 'Standard ceiling height in US residential construction is 8 feet (2.44 m). Many newer homes use 9 ft (2.74 m) or 10 ft (3.05 m) ceilings. In Europe, ceiling heights typically range from 2.4 m to 2.7 m (about 8–9 ft).',
+    },
+  ],
+
+  temperature: [
+    {
+      q: 'What temperature should an oven be for baking?',
+      a: 'Common baking temperatures: cookies and cakes 170–180°C (340–355°F), bread 190–220°C (375–430°F), pizza 220–250°C (430–480°F), roasting meat 160–200°C (320–390°F). Fan-assisted ovens typically run 10–20°C hotter than conventional settings.',
+    },
+    {
+      q: 'What is a normal human body temperature?',
+      a: 'Normal body temperature is 36.1–37.2°C (97–99°F). A fever is generally defined as above 38°C (100.4°F). A high fever is above 39.5°C (103°F). Temperature varies slightly by time of day and measurement method (oral, axillary, rectal).',
+    },
+    {
+      q: 'At what temperature does it feel hot outside?',
+      a: 'Weather temperature reference points: below 10°C (50°F) feels cold, 15–20°C (59–68°F) is cool and comfortable, 25–30°C (77–86°F) is warm, above 35°C (95°F) is hot, and above 40°C (104°F) is very hot and potentially dangerous without shade and hydration.',
+    },
+    {
+      q: 'What temperature is a refrigerator and freezer?',
+      a: 'A refrigerator should be kept at 1–4°C (34–39°F) to slow bacterial growth without freezing food. A freezer should be at −18°C (0°F) or colder. Food stays safe indefinitely in a properly maintained freezer, though quality degrades over time.',
+    },
+    {
+      q: 'What is the coldest and hottest temperature ever recorded on Earth?',
+      a: 'The coldest temperature recorded was −89.2°C (−128.6°F) at Vostok Station, Antarctica, in 1983. The hottest was 56.7°C (134.1°F) at Furnace Creek, Death Valley, California, in 1913. The average global surface temperature is about 15°C (59°F).',
+    },
+  ],
+
+  volume: [
+    {
+      q: 'How many liters does a car fuel tank hold?',
+      a: 'A typical compact car fuel tank holds 45–55 liters (12–14.5 US gallons). Mid-size sedans typically have 55–65 L (14.5–17 gal) tanks. Large SUVs and trucks can have 80–110 L (21–29 gal) tanks. Electric vehicles do not have fuel tanks but typically have 40–100 kWh battery packs.',
+    },
+    {
+      q: 'How many liters is a standard bathtub?',
+      a: 'A standard bathtub holds about 150–250 liters (40–66 US gallons) when filled to normal bathing depth (about two-thirds full). A full fill to the overflow drain is typically 300–400 liters. Freestanding soaking tubs can hold up to 500 liters.',
+    },
+    {
+      q: 'How much water does a washing machine use?',
+      a: 'A modern front-loading washing machine uses 40–60 liters (11–16 US gallons) per cycle. Top-loading machines use more — typically 100–170 liters (26–45 gal). High-efficiency (HE) models use less water per load than standard machines.',
+    },
+    {
+      q: 'How many liters is a standard wine bottle?',
+      a: 'A standard wine bottle is 750 ml (0.75 liters), which is about 25.4 fl oz or roughly 5 glasses of wine at a standard 150 ml pour. A magnum is 1.5 liters (2 standard bottles). A half-bottle is 375 ml.',
+    },
+    {
+      q: 'How much water should I drink per day?',
+      a: 'General guidelines suggest about 2–3 liters (8–12 cups) of total fluid per day for adults, including water from food. The US National Academies recommend approximately 3.7 liters for men and 2.7 liters for women from all beverages and foods combined. Individual needs vary by activity level, climate, and health.',
+    },
+  ],
+
+  speed: [
+    {
+      q: 'How fast does a commercial airplane fly?',
+      a: 'Commercial aircraft cruise at 800–920 km/h (500–570 mph), which is roughly Mach 0.75–0.85. A Boeing 737 typically cruises at about 840 km/h (520 mph). The Concorde flew at Mach 2, or about 2,180 km/h (1,354 mph), but was retired in 2003.',
+    },
+    {
+      q: 'How fast is the fastest human?',
+      a: 'Usain Bolt set the 100 m world record of 9.58 seconds in 2009, reaching a peak speed of approximately 44.72 km/h (27.8 mph or 12.4 m/s) between the 60 m and 80 m marks. The average speed over the full 100 m was about 37.6 km/h (23.4 mph).',
+    },
+    {
+      q: 'What is the speed of sound?',
+      a: 'The speed of sound in air at 20°C (68°F) is approximately 343 m/s, or 1,235 km/h (767 mph). This is known as Mach 1. The speed varies with temperature: at 0°C it is 331 m/s, and at 30°C it is 349 m/s. In water, sound travels about 4.3× faster at roughly 1,480 m/s.',
+    },
+    {
+      q: 'What are typical highway speed limits around the world?',
+      a: 'Highway speed limits vary by country: Germany Autobahn has an advisory speed of 130 km/h (81 mph) with no general limit on some sections; France, Spain, and Italy use 130 km/h; the UK is 70 mph (113 km/h); the US interstate limits range from 65–80 mph (105–129 km/h); Australia uses 100–110 km/h (62–68 mph).',
+    },
+    {
+      q: 'How fast does a bicycle go?',
+      a: 'A casual cyclist on flat ground averages 15–20 km/h (9–12 mph). A fit recreational rider maintains 25–30 km/h (15–19 mph). Professional road cyclists average 40–45 km/h (25–28 mph) during races. The cycling land speed record is 296 km/h (184 mph), set in a streamlined recumbent bike in 2018.',
+    },
+  ],
+
+  pressure: [
+    {
+      q: 'What is the correct tire pressure for a car?',
+      a: 'Most passenger cars require 2.0–2.5 bar (29–36 psi) for front and rear tires. Always check the sticker on the inside of the driver\'s door jamb — not the number printed on the tire itself, which is the maximum pressure, not the recommended one. Pressure should be checked when tires are cold.',
+    },
+    {
+      q: 'What pressure should a road bicycle tire have?',
+      a: 'Road bike tires (23–28 mm wide) typically run at 6.0–8.0 bar (87–116 psi). Wider tires (32–38 mm) use 4.5–6.0 bar (65–87 psi). Mountain bike tires run much lower, at 1.5–2.5 bar (22–36 psi). The correct pressure depends on rider weight, tire width, and terrain.',
+    },
+    {
+      q: 'What is normal atmospheric pressure?',
+      a: 'Standard atmospheric pressure at sea level is 1.01325 bar, 101.325 kPa, or 14.696 psi. Weather reports use hectopascals (hPa) — a "normal" day is around 1013 hPa (1.013 bar). High pressure (fair weather) is above 1020 hPa; low pressure (storms) is below 1000 hPa.',
+    },
+    {
+      q: 'What is a healthy blood pressure reading?',
+      a: 'Blood pressure is measured in mmHg (millimeters of mercury), not bar or psi. A healthy reading is below 120/80 mmHg. High blood pressure (hypertension) is defined as 130/80 mmHg or higher. For reference: 120 mmHg systolic = 0.160 bar = 2.32 psi.',
+    },
+    {
+      q: 'What pressure is inside a football (soccer ball)?',
+      a: 'FIFA regulations require a match soccer ball to be inflated to 0.6–1.1 bar (8.7–16 psi) above atmospheric pressure. Most balls are inflated to about 0.8–0.9 bar (11.6–13 psi) gauge pressure. An NFL American football is inflated to 12.5–13.5 psi (0.86–0.93 bar) gauge.',
+    },
+  ],
+
+  area: [
+    {
+      q: 'How big is an average apartment?',
+      a: 'Average apartment sizes vary widely by country. In the US, a one-bedroom apartment averages about 65–75 m² (700–800 sq ft). In Europe, apartments tend to be smaller — a one-bedroom in a major city is typically 40–60 m² (430–645 sq ft). Studio apartments are usually 25–40 m² (270–430 sq ft).',
+    },
+    {
+      q: 'How large is a football (soccer) pitch?',
+      a: 'FIFA regulations set the pitch size at 100–110 m long and 64–75 m wide, giving an area of 6,400–8,250 m² (1.58–2.04 acres). A standard match pitch is typically 105 × 68 m = 7,140 m² (1.76 acres). An American football field including end zones is 109.7 × 48.8 m = 5,351 m² (1.32 acres).',
+    },
+    {
+      q: 'How big is a tennis court?',
+      a: 'A full tennis court (including surrounding area) is 36.6 m × 18.3 m = 669.8 m² (7,205 sq ft). The playing surface itself is 23.77 m × 10.97 m = 260.7 m² (2,808 sq ft) for singles. A doubles court is 23.77 m × 10.97 m including the wider doubles alleys.',
+    },
+    {
+      q: 'How many square meters is a standard parking space?',
+      a: 'A standard parking space in most countries is about 2.4–2.7 m wide and 4.8–5.4 m long, giving an area of roughly 12–15 m² (130–160 sq ft). Compact spaces may be as small as 2.2 × 4.5 m = 9.9 m². Accessible (disabled) spaces are wider, typically 3.6–4.0 m wide.',
+    },
+    {
+      q: 'How big is an acre compared to everyday objects?',
+      a: 'One acre is 4,047 m² (43,560 sq ft). For reference: 1 acre is about 90% of a US football field (including end zones); it fits roughly 16 tennis courts; a typical suburban quarter-acre lot is about 1,012 m². Central Park in New York City is 843 acres (341 hectares).',
+    },
+  ],
+
+  data_storage: [
+    {
+      q: 'How much storage does a photo take up?',
+      a: 'A JPEG photo from a modern smartphone takes up 3–8 MB depending on resolution and compression. RAW photos from a DSLR or mirrorless camera are typically 20–50 MB each. A 1 GB memory card can hold roughly 200–300 JPEG photos or 20–40 RAW files.',
+    },
+    {
+      q: 'How large is a movie file?',
+      a: 'A standard-definition movie (480p) is about 700 MB–1.5 GB. An HD (1080p) movie is typically 4–8 GB. A 4K HDR movie from a streaming service is 15–25 GB. A Blu-ray disc holds up to 50 GB (dual layer), and a 4K Ultra HD Blu-ray holds up to 100 GB.',
+    },
+    {
+      q: 'How many songs fit on 1 GB?',
+      a: 'At standard quality (128 kbps MP3, about 1 MB per minute), 1 GB holds roughly 250–300 songs of average 3–4 minute length. At high quality (320 kbps, about 2.4 MB per minute), 1 GB holds about 100–130 songs. Lossless audio (FLAC) files are 20–50 MB per song.',
+    },
+    {
+      q: 'How much internet data does streaming use?',
+      a: 'Netflix data usage: standard definition uses about 1 GB per hour, HD (1080p) uses 3 GB per hour, and 4K uses 7–15 GB per hour. Spotify streams music at 24–320 kbps, using roughly 10–150 MB per hour. A video call on Zoom uses about 1.5–2.5 GB per hour in HD.',
+    },
+    {
+      q: 'How much storage does Windows or macOS need?',
+      a: 'Windows 11 requires a minimum of 64 GB of storage, but a fresh installation takes about 20–30 GB, with updates growing it over time. macOS Sonoma requires about 26 GB for installation. Most users need at least 256 GB of total storage for comfortable everyday use, with 512 GB or 1 TB recommended for longevity.',
+    },
+  ],
+
+  energy: [
+    {
+      q: 'How much energy does a household use per day?',
+      a: 'The average US household uses about 30 kWh (kilowatt-hours) of electricity per day, or about 900 kWh per month. European households use less — a typical German household averages about 10–12 kWh per day. In joules, 1 kWh = 3,600,000 J (3.6 MJ).',
+    },
+    {
+      q: 'How many calories are in common foods?',
+      a: 'Approximate food energy values: an apple ≈ 80 kcal, a slice of bread ≈ 80 kcal, a chicken breast (150 g) ≈ 165 kcal, a chocolate bar (50 g) ≈ 250 kcal, a Big Mac ≈ 550 kcal. Daily intake recommendations are typically 2,000 kcal for women and 2,500 kcal for men.',
+    },
+    {
+      q: 'How much energy does a 60W light bulb use in a day?',
+      a: 'A 60-watt bulb running for 8 hours uses 60 W × 8 h = 480 Wh = 0.48 kWh. An equivalent LED bulb at 8–9 watts uses about 64–72 Wh for the same light output — roughly 85% less energy. In joules: 0.48 kWh = 1,728,000 J (1.73 MJ).',
+    },
+    {
+      q: 'How much energy is in a AA battery?',
+      a: 'A standard AA alkaline battery stores about 3,000–3,500 mAh at 1.5V, which is roughly 16,000–19,000 joules (4.5–5.3 Wh). For comparison, a typical smartphone battery holds 10,000–15,000 J (2.8–4.2 Wh). A AA battery powers a TV remote for 6–12 months of normal use.',
+    },
+    {
+      q: 'How much energy does a car engine produce?',
+      a: 'A typical family car engine produces 100–150 kW (134–201 hp) of peak power. At highway cruising speed, it uses about 15–25 kW continuously. In energy terms, gasoline contains about 32 MJ per liter (8.6 kWh/L). A full 50-liter tank holds about 1,600 MJ of chemical energy, though engines convert only 20–35% of that into motion.',
+    },
+  ],
+
+  time: [
+    {
+      q: 'How long is a flight from New York to London?',
+      a: 'A direct flight from New York (JFK) to London (Heathrow) takes approximately 7 hours eastbound and 8–9 hours westbound, due to the jet stream. That is 420–540 minutes, or 25,200–32,400 seconds. The Concorde completed the crossing in under 3.5 hours before its retirement in 2003.',
+    },
+    {
+      q: 'How many hours of sleep does a person need?',
+      a: 'Adults generally need 7–9 hours of sleep per night (420–540 minutes). Teenagers need 8–10 hours. Young children need 10–14 hours. Over a lifetime, a person spends roughly 26 years asleep — about 9,490 days or 227,760 hours, assuming 7 hours per night for 80 years.',
+    },
+    {
+      q: 'How long does it take to cook common foods?',
+      a: 'Approximate cooking times: boiling pasta 8–12 minutes, boiling an egg 6–10 minutes, baking chicken breast 20–30 minutes at 200°C, roasting a whole chicken 1–1.5 hours, baking bread 30–40 minutes. Pressure cookers reduce most cooking times by 50–70%.',
+    },
+    {
+      q: 'How long does a car battery last?',
+      a: 'A standard lead-acid car battery lasts 3–5 years under normal use. In hot climates, batteries degrade faster and may last only 2–3 years. In very cold climates, they lose charge capacity but may physically last longer. A dead battery from a fully discharged state can take 2–8 hours to recharge with a standard charger.',
+    },
+    {
+      q: 'How many hours are in a year?',
+      a: 'A calendar year has 365 days × 24 hours = 8,760 hours. A leap year has 8,784 hours. In minutes: 525,600 per year (made famous by the musical "Rent"). In seconds: 31,536,000. The exact tropical year (Earth\'s orbit) is 365.2422 days = 8,765.8 hours.',
+    },
+  ],
+
+  fuel_economy: [
+    {
+      q: 'What is good fuel economy for a car?',
+      a: 'A fuel-efficient compact car achieves 5–6 L/100km (40–47 MPG). An average family sedan uses 7–9 L/100km (26–34 MPG). SUVs and larger vehicles typically use 10–14 L/100km (17–24 MPG). Hybrid vehicles achieve 4–5 L/100km (47–59 MPG). Plug-in hybrids and EVs use 15–20 kWh per 100 km.',
+    },
+    {
+      q: 'How far can a car go on a full tank?',
+      a: 'With a 55-liter tank and average fuel consumption of 8 L/100km, a car can travel about 687 km (427 miles) on a full tank. A more efficient car at 6 L/100km with the same tank goes about 917 km (570 miles). Most cars have a range of 500–800 km per fill-up under normal driving conditions.',
+    },
+    {
+      q: 'How much does it cost to fill up a car in Europe vs the US?',
+      a: 'European petrol prices are typically €1.50–2.00 per liter ($1.60–2.15/L). In the US, gasoline averages $0.95–1.30 per liter ($3.50–5.00 per US gallon). To fill a 55-liter tank: roughly €83–110 in Europe vs. $52–72 in the US. European cars tend to be more fuel-efficient to compensate for higher fuel prices.',
+    },
+    {
+      q: 'What does L/100km mean and how do I read it?',
+      a: 'L/100km means how many liters of fuel your car consumes per 100 kilometers traveled. Lower is better — 5 L/100km is more efficient than 10 L/100km. To convert to US MPG, divide 235.215 by the L/100km value: 8 L/100km = 235.215 ÷ 8 = 29.4 MPG.',
+    },
+    {
+      q: 'How fuel-efficient are electric vehicles compared to petrol cars?',
+      a: 'Electric vehicles (EVs) use 15–20 kWh per 100 km, which is equivalent to about 1.5–2 L/100km of gasoline in energy terms — roughly 4–5× more efficient than combustion engines. At an electricity price of €0.30/kWh, driving 100 km costs about €4.50–6.00, compared to €12–16 for a petrol car at €1.60/L and 8 L/100km.',
+    },
+  ],
+}
+
 // Pairs where the relationship is inverse (not linear) — can't say "1 X = Y Z"
 const INVERSE_PAIR_FORMULAS = {
   // Shoe size conversions (additive offsets through EU base)
@@ -302,5 +558,8 @@ export function generatePairContent(category, fromUnit, toUnit) {
   // Inject pair-specific extra FAQ items if available
   const extraFaq = PAIR_EXTRA_FAQ[`${fromUnit.id}|${toUnit.id}`] ?? []
 
-  return { intro, faq: [...faq, ...extraFaq] }
+  // Inject category-level real-world FAQ items
+  const categoryFaq = CATEGORY_FAQ[category] ?? []
+
+  return { intro, faq: [...faq, ...extraFaq, ...categoryFaq] }
 }
