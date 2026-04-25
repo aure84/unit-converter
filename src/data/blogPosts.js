@@ -1248,6 +1248,10 @@ export const blogPosts = [
 
   {
     slug: 'shoe-size-guide',
+    image: {
+      url: 'https://images.unsplash.com/photo-1576491110919-df70d852860f?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Collection of sneakers and shoes',
+    },
     title: 'Shoe Size Conversion Guide: EU, US, and UK Sizes Explained',
     tag: 'Quick Reference',
     date: '2026-04-20',
