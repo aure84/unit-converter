@@ -912,7 +912,7 @@ export const blogPosts = [
     tag: 'Conversion Fail',
     date: '2026-04-20',
     description: 'In 1999, NASA lost a $327 million spacecraft because one team used metric units and another used imperial. The story of the Mars Climate Orbiter is the most expensive unit conversion error in history.',
-    intro: 'On September 23, 1999, NASA\'s Mars Climate Orbiter fired its main engine to enter orbit around Mars. It never came back. The spacecraft — nine months into its journey, 416 million miles from Earth — flew too close to the Martian atmosphere and was destroyed. The cause: one engineering team at NASA\'s Jet Propulsion Laboratory was sending thruster data in metric units, while another team\'s software at Lockheed Martin expected imperial units. Nobody caught it for nine months.',
+    intro: 'On September 23, 1999, NASA\'s Mars Climate Orbiter fired its main engine to enter orbit around Mars. It never came back. The spacecraft — nine months into its journey, 416 million miles from Earth — flew too close to the Martian atmosphere and was destroyed by aerodynamic stress and heat. The cause was not a software bug in the traditional sense, and not a hardware failure. It was a unit mismatch: one engineering team at NASA\'s Jet Propulsion Laboratory was sending thruster data in metric units (newton-seconds), while another team\'s software at Lockheed Martin expected imperial units (pound-force seconds). Nobody caught it for nine months.',
     sections: [
       {
         heading: 'What Went Wrong',
@@ -925,9 +925,9 @@ export const blogPosts = [
       {
         heading: 'How It Was Missed',
         paragraphs: [
-          'The mismatch was not caught because the two software systems — one from NASA\'s JPL, one from Lockheed Martin — were developed independently and tested separately. Each worked correctly in isolation. The error only manifested when they communicated with each other in space.',
+          'The mismatch was not caught because the two software systems — one from NASA\'s JPL, one from Lockheed Martin — were developed independently and tested separately against their own specifications. Each worked correctly in isolation. The error only manifested when they communicated with each other across 416 million miles of space.',
           'Reviewers noticed the trajectory was slightly off weeks before arrival, but the deviations were within a range that could have been caused by other factors. The root cause was not identified in time.',
-          'NASA\'s internal review found the failure resulted from inadequate systems-engineering verification and validation — a process failure, not just a math error.',
+          'NASA\'s internal review found the failure resulted from inadequate systems-engineering verification and validation — a process failure, not just a math error. No single person or team was solely responsible; the system as a whole had no mechanism to catch a cross-team unit discrepancy.',
         ],
       },
       {
@@ -946,8 +946,33 @@ export const blogPosts = [
           'The incident is now a standard case study in software engineering, systems integration, and the importance of interface specifications. It is taught in engineering programs worldwide as an example of how a simple unit mismatch can cascade into catastrophic failure.',
         ],
       },
+      {
+        heading: 'Nine Months of Silence',
+        paragraphs: [
+          'What makes the Mars Climate Orbiter story particularly striking is the timeline. The unit mismatch was present from the moment the spacecraft launched on December 11, 1998. For nine months, the navigation team received trajectory data that was subtly wrong — and corrected for it, over and over, without ever identifying the root cause.',
+          'The small-force thruster data affected the spacecraft\'s attitude control. Each firing was 4.448 times weaker than the software believed. To maintain the correct course, the ground team kept issuing correction commands. The spacecraft kept drifting. Engineers flagged the anomaly in a report dated July 1999 — two months before arrival — but the report did not reach the right people in time.',
+          'This is the real lesson of the Orbiter: the error was not invisible. It produced symptoms. Those symptoms were observed and documented. The failure was not simply a math mistake — it was an organizational failure to follow an anomaly through to its root cause before it became catastrophic.',
+        ],
+      },
+      {
+        heading: 'What Changed After the Loss',
+        paragraphs: [
+          'NASA\'s post-incident review produced a set of concrete changes to spacecraft development practice. All interface control documents — the specifications that define how software components communicate — were required to explicitly state the units for every data field. "Assumed" units were no longer acceptable.',
+          'The review also found that the "faster, better, cheaper" philosophy of the 1990s — which aimed to reduce mission costs and schedules — had led to understaffed navigation teams and inadequate cross-team verification processes. The Mars Climate Orbiter was one of the last missions built under that philosophy. Subsequent Mars missions, including Mars Reconnaissance Orbiter and the Curiosity rover, had significantly expanded systems-engineering oversight.',
+          'The $327.6 million loss is often cited in software engineering courses not because the conversion is complicated — it is not — but because it demonstrates how a simple, well-known error can persist through an organization if the processes for catching it are absent. The fix cost nothing: a single line in an interface specification stating "units: newton-seconds" would have been enough.',
+        ],
+      },
+      {
+        heading: 'The Broader Pattern: When Two Systems Meet',
+        paragraphs: [
+          'The Mars Climate Orbiter is the most famous unit conversion failure in history, but it belongs to a recognizable pattern. The Gimli Glider (1983) ran out of fuel because ground crew calculated fuel weight in pounds instead of kilograms — the Boeing 767 required kilograms. The Vasa warship (1628) was built asymmetrically because two construction crews used rulers of different lengths, one Swedish foot and one Amsterdam foot, without ever checking. Columbus underestimated the size of the Earth because he confused two definitions of a "mile."',
+          'In each case, the error happened at an interface — the point where two systems, teams, or traditions handed information to each other. Within each system, everything was consistent. The failure was in the handoff.',
+          'Unit conversions are among the most dangerous errors in engineering precisely because they are invisible inside any single system. A number looks like a number. 4.448 looks plausible. Nothing breaks immediately. The error accumulates quietly until the moment of no return — the spacecraft reaches Mars, the plane runs out of fuel at 41,000 feet, the ship leaves the harbor.',
+          'The preventive measure is always the same: make units explicit at every interface. Not assumed, not documented somewhere in a file nobody reads, but verified — by a test, a review, a specification that both teams sign off on. The Mars Climate Orbiter cost $327 million to teach a lesson that can be applied for free.',
+        ],
+      },
     ],
-    conclusion: 'A single unconverted unit — pound-force seconds sent where newton-seconds were expected — destroyed a $327 million spacecraft. The lesson is not just about unit conversion. It is about never assuming two systems speak the same language, even when built by the same organization. Always verify units at every interface.',
+    conclusion: 'A single unconverted unit — pound-force seconds sent where newton-seconds were expected — destroyed a $327 million spacecraft. The lesson is not just about unit conversion. It is about never assuming two systems speak the same language, even when built by the same organization. The fix would have cost nothing: an explicit unit label in a software interface specification. Instead, NASA lost the spacecraft, nine months of flight time, and $327.6 million. The Mars Climate Orbiter mission ended at 57 km above Mars on September 23, 1999 — the exact altitude where the atmosphere was thick enough to destroy a spacecraft that should have been in safe orbit 100 km higher. Always verify units at every interface.',
     relatedLinks: [
       { label: 'Force / Pressure Converter', path: '/pressure' },
       { label: 'Length Converter', path: '/length' },
