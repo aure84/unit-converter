@@ -1853,7 +1853,7 @@ export const blogPosts = [
     tag: 'Conversion Fail',
     date: '2026-04-20',
     description: 'Your 1 TB hard drive shows 931 GB because manufacturers and operating systems define "terabyte" differently. No storage is missing.',
-    intro: 'You buy a "1 TB" external hard drive, plug it in, and your computer reports 931 GB. You have not been cheated. No one removed 69 GB of storage. What happened is a unit conversion disagreement — one that has persisted for decades because manufacturers and operating systems define "terabyte" differently. This is one of the most common and misunderstood unit conversion issues in everyday technology.',
+    intro: 'You buy a "1 TB" external hard drive, plug it in, and your computer reports 931 GB. You have not been cheated. No one removed 69 GB of storage. What happened is a unit conversion disagreement — one that has persisted for decades and will persist for the foreseeable future because manufacturers and operating systems define "terabyte" differently, neither side wants to change, and the body that tried to fix it in 1998 introduced terminology so awkward that almost nobody uses it. This is one of the most common and widely misunderstood unit conversion issues in everyday technology, and it gets more noticeable every year as consumer drives grow larger.',
     sections: [
       {
         heading: 'Two Definitions of "Terabyte"',
@@ -1867,7 +1867,7 @@ export const blogPosts = [
         heading: 'Why Computers Use Binary',
         paragraphs: [
           'Computer memory and storage are built from transistors that are either on or off — binary digits (bits). Doubling is natural: 1 KB = 1,024 bytes (2¹⁰), 1 MB = 1,048,576 bytes (2²⁰), 1 GB = 1,073,741,824 bytes (2³⁰), 1 TB = 1,099,511,627,776 bytes (2⁴⁰).',
-          'Early in computing history, the terms "kilobyte," "megabyte," and so on were informally used to mean the nearest power of 2, even though the SI prefixes kilo, mega, giga strictly mean 10³, 10⁶, 10⁹. Storage manufacturers eventually adopted the strict SI definitions — giving their drives larger apparent capacities — while operating systems kept the binary interpretation.',
+          'Early in computing history, the terms "kilobyte," "megabyte," and so on were informally used to mean the nearest power of 2 — 1,024 bytes, 1,048,576 bytes — even though the SI prefixes kilo, mega, giga strictly mean 10³, 10⁶, 10⁹. When drives were small, the difference was negligible: a 100 MB drive off by 4.86% was not worth arguing about. As drives grew to gigabytes and then terabytes, the gap became large enough to matter financially. Storage manufacturers adopted the strict SI decimal definitions — giving their drives larger apparent capacities on the label — while operating systems retained the binary interpretation they had always used.',
         ],
       },
       {
@@ -1900,8 +1900,32 @@ export const blogPosts = [
           '1 TB drive → macOS shows 1 TB',
         ],
       },
+      {
+        heading: 'Why Manufacturers Chose Decimal',
+        paragraphs: [
+          'Storage manufacturers switched to decimal definitions because it makes their products look larger. A drive containing 1,000,000,000,000 bytes can be labeled "1 TB" in decimal, but would be labeled "931 GiB" in binary. From a marketing perspective, "1 TB" is a cleaner, larger-sounding number than "931 GiB."',
+          'This is not new. Western Digital was sued in 2006 in a class-action lawsuit over the discrepancy. The settlement required WD to include a software utility that clarified the difference between SI and binary definitions. The lawsuit did not change the labeling convention — manufacturers continue to use decimal definitions, and operating systems continue to display binary values under GB labels.',
+          'The issue becomes more noticeable at larger capacities. A 4 TB drive shows as 3.64 TB on Windows — a gap of 360 GB. At 16 TB, the gap is nearly 1.5 TB. As consumer drives grow larger, the apparent "missing" storage grows proportionally, which is why the confusion becomes more common as drive sizes increase.',
+        ],
+      },
+      {
+        heading: 'RAM Is Different',
+        paragraphs: [
+          'Computer memory (RAM) has always been sold and measured in binary units, because RAM is addressed directly by the CPU using binary addressing. A "16 GB" stick of RAM genuinely contains 16 × 1,073,741,824 = 17,179,869,184 bytes — the binary definition. Windows and macOS both report RAM in binary GB, and for once, the label and the display agree.',
+          'This creates an inconsistency on the same computer: your 16 GB of RAM shows as 16 GB, while your 1 TB SSD shows as 931 GB — even though both are measured in "gigabytes." The difference is that RAM manufacturers use binary gigabytes and storage manufacturers use decimal gigabytes. Both call the unit GB.',
+          'For practical purposes: trust the label on RAM, and subtract about 7% from the labeled capacity of HDDs and SSDs to get the number Windows will display. A 512 GB SSD will show as approximately 477 GB in Windows Explorer.',
+        ],
+      },
+      {
+        heading: 'Does the File System Take Space Too?',
+        paragraphs: [
+          'Beyond the decimal-vs-binary discrepancy, formatting a drive also reduces available space. Every file system — NTFS, exFAT, APFS, ext4 — reserves some space for its own overhead: the master file table, directory structures, and system files.',
+          'On a 1 TB drive formatted with NTFS, the file system overhead is typically 100–500 MB. On a freshly formatted 1 TB SSD, you might see 930 GB available after accounting for both the binary conversion and the file system overhead.',
+          'SSDs also reserve a portion of their raw capacity as "over-provisioning" — spare cells used to manage wear leveling and bad block replacement. This is not visible to the operating system at all. A 1 TB NVMe SSD might have 1.07 TB of raw flash memory but expose only 1 TB to the system, with the remaining 7% held in reserve to extend drive longevity.',
+        ],
+      },
     ],
-    conclusion: 'Your 1 TB drive shows 931 GB on Windows because manufacturers define 1 TB as 10¹² bytes while Windows defines 1 TB as 2⁴⁰ bytes — a 9.95% difference. No storage is missing. macOS switched to the manufacturer\'s decimal definition in 2009, so the same drive shows 1 TB there. The IEC introduced the "tebibyte" (TiB) to resolve this, but almost nobody uses the term. The confusion persists.',
+    conclusion: 'Your 1 TB drive shows 931 GB on Windows because manufacturers define 1 TB as 10¹² bytes (decimal) while Windows defines 1 GB as 2³⁰ bytes (binary) — a 9.95% difference per terabyte that grows as drive sizes increase. No storage is missing: you are getting every byte the manufacturer labeled. macOS switched to the manufacturer\'s decimal definition in macOS 10.6 (2009), so the same drive shows 1 TB on a Mac. The IEC introduced the "tebibyte" (TiB) in 1998 specifically to resolve this ambiguity, but almost nobody outside of technical documentation uses the term. The confusion persists because neither manufacturers nor operating system vendors have any financial incentive to fix it — and because "gibibyte" sounds worse than "gigabyte." Until Windows adopts decimal definitions or the industry agrees on a single standard, plan on about 7% less displayed capacity per labeled TB on any Windows system.',
     relatedLinks: [
       { label: 'GB to TB Converter', path: '/data-storage/gigabyte-to-terabyte' },
       { label: 'MB to GB Converter', path: '/data-storage/megabyte-to-gigabyte' },
