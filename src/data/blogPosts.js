@@ -1791,6 +1791,10 @@ export const blogPosts = [
   },
   {
     slug: 'vasa-warship',
+    image: {
+      url: 'https://images.unsplash.com/photo-1547013571-585f53927cd4?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Old wooden sailing ship at sea',
+    },
     title: 'The Warship That Sank Because Two Teams Used Different Rulers',
     tag: 'Conversion Fail',
     date: '2026-04-20',
