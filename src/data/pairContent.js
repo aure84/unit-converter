@@ -434,6 +434,28 @@ const CATEGORY_FAQ = {
       a: 'Electric vehicles (EVs) use 15–20 kWh per 100 km, which is equivalent to about 1.5–2 L/100km of gasoline in energy terms — roughly 4–5× more efficient than combustion engines. At an electricity price of €0.30/kWh, driving 100 km costs about €4.50–6.00, compared to €12–16 for a petrol car at €1.60/L and 8 L/100km.',
     },
   ],
+  torque: [
+    {
+      q: 'What is a typical tightening torque for car wheel bolts?',
+      a: 'Most passenger car wheel bolts require 100–130 Nm (74–96 ft-lb) of torque. Always check your vehicle\'s manual — overtightening can warp brake discs and crack wheel studs, while undertightening can cause wheels to loosen while driving. A calibrated torque wrench is essential for wheel changes.',
+    },
+    {
+      q: 'How much torque does a car engine produce?',
+      a: 'A typical compact car produces 150–250 Nm (110–184 ft-lb) of torque. Family sedans range from 250–400 Nm (184–295 ft-lb). High-performance sports cars can exceed 600 Nm (443 ft-lb). Diesel engines typically produce more torque than equivalent petrol engines, which is why diesels feel stronger at low revs.',
+    },
+    {
+      q: 'What is the difference between Nm and ft-lb?',
+      a: '1 ft-lb (foot-pound) = 1.3558 Nm (newton-meters). 1 Nm = 0.7376 ft-lb. Newton-meters are the SI standard used in Europe and most of the world; foot-pounds are common in the US and UK automotive industry. To convert: multiply ft-lb by 1.356 to get Nm, or divide Nm by 1.356 to get ft-lb.',
+    },
+    {
+      q: 'What torque is needed for common DIY tasks?',
+      a: 'Spark plugs: 15–25 Nm. Oil drain plug: 20–40 Nm. Cylinder head bolts: 60–100 Nm (varies by engine). Bicycle pedals: 35–40 Nm. Furniture assembly bolts: 5–15 Nm. Always check manufacturer specs — torque requirements vary significantly between materials, thread sizes, and applications.',
+    },
+    {
+      q: 'Why does torque matter more than power at low speeds?',
+      a: 'Torque is the rotational force that actually moves a vehicle, while power is the rate at which work is done. At low speeds (pulling, accelerating from standstill), high torque is more useful — it determines how easily a vehicle can start moving or tow a load. Power (HP/kW) determines top speed and sustained high-speed performance. Diesel engines excel at towing due to high low-rpm torque.',
+    },
+  ],
   power: [
     {
       q: 'How many watts does a household appliance use?',
