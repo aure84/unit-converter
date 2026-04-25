@@ -2209,6 +2209,160 @@ export const blogPosts = [
       { label: 'Temperature Converter', path: '/temperature' },
     ],
   },
+
+  {
+    slug: 'kitchen-measurement-conversions',
+    image: {
+      url: 'https://images.unsplash.com/photo-1608635661411-b8de70247ea5?q=80&w=1200&auto=format&fit=crop',
+      alt: 'Kitchen measuring cups and spoons arranged on a countertop',
+    },
+    title: 'Kitchen Measurement Conversions: The Complete Cooking Cheat Sheet',
+    tag: 'Quick Reference',
+    date: '2026-04-26',
+    description: 'Complete kitchen measurement conversion reference: cups to ml, ounces to grams, tablespoons to teaspoons, baking temperatures, and pan sizes — all in one place.',
+    intro: 'Cooking and baking pull from two measurement systems that do not always speak to each other cleanly. A US recipe calls for cups and tablespoons. A European recipe lists grams and milliliters. A British recipe mentions fluid ounces — which are not the same size as US fluid ounces. This guide covers every kitchen measurement conversion you will actually need: volume, weight, temperature, pan sizes, and the mental shortcuts that make it faster.',
+    sections: [
+      {
+        heading: 'US Volume Measurements: Cups, Tablespoons, Teaspoons',
+        paragraphs: [
+          'The US system builds up from teaspoons. Three teaspoons make one tablespoon. Sixteen tablespoons make one cup. This hierarchy matters because most recipes mix all three, and knowing the relationships lets you scale up or down without a calculator.',
+          'The full hierarchy from smallest to largest:',
+        ],
+        list: [
+          '1 tablespoon = 3 teaspoons',
+          '2 tablespoons = 1 fluid ounce',
+          '¼ cup = 4 tablespoons = 12 teaspoons',
+          '⅓ cup = 5 tablespoons + 1 teaspoon',
+          '½ cup = 8 tablespoons',
+          '1 cup = 16 tablespoons = 48 teaspoons',
+          '1 cup = 8 US fluid ounces = 236.6 ml',
+          '1 pint = 2 cups = 473 ml',
+          '1 quart = 4 cups = 946 ml',
+          '1 gallon = 16 cups = 3.785 liters',
+        ],
+      },
+      {
+        heading: 'Cups to Milliliters: The Most Common Volume Conversions',
+        paragraphs: [
+          'When converting a US recipe to metric, the cup-to-milliliter conversion is the one you will use most. One US cup equals 236.6 milliliters — often rounded to 240 ml for cooking purposes, which introduces a trivial error of less than 2%.',
+          'Common cup conversions to ml:',
+        ],
+        list: [
+          '¼ cup = 60 ml',
+          '⅓ cup = 80 ml',
+          '½ cup = 120 ml',
+          '⅔ cup = 160 ml',
+          '¾ cup = 180 ml',
+          '1 cup = 240 ml',
+          '1½ cups = 355 ml',
+          '2 cups = 480 ml',
+        ],
+      },
+      {
+        heading: 'Weight: Grams, Ounces, and Pounds',
+        paragraphs: [
+          'Weight is the most precise way to measure ingredients in baking. A cup of flour can weigh anywhere from 120 g to 160 g depending on how tightly it is packed — a 30% variation that will noticeably affect a cake or bread. Weight eliminates that variation entirely.',
+          '1 ounce = 28.35 grams. 1 pound = 453.6 grams = 16 ounces. For quick mental math, 1 oz ≈ 28 g.',
+          'Common baking weight conversions:',
+        ],
+        list: [
+          '1 oz = 28 g',
+          '2 oz = 57 g',
+          '3.5 oz = 100 g',
+          '4 oz = 113 g (¼ pound)',
+          '8 oz = 227 g (½ pound)',
+          '16 oz = 454 g (1 pound)',
+          '1 stick of butter = 4 oz = 113 g = ½ cup',
+        ],
+      },
+      {
+        heading: 'Common Ingredient Weights per Cup',
+        paragraphs: [
+          'Volume measurements are inconsistent across ingredients because density varies. One cup of water weighs 236 g. One cup of all-purpose flour weighs about 125 g. One cup of sugar weighs about 200 g. These differences explain why professional bakers always weigh — and why substituting volume measures for weight (or vice versa) without a reference produces unreliable results.',
+          'Approximate weights per US cup for common baking ingredients:',
+        ],
+        list: [
+          'All-purpose flour: 125 g (4.4 oz)',
+          'Bread flour: 130 g (4.6 oz)',
+          'Whole wheat flour: 120 g (4.2 oz)',
+          'Granulated sugar: 200 g (7 oz)',
+          'Brown sugar, packed: 220 g (7.7 oz)',
+          'Powdered / icing sugar: 120 g (4.2 oz)',
+          'Cocoa powder: 85 g (3 oz)',
+          'Rolled oats: 90 g (3.2 oz)',
+          'Honey: 340 g (12 oz)',
+          'Butter (melted): 227 g (8 oz)',
+          'Milk: 240 g (8.5 oz)',
+        ],
+      },
+      {
+        heading: 'US vs UK vs Metric: Fluid Ounces and Tablespoons',
+        paragraphs: [
+          'One of the most common sources of confusion in international recipes is the fluid ounce. A US fluid ounce is 29.57 ml. A UK (imperial) fluid ounce is 28.41 ml — about 4% larger. The difference is small enough to ignore for most recipes but matters in precise baking.',
+          'The UK tablespoon is also slightly different: 1 UK tablespoon = 17.76 ml. A US tablespoon = 14.79 ml. When a British recipe calls for "1 tablespoon of baking powder" and you use a US tablespoon, you are adding about 17% less. For leavening agents, that can matter.',
+          'Australian tablespoons are larger still: 1 Australian tablespoon = 20 ml = 4 teaspoons (vs 3 US teaspoons). If you are cooking from Australian recipes, adjust accordingly.',
+        ],
+      },
+      {
+        heading: 'Oven Temperature Conversions: Fahrenheit, Celsius, Gas Mark',
+        paragraphs: [
+          'US recipes use Fahrenheit. European recipes use Celsius. British recipes often list Gas Marks — a numbered scale from 1 to 9 that corresponds to Celsius ranges on a gas oven. When following a recipe from a different country, temperature conversion is critical: an oven set to 350°F instead of 350°C is about 177°C cooler — a difference that will undercook most baked goods.',
+          'The conversion formula: °C = (°F − 32) × 5/9. For quick cooking estimates, subtract 32 and divide by 2 (slightly high but within about 5%).',
+          'Common baking temperature reference:',
+        ],
+        list: [
+          '275°F = 135°C = Gas Mark 1 (very low — meringues, slow-roasted meats)',
+          '300°F = 150°C = Gas Mark 2 (low — cheesecakes, custards)',
+          '325°F = 165°C = Gas Mark 3 (low-moderate — pound cake, banana bread)',
+          '350°F = 175°C = Gas Mark 4 (moderate — most cakes, cookies)',
+          '375°F = 190°C = Gas Mark 5 (moderate-hot — muffins, quick breads)',
+          '400°F = 200°C = Gas Mark 6 (hot — roasted vegetables, pizza)',
+          '425°F = 220°C = Gas Mark 7 (high — artisan bread, roast chicken)',
+          '450°F = 230°C = Gas Mark 8 (very high — high-heat roasting)',
+          '475°F = 245°C = Gas Mark 9 (maximum — pizza, steakhouse sear)',
+        ],
+      },
+      {
+        heading: 'Pan Size Conversions',
+        paragraphs: [
+          'US recipes specify pan sizes in inches. European recipes use centimeters. The conversion is straightforward: multiply inches by 2.54 to get centimeters.',
+          'Common pan conversions and their metric equivalents:',
+        ],
+        list: [
+          '8-inch round pan = 20 cm',
+          '9-inch round pan = 23 cm',
+          '9×13-inch baking dish = 23×33 cm',
+          '8×8-inch square pan = 20×20 cm',
+          '9×5-inch loaf pan = 23×13 cm',
+          '10-inch springform = 26 cm',
+          'Standard muffin tin: 12 cups, each about 50 ml (3.4 tablespoons)',
+          'Mini muffin tin: 24 cups, each about 30 ml',
+        ],
+      },
+      {
+        heading: 'Quick Mental Shortcuts for the Kitchen',
+        paragraphs: [
+          'Precise conversions are useful for reference but slow for real-time cooking. These mental shortcuts are accurate enough for most recipes and much faster to apply:',
+        ],
+        list: [
+          'Cups to ml: multiply by 240 (exact: 236.6)',
+          'Fluid ounces to ml: multiply by 30 (exact: 29.57)',
+          'Ounces to grams: multiply by 28 (exact: 28.35)',
+          'Pounds to grams: multiply by 450 (exact: 453.6)',
+          'Fahrenheit to Celsius (cooking): subtract 32, divide by 2 (within 5% for temps above 200°F)',
+          'Inches to cm: multiply by 2.5 (exact: 2.54)',
+          '1 stick of butter: always 4 oz / 113 g / ½ cup regardless of brand',
+        ],
+      },
+    ],
+    conclusion: 'Kitchen conversions become second nature once you internalize a handful of anchor values: 1 cup = 240 ml, 1 oz = 28 g, 350°F = 175°C, and 1 tablespoon = 3 teaspoons. Everything else is a multiple or fraction of those four. For precise baking, weigh your ingredients rather than measuring by volume — it takes the same amount of time and eliminates the single biggest source of inconsistency in home baking. Use the free converters below for any value that falls outside these common ranges.',
+    relatedLinks: [
+      { label: 'Volume Converter', path: '/volume' },
+      { label: 'Weight Converter', path: '/weight' },
+      { label: 'Temperature Converter', path: '/temperature' },
+      { label: 'Length Converter', path: '/length' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */
