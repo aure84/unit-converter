@@ -2043,6 +2043,10 @@ export const blogPosts = [
 
   {
     slug: 'stone-to-kg',
+    image: {
+      url: 'https://images.unsplash.com/photo-1646829873498-e874cfa27933?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Bathroom weight scale',
+    },
     title: 'How to Convert Stone to Kilograms (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-23',
