@@ -363,6 +363,10 @@ export const blogPosts = [
 
   {
     slug: 'speed-units',
+    image: {
+      url: 'https://images.unsplash.com/photo-1611760357505-922600d8ffa6?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Car speedometer dashboard',
+    },
     title: 'How Do You Convert mph, km/h, m/s, and Knots?',
     tag: 'Quick Reference',
     date: '2026-04-15',
