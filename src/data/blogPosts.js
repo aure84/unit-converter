@@ -1600,6 +1600,10 @@ export const blogPosts = [
   },
   {
     slug: 'liters-to-ml',
+    image: {
+      url: 'https://images.unsplash.com/photo-1617155093730-a8bf47be792d?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Water bottle liquid measurement',
+    },
     title: 'How to Convert Liters to Milliliters (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-20',
