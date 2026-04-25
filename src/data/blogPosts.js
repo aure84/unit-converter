@@ -1742,6 +1742,10 @@ export const blogPosts = [
   },
   {
     slug: 'hours-to-minutes',
+    image: {
+      url: 'https://images.unsplash.com/photo-1541480601022-2308c0f02487?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Clock showing time',
+    },
     title: 'How to Convert Hours to Minutes (and Seconds)',
     tag: 'How-To Guide',
     date: '2026-04-20',
