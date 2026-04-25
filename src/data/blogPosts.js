@@ -986,7 +986,7 @@ export const blogPosts = [
     tag: 'Conversion Fail',
     date: '2026-04-20',
     description: 'In 1983, an Air Canada Boeing 767 ran out of fuel at 41,000 feet because ground crew confused kilograms with pounds. The plane glided 100 miles to an emergency landing — with 69 people on board.',
-    intro: 'On July 23, 1983, Air Canada Flight 143 — a brand-new Boeing 767 — ran out of fuel at 41,000 feet over northern Canada. All engines went silent. For the next 17 minutes, the plane glided without power over 100 miles of Canadian wilderness, carrying 61 passengers and 8 crew. The cause was a unit conversion error: ground crew calculated the fuel load in pounds when they should have used kilograms. The plane had exactly half the fuel it needed.',
+    intro: 'On July 23, 1983, Air Canada Flight 143 — a brand-new Boeing 767 — ran out of fuel at 41,000 feet over northern Canada. All engines went silent. For the next 17 minutes, the plane glided without power over 100 miles of Canadian wilderness, carrying 61 passengers and 8 crew. The cause was a unit conversion error: ground crew calculated the fuel load in pounds when they should have used kilograms. Because a pound is approximately 2.2 times lighter than a kilogram, the plane departed with roughly 22,300 pounds of fuel instead of the required 22,300 kilograms — less than half of what it needed to reach Edmonton. The aircraft became the world\'s largest glider at 41,000 feet, and landed only because of one pilot\'s gliding experience and an abandoned airstrip in rural Manitoba.',
     sections: [
       {
         heading: 'The Setup: A New Plane and a Broken Gauge',
@@ -999,7 +999,7 @@ export const blogPosts = [
       {
         heading: 'The Exact Calculation Error',
         paragraphs: [
-          'The plane needed 22,300 kg of fuel for the flight from Montreal to Edmonton.',
+          'The plane needed 22,300 kg of fuel for the complete flight from Montreal to Edmonton, a journey of roughly 3,500 km.',
           'The ground crew measured the fuel already on board in liters, then multiplied by 1.77 (lbs/liter) instead of 0.803 (kg/liter) to get the weight. This gave them a number in pounds, not kilograms.',
           'Because 1 kg = 2.2 lbs, their fuel reading appeared more than twice as heavy as the actual fuel on board. The plane departed with 22,300 pounds of fuel — just over 10,000 kg — instead of the required 22,300 kg. It had 45% of the fuel it needed.',
         ],
@@ -1007,8 +1007,8 @@ export const blogPosts = [
       {
         heading: 'The Glide',
         paragraphs: [
-          'Both engines flamed out over Red Lake, Ontario. The cockpit went dark — many instruments, including the altitude indicator, are powered by the engines. The pilots had never trained for a complete dual-engine failure in a jet aircraft.',
-          'Captain Robert Pearson had gliding experience in small aircraft. He calculated a glide ratio — the 767 could travel roughly 12 miles for every mile of altitude lost. From 41,000 feet, that gave them about 100 miles of range.',
+          'Both engines flamed out over Red Lake, Ontario, at 41,000 feet and approximately halfway through the flight. The cockpit went dark — many instruments, including the altitude indicator and most communications equipment, are electrically powered by the engines. The ram air turbine (RAT), a small propeller that drops from the fuselage in emergencies, provided minimal power for basic flight controls. The pilots had never trained for a complete dual-engine failure in a jet aircraft, because under normal circumstances it cannot happen.',
+          'Captain Robert Pearson had gliding experience in small aircraft — an unusual background for a commercial jet pilot. He calculated a glide ratio: the 767, with gear up and engines windmilling, could travel roughly 12 miles for every mile of altitude lost. From 41,000 feet (about 12.5 km), that gave them roughly 150 km (about 93 miles) of range to find a runway.',
           'The crew diverted to Gimli, Manitoba — a former Royal Canadian Air Force base that had been partially converted into a motorsport racing venue. The runway was shorter than ideal and had cars and people on it from a racing event that day. Pearson executed a forward slip maneuver to lose altitude rapidly and landed without engine power, nose gear, or full brakes. There were minor injuries but no fatalities.',
         ],
       },
@@ -1016,12 +1016,28 @@ export const blogPosts = [
         heading: 'Why Multiple Checks Failed',
         paragraphs: [
           'Three separate people — the fueler, the first officer, and the captain — all checked the fuel calculation and missed the error. Each was working from the same incorrect assumption: that the number they were looking at was in the correct units.',
-          'The FQIS malfunction had created a situation where manual calculation was required, but no written procedure existed for the metric conversion. The 767 was new; the ground crew were accustomed to the older imperial-unit aircraft.',
+          'The FQIS malfunction had created a situation where manual calculation was required, but no written procedure existed for the metric conversion. The 767 was new; Canada had only recently adopted the metric system nationally, and many ground crew were still accustomed to working with the older imperial-unit aircraft that dominated the fleet. The new unit system had not been sufficiently embedded in training or documentation.',
           'The accident investigation found systemic failures: inadequate training on the new metric system, no clear procedure for manual fuel calculations, and a broken instrument that should have grounded the aircraft.',
         ],
       },
+      {
+        heading: 'Captain Pearson\'s Glide',
+        paragraphs: [
+          'The 767\'s glide ratio — the distance it travels forward for every unit of altitude lost — is approximately 17:1 in clean configuration. From 41,000 feet (12,500 meters), that gave the crew roughly 213 km (132 miles) of range. Pearson and First Officer Maurice Quintal quickly identified Gimli as the closest suitable runway.',
+          'What they did not know was that Gimli\'s runway 32L, though still paved, had been decommissioned as an active military airfield. Half the runway had been repurposed as a dragstrip for a car racing event. Spectators, cars, and competitors were on the runway when the 767 appeared overhead with no engine noise.',
+          'Pearson used a sideslip — a technique common in gliders but almost never used in commercial jets — to bleed off excess altitude on final approach. The nose gear collapsed on touchdown. The plane skidded to a stop with its nose on the ground, stopping just short of the spectators. The forward cabin floor buckled, but the aircraft did not break apart. Of the 69 people on board, only a handful suffered minor injuries, mostly from the emergency slide evacuation.',
+        ],
+      },
+      {
+        heading: 'The Aftermath and Legacy',
+        paragraphs: [
+          'The repaired aircraft — nicknamed "the Gimli Glider" — returned to service and flew for Air Canada until 2008, when it was retired and eventually scrapped in 2013. Captain Pearson and First Officer Quintal received commendations for their airmanship. They also received reprimands for procedural violations that contributed to the departure with insufficient fuel.',
+          'Transport Canada and Air Canada overhauled fuel management procedures for metric aircraft. The FQIS on the accident aircraft had been malfunctioning for two days before the flight; the investigation found that the plane should never have been dispatched with a broken fuel gauge. A working fuel quantity system would have made the manual calculation unnecessary.',
+          'The Gimli Glider incident is studied in aviation training programs worldwide. It appears in human factors courses as an example of how a chain of individually small failures — a broken instrument, unfamiliar units, inadequate procedures, time pressure — can combine into a crisis that only luck and exceptional skill prevent from becoming a disaster.',
+        ],
+      },
     ],
-    conclusion: 'The Gimli Glider is a reminder that unit errors do not announce themselves. The numbers looked right — because everyone was checking internal consistency, not unit consistency. The plane landed safely only because of extraordinary piloting skill. The fix was procedural: clear written standards specifying units at every step of fuel calculation.',
+    conclusion: 'The Gimli Glider is a reminder that unit errors do not announce themselves. Three experienced aviation professionals checked the fuel calculation and found nothing wrong — because each was verifying internal consistency, not unit consistency. The number 22,300 appeared in the correct column. Nobody asked whether it was kilograms or pounds. The plane landed safely only because of extraordinary piloting skill, a decommissioned runway that happened to exist at the right range, and a combination of luck that should not be relied upon as a safety net. The fix was procedural and inexpensive: a written checklist specifying that fuel weight must be entered in kilograms, and a policy requiring the FQIS to be operational before dispatch. Neither required new technology. Both existed in aviation practice for other aircraft. They simply had not been implemented for the 767 in time.',
     relatedLinks: [
       { label: 'Weight Converter (kg to lbs)', path: '/weight/kilogram-to-pound' },
       { label: 'Volume Converter', path: '/volume' },
