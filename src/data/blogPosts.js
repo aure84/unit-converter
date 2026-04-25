@@ -5,6 +5,10 @@
 export const blogPosts = [
   {
     slug: 'kilometers-to-miles',
+    image: {
+      url: 'https://images.unsplash.com/photo-1486673748761-a8d18475c757?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Empty highway road',
+    },
     title: 'How to Convert Kilometers to Miles (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-15',
