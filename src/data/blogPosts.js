@@ -813,6 +813,10 @@ export const blogPosts = [
 
   {
     slug: 'horsepower-to-kw',
+    image: {
+      url: 'https://images.unsplash.com/photo-1725289339928-06ee31684df5?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Car engine close up',
+    },
     title: 'How to Convert Horsepower to Kilowatts (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-19',
