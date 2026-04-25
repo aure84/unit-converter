@@ -434,6 +434,28 @@ const CATEGORY_FAQ = {
       a: 'Electric vehicles (EVs) use 15–20 kWh per 100 km, which is equivalent to about 1.5–2 L/100km of gasoline in energy terms — roughly 4–5× more efficient than combustion engines. At an electricity price of €0.30/kWh, driving 100 km costs about €4.50–6.00, compared to €12–16 for a petrol car at €1.60/L and 8 L/100km.',
     },
   ],
+  power: [
+    {
+      q: 'How many watts does a household appliance use?',
+      a: 'Common household appliances: kettle 2,000–3,000 W, microwave 600–1,200 W, washing machine 500–2,000 W, refrigerator 100–400 W, LED bulb 6–12 W, laptop 30–70 W, TV 50–200 W. Knowing wattage helps estimate electricity costs: a 1,000 W device running 1 hour uses 1 kWh.',
+    },
+    {
+      q: 'How much power does a car engine produce in watts?',
+      a: 'A typical compact car engine produces around 75–100 kW (100–135 HP). A mid-range family sedan 110–150 kW (148–201 HP). Sports cars often produce 250–500 kW (335–670 HP). In comparison, a professional cyclist produces about 250–400 W sustained — roughly 400× less than a car engine.',
+    },
+    {
+      q: 'What is the difference between watts and kilowatts?',
+      a: '1 kilowatt (kW) = 1,000 watts (W). Watts are used for small appliances and electronics; kilowatts for larger equipment, engines, and electricity billing. Your electricity bill is measured in kilowatt-hours (kWh): a 1,000 W (1 kW) device running for 1 hour consumes 1 kWh.',
+    },
+    {
+      q: 'How do horsepower and kilowatts compare?',
+      a: '1 horsepower (HP) = 0.7457 kilowatts. So 100 HP ≈ 74.6 kW and 200 HP ≈ 149 kW. Horsepower is still used for car engines in the US and UK; Europe and most of the world uses kilowatts. A typical family car at 110 kW is about 148 HP.',
+    },
+    {
+      q: 'How much power does a solar panel generate?',
+      a: 'A standard residential solar panel produces 300–450 W of peak power. A typical home installation of 10 panels (3.5 kW total) generates roughly 3,500–4,500 kWh per year in central Europe, or 5,000–6,000 kWh in sunnier climates. Average European household consumption is about 3,500–4,500 kWh per year.',
+    },
+  ],
   cooking: [
     {
       q: 'How many cups is 250 ml?',
