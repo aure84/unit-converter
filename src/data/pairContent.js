@@ -434,6 +434,28 @@ const CATEGORY_FAQ = {
       a: 'Electric vehicles (EVs) use 15–20 kWh per 100 km, which is equivalent to about 1.5–2 L/100km of gasoline in energy terms — roughly 4–5× more efficient than combustion engines. At an electricity price of €0.30/kWh, driving 100 km costs about €4.50–6.00, compared to €12–16 for a petrol car at €1.60/L and 8 L/100km.',
     },
   ],
+  cooking: [
+    {
+      q: 'How many cups is 250 ml?',
+      a: '250 ml is about 1.06 US cups — close enough that most recipes treat it as 1 cup. A standard US cup equals 236.6 ml. In cooking, the difference (about 13 ml) is rarely significant unless you\'re scaling a recipe by 4× or more.',
+    },
+    {
+      q: 'How many tablespoons in a cup?',
+      a: 'There are 16 tablespoons in 1 US cup (236.6 ml). A tablespoon is about 14.79 ml. Half a cup is 8 tablespoons, and a quarter cup is 4 tablespoons. These conversions are useful when you need to measure without a measuring cup.',
+    },
+    {
+      q: 'How do I convert a recipe from cups to grams?',
+      a: 'Cups measure volume, grams measure weight — so the conversion depends on the ingredient. 1 cup of water = 236 g. 1 cup of flour = about 120–130 g. 1 cup of sugar = about 200 g. 1 cup of butter = about 227 g. For baking, weighing with a kitchen scale is more accurate than using cups.',
+    },
+    {
+      q: 'How many teaspoons in a tablespoon?',
+      a: 'There are 3 teaspoons in 1 tablespoon. A teaspoon equals about 4.93 ml and a tablespoon about 14.79 ml. This ratio is consistent across US, UK, and metric cooking measurements, making it one of the most universal cooking conversions.',
+    },
+    {
+      q: 'What is a "pinch" or "dash" in cooking?',
+      a: 'A pinch is approximately 1/16 teaspoon (about 0.3 ml) — the amount you can hold between two fingers. A dash is slightly more: about 1/8 teaspoon (0.6 ml). A smidgen is 1/32 teaspoon. These informal units are mostly used for salt, spices, and flavoring where precision is less critical.',
+    },
+  ],
 }
 
 // Pairs where the relationship is inverse (not linear) — can't say "1 X = Y Z"
