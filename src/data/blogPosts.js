@@ -94,6 +94,10 @@ export const blogPosts = [
 
   {
     slug: 'kg-to-lbs',
+    image: {
+      url: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Gym weights and dumbbells',
+    },
     title: 'How to Convert Kilograms to Pounds (and Back)',
     tag: 'How-To Guide',
     date: '2026-04-15',
