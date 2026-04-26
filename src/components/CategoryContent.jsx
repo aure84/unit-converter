@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import { categoryContent } from '../data/content.js'
 import { CATEGORY_FAQ } from '../data/pairContent.js'
 import './CategoryContent.css'
@@ -11,6 +12,19 @@ function CategoryContent({ category }) {
   return (
     <section className="cat-content">
       <p className="cat-content__intro">{content.intro}</p>
+
+      {content.featuredPairs && content.featuredPairs.length > 0 && (
+        <div className="cat-content__featured">
+          <h2 className="cat-content__section-title">Popular conversions</h2>
+          <div className="cat-content__featured-grid">
+            {content.featuredPairs.map(({ label, path }) => (
+              <Link key={path} to={path} className="cat-content__featured-link">
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {content.explanation && (
         <div className="cat-content__explanation">

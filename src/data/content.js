@@ -21,6 +21,14 @@ export const categoryContent = {
       { q: 'What is a nautical mile?', a: 'A nautical mile equals 1,852 meters (about 1.151 statute miles). It is used in maritime and aviation navigation.' },
       { q: 'How many millimeters are in a centimeter?', a: '1 centimeter equals 10 millimeters. There are 1,000 millimeters in a meter.' },
     ],
+    featuredPairs: [
+      { label: 'Meters to Feet', path: '/length/meter-to-foot' },
+      { label: 'Feet to Meters', path: '/length/foot-to-meter' },
+      { label: 'km to Miles', path: '/length/kilometer-to-mile' },
+      { label: 'Miles to km', path: '/length/mile-to-kilometer' },
+      { label: 'cm to Inches', path: '/length/centimeter-to-inch' },
+      { label: 'Inches to cm', path: '/length/inch-to-centimeter' },
+    ],
   },
 
   weight: {
@@ -40,6 +48,14 @@ export const categoryContent = {
       { q: 'What is a stone in pounds?', a: '1 stone equals 14 pounds (approximately 6.35 kg). Stones are commonly used in the UK and Ireland to measure body weight.' },
       { q: 'How many ounces are in a pound?', a: 'There are 16 ounces in 1 pound. This is the standard in the US customary and imperial systems.' },
       { q: 'How do you convert grams to kilograms?', a: 'Divide the number of grams by 1,000. For example, 500 g ÷ 1,000 = 0.5 kg.' },
+    ],
+    featuredPairs: [
+      { label: 'kg to Pounds', path: '/weight/kilogram-to-pound' },
+      { label: 'Pounds to kg', path: '/weight/pound-to-kilogram' },
+      { label: 'Grams to Ounces', path: '/weight/gram-to-ounce' },
+      { label: 'Ounces to Grams', path: '/weight/ounce-to-gram' },
+      { label: 'kg to Grams', path: '/weight/kilogram-to-gram' },
+      { label: 'Stones to kg', path: '/weight/stone-to-kilogram' },
     ],
   },
 
@@ -61,6 +77,14 @@ export const categoryContent = {
       { q: 'What is normal body temperature in Fahrenheit?', a: 'Normal human body temperature is 98.6°F (37°C). Temperatures above 100.4°F (38°C) are generally considered a fever.' },
       { q: 'What is the boiling point of water in Fahrenheit?', a: 'Water boils at 212°F (100°C) at sea level. At higher altitudes, the boiling point is lower due to reduced air pressure.' },
     ],
+    featuredPairs: [
+      { label: 'Celsius to Fahrenheit', path: '/temperature/celsius-to-fahrenheit' },
+      { label: 'Fahrenheit to Celsius', path: '/temperature/fahrenheit-to-celsius' },
+      { label: 'Celsius to Kelvin', path: '/temperature/celsius-to-kelvin' },
+      { label: 'Kelvin to Celsius', path: '/temperature/kelvin-to-celsius' },
+      { label: 'Fahrenheit to Kelvin', path: '/temperature/fahrenheit-to-kelvin' },
+      { label: 'Kelvin to Fahrenheit', path: '/temperature/kelvin-to-fahrenheit' },
+    ],
   },
 
   volume: {
@@ -80,6 +104,14 @@ export const categoryContent = {
       { q: 'How many tablespoons are in a cup?', a: 'There are 16 tablespoons in 1 US cup. 1 tablespoon equals 3 teaspoons or approximately 14.79 ml.' },
       { q: 'How many cups are in a liter?', a: '1 liter equals approximately 4.227 US cups. This is useful for scaling recipes between metric and US measurements.' },
       { q: 'How many fluid ounces are in a pint?', a: '1 US pint equals 16 fluid ounces or 473.176 ml. The UK imperial pint is larger at 20 fluid ounces (568 ml).' },
+    ],
+    featuredPairs: [
+      { label: 'Liters to Gallons', path: '/volume/liter-to-gallon' },
+      { label: 'Gallons to Liters', path: '/volume/gallon-to-liter' },
+      { label: 'ml to Cups', path: '/volume/milliliter-to-cup' },
+      { label: 'Cups to ml', path: '/volume/cup-to-milliliter' },
+      { label: 'fl oz to ml', path: '/volume/fluid_ounce-to-milliliter' },
+      { label: 'ml to fl oz', path: '/volume/milliliter-to-fluid_ounce' },
     ],
   },
 
@@ -120,6 +152,14 @@ export const categoryContent = {
       { q: 'What is a knot in km/h?', a: '1 knot equals 1.852 km/h. Knots are the standard unit of speed in maritime and aviation contexts.' },
       { q: 'How fast is 100 km/h in mph?', a: '100 km/h equals approximately 62.14 mph. This is a common highway speed limit in many countries.' },
       { q: 'How do you convert m/s to km/h?', a: 'Multiply the m/s value by 3.6. For example, 10 m/s × 3.6 = 36 km/h.' },
+    ],
+    featuredPairs: [
+      { label: 'km/h to mph', path: '/speed/kilometer_per_hour-to-mile_per_hour' },
+      { label: 'mph to km/h', path: '/speed/mile_per_hour-to-kilometer_per_hour' },
+      { label: 'm/s to km/h', path: '/speed/meter_per_second-to-kilometer_per_hour' },
+      { label: 'km/h to m/s', path: '/speed/kilometer_per_hour-to-meter_per_second' },
+      { label: 'Knots to km/h', path: '/speed/knot-to-kilometer_per_hour' },
+      { label: 'mph to m/s', path: '/speed/mile_per_hour-to-meter_per_second' },
     ],
   },
 
@@ -181,6 +221,14 @@ export const categoryContent = {
       { q: 'What is a pascal?', a: 'A pascal (Pa) is the SI unit of pressure, equal to 1 newton per square meter. Atmospheric pressure is about 101,325 Pa or 101.325 kPa.' },
       { q: 'What tire pressure is recommended in bar vs psi?', a: 'Most car tires are inflated to 2.0–2.5 bar (29–36 psi). Always check the sticker inside your car door for the manufacturer\'s recommended pressure.' },
     ],
+    featuredPairs: [
+      { label: 'Bar to PSI', path: '/pressure/bar-to-psi' },
+      { label: 'PSI to Bar', path: '/pressure/psi-to-bar' },
+      { label: 'Bar to kPa', path: '/pressure/bar-to-kilopascal' },
+      { label: 'kPa to Bar', path: '/pressure/kilopascal-to-bar' },
+      { label: 'Atm to PSI', path: '/pressure/atmosphere-to-psi' },
+      { label: 'PSI to kPa', path: '/pressure/psi-to-kilopascal' },
+    ],
   },
 
   energy: {
@@ -200,6 +248,14 @@ export const categoryContent = {
       { q: 'How many kJ are in 1 kcal?', a: '1 kilocalorie (kcal) equals 4.184 kilojoules (kJ). Both are commonly used in nutrition: kcal in the US, kJ in Australia and many other countries.' },
       { q: 'What is a kilowatt-hour?', a: 'A kilowatt-hour (kWh) is the energy used by a 1,000-watt appliance running for 1 hour. It equals 3,600,000 joules (3.6 MJ) and is the standard unit on electricity bills.' },
       { q: 'What is a BTU?', a: 'A British Thermal Unit (BTU) is the energy needed to heat 1 pound of water by 1°F. 1 BTU equals approximately 1,055 joules. BTUs are used to rate air conditioners and heating systems.' },
+    ],
+    featuredPairs: [
+      { label: 'Joule to Calorie', path: '/energy/joule-to-calorie' },
+      { label: 'Calorie to Joule', path: '/energy/calorie-to-joule' },
+      { label: 'Joule to kcal', path: '/energy/joule-to-kilocalorie' },
+      { label: 'kcal to Joule', path: '/energy/kilocalorie-to-joule' },
+      { label: 'kcal to kJ', path: '/energy/kilocalorie-to-kilojoule' },
+      { label: 'kWh to Joule', path: '/energy/kilowatt_hour-to-joule' },
     ],
   },
 

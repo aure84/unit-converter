@@ -22,6 +22,35 @@
   letter-spacing: -0.3px;
 }
 
+.cat-content__featured {
+  margin-bottom: 40px;
+}
+
+.cat-content__featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 8px;
+}
+
+.cat-content__featured-link {
+  display: block;
+  padding: 10px 14px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  text-align: center;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.cat-content__featured-link:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+
 .cat-content__explanation {
   margin-bottom: 40px;
 }
