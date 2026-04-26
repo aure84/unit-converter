@@ -87,7 +87,7 @@ function PairPage() {
 
   const h1 = `${fromLabel} to ${toLabel} Converter`
   const pageTitle = `${fromLabel} to ${toLabel} Converter | Convert Fast`
-  const pairKey = `${fromUnit.id}|${toUnit.id}`
+  const pairKey = `${from}|${to}`
   const description = PAIR_META[pairKey]?.description
     ?? `Convert ${fromLabel} to ${toLabel} instantly. Free online ${toTitle(category)} converter.`
   const canonical = `${SITE_URL}/${segment}/${pair}`
