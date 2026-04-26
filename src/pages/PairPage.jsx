@@ -126,7 +126,6 @@ function PairPage() {
         description={description}
         canonical={canonical}
         jsonLd={faqJsonLd ? [jsonLd, faqJsonLd] : jsonLd}
-        noindex
       />
       <h1>{h1}</h1>
       <Converter
