@@ -179,6 +179,10 @@ const PAIR_EXTRA_FAQ = {
       q: 'What is 2.5 bar in psi?',
       a: '2.5 bar equals approximately 36.3 psi. This is a typical rear tire pressure for many cars, especially when carrying heavier loads.',
     },
+    {
+      q: 'What is barg and how do I convert it to psi?',
+      a: 'barg (bar gauge) measures pressure relative to atmospheric pressure, while bar (bar absolute) is measured relative to a perfect vacuum. In most practical conversions they are treated as equivalent: 1 barg = 1 bar. To convert barg to psi, multiply by 14.5038 — exactly the same formula as bar to psi. For example, 2.5 barg ≈ 36.3 psi.',
+    },
   ],
   'psi|bar': [
     {

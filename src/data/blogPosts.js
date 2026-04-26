@@ -1818,7 +1818,7 @@ export const blogPosts = [
     tag: 'How-To Guide',
     date: '2026-04-20',
     description: 'Convert joules to calories with exact formulas, plus the difference between small calories and food Calories (kcal), with nutrition examples.',
-    intro: 'Joules and calories are both units of energy, but they appear in very different contexts. Physics and engineering use joules (the SI unit). Nutrition labels use Calories — which are actually kilocalories. Chemistry uses small calories. Understanding the difference between a "calorie" and a "Calorie" is one of the most common sources of confusion in science and nutrition. This guide clears it up.',
+    intro: '1 joule = 0.239 calories (cal). 1 calorie = 4.184 joules. Joules and calories are both units of energy, but they appear in very different contexts. Physics and engineering use joules (the SI unit). Nutrition labels use Calories — which are actually kilocalories. Chemistry uses small calories. Understanding the difference between a "calorie" and a "Calorie" is one of the most common sources of confusion in science and nutrition. This guide clears it up.',
     sections: [
       {
         heading: 'What Is a Joule?',
