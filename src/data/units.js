@@ -135,7 +135,7 @@ export const units = {
       { id: 'kilopascal',  label: 'Kilopascal',            symbol: 'kPa', factor: 1_000 },
       { id: 'megapascal',  label: 'Megapascal',            symbol: 'MPa', factor: 1_000_000 },
       { id: 'bar',         label: 'Bar',                   symbol: 'bar', factor: 100_000 },
-      { id: 'psi',         label: 'Pound per sq. inch',    symbol: 'psi', factor: 6_894.757 },
+      { id: 'psi',         label: 'Pounds per Square Inch', symbol: 'psi', factor: 6_894.757 },
       { id: 'atmosphere',  label: 'Atmosphere',            symbol: 'atm', factor: 101_325 },
       { id: 'torr',        label: 'Torr (mmHg)',           symbol: 'Torr', factor: 133.322 },
     ],

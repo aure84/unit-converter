@@ -4,7 +4,7 @@ import ReferenceTable from '../components/ReferenceTable.jsx'
 import PairContent from '../components/PairContent.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
 import { units, getUnit } from '../data/units.js'
-import { generatePairContent } from '../data/pairContent.js'
+import { generatePairContent, PAIR_META } from '../data/pairContent.js'
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -87,7 +87,9 @@ function PairPage() {
 
   const h1 = `${fromLabel} to ${toLabel} Converter`
   const pageTitle = `${fromLabel} to ${toLabel} Converter | Convert Fast`
-  const description = `Convert ${fromLabel} to ${toLabel} instantly. Free online ${toTitle(category)} converter.`
+  const pairKey = `${fromUnit.id}|${toUnit.id}`
+  const description = PAIR_META[pairKey]?.description
+    ?? `Convert ${fromLabel} to ${toLabel} instantly. Free online ${toTitle(category)} converter.`
   const canonical = `${SITE_URL}/${segment}/${pair}`
 
   const jsonLd = {

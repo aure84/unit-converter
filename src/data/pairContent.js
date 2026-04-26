@@ -148,6 +148,22 @@ function fmt(value) {
   return String(parseFloat(value.toPrecision(6)))
 }
 
+// Custom meta descriptions for high-value pairs (overrides the generated default)
+export const PAIR_META = {
+  'joule|calorie': {
+    description: '1 joule = 0.239 calories. 1 calorie = 4.184 joules. Convert joules to calories instantly with formula and reference table.',
+  },
+  'calorie|joule': {
+    description: '1 calorie = 4.184 joules. 1 joule = 0.239 cal. Convert calories to joules instantly with formula and reference table.',
+  },
+  'bar|psi': {
+    description: '1 bar = 14.504 psi. 1 psi = 0.0689 bar. Convert bar to pounds per square inch instantly — includes tire pressure reference table.',
+  },
+  'psi|bar': {
+    description: '1 psi = 0.0689 bar. 1 bar = 14.504 psi. Convert pounds per square inch to bar instantly — includes tire pressure reference table.',
+  },
+}
+
 // Extra FAQ items injected for specific high-value pairs
 const PAIR_EXTRA_FAQ = {
   'bar|psi': [
