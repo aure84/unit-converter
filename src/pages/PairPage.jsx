@@ -2,6 +2,7 @@ import { useLocation, useParams } from 'react-router'
 import Converter from '../components/Converter.jsx'
 import ReferenceTable from '../components/ReferenceTable.jsx'
 import PairContent from '../components/PairContent.jsx'
+import RelatedConverters from '../components/RelatedConverters.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
 import { units, getUnit } from '../data/units.js'
 import { generatePairContent, PAIR_META } from '../data/pairContent.js'
@@ -144,6 +145,12 @@ function PairPage() {
       />
       <PairContent
         category={category}
+        fromUnit={from}
+        toUnit={to}
+      />
+      <RelatedConverters
+        category={category}
+        segment={segment}
         fromUnit={from}
         toUnit={to}
       />
