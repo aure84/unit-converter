@@ -164,11 +164,9 @@ function PairPage() {
       {value !== null && valueResult !== null ? (
         <ValueResult
           value={value}
-          from={from}
-          to={to}
+          result={valueResult}
           fromSymbol={fromObj.symbol}
           toSymbol={toObj.symbol}
-          category={category}
         />
       ) : (
         <h1>{h1}</h1>
