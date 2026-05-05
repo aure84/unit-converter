@@ -221,3 +221,23 @@ test('value page: FAQ JSON-LD contains value-specific Q&A', async ({ page }) => 
   const questions = faqLd.mainEntity.map((e) => e.name);
   expect(questions.some((q) => q.includes('3,300'))).toBe(true);
 });
+
+test('value page: <title> contains value and result', async ({ page }) => {
+  await page.goto(`${BASE}/weight/3300-pound-to-kilogram`);
+  const title = await page.title();
+  expect(title).toContain('3,300');
+  expect(title).toContain('1,496');
+});
+
+test('value page: meta description contains value and result', async ({ page }) => {
+  await page.goto(`${BASE}/weight/3300-pound-to-kilogram`);
+  const desc = await page.locator('meta[name="description"]').getAttribute('content');
+  expect(desc).toContain('3,300');
+  expect(desc).toContain('1,496');
+});
+
+test('value page: canonical points to value-specific URL', async ({ page }) => {
+  await page.goto(`${BASE}/weight/3300-pound-to-kilogram`);
+  const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
+  expect(canonical).toBe('https://convert-fast.com/weight/3300-pound-to-kilogram');
+});

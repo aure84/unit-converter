@@ -168,11 +168,32 @@ function PairPage() {
   }
 
   const h1 = `${fromLabel} to ${toLabel} Converter`
-  const pageTitle = `${fromLabel} to ${toLabel} Converter | Convert Fast`
   const pairKey = `${from}|${to}`
-  const description = PAIR_META[pairKey]?.description
-    ?? `Convert ${fromLabel} to ${toLabel} instantly. Free online ${toTitle(category)} converter.`
   const canonical = `${SITE_URL}/${segment}/${pair}`
+
+  const fromObj = getUnit(category, from)
+  const toObj   = getUnit(category, to)
+
+  // Compute value-specific result (null if no value or conversion fails)
+  let valueResult = null
+  if (value !== null && fromObj && toObj) {
+    try {
+      valueResult = convert(value, from, to, category)
+    } catch {
+      // Unknown units — treat as generic pair page
+    }
+  }
+
+  const isValuePage = value !== null && valueResult !== null
+
+  const pageTitle = isValuePage
+    ? `${fmtNum(value)} ${fromLabel} to ${toLabel} — ${fmtNum(valueResult)} ${toLabel} | Convert Fast`
+    : `${fromLabel} to ${toLabel} Converter | Convert Fast`
+
+  const description = isValuePage
+    ? `${fmtNum(value)} ${fromLabel} equals ${fmtNum(valueResult)} ${toLabel}. Free converter for any value.`
+    : (PAIR_META[pairKey]?.description
+        ?? `Convert ${fromLabel} to ${toLabel} instantly. Free online ${toTitle(category)} converter.`)
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -187,19 +208,6 @@ function PairPage() {
       price: '0',
       priceCurrency: 'USD',
     },
-  }
-
-  const fromObj = getUnit(category, from)
-  const toObj   = getUnit(category, to)
-
-  // Compute value-specific result (null if no value or conversion fails)
-  let valueResult = null
-  if (value !== null && fromObj && toObj) {
-    try {
-      valueResult = convert(value, from, to, category)
-    } catch {
-      // Unknown units — treat as generic pair page
-    }
   }
 
   const converterInitialValue = (value !== null && valueResult !== null)
