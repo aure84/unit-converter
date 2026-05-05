@@ -33,14 +33,28 @@ const PATH_TO_REGISTRY = {
  * Normalises slugs to registry ids (lowercase, hyphens → underscores).
  */
 function parsePair(pair) {
-  if (!pair) return { from: undefined, to: undefined }
+  if (!pair) return { value: null, from: undefined, to: undefined }
 
-  const match = pair.match(/^(.+?)-to-(.+)$/i)
-  if (!match) return { from: pair, to: undefined }
+  const normalise = (s) => s.toLowerCase().replace(/[-\s]+/g, '_')
 
-  const normalise = (slug) => slug.toLowerCase().replace(/[-\s]+/g, '_')
+  // Detect optional numeric prefix: "3300-pound-to-kilogram" or "-10-celsius-to-fahrenheit"
+  let value = null
+  let slug = pair
+  const valueMatch = pair.match(/^(-?[\d.]+)-(.+)$/)
+  if (valueMatch) {
+    const candidate = parseFloat(valueMatch[1])
+    const remainder = valueMatch[2]
+    if (!isNaN(candidate) && /^.+-to-.+$/.test(remainder)) {
+      value = candidate
+      slug = remainder
+    }
+  }
+
+  const match = slug.match(/^(.+?)-to-(.+)$/i)
+  if (!match) return { value, from: slug, to: undefined }
 
   return {
+    value,
     from: normalise(match[1]),
     to: normalise(match[2]),
   }
@@ -64,7 +78,7 @@ function PairPage() {
   const { pathname, search } = useLocation()
   const { pair } = useParams()
   const initialValue = new URLSearchParams(search).get('value') ?? undefined
-  const { from, to } = parsePair(pair)
+  const { value, from, to } = parsePair(pair)
 
   // Derive category from the first path segment
   const segment = pathname.split('/')[1] ?? ''

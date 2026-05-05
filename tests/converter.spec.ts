@@ -172,3 +172,10 @@ test('mobile: no horizontal scroll at 375px', async ({ page }) => {
   const bodyWidth = await page.evaluate(() => document.body.scrollWidth);
   expect(bodyWidth).toBeLessThanOrEqual(375);
 });
+
+// ── Value-specific pages ─────────────────────────────────────────────────────
+
+test('value page: /weight/3300-pound-to-kilogram does not show "Converter Not Found"', async ({ page }) => {
+  await page.goto(`${BASE}/weight/3300-pound-to-kilogram`);
+  await expect(page.getByText('Converter Not Found')).not.toBeVisible();
+});
