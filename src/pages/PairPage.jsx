@@ -6,7 +6,6 @@ import RelatedConverters from '../components/RelatedConverters.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
 import ValueResult from '../components/ValueResult.jsx'
 import { units, getUnit } from '../data/units.js'
-import '../components/CategoryContent.css'
 import { generatePairContent, PAIR_META } from '../data/pairContent.js'
 import { convert } from '../utils/convert.js'
 
@@ -258,6 +257,7 @@ function PairPage() {
       {valueFaq.length > 0 && (
         <section className="cat-content">
           <div className="cat-content__faq">
+            <h2 className="cat-content__faq-title">Frequently Asked Questions</h2>
             <div className="cat-content__faq-list">
               {valueFaq.map(({ q, a }) => (
                 <details key={q} className="cat-content__faq-item">
