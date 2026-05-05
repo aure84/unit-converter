@@ -6,6 +6,7 @@ import RelatedConverters from '../components/RelatedConverters.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
 import ValueResult from '../components/ValueResult.jsx'
 import { units, getUnit } from '../data/units.js'
+import '../components/CategoryContent.css'
 import { generatePairContent, PAIR_META } from '../data/pairContent.js'
 import { convert } from '../utils/convert.js'
 
@@ -76,6 +77,71 @@ function toTitle(key) {
   return key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 }
 
+function fmtNum(n) {
+  return parseFloat(n.toPrecision(6)).toLocaleString('en-US')
+}
+
+const VALUE_CONTEXT = {
+  weight: (value, result, fromUnit, toUnit) => {
+    if (fromUnit !== 'pound' || toUnit !== 'kilogram') return null
+    let ref
+    if (value < 10)         ref = 'a small bag of groceries'
+    else if (value < 50)    ref = 'a large dog'
+    else if (value < 200)   ref = 'an average adult'
+    else if (value < 1000)  ref = 'a grand piano'
+    else if (value < 4000)  ref = 'a mid-size car'
+    else                    ref = 'a large commercial truck'
+    return {
+      q: `Is ${fmtNum(value)} lbs heavy?`,
+      a: `${fmtNum(value)} lbs (${fmtNum(result)} kg) is roughly the weight of ${ref}.`,
+    }
+  },
+  length: (value, result, fromUnit, toUnit) => {
+    if (fromUnit !== 'kilometer' || toUnit !== 'mile') return null
+    let ref
+    if (value < 1)        ref = 'a short walk'
+    else if (value < 5)   ref = 'a brisk morning jog'
+    else if (value < 100) ref = 'a short road trip'
+    else                  ref = 'a long drive between cities'
+    return {
+      q: `How far is ${fmtNum(value)} km?`,
+      a: `${fmtNum(value)} km (${fmtNum(result)} miles) is about the distance of ${ref}.`,
+    }
+  },
+  temperature: (value, result, fromUnit, toUnit) => {
+    if (fromUnit !== 'fahrenheit' || toUnit !== 'celsius') return null
+    let desc
+    if (value <= 32)       desc = 'at or below freezing — water turns to ice at 32°F'
+    else if (value < 60)   desc = "cold — you'll want a coat"
+    else if (value < 80)   desc = 'mild and comfortable'
+    else if (value < 100)  desc = 'warm — a hot summer day'
+    else if (value < 212)  desc = 'hot — above normal body temperature (98.6°F)'
+    else                   desc = 'at or above the boiling point of water'
+    return {
+      q: `Is ${value}°F hot or cold?`,
+      a: `${value}°F (${fmtNum(result)}°C) is ${desc}.`,
+    }
+  },
+}
+
+function generateValueFaq(value, result, fromLabel, toLabel, fromSymbol, toSymbol, from, to, category) {
+  const fv = fmtNum(value)
+  const fr = fmtNum(result)
+  const items = [
+    {
+      q: `What is ${fv} ${fromLabel} in ${toLabel}?`,
+      a: `${fv} ${fromLabel} equals ${fr} ${toLabel}.`,
+    },
+    {
+      q: `How many ${toLabel} is ${fv} ${fromLabel}?`,
+      a: `${fv} ${fromSymbol} = ${fr} ${toSymbol}.`,
+    },
+  ]
+  const ctx = VALUE_CONTEXT[category]?.(value, result, from, to)
+  if (ctx) items.push(ctx)
+  return items
+}
+
 function PairPage() {
   const { pathname, search } = useLocation()
   const { pair } = useParams()
@@ -141,7 +207,13 @@ function PairPage() {
     ? String(value)
     : initialValue
 
-  const { faq } = (fromObj && toObj) ? generatePairContent(category, fromObj, toObj) : { faq: [] }
+  const { faq: pairFaq } = (fromObj && toObj) ? generatePairContent(category, fromObj, toObj) : { faq: [] }
+
+  const valueFaq = (value !== null && valueResult !== null)
+    ? generateValueFaq(value, valueResult, fromLabel, toLabel, fromObj.symbol, toObj.symbol, from, to, category)
+    : []
+
+  const faq = [...valueFaq, ...pairFaq]
 
   const faqJsonLd = faq.length > 0 ? {
     '@context': 'https://schema.org',
@@ -183,6 +255,20 @@ function PairPage() {
         fromUnit={from}
         toUnit={to}
       />
+      {valueFaq.length > 0 && (
+        <section className="cat-content">
+          <div className="cat-content__faq">
+            <div className="cat-content__faq-list">
+              {valueFaq.map(({ q, a }) => (
+                <details key={q} className="cat-content__faq-item">
+                  <summary className="cat-content__faq-q">{q}</summary>
+                  <p className="cat-content__faq-a">{a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
       <PairContent
         category={category}
         fromUnit={from}

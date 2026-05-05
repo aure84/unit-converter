@@ -199,3 +199,25 @@ test('value page: generic pair page H1 unchanged (no regression)', async ({ page
   const h1 = page.getByRole('heading', { level: 1 });
   await expect(h1).toContainText('Pound to Kilogram Converter');
 });
+
+test('value page: FAQ contains value-specific question', async ({ page }) => {
+  await page.goto(`${BASE}/weight/3300-pound-to-kilogram`);
+  await expect(page.getByText(/What is 3,300/i)).toBeVisible();
+});
+
+test('value page: FAQ JSON-LD contains value-specific Q&A', async ({ page }) => {
+  await page.goto(`${BASE}/weight/3300-pound-to-kilogram`);
+  const faqLd = await page.evaluate(() => {
+    const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'));
+    for (const s of scripts) {
+      try {
+        const data = JSON.parse(s.textContent);
+        if (data['@type'] === 'FAQPage') return data;
+      } catch { /* skip */ }
+    }
+    return null;
+  });
+  expect(faqLd).not.toBeNull();
+  const questions = faqLd.mainEntity.map((e) => e.name);
+  expect(questions.some((q) => q.includes('3,300'))).toBe(true);
+});
