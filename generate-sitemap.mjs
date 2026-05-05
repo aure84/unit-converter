@@ -212,6 +212,66 @@ sections.push([
   `  <url><loc>${BASE}/currency</loc><lastmod>${TODAY}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>`,
 ].join('\n'));
 
+// ── Value-specific pages ─────────────────────────────────────────────────────
+
+function range(start, end, step = 1) {
+  const out = []
+  for (let v = start; v <= end; v += step) out.push(v)
+  return out
+}
+
+const VALUE_PAGES = [
+  {
+    category: 'weight',
+    from: 'pound', to: 'kilogram',
+    values: [
+      ...range(50, 500, 50),
+      ...range(550, 2000, 50),
+      2500, 3000, 3300, 3500, 4000, 4500, 4900, 5000,
+    ],
+  },
+  {
+    category: 'weight',
+    from: 'kilogram', to: 'pound',
+    values: [50, 60, 70, 75, 80, 85, 90, 95, 100, 110, 120, 130, 140, 150, 200],
+  },
+  {
+    category: 'length',
+    from: 'kilometer', to: 'mile',
+    values: [...range(1, 50), 60, 70, 80, 90, 100],
+  },
+  {
+    category: 'length',
+    from: 'inch', to: 'centimeter',
+    values: [...range(1, 72)],
+  },
+  {
+    category: 'length',
+    from: 'centimeter', to: 'inch',
+    values: [...range(5, 200, 5)],
+  },
+  {
+    category: 'temperature',
+    from: 'fahrenheit', to: 'celsius',
+    values: [-40, -20, -10, 0, 10, 20, 30, 32, 40, 50, 60, 70, 72, 75, 80, 85, 90, 95, 98, 98.6, 100, 105, 110, 120, 130, 140, 150, 200, 212, 250, 300, 350, 400, 450],
+  },
+  {
+    category: 'temperature',
+    from: 'celsius', to: 'fahrenheit',
+    values: [-40, -20, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 37, 40, 50, 60, 70, 80, 90, 100],
+  },
+]
+
+const valueSection = []
+for (const { category, from, to, values } of VALUE_PAGES) {
+  for (const v of values) {
+    valueSection.push(
+      `  <url><loc>${BASE}/${category}/${v}-${from}-to-${to}</loc><lastmod>${TODAY}</lastmod><priority>0.6</priority></url>`
+    )
+  }
+}
+sections.push(`  <!-- Value-specific pages -->\n` + valueSection.join('\n'))
+
 // ── Assemble ─────────────────────────────────────────────────────────────────
 const xml = [
   `<?xml version="1.0" encoding="UTF-8"?>`,
