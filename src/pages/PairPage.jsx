@@ -4,8 +4,10 @@ import ReferenceTable from '../components/ReferenceTable.jsx'
 import PairContent from '../components/PairContent.jsx'
 import RelatedConverters from '../components/RelatedConverters.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
+import ValueResult from '../components/ValueResult.jsx'
 import { units, getUnit } from '../data/units.js'
 import { generatePairContent, PAIR_META } from '../data/pairContent.js'
+import { convert } from '../utils/convert.js'
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -124,6 +126,21 @@ function PairPage() {
 
   const fromObj = getUnit(category, from)
   const toObj   = getUnit(category, to)
+
+  // Compute value-specific result (null if no value or conversion fails)
+  let valueResult = null
+  if (value !== null && fromObj && toObj) {
+    try {
+      valueResult = convert(value, from, to, category)
+    } catch {
+      // Unknown units — treat as generic pair page
+    }
+  }
+
+  const converterInitialValue = (value !== null && valueResult !== null)
+    ? String(value)
+    : initialValue
+
   const { faq } = (fromObj && toObj) ? generatePairContent(category, fromObj, toObj) : { faq: [] }
 
   const faqJsonLd = faq.length > 0 ? {
@@ -144,13 +161,24 @@ function PairPage() {
         canonical={canonical}
         jsonLd={faqJsonLd ? [jsonLd, faqJsonLd] : jsonLd}
       />
-      <h1>{h1}</h1>
+      {value !== null && valueResult !== null ? (
+        <ValueResult
+          value={value}
+          from={from}
+          to={to}
+          fromSymbol={fromObj.symbol}
+          toSymbol={toObj.symbol}
+          category={category}
+        />
+      ) : (
+        <h1>{h1}</h1>
+      )}
       <Converter
         key={`${category}/${from}/${to}`}
         category={category}
         defaultFrom={from}
         defaultTo={to}
-        initialValue={initialValue}
+        initialValue={converterInitialValue}
       />
       <ReferenceTable
         category={category}

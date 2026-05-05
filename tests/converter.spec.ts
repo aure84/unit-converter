@@ -179,3 +179,23 @@ test('value page: /weight/3300-pound-to-kilogram does not show "Converter Not Fo
   await page.goto(`${BASE}/weight/3300-pound-to-kilogram`);
   await expect(page.getByText('Converter Not Found')).not.toBeVisible();
 });
+
+test('value page: H1 shows computed result for 3300 pound to kilogram', async ({ page }) => {
+  await page.goto(`${BASE}/weight/3300-pound-to-kilogram`);
+  const h1 = page.getByRole('heading', { level: 1 });
+  await expect(h1).toContainText('3,300');
+  await expect(h1).toContainText('1,496');
+});
+
+test('value page: converter is pre-filled with the URL value', async ({ page }) => {
+  await page.goto(`${BASE}/weight/3300-pound-to-kilogram`);
+  const inputs = page.locator('input[type="number"]');
+  const fromVal = await inputs.first().inputValue();
+  expect(parseFloat(fromVal)).toBeCloseTo(3300, 0);
+});
+
+test('value page: generic pair page H1 unchanged (no regression)', async ({ page }) => {
+  await page.goto(`${BASE}/weight/pound-to-kilogram`);
+  const h1 = page.getByRole('heading', { level: 1 });
+  await expect(h1).toContainText('Pound to Kilogram Converter');
+});
