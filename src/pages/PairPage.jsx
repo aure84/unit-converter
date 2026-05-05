@@ -40,7 +40,7 @@ function parsePair(pair) {
   // Detect optional numeric prefix: "3300-pound-to-kilogram" or "-10-celsius-to-fahrenheit"
   let value = null
   let slug = pair
-  const valueMatch = pair.match(/^(-?[\d.]+)-(.+)$/)
+  const valueMatch = pair.match(/^(-?\d+(?:\.\d+)?)-(.+)$/)
   if (valueMatch) {
     const candidate = parseFloat(valueMatch[1])
     const remainder = valueMatch[2]
