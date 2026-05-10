@@ -71,14 +71,7 @@ export default function NumberBaseConverter() {
 
   return (
     <div style={{ marginBottom: 40 }}>
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(2, 1fr)',
-          gap: 20,
-          marginBottom: 16,
-        }}
-      >
+      <div className="two-col-grid" style={{ marginBottom: 16 }}>
         {fields.map(({ label, value, base, placeholder }) => (
           <div key={base}>
             <label style={{ display: 'block', fontWeight: 600, marginBottom: 8 }}>{label}</label>

@@ -127,3 +127,15 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 480px) {
+  .two-col-grid {
+    grid-template-columns: 1fr;
+  }
+}

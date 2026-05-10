@@ -13,7 +13,7 @@ function CookiePage() {
       />
 
       <h1>Cookie Policy</h1>
-      <p className="legal-page__meta">Last updated: April 14, 2026</p>
+      <p className="legal-page__meta">Last updated: May 10, 2026</p>
 
       <section>
         <h2>1. What are cookies?</h2>
@@ -183,8 +183,14 @@ function CookiePage() {
           after you accept.
         </p>
         <p>
-          To withdraw consent, click <strong>Reject</strong> on the banner (clear your{' '}
-          <code>cookieConsent</code> localStorage entry to see the banner again) or use the
+          To withdraw or change your consent,{' '}
+          <button
+            style={{ background: 'none', border: 'none', color: 'var(--accent)', cursor: 'pointer', padding: 0, font: 'inherit', textDecoration: 'underline' }}
+            onClick={() => { localStorage.removeItem('cookieConsent'); window.location.reload() }}
+          >
+            reset your cookie preferences
+          </button>{' '}
+          (this will clear your saved choice and show the consent banner again), or use the
           opt-out tools listed in section 7 below.
         </p>
       </section>

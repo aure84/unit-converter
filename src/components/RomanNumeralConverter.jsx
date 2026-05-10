@@ -84,7 +84,7 @@ export default function RomanNumeralConverter() {
 
   return (
     <div style={{ marginBottom: 40 }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 8 }}>
+      <div className="two-col-grid" style={{ marginBottom: 8 }}>
         <div>
           <label style={{ display: 'block', fontWeight: 600, marginBottom: 8 }}>Decimal</label>
           <input
@@ -116,7 +116,8 @@ export default function RomanNumeralConverter() {
       </div>
 
       <h2 style={{ fontSize: 18, fontWeight: 700, margin: '32px 0 16px' }}>Quick Reference</h2>
-      <table style={{ borderCollapse: 'collapse', marginBottom: 32 }}>
+      <div style={{ overflowX: 'auto' }}>
+      <table style={{ borderCollapse: 'collapse', marginBottom: 32, width: '100%' }}>
         <thead>
           <tr style={{ background: 'var(--code-bg)' }}>
             <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Symbol</th>
@@ -134,9 +135,11 @@ export default function RomanNumeralConverter() {
           )}
         </tbody>
       </table>
+      </div>
 
       <h2 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 16px' }}>Common Examples</h2>
-      <table style={{ borderCollapse: 'collapse' }}>
+      <div style={{ overflowX: 'auto' }}>
+      <table style={{ borderCollapse: 'collapse', width: '100%' }}>
         <thead>
           <tr style={{ background: 'var(--code-bg)' }}>
             <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Decimal</th>
@@ -161,6 +164,7 @@ export default function RomanNumeralConverter() {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   )
 }

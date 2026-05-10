@@ -13,14 +13,15 @@ function PrivacyPage() {
       />
 
       <h1>Privacy Policy</h1>
-      <p className="legal-page__meta">Last updated: April 14, 2026</p>
+      <p className="legal-page__meta">Last updated: May 10, 2026</p>
 
       <section>
         <h2>1. Who we are</h2>
         <p>
           Convert Fast (<strong>convert-fast.com</strong>) is a free online unit conversion tool
-          operated by an individual based in Hungary. If you have any questions about this policy,
-          please contact us at <a href={`mailto:${CONTACT}`}>{CONTACT}</a>.
+          operated by <strong>Stromájer László</strong>, an individual based in Hungary. If you
+          have any questions about this policy, please contact us at{' '}
+          <a href={`mailto:${CONTACT}`}>{CONTACT}</a>.
         </p>
       </section>
 
@@ -93,8 +94,9 @@ function PrivacyPage() {
           or the{' '}
           <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener noreferrer">
             NAI opt-out page
-          </a>. EU/EEA users will be shown a consent prompt before personalised ads are served,
-          in compliance with the IAB Transparency and Consent Framework.
+          </a>. EU/EEA users will be shown a consent prompt before personalised ads are served.
+          Our consent mechanism uses Google Consent Mode v2, which defaults all signals to
+          denied until you make an explicit choice.
         </p>
       </section>
 
