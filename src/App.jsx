@@ -6,6 +6,8 @@ import CookingPage from './pages/CookingPage.jsx'
 import IngredientPage from './pages/IngredientPage.jsx'
 import PairPage from './pages/PairPage.jsx'
 import CurrencyPage from './pages/CurrencyPage.jsx'
+import RomanNumeralPage from './pages/RomanNumeralPage.jsx'
+import NumberBasePage from './pages/NumberBasePage.jsx'
 import BlogIndexPage from './pages/BlogIndexPage.jsx'
 import BlogPostPage from './pages/BlogPostPage.jsx'
 import PrivacyPage from './pages/PrivacyPage.jsx'
@@ -42,6 +44,10 @@ function App() {
 
         {/* Currency — dedicated page with live API */}
         <Route path="/currency" element={<CurrencyPage />} />
+
+        {/* Standalone number converters */}
+        <Route path="/roman-numerals" element={<RomanNumeralPage />} />
+        <Route path="/number-base" element={<NumberBasePage />} />
 
         {/* Pair sub-routes per category */}
         <Route path="/length/:pair"       element={<PairPage />} />
