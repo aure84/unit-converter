@@ -52,12 +52,14 @@ export default function NumberBaseConverter() {
 
   const inputStyle = {
     padding: '12px 16px',
-    border: '2px solid #e5e7eb',
+    border: '2px solid var(--border)',
     borderRadius: 8,
     fontSize: 16,
     width: '100%',
     fontFamily: 'monospace',
     boxSizing: 'border-box',
+    background: 'var(--bg)',
+    color: 'var(--text-h)',
   }
 
   const fields = [
@@ -101,14 +103,14 @@ export default function NumberBaseConverter() {
       <div style={{ overflowX: 'auto' }}>
         <table style={{ borderCollapse: 'collapse', fontSize: 14 }}>
           <thead>
-            <tr style={{ background: '#f3f4f6' }}>
+            <tr style={{ background: 'var(--code-bg)' }}>
               {['Decimal', 'Binary', 'Hex', 'Octal'].map(h => (
                 <th
                   key={h}
                   style={{
                     padding: '8px 20px',
                     textAlign: 'left',
-                    borderBottom: '2px solid #e5e7eb',
+                    borderBottom: '2px solid var(--border)',
                     fontFamily: 'monospace',
                   }}
                 >
@@ -119,7 +121,7 @@ export default function NumberBaseConverter() {
           </thead>
           <tbody>
             {Array.from({ length: 16 }, (_, i) => (
-              <tr key={i} style={{ borderBottom: '1px solid #f3f4f6' }}>
+              <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
                 <td style={{ padding: '5px 20px', fontFamily: 'monospace' }}>{i}</td>
                 <td style={{ padding: '5px 20px', fontFamily: 'monospace' }}>{i.toString(2)}</td>
                 <td style={{ padding: '5px 20px', fontFamily: 'monospace' }}>{i.toString(16).toUpperCase()}</td>

@@ -72,12 +72,14 @@ export default function RomanNumeralConverter() {
 
   const inputStyle = {
     padding: '12px 16px',
-    border: '2px solid #e5e7eb',
+    border: '2px solid var(--border)',
     borderRadius: 8,
     fontSize: 20,
     width: '100%',
     fontFamily: 'monospace',
     boxSizing: 'border-box',
+    background: 'var(--bg)',
+    color: 'var(--text-h)',
   }
 
   return (
@@ -116,15 +118,15 @@ export default function RomanNumeralConverter() {
       <h2 style={{ fontSize: 18, fontWeight: 700, margin: '32px 0 16px' }}>Quick Reference</h2>
       <table style={{ borderCollapse: 'collapse', marginBottom: 32 }}>
         <thead>
-          <tr style={{ background: '#f3f4f6' }}>
-            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid #e5e7eb' }}>Symbol</th>
-            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid #e5e7eb' }}>Value</th>
+          <tr style={{ background: 'var(--code-bg)' }}>
+            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Symbol</th>
+            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Value</th>
           </tr>
         </thead>
         <tbody>
           {[['I', 1], ['V', 5], ['X', 10], ['L', 50], ['C', 100], ['D', 500], ['M', 1000]].map(
             ([sym, val]) => (
-              <tr key={sym} style={{ borderBottom: '1px solid #f3f4f6' }}>
+              <tr key={sym} style={{ borderBottom: '1px solid var(--border)' }}>
                 <td style={{ padding: '6px 24px', fontFamily: 'monospace', fontWeight: 700, fontSize: 18 }}>{sym}</td>
                 <td style={{ padding: '6px 24px' }}>{val}</td>
               </tr>
@@ -136,9 +138,9 @@ export default function RomanNumeralConverter() {
       <h2 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 16px' }}>Common Examples</h2>
       <table style={{ borderCollapse: 'collapse' }}>
         <thead>
-          <tr style={{ background: '#f3f4f6' }}>
-            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid #e5e7eb' }}>Decimal</th>
-            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid #e5e7eb' }}>Roman Numeral</th>
+          <tr style={{ background: 'var(--code-bg)' }}>
+            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Decimal</th>
+            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Roman Numeral</th>
           </tr>
         </thead>
         <tbody>
@@ -152,7 +154,7 @@ export default function RomanNumeralConverter() {
             [9, 'IX'],
             [4, 'IV'],
           ].map(([dec, rom]) => (
-            <tr key={dec} style={{ borderBottom: '1px solid #f3f4f6' }}>
+            <tr key={dec} style={{ borderBottom: '1px solid var(--border)' }}>
               <td style={{ padding: '6px 24px' }}>{dec}</td>
               <td style={{ padding: '6px 24px', fontFamily: 'monospace' }}>{rom}</td>
             </tr>

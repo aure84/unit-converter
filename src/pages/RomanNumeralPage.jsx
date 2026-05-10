@@ -1,6 +1,7 @@
 import { Link } from 'react-router'
 import SEOMeta from '../components/SEOMeta.jsx'
 import RomanNumeralConverter from '../components/RomanNumeralConverter.jsx'
+import '../components/CategoryContent.css'
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -32,27 +33,31 @@ export default function RomanNumeralPage() {
 
       <RomanNumeralConverter />
 
-      <section>
-        <h2>Frequently asked questions</h2>
-        {FAQ.map(({ q, a }) => (
-          <div key={q} style={{ marginBottom: 24 }}>
-            <h3 style={{ marginBottom: 8 }}>{q}</h3>
-            <p style={{ color: '#4b5563' }}>{a}</p>
+      <section className="cat-content">
+        <div className="cat-content__faq">
+          <h2 className="cat-content__faq-title">Frequently asked questions</h2>
+          <div className="cat-content__faq-list">
+            {FAQ.map(({ q, a }) => (
+              <details key={q} className="cat-content__faq-item">
+                <summary className="cat-content__faq-q">{q}</summary>
+                <p className="cat-content__faq-a">{a}</p>
+              </details>
+            ))}
           </div>
-        ))}
-      </section>
+        </div>
 
-      <section style={{ marginTop: 40 }}>
-        <h2>Other number converters</h2>
-        <ul>
-          <li>
-            <Link to="/number-base">Number Base Converter</Link> — Convert between decimal,
-            binary, hexadecimal, and octal
-          </li>
-          <li>
-            <Link to="/length">Length Converter</Link> — Meters, feet, miles, and more
-          </li>
-        </ul>
+        <div style={{ marginTop: 40 }}>
+          <h2 className="cat-content__section-title">Other number converters</h2>
+          <ul>
+            <li>
+              <Link to="/number-base">Number Base Converter</Link> — Convert between decimal,
+              binary, hexadecimal, and octal
+            </li>
+            <li>
+              <Link to="/length">Length Converter</Link> — Meters, feet, miles, and more
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   )
