@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './ConverterTools.css'
 
 const MAX_VAL = 4294967295
 
@@ -42,6 +43,10 @@ export default function NumberBaseConverter() {
     const n = parseInt(value, base)
     if (isNaN(n)) { setError('Invalid input'); return }
     if (n > MAX_VAL) {
+      if (base === 10) setDecimal(value)
+      else if (base === 2) setBinary(value)
+      else if (base === 16) setHex(value)
+      else setOctal(value)
       setError('Exceeds 32-bit unsigned max (4,294,967,295)')
       return
     }
@@ -50,79 +55,58 @@ export default function NumberBaseConverter() {
     updateAll(n, setDecimal, setBinary, setHex, setOctal)
   }
 
-  const inputStyle = {
-    padding: '12px 16px',
-    border: '2px solid var(--border)',
-    borderRadius: 8,
-    fontSize: 16,
-    width: '100%',
-    fontFamily: 'monospace',
-    boxSizing: 'border-box',
-    background: 'var(--bg)',
-    color: 'var(--text-h)',
-  }
-
   const fields = [
-    { label: 'Decimal (Base 10)', value: decimal, base: 10, placeholder: '255' },
-    { label: 'Binary (Base 2)', value: binary, base: 2, placeholder: '11111111' },
-    { label: 'Hexadecimal (Base 16)', value: hex, base: 16, placeholder: 'FF' },
-    { label: 'Octal (Base 8)', value: octal, base: 8, placeholder: '377' },
+    { label: 'Decimal', sublabel: 'Base 10', value: decimal, base: 10, placeholder: '255' },
+    { label: 'Binary', sublabel: 'Base 2', value: binary, base: 2, placeholder: '11111111' },
+    { label: 'Hexadecimal', sublabel: 'Base 16', value: hex, base: 16, placeholder: 'FF' },
+    { label: 'Octal', sublabel: 'Base 8', value: octal, base: 8, placeholder: '377' },
   ]
 
   return (
-    <div style={{ marginBottom: 40 }}>
-      <div className="two-col-grid" style={{ marginBottom: 16 }}>
-        {fields.map(({ label, value, base, placeholder }) => (
+    <div className="conv-tool">
+      <div className="two-col-grid" style={{ marginBottom: 8 }}>
+        {fields.map(({ label, sublabel, value, base, placeholder }) => (
           <div key={base}>
-            <label style={{ display: 'block', fontWeight: 600, marginBottom: 8 }}>{label}</label>
+            <label className="conv-tool__label">
+              {label} <span style={{ opacity: 0.5 }}>/ {sublabel}</span>
+            </label>
             <input
               type="text"
               value={value}
               onChange={e => handleChange(e.target.value, base)}
               placeholder={placeholder}
-              style={inputStyle}
+              className="conv-tool__input"
             />
           </div>
         ))}
       </div>
 
-      {error && (
-        <p style={{ color: '#dc2626', fontWeight: 600, marginBottom: 24 }}>{error}</p>
-      )}
+      {error && <p className="conv-tool__error" style={{ marginBottom: 16 }}>{error}</p>}
 
-      <h2 style={{ fontSize: 18, fontWeight: 700, margin: '32px 0 16px' }}>
-        Quick Reference (0–15)
-      </h2>
-      <div style={{ overflowX: 'auto' }}>
-        <table style={{ borderCollapse: 'collapse', fontSize: 14 }}>
-          <thead>
-            <tr style={{ background: 'var(--code-bg)' }}>
-              {['Decimal', 'Binary', 'Hex', 'Octal'].map(h => (
-                <th
-                  key={h}
-                  style={{
-                    padding: '8px 20px',
-                    textAlign: 'left',
-                    borderBottom: '2px solid var(--border)',
-                    fontFamily: 'monospace',
-                  }}
-                >
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {Array.from({ length: 16 }, (_, i) => (
-              <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
-                <td style={{ padding: '5px 20px', fontFamily: 'monospace' }}>{i}</td>
-                <td style={{ padding: '5px 20px', fontFamily: 'monospace' }}>{i.toString(2)}</td>
-                <td style={{ padding: '5px 20px', fontFamily: 'monospace' }}>{i.toString(16).toUpperCase()}</td>
-                <td style={{ padding: '5px 20px', fontFamily: 'monospace' }}>{i.toString(8)}</td>
+      <div className="ref-tables">
+        <div className="ref-panel">
+          <div className="ref-panel__title">Quick Reference (0–15)</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Dec</th>
+                <th>Binary</th>
+                <th>Hex</th>
+                <th>Octal</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {Array.from({ length: 16 }, (_, i) => (
+                <tr key={i}>
+                  <td className="mono">{i}</td>
+                  <td className="mono-accent">{i.toString(2)}</td>
+                  <td className="mono">{i.toString(16).toUpperCase()}</td>
+                  <td className="mono">{i.toString(8)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   )

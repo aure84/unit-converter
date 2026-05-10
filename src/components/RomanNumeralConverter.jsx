@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './ConverterTools.css'
 
 const ROMAN_MAP = [
   [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
@@ -59,6 +60,7 @@ export default function RomanNumeralConverter() {
     const raw = e.target.value.toUpperCase()
     setRoman(raw)
     setRomanError('')
+    setDecimalError('')
     if (!raw) { setDecimal(''); return }
     const n = fromRoman(raw)
     if (isNaN(n)) {
@@ -67,26 +69,13 @@ export default function RomanNumeralConverter() {
       return
     }
     setDecimal(String(n))
-    setDecimalError('')
-  }
-
-  const inputStyle = {
-    padding: '12px 16px',
-    border: '2px solid var(--border)',
-    borderRadius: 8,
-    fontSize: 20,
-    width: '100%',
-    fontFamily: 'monospace',
-    boxSizing: 'border-box',
-    background: 'var(--bg)',
-    color: 'var(--text-h)',
   }
 
   return (
-    <div style={{ marginBottom: 40 }}>
-      <div className="two-col-grid" style={{ marginBottom: 8 }}>
+    <div className="conv-tool">
+      <div className="two-col-grid" style={{ marginBottom: 4 }}>
         <div>
-          <label style={{ display: 'block', fontWeight: 600, marginBottom: 8 }}>Decimal</label>
+          <label className="conv-tool__label">Decimal</label>
           <input
             type="number"
             value={decimal}
@@ -94,76 +83,67 @@ export default function RomanNumeralConverter() {
             placeholder="1–3999"
             min={1}
             max={3999}
-            style={inputStyle}
+            className="conv-tool__input"
           />
-          {decimalError && (
-            <p style={{ color: '#dc2626', fontSize: 13, marginTop: 4 }}>{decimalError}</p>
-          )}
+          {decimalError && <p className="conv-tool__error">{decimalError}</p>}
         </div>
         <div>
-          <label style={{ display: 'block', fontWeight: 600, marginBottom: 8 }}>Roman Numeral</label>
+          <label className="conv-tool__label">Roman Numeral</label>
           <input
             type="text"
             value={roman}
             onChange={handleRomanChange}
             placeholder="MCMXCIX"
-            style={{ ...inputStyle, textTransform: 'uppercase' }}
+            className="conv-tool__input"
+            style={{ textTransform: 'uppercase' }}
           />
-          {romanError && (
-            <p style={{ color: '#dc2626', fontSize: 13, marginTop: 4 }}>{romanError}</p>
-          )}
+          {romanError && <p className="conv-tool__error">{romanError}</p>}
         </div>
       </div>
 
-      <h2 style={{ fontSize: 18, fontWeight: 700, margin: '32px 0 16px' }}>Quick Reference</h2>
-      <div style={{ overflowX: 'auto' }}>
-      <table style={{ borderCollapse: 'collapse', marginBottom: 32, width: '100%' }}>
-        <thead>
-          <tr style={{ background: 'var(--code-bg)' }}>
-            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Symbol</th>
-            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Value</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[['I', 1], ['V', 5], ['X', 10], ['L', 50], ['C', 100], ['D', 500], ['M', 1000]].map(
-            ([sym, val]) => (
-              <tr key={sym} style={{ borderBottom: '1px solid var(--border)' }}>
-                <td style={{ padding: '6px 24px', fontFamily: 'monospace', fontWeight: 700, fontSize: 18 }}>{sym}</td>
-                <td style={{ padding: '6px 24px' }}>{val}</td>
-              </tr>
-            )
-          )}
-        </tbody>
-      </table>
-      </div>
+      <div className="ref-tables">
+        <div className="ref-panel">
+          <div className="ref-panel__title">Symbols</div>
+          <table>
+            <thead>
+              <tr><th>Symbol</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+              {[['I', 1], ['V', 5], ['X', 10], ['L', 50], ['C', 100], ['D', 500], ['M', 1000]].map(([sym, val]) => (
+                <tr key={sym}>
+                  <td className="mono">{sym}</td>
+                  <td>{val.toLocaleString()}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
-      <h2 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 16px' }}>Common Examples</h2>
-      <div style={{ overflowX: 'auto' }}>
-      <table style={{ borderCollapse: 'collapse', width: '100%' }}>
-        <thead>
-          <tr style={{ background: 'var(--code-bg)' }}>
-            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Decimal</th>
-            <th style={{ padding: '8px 24px', textAlign: 'left', borderBottom: '2px solid var(--border)' }}>Roman Numeral</th>
-          </tr>
-        </thead>
-        <tbody>
-          {[
-            [2026, 'MMXXVI'],
-            [2024, 'MMXXIV'],
-            [1999, 'MCMXCIX'],
-            [1776, 'MDCCLXXVI'],
-            [42, 'XLII'],
-            [14, 'XIV'],
-            [9, 'IX'],
-            [4, 'IV'],
-          ].map(([dec, rom]) => (
-            <tr key={dec} style={{ borderBottom: '1px solid var(--border)' }}>
-              <td style={{ padding: '6px 24px' }}>{dec}</td>
-              <td style={{ padding: '6px 24px', fontFamily: 'monospace' }}>{rom}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+        <div className="ref-panel" style={{ flex: 2 }}>
+          <div className="ref-panel__title">Common Examples</div>
+          <table>
+            <thead>
+              <tr><th>Decimal</th><th>Roman Numeral</th></tr>
+            </thead>
+            <tbody>
+              {[
+                [2026, 'MMXXVI'],
+                [2024, 'MMXXIV'],
+                [1999, 'MCMXCIX'],
+                [1776, 'MDCCLXXVI'],
+                [42, 'XLII'],
+                [14, 'XIV'],
+                [9, 'IX'],
+                [4, 'IV'],
+              ].map(([dec, rom]) => (
+                <tr key={dec}>
+                  <td>{dec}</td>
+                  <td className="mono-accent">{rom}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   )
