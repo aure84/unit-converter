@@ -48,7 +48,7 @@ export default function RomanNumeralPage() {
 
         <div style={{ marginTop: 40 }}>
           <h2 className="cat-content__section-title">Other number converters</h2>
-          <ul>
+          <ul className="cat-content__link-list">
             <li>
               <Link to="/number-base">Number Base Converter</Link> — Convert between decimal,
               binary, hexadecimal, and octal

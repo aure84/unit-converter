@@ -51,7 +51,7 @@ export default function NumberBasePage() {
 
         <div style={{ marginTop: 40 }}>
           <h2 className="cat-content__section-title">Other number tools</h2>
-          <ul>
+          <ul className="cat-content__link-list">
             <li>
               <Link to="/roman-numerals">Roman Numeral Converter</Link> — Decimal to Roman and back
             </li>
