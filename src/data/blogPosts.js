@@ -358,6 +358,7 @@ export const blogPosts = [
       { label: 'MB to GB Converter', path: '/data-storage/megabyte-to-gigabyte' },
       { label: 'KB to MB Converter', path: '/data-storage/kilobyte-to-megabyte' },
       { label: 'Data Storage Converter', path: '/data-storage' },
+      { label: 'Number Base Converter', path: '/number-base' },
     ],
   },
 
@@ -1172,6 +1173,7 @@ export const blogPosts = [
       { label: 'km to Miles Converter', path: '/length/kilometer-to-mile' },
       { label: 'Unit Converter Home', path: '/' },
       { label: 'Why the US Never Switched to Metric', path: '/blog/us-metric-history' },
+      { label: 'Roman Numeral Converter', path: '/roman-numerals' },
     ],
   },
 
@@ -2560,6 +2562,8 @@ export const blogPosts = [
       { label: 'Weight Converter', path: '/weight' },
       { label: 'Temperature Converter', path: '/temperature' },
       { label: 'Speed Converter', path: '/speed' },
+      { label: 'Roman Numeral Converter', path: '/roman-numerals' },
+      { label: 'Number Base Converter', path: '/number-base' },
     ],
   },
 ]
