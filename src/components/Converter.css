@@ -24,7 +24,8 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #666;
+  color: var(--text);
+  opacity: 0.6;
 }
 
 .converter__select,
@@ -33,11 +34,11 @@
   box-sizing: border-box;
   min-height: 44px;          /* WCAG / mobile touch target */
   padding: 0.5rem 0.75rem;
-  border: 1.5px solid #d1d5db;
+  border: 1.5px solid var(--border);
   border-radius: 8px;
   font-size: 1rem;           /* 16px — prevents iOS auto-zoom */
-  background: #fff;
-  color: #111;
+  background: var(--bg);
+  color: var(--text-h);
   appearance: none;
   -webkit-appearance: none;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
@@ -69,8 +70,8 @@
 .converter__select:focus,
 .converter__input:focus {
   outline: none;
-  border-color: #4f46e5;
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-bg);
 }
 
 /* ── Input row: input + copy button side by side ─────────────────────── */
@@ -97,10 +98,10 @@
   min-width: 44px;
   min-height: 44px;
   padding: 0 0.625rem;
-  border: 1.5px solid #d1d5db;
+  border: 1.5px solid var(--border);
   border-radius: 8px;
-  background: #fff;
-  color: #6b7280;
+  background: var(--bg);
+  color: var(--text);
   font-size: 0.75rem;
   font-weight: 600;
   cursor: pointer;
@@ -111,25 +112,25 @@
 }
 
 .converter__copy-btn:hover {
-  color: #4f46e5;
-  border-color: #4f46e5;
-  background: rgba(79, 70, 229, 0.06);
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-bg);
 }
 
 .converter__copy-btn:active {
-  background: rgba(79, 70, 229, 0.12);
+  background: var(--accent-bg);
 }
 
 .converter__copy-btn--copied {
-  color: #059669;
-  border-color: #059669;
-  background: rgba(5, 150, 105, 0.08);
+  color: var(--currency);
+  border-color: var(--currency-border);
+  background: var(--currency-bg);
 }
 
 .converter__copy-btn--copied:hover {
-  color: #059669;
-  border-color: #059669;
-  background: rgba(5, 150, 105, 0.12);
+  color: var(--currency);
+  border-color: var(--currency-border);
+  background: var(--currency-bg);
 }
 
 /* Swap button */
@@ -138,25 +139,27 @@
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  color: #9ca3af;
+  color: var(--text);
+  opacity: 0.5;
   line-height: 1;
   user-select: none;
   /* button reset */
   background: none;
-  border: 1.5px solid #d1d5db;
+  border: 1.5px solid var(--border);
   border-radius: 50%;
   width: 40px;
   height: 40px;
   flex-shrink: 0;
   cursor: pointer;
-  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  transition: border-color 0.15s, background 0.15s, color 0.15s, opacity 0.15s;
   -webkit-tap-highlight-color: transparent;
 }
 
 .converter__arrow:hover {
-  border-color: #4f46e5;
-  background: rgba(79, 70, 229, 0.06);
-  color: #4f46e5;
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  color: var(--accent);
+  opacity: 1;
 }
 
 /* ── Responsive: side-by-side on wider screens ────────────────────────── */
@@ -180,52 +183,10 @@
   }
 }
 
-/* ── Dark mode ───────────────────────────────────────────────────────── */
-
-[data-theme="dark"] .converter__select,
-[data-theme="dark"] .converter__input {
-  background: #1f2028;
-  border-color: #2e303a;
-  color: #f3f4f6;
-}
-
-[data-theme="dark"] .converter__arrow {
-  border-color: #2e303a;
-  color: #9ca3af;
-}
-
-[data-theme="dark"] .converter__arrow:hover {
-  border-color: #c084fc;
-  background: rgba(192, 132, 252, 0.1);
-  color: #c084fc;
-}
+/* ── Dark mode: only the select SVG arrow needs overriding ───────────── */
 
 [data-theme="dark"] .converter__select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239ca3af' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
-}
-
-[data-theme="dark"] .converter__copy-btn {
-  background: #1f2028;
-  border-color: #2e303a;
-  color: #9ca3af;
-}
-
-[data-theme="dark"] .converter__copy-btn:hover {
-  color: #c084fc;
-  border-color: #c084fc;
-  background: rgba(192, 132, 252, 0.1);
-}
-
-[data-theme="dark"] .converter__copy-btn--copied {
-  color: #34d399;
-  border-color: #34d399;
-  background: rgba(52, 211, 153, 0.1);
-}
-
-[data-theme="dark"] .converter__copy-btn--copied:hover {
-  color: #34d399;
-  border-color: #34d399;
-  background: rgba(52, 211, 153, 0.15);
 }
