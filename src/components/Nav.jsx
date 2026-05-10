@@ -32,8 +32,10 @@ const CATEGORIES = [
   { path: '/angle',         label: 'Angle' },
   { path: '/frequency',     label: 'Frequency' },
   { path: '/shoe-size',     label: 'Shoe Size' },
-  { path: '/torque',        label: 'Torque' },
-  { path: '/currency',      label: 'Currency', special: true },
+  { path: '/torque',          label: 'Torque' },
+  { path: '/roman-numerals',  label: 'Roman Numerals' },
+  { path: '/number-base',     label: 'Number Base' },
+  { path: '/currency',        label: 'Currency', special: true },
 ]
 
 const LEGAL_LINKS = [
