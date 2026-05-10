@@ -212,6 +212,18 @@ sections.push([
   `  <url><loc>${BASE}/currency</loc><lastmod>${TODAY}</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>`,
 ].join('\n'));
 
+// ── Roman Numerals ───────────────────────────────────────────────────────────
+sections.push([
+  `  <!-- Roman Numerals -->`,
+  url(`${BASE}/roman-numerals`, '0.8'),
+].join('\n'));
+
+// ── Number Base ──────────────────────────────────────────────────────────────
+sections.push([
+  `  <!-- Number Base -->`,
+  url(`${BASE}/number-base`, '0.8'),
+].join('\n'));
+
 // ── Value-specific pages ─────────────────────────────────────────────────────
 
 function range(start, end, step = 1) {
