@@ -215,6 +215,28 @@ const CATEGORIES = [
       { label: 'Nm → in·lb',   path: '/torque/newton_meter-to-inch_pound' },
     ],
   },
+  {
+    id: 'roman-numerals',
+    path: '/roman-numerals',
+    label: 'Roman Numerals',
+    icon: 'Ⅻ',
+    pairs: [
+      { label: '2026 → MMXXVI',    path: '/roman-numerals' },
+      { label: '1999 → MCMXCIX',   path: '/roman-numerals' },
+      { label: 'XLII → 42',        path: '/roman-numerals' },
+    ],
+  },
+  {
+    id: 'number-base',
+    path: '/number-base',
+    label: 'Number Base',
+    icon: '01',
+    pairs: [
+      { label: 'Decimal → Binary', path: '/number-base' },
+      { label: 'Decimal → Hex',    path: '/number-base' },
+      { label: 'Binary → Octal',   path: '/number-base' },
+    ],
+  },
 ]
 
 
