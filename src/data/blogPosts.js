@@ -2363,6 +2363,208 @@ export const blogPosts = [
       { label: 'Length Converter', path: '/length' },
     ],
   },
+
+  {
+    slug: 'ounces-to-grams',
+    image: {
+      url: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&auto=format&fit=crop&q=80',
+      alt: 'Digital kitchen scale weighing ingredients in grams',
+    },
+    title: 'How to Convert Ounces to Grams (and Back)',
+    tag: 'How-To Guide',
+    date: '2026-05-10',
+    description: 'Learn how to convert ounces to grams with the exact formula, a full reference table, cooking examples, and the difference between avoirdupois and troy ounces.',
+    intro: 'The ounce and the gram are two of the most commonly used units of weight in everyday life, and they appear in the same contexts constantly. Recipes from different countries, nutritional labels, postal rates, jewelry pricing, supplement dosing, and precious metal quotes all involve switching between ounces and grams. The conversion is simple once you have the exact factor, and a handful of anchor values cover the majority of real-world situations without a calculator.',
+    sections: [
+      {
+        heading: 'What Is an Ounce?',
+        paragraphs: [
+          'The ounce used in everyday measurements — for food, body weight, and general goods — is the avoirdupois ounce, defined as exactly 28.349523125 grams. The word "avoirdupois" comes from Old French meaning "goods of weight," a system codified in England in the 13th century. Sixteen avoirdupois ounces make one pound.',
+          'The United States is one of the few countries that still uses ounces for everyday weight measurement. Most countries switched to the metric system during the 19th and 20th centuries, which is why ounce-to-gram conversions appear so frequently when cooking from international recipes, ordering goods from abroad, or reading foreign nutritional labels.',
+          'A standard US postal letter is limited to 1 ounce (28.35 g) for the base postage rate. A slice of bread weighs roughly 1 ounce. A standard AA battery weighs approximately 0.8 ounces (23 g). These anchors give useful physical intuition for the unit.',
+        ],
+      },
+      {
+        heading: 'What Is a Gram?',
+        paragraphs: [
+          'The gram is the fundamental unit of mass in the metric system for everyday measurements, defined as one one-thousandth of a kilogram. It was originally defined in 1795 as the mass of one cubic centimeter of water at 4°C — a definition elegant in its simplicity. The official definition is now based on the kilogram, which since 2019 is defined in terms of the Planck constant.',
+          'For practical reference: a standard paperclip weighs about 1 gram. A US nickel coin weighs exactly 5 grams, making it a useful calibration object for kitchen scales. A teaspoon of water weighs approximately 5 grams. A standard AA battery weighs about 23 grams.',
+          'The gram is the universal standard for food portions on nutrition labels in most countries, including the entire European Union. It is also the standard for pharmaceutical dosing, precious metal weights (with a twist — see the troy ounce section below), and scientific measurements worldwide.',
+        ],
+      },
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          'The exact conversion factor is: 1 avoirdupois ounce = 28.3495 grams (rounded to four decimal places from the exact value of 28.349523125 g).',
+          'To convert ounces to grams: multiply by 28.3495.',
+          'To convert grams to ounces: divide by 28.3495, or equivalently, multiply by 0.035274.',
+          'Quick examples: 2 oz × 28.3495 = 56.70 g. 8 oz × 28.3495 = 226.80 g. 16 oz × 28.3495 = 453.59 g (one pound).',
+          'A useful approximation for mental math: multiply ounces by 28 for a quick estimate. This is accurate to within about 1.2% — close enough for most cooking and everyday purposes, though not for precise baking or postal weights.',
+        ],
+      },
+      {
+        heading: 'Ounce to Gram Reference Table',
+        paragraphs: ['Common ounce-to-gram conversions for everyday use:'],
+        list: [
+          '1 oz = 28.35 g',
+          '2 oz = 56.70 g',
+          '3 oz = 85.05 g',
+          '4 oz = 113.40 g (one quarter pound)',
+          '6 oz = 170.10 g',
+          '8 oz = 226.80 g (one half pound)',
+          '10 oz = 283.50 g',
+          '12 oz = 340.19 g (three quarter pound)',
+          '16 oz = 453.59 g (one pound)',
+          '32 oz = 907.19 g (two pounds)',
+          '100 g = 3.527 oz',
+          '250 g = 8.818 oz',
+          '500 g = 17.637 oz',
+        ],
+      },
+      {
+        heading: 'Ounces to Grams in Cooking',
+        paragraphs: [
+          'Cooking is where the ounce-to-gram conversion matters most in daily life. US recipes specify quantities in cups, tablespoons, and ounces. European, British, and most international recipes use grams. Converting between the two is essential when cooking from a foreign cookbook or scaling a recipe written in a different measurement tradition.',
+          'Practical cooking examples using grams:',
+        ],
+        list: [
+          'Chicken breast: typically 6–8 oz (170–227 g)',
+          'Standard can of chickpeas: 15 oz (425 g) drained weight',
+          '1 cup all-purpose flour: approximately 4.25 oz (120 g)',
+          '1 cup granulated sugar: approximately 7 oz (200 g)',
+          '1 cup butter: 8 oz (227 g), or 2 sticks',
+          'Dark chocolate bar (baking): usually 4 oz (113 g)',
+          '1 stick of butter: 4 oz (113 g)',
+          'A chicken egg (large): approximately 1.8 oz (50 g) without shell',
+        ],
+      },
+      {
+        heading: 'Why Grams Are Better for Baking',
+        paragraphs: [
+          'For baking specifically, weight measurements in grams are more accurate and repeatable than volume measurements in cups. A cup of all-purpose flour can range from 120 to 150 grams depending on how it is scooped — whether it is packed, aerated, or leveled. That 25% variation in a key ingredient has a measurable effect on the final product.',
+          'A digital kitchen scale set to grams eliminates this inconsistency entirely. You weigh directly into the bowl, reduce the number of dirty measuring cups, and get consistent results every time. This is why professional bakers and most European home bakers have used weight-based recipes for decades.',
+          'If you bake frequently and do not already own a digital scale, it is one of the most useful — and inexpensive — kitchen investments you can make. Scales accurate to 1 gram cost $10–$20 and last for years.',
+        ],
+      },
+      {
+        heading: 'Troy Ounces: A Different Ounce for Precious Metals',
+        paragraphs: [
+          'There is a second type of ounce that matters in specific contexts: the troy ounce. A troy ounce is heavier than an avoirdupois ounce: 1 troy oz = 31.1035 grams, compared to 28.3495 grams for the standard ounce. That is a difference of about 9.7% — significant when money is involved.',
+          'Troy ounces are used exclusively for precious metals — gold, silver, platinum, and palladium. When you see gold quoted at a price per ounce, that price is per troy ounce. If you are converting gold or silver weights, use the troy factor (31.1035 g per oz), not the standard avoirdupois factor.',
+          'The two systems cannot be interchanged. A scale calibrated in troy ounces reads differently from one in avoirdupois ounces, even though both display "oz." Jewelers and precious metals dealers always specify troy; food, postal, and general commerce always use avoirdupois. If you ever buy or sell gold or silver and need to verify weights, confirm which ounce is being used.',
+        ],
+      },
+      {
+        heading: 'Mental Math Shortcuts',
+        paragraphs: [
+          'Exact conversions need a calculator, but a handful of anchor values let you estimate quickly without one.',
+          'For ounces to grams: 1 oz ≈ 28 g, 4 oz ≈ 113 g, 8 oz ≈ 227 g, 16 oz ≈ 454 g. These four anchor points cover most cooking portions.',
+          'For grams to ounces: 100 g ≈ 3.5 oz, 250 g ≈ 9 oz, 500 g ≈ 17.5 oz, 1,000 g (1 kg) ≈ 35 oz (about 2.2 lbs).',
+          'A useful rule of thumb for recipes: if you need to convert between cups and grams, remember that cup measurements vary by ingredient density. Always look up the specific ingredient-to-gram conversion rather than applying a single factor — flour, sugar, butter, and rice all have different weights per cup.',
+        ],
+      },
+    ],
+    conclusion: 'The ounce-to-gram conversion — multiply by 28.3495 — is one of the most frequently needed calculations in everyday life, and internalizing a few anchor values makes it instant in most situations. For cooking, 8 oz is roughly 227 g and 16 oz is 454 g. For baking, use a gram-based scale for consistent results. For precious metals, always confirm whether the weight is in avoirdupois or troy ounces — the nearly 10% difference matters whenever real money is involved.',
+    relatedLinks: [
+      { label: 'Weight Converter', path: '/weight' },
+      { label: 'Ounce to Gram Converter', path: '/weight/ounce-to-gram' },
+      { label: 'Pounds to Kilograms', path: '/weight/pound-to-kilogram' },
+      { label: 'Cups to Milliliters', path: '/volume/cup-to-milliliter' },
+    ],
+  },
+
+  {
+    slug: 'us-metric-history',
+    image: {
+      url: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&auto=format&fit=crop&q=80',
+      alt: 'American highway road sign showing distances in miles',
+    },
+    title: 'Why the US Never Switched to Metric',
+    tag: 'Conversion Fail',
+    date: '2026-05-10',
+    description: 'The US came close to going metric twice — in 1866 and 1975. Here is the full story of why the world\'s most powerful economy still uses miles, pounds, and Fahrenheit.',
+    intro: 'The United States is one of three countries in the world that has not officially adopted the metric system as its primary system of measurement. The other two are Liberia and Myanmar. This puts the US in unusual company — and the reasons are not simple stubbornness or ignorance. The US nearly switched to metric twice, had the legal framework in place to do it, and backed away both times. The story involves Congress, an oil crisis, a presidential administration, fierce public resistance, and some deeply embedded cultural habits that no law has been able to override.',
+    sections: [
+      {
+        heading: 'The Metric System and the Rest of the World',
+        paragraphs: [
+          'The metric system was formally defined in France in 1795, during the Revolution. France adopted it as a deliberate break from the feudal measurement systems that varied by region and even by lord — the width of a "foot" depended on whose foot you were measuring. The kilogram, meter, and liter were defined in terms of natural constants, making them universal and reproducible anywhere on Earth.',
+          'Over the following century, almost every industrialized nation adopted metric. Germany standardized in 1872. Japan began metrication in 1891. The British Empire transitioned gradually through the 20th century — the UK formally adopted metric in 1965, though British road signs still show miles and people still discuss body weight in stones. By the early 21st century, the US stands essentially alone among major economies in daily use of imperial measurements.',
+        ],
+      },
+      {
+        heading: 'The US Knew About Metric Early — and Chose Not to Act',
+        paragraphs: [
+          'Contrary to popular assumption, the US was not ignorant of the metric system. Congress legalized the metric system for use in trade in 1866 — the same year the Civil War ended. The US was also a founding signatory of the Treaty of the Metre in 1875, which established the International Bureau of Weights and Measures. US standard kilogram and meter artifacts were established by 1893, meaning American scientists and engineers had metric standards available from the late 19th century.',
+          'But legalizing metric did not require it. American manufacturers, farmers, and consumers continued using customary units. The legal option to use metric sat mostly unused for over a century, available but unwanted.',
+        ],
+      },
+      {
+        heading: 'The Real Attempt: The Metric Conversion Act of 1975',
+        paragraphs: [
+          'The serious political push came in the 1970s. The oil crisis, rising global competition, and a wave of metrication among major trading partners created genuine concern in Washington. American exports were quoted in units that confused European and Asian buyers. US manufacturers produced parts with fractional-inch dimensions that fit nothing made anywhere else. A congressional study estimated that the cost to American industry of maintaining incompatible measurement systems ran into billions of dollars annually.',
+          'Congress passed the Metric Conversion Act in 1975, signed by President Gerald Ford. The act declared metric "the preferred system of weights and measures for United States trade and commerce" and created the United States Metric Board — a 17-member body representing industry, labor, education, and consumer groups — to coordinate the transition.',
+          'The key word in the act was "voluntary." The Metric Board had no authority to require anything.',
+        ],
+      },
+      {
+        heading: 'Why Voluntary Conversion Failed',
+        paragraphs: [
+          'The Metric Board could educate, encourage, and publish recommendations. It could not mandate that highway signs change from miles to kilometers, that grocery stores price products by the kilogram instead of the pound, or that tool manufacturers retool from fractional inches to millimeters. It could not compel anyone to do anything.',
+          'Public resistance was immediate and organized. Consumers complained that metric quantities were unintuitive — and they were right, for people who had built a lifetime of experience around different units. How far is a kilometer to someone who has always driven miles? How much is 250 grams of ground beef to someone who has always bought pounds? The intuitive calibration that comes from decades of experience with a measurement system does not transfer when you rename the units.',
+          'Business resistance came from capital costs. Manufacturers with tooling, precision machinery, and inventory built around fractional inches faced significant investment to switch. For businesses selling primarily to domestic customers, the investment had no obvious return. A hardware store does not gain customers by switching from inches to millimeters if its customers still think in inches.',
+          'Congress abolished the Metric Board in 1982 under the Reagan administration, as part of budget cuts and a general rollback of federal programs seen as overreach. The official push for civilian metrication was over.',
+        ],
+      },
+      {
+        heading: 'The Quiet Victory: Federal Agencies Go Metric',
+        paragraphs: [
+          'A quieter attempt came in 1988. The Omnibus Trade and Competitiveness Act required all federal agencies to use metric for grants, contracts, and official business by 1992. This produced real but largely invisible change: NASA, the Department of Defense, the pharmaceutical industry, and the scientific community adopted metric as their primary working language.',
+          'That is why American scientists publish in meters and kilograms, American medicine is dosed in milligrams and milliliters, and most NASA calculations use metric. The professional and scientific worlds went metric quietly, without fanfare or controversy. The daily civilian world did not follow.',
+        ],
+      },
+      {
+        heading: 'The Real Cost: Errors, Inefficiency, and the Mars Orbiter',
+        paragraphs: [
+          'The most dramatic documented cost of America\'s dual measurement system appears in the story of the Mars Climate Orbiter — covered in detail elsewhere on this site. In 1999, NASA lost a $327 million spacecraft because one engineering team sent thruster data in metric units while another team\'s software expected imperial units. Nobody caught the mismatch for nine months of flight. The spacecraft entered the Martian atmosphere at the wrong angle and was destroyed.',
+          'Less dramatic but more economically significant: US manufacturers who export to European or Asian markets must maintain dual tooling, dual documentation, and dual quality control. American automotive parts, industrial equipment, and consumer goods all require metric versions for international sale. Industry analysts have estimated that maintaining parallel systems costs American manufacturers billions annually — costs ultimately passed to consumers.',
+          'American students spend years learning two measurement systems: the customary one used in daily life and the metric one required for science classes. Countries that have completed metrication have one system for both contexts. The cognitive overhead is real, if unmeasurable.',
+        ],
+      },
+      {
+        heading: 'Where the US Already Uses Metric — Without Realizing It',
+        paragraphs: [
+          'American daily life is more metricated than most Americans realize. The metric system is not foreign — it is already embedded in the infrastructure of everyday life, just not always visible.',
+        ],
+        list: [
+          'All pharmaceuticals: dosed in milligrams, micrograms, and milliliters',
+          'Wine and spirits: sold in 750 ml bottles and 1 L bottles',
+          'Camera lenses and photography: focal lengths in millimeters',
+          'Engine displacement: measured in liters (a 5.0L V8, a 2.4L four-cylinder)',
+          'Track and field: all distances in meters (100m dash, 1500m run, marathon at 42.195 km)',
+          'The entire US military: operates in kilometers, meters, and kilograms',
+          'Nutrition labels: list grams, milligrams, and milliliters alongside customary units',
+          'Soda and bottled water: 2-liter bottles, 500 ml cans',
+          'The entire US scientific and medical community: operates exclusively in SI units',
+        ],
+      },
+      {
+        heading: 'Will the US Ever Fully Switch?',
+        paragraphs: [
+          'Probably not through top-down legislation. The political will for mandatory civilian metrication does not exist, and the cost of replacing all highway signs, retooling consumer-facing industry, and retraining a population is genuinely enormous. The Federal Highway Administration has estimated that converting road signs alone would cost $400–$600 million — and that is before any other infrastructure or behavioral changes.',
+          'The more likely trajectory is gradual cultural erosion from the bottom up. Younger Americans encounter metric more than their predecessors did: through international media, imported products, global video games, and science education that uses metric exclusively. Global commerce continues to pressure American manufacturing toward metric standards. The FDA has moved toward metric-primary labeling requirements for food products.',
+          'The irony is that the argument for switching only grows stronger with time: every year of maintaining two parallel systems is another year of conversion costs, trade friction, and the occasional expensive mistake. But the argument has been growing stronger for 50 years and the highway signs still read in miles.',
+        ],
+      },
+    ],
+    conclusion: 'The US did not fail to go metric out of ignorance — it tried, with real political will and a dedicated federal agency, and failed. What defeated metrication was a structural problem that has nothing to do with measurement: the cost of switching is immediate and falls on specific businesses and households, while the benefits are diffuse, long-term, and accrue to no single constituency. Congress gave businesses and consumers every reason to resist and no reason to comply. The result is a country that is fluent in metric in its hospitals, military, and laboratories, and stubbornly imperial everywhere else — still converting, still spending, and still occasionally losing spacecraft.',
+    relatedLinks: [
+      { label: 'Length Converter', path: '/length' },
+      { label: 'Weight Converter', path: '/weight' },
+      { label: 'Temperature Converter', path: '/temperature' },
+      { label: 'Speed Converter', path: '/speed' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */
