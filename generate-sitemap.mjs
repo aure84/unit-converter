@@ -167,7 +167,7 @@ sections.push([
 ].join('\n'));
 
 // ── Power ────────────────────────────────────────────────────────────────────
-const powerUnits = ['watt','kilowatt','megawatt','horsepower','horsepower_metric','btu_per_hour'];
+const powerUnits = ['watt','kilowatt','megawatt','horsepower','ps','btu_per_hour'];
 sections.push([
   `  <!-- Power -->`,
   url(`${BASE}/power`, '0.8'),

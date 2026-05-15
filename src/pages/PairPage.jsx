@@ -31,6 +31,14 @@ const PATH_TO_REGISTRY = {
 }
 
 /**
+ * Maps user-friendly URL slugs to their registry IDs.
+ * Needed when the symbol/common name differs from the internal id.
+ */
+const UNIT_ALIASES = {
+  ps: 'horsepower_metric',
+}
+
+/**
  * Parse a pair slug like "meter-to-foot" into unit ids.
  * Normalises slugs to registry ids (lowercase, hyphens → underscores).
  */
@@ -55,10 +63,11 @@ function parsePair(pair) {
   const match = slug.match(/^(.+?)-to-(.+)$/i)
   if (!match) return { value, from: slug, to: undefined }
 
+  const resolve = (id) => UNIT_ALIASES[id] ?? id
   return {
     value,
-    from: normalise(match[1]),
-    to: normalise(match[2]),
+    from: resolve(normalise(match[1])),
+    to: resolve(normalise(match[2])),
   }
 }
 
