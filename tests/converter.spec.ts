@@ -241,3 +241,10 @@ test('value page: canonical points to value-specific URL', async ({ page }) => {
   const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
   expect(canonical).toBe('https://convert-fast.com/weight/3300-pound-to-kilogram');
 });
+
+test('internal linking: common values block on generic pair page', async ({ page }) => {
+  await page.goto(`${BASE}/weight/pound-to-kilogram`)
+  await expect(page.getByRole('heading', { name: /common values/i })).toBeVisible()
+  const links = page.locator('a[href*="pound-to-kilogram"]')
+  expect(await links.count()).toBeGreaterThan(1)
+})

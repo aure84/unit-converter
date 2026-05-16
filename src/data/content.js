@@ -28,6 +28,10 @@ export const categoryContent = {
       { label: 'Miles to km', path: '/length/mile-to-kilometer' },
       { label: 'cm to Inches', path: '/length/centimeter-to-inch' },
       { label: 'Inches to cm', path: '/length/inch-to-centimeter' },
+      { label: '5 km → miles', path: '/length/5-kilometer-to-mile' },
+      { label: '10 km → miles', path: '/length/10-kilometer-to-mile' },
+      { label: '170 cm → inches', path: '/length/170-centimeter-to-inch' },
+      { label: '6 ft → meters', path: '/length/6-foot-to-meter' },
     ],
   },
 
@@ -56,6 +60,10 @@ export const categoryContent = {
       { label: 'Ounces to Grams', path: '/weight/ounce-to-gram' },
       { label: 'kg to Grams', path: '/weight/kilogram-to-gram' },
       { label: 'Stones to kg', path: '/weight/stone-to-kilogram' },
+      { label: '3,300 lb → kg', path: '/weight/3300-pound-to-kilogram' },
+      { label: '150 lb → kg', path: '/weight/150-pound-to-kilogram' },
+      { label: '70 kg → lb', path: '/weight/70-kilogram-to-pound' },
+      { label: '100 kg → lb', path: '/weight/100-kilogram-to-pound' },
     ],
   },
 
@@ -84,6 +92,10 @@ export const categoryContent = {
       { label: 'Kelvin to Celsius', path: '/temperature/kelvin-to-celsius' },
       { label: 'Fahrenheit to Kelvin', path: '/temperature/fahrenheit-to-kelvin' },
       { label: 'Kelvin to Fahrenheit', path: '/temperature/kelvin-to-fahrenheit' },
+      { label: '37°C → °F', path: '/temperature/37-celsius-to-fahrenheit' },
+      { label: '100°F → °C', path: '/temperature/100-fahrenheit-to-celsius' },
+      { label: '0°C → °F', path: '/temperature/0-celsius-to-fahrenheit' },
+      { label: '20°C → °F', path: '/temperature/20-celsius-to-fahrenheit' },
     ],
   },
 

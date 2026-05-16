@@ -1,4 +1,4 @@
-import { useLocation, useParams } from 'react-router'
+import { useLocation, useParams, Link } from 'react-router'
 import Converter from '../components/Converter.jsx'
 import ReferenceTable from '../components/ReferenceTable.jsx'
 import PairContent from '../components/PairContent.jsx'
@@ -239,6 +239,8 @@ function PairPage() {
   } : null
 
   const hasEnrichment = !!VALUE_ENRICHMENT[`${category}|${from}|${to}`]
+  const enrichment = !isValuePage ? (VALUE_ENRICHMENT[`${category}|${from}|${to}`] ?? null) : null
+  const commonValues = enrichment?.commonValues ?? []
 
   return (
     <main>
@@ -302,6 +304,28 @@ function PairPage() {
         fromUnit={from}
         toUnit={to}
       />
+      {commonValues.length > 0 && (
+        <section className="cat-content">
+          <div className="cat-content__featured">
+            <h2 className="cat-content__section-title">Common values</h2>
+            <div className="cat-content__featured-grid">
+              {commonValues.map((v) => {
+                const res = (() => { try { return convert(v, from, to, category) } catch { return null } })()
+                if (res === null) return null
+                return (
+                  <Link
+                    key={v}
+                    to={`/${segment}/${v}-${from.replace(/_/g, '-')}-to-${to.replace(/_/g, '-')}`}
+                    className="cat-content__featured-link"
+                  >
+                    {fmtNum(v)} {fromObj?.symbol} = {fmtNum(res)} {toObj?.symbol}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
     </main>
   )
 }
