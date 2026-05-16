@@ -238,8 +238,8 @@ function PairPage() {
     })),
   } : null
 
-  const hasEnrichment = !!VALUE_ENRICHMENT[`${category}|${from}|${to}`]
   const enrichment = !isValuePage ? (VALUE_ENRICHMENT[`${category}|${from}|${to}`] ?? null) : null
+  const hasEnrichment = !!VALUE_ENRICHMENT[`${category}|${from}|${to}`]
   const commonValues = enrichment?.commonValues ?? []
 
   return (
@@ -304,7 +304,7 @@ function PairPage() {
         fromUnit={from}
         toUnit={to}
       />
-      {commonValues.length > 0 && (
+      {commonValues.length > 0 && !isValuePage && (
         <section className="cat-content">
           <div className="cat-content__featured">
             <h2 className="cat-content__section-title">Common values</h2>
@@ -314,7 +314,7 @@ function PairPage() {
                 if (res === null) return null
                 return (
                   <Link
-                    key={v}
+                    key={String(v)}
                     to={`/${segment}/${v}-${from.replace(/_/g, '-')}-to-${to.replace(/_/g, '-')}`}
                     className="cat-content__featured-link"
                   >
