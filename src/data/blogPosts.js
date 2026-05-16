@@ -2570,7 +2570,7 @@ export const blogPosts = [
     slug: 'what-is-2-5-bar-in-psi-tire-pressure',
     title: 'What Is 2.5 Bar in PSI? Tire Pressure Guide',
     tag: 'Context',
-    date: '2026-05-18',
+    date: '2026-05-16',
     description: '2.5 bar equals 36.3 PSI. Learn what this means for your tires, how to check tire pressure correctly, and what the ideal range is for most cars.',
     intro: '2.5 bar equals approximately 36.3 PSI (pounds per square inch). For most passenger cars, the recommended tire pressure falls between 30 and 35 PSI (2.1–2.4 bar) — so 2.5 bar is at the high end of normal, or slightly above recommended for some vehicles. Always check your car\'s door jamb sticker for the exact figure.',
     sections: [
@@ -2649,7 +2649,7 @@ export const blogPosts = [
     slug: 'bar-to-psi-conversion-chart',
     title: 'Bar to PSI Conversion Chart (Full Reference)',
     tag: 'Quick Reference',
-    date: '2026-05-19',
+    date: '2026-05-17',
     description: 'Complete bar to PSI conversion chart from 0.5 to 10 bar. Includes the exact formula, tire pressure ranges, and industrial pressure reference points.',
     intro: 'To convert bar to PSI, multiply by 14.5038. This chart covers the full range from 0.5 to 10 bar — the range that covers bicycle tires, car tires, truck tires, and common industrial applications.',
     sections: [
@@ -2731,7 +2731,7 @@ export const blogPosts = [
     slug: 'how-big-is-1-hectare',
     title: 'How Big Is 1 Hectare? Comparisons + Examples',
     tag: 'Context',
-    date: '2026-05-20',
+    date: '2026-05-18',
     description: '1 hectare equals 10,000 square meters — about 1.5 American football fields or 2.47 acres. See real-world comparisons to understand exactly how big a hectare is.',
     intro: 'One hectare equals 10,000 square meters (100 m × 100 m). To picture it: roughly one and a half American football fields, or a square just a little bigger than a city block. It is the standard unit for measuring agricultural land and forest area across most of the world.',
     sections: [
@@ -2809,7 +2809,7 @@ export const blogPosts = [
     slug: 'hectare-to-square-km',
     title: 'Hectare to Square Kilometer — When and Why It Matters',
     tag: 'How-To Guide',
-    date: '2026-05-21',
+    date: '2026-05-19',
     description: 'Divide hectares by 100 to get square kilometers. Learn the formula, when each unit applies, and how to compare areas of cities, parks, and countries.',
     intro: 'To convert hectares to square kilometers, divide by 100. One square kilometer equals exactly 100 hectares. This is one of the cleanest conversions in the metric system — no messy decimals, no approximations needed.',
     sections: [
@@ -2873,7 +2873,7 @@ export const blogPosts = [
     slug: 'pounds-to-kilograms-complete-guide',
     title: 'Pounds to Kilograms: The Complete Guide',
     tag: 'How-To Guide',
-    date: '2026-05-22',
+    date: '2026-05-20',
     description: 'Multiply pounds by 0.4536 to get kilograms. Includes a reference table from 100–220 lbs, body weight examples, and a quick mental shortcut.',
     intro: 'To convert pounds to kilograms, multiply by 0.453592. One pound equals exactly 0.453592 kg — this is the international definition. For quick mental math, dividing by 2.2 gives a result accurate to within 0.1%.',
     sections: [
@@ -2965,7 +2965,7 @@ export const blogPosts = [
     slug: 'how-many-steps-is-1-km',
     title: 'How Many Steps Is 1 km? Walking, Running, and Height',
     tag: 'Context',
-    date: '2026-05-23',
+    date: '2026-05-21',
     description: 'Walking 1 km takes about 1,300 steps for an average adult. Learn how stride length, height, and pace affect step count — and how fitness trackers calculate it.',
     intro: 'Walking 1 kilometer takes roughly 1,300 to 1,500 steps for an average adult. The exact number depends on your height, stride length, and walking pace. A taller person with a longer stride will reach 1 km in fewer steps than a shorter person walking the same distance.',
     sections: [
@@ -3030,7 +3030,7 @@ export const blogPosts = [
     slug: 'celsius-to-fahrenheit-quick-reference',
     title: 'Celsius to Fahrenheit: Quick Reference + Formula',
     tag: 'Quick Reference',
-    date: '2026-05-24',
+    date: '2026-05-22',
     description: 'Multiply °C by 1.8 then add 32 to get °F. Full reference table, key anchor points (freezing, body temp, boiling), and the reverse formula.',
     intro: 'To convert Celsius to Fahrenheit: multiply by 1.8 (or 9/5), then add 32. To go the other way, subtract 32 then divide by 1.8. The two scales share one anchor point: −40°C = −40°F.',
     sections: [
@@ -3119,7 +3119,7 @@ export const blogPosts = [
     slug: 'inches-to-cm-chart-clothes-height-screens',
     title: 'Inches to cm Chart — Clothes, Height, and Screens',
     tag: 'Quick Reference',
-    date: '2026-05-25',
+    date: '2026-05-23',
     description: 'Multiply inches by 2.54 to get centimeters. Height chart from 5\'0\" to 6\'5\", screen size reference, and clothing inseam/waist conversions.',
     intro: 'To convert inches to centimeters, multiply by 2.54. One inch equals exactly 2.54 cm — this is the international definition, established in 1959. For height: 6 feet = 72 inches = 182.88 cm.',
     sections: [
@@ -3201,7 +3201,7 @@ export const blogPosts = [
     slug: 'what-is-a-kilowatt-hour',
     title: 'What Is a Kilowatt-Hour? Energy Explained Simply',
     tag: 'Context',
-    date: '2026-05-26',
+    date: '2026-05-24',
     description: 'A kilowatt-hour is the energy used by a 1,000-watt device running for one hour. Learn how kWh shows up on your electricity bill and in EV charging.',
     intro: 'A kilowatt-hour (kWh) is the amount of energy consumed by a 1,000-watt device running for one hour. It is the standard unit on your electricity bill. A 100-watt light bulb left on for 10 hours uses 1 kWh. Your EV battery holds 40–100 kWh.',
     sections: [
@@ -3266,7 +3266,7 @@ export const blogPosts = [
     slug: 'horsepower-vs-kw-vs-ps',
     title: 'Horsepower vs kW vs PS — What\'s the Difference?',
     tag: 'Context',
-    date: '2026-05-27',
+    date: '2026-05-25',
     description: '1 horsepower = 0.7457 kW = 1.014 PS. Learn the history of each power unit, exact conversion factors, and why European specs list kW while the US uses hp.',
     intro: '1 mechanical horsepower equals 745.7 watts (0.7457 kW). PS (Pferdestärke, metric horsepower) equals 735.5 watts — slightly less. These three units all measure engine power, just on slightly different scales. The gap between hp and PS is under 2%, but it shows up in spec sheets.',
     sections: [
@@ -3332,7 +3332,7 @@ export const blogPosts = [
     slug: 'liters-to-gallons-us-vs-uk',
     title: 'Liters to Gallons: US vs UK — What\'s the Difference?',
     tag: 'Context',
-    date: '2026-05-28',
+    date: '2026-05-26',
     description: '1 US gallon = 3.785 liters. 1 UK gallon = 4.546 liters. Learn why there are two gallons, which countries use which, and how it affects fuel economy comparisons.',
     intro: 'There are two gallons: the US gallon (3.785 liters) and the imperial (UK) gallon (4.546 liters). They differ by about 20%. If someone tells you their car gets "40 MPG" and you do not know which gallon they mean, you cannot compare it to a European fuel economy figure.',
     sections: [
@@ -3396,7 +3396,7 @@ export const blogPosts = [
     slug: 'how-to-read-tire-pressure-bar-psi-kpa',
     title: 'How to Read Tire Pressure: Bar, PSI, and kPa Explained',
     tag: 'Context',
-    date: '2026-05-29',
+    date: '2026-05-27',
     description: 'Tire pressure is shown in bar, PSI, or kPa depending on your car\'s origin. Learn what each unit means, where to find your car\'s spec, and how to check pressure correctly.',
     intro: 'Tire pressure appears in three units depending on your car\'s country of manufacture: PSI (US), bar (Europe), or kPa (Japan, Australia). They all measure the same thing — how much air is in your tires — on different scales. 1 bar = 14.5 PSI = 100 kPa.',
     sections: [
@@ -3462,7 +3462,7 @@ export const blogPosts = [
     slug: 'joules-to-calories-food-energy',
     title: 'Joules to Calories: Food Energy Explained',
     tag: 'Context',
-    date: '2026-05-30',
+    date: '2026-05-28',
     description: '1 dietary Calorie (kcal) = 4,184 joules. Learn the difference between calories and kilocalories, why food labels use kJ, and how everyday foods compare in energy.',
     intro: '1 dietary Calorie (written with a capital C on food labels) equals 1 kilocalorie = 4,184 joules. The confusion between "calorie" and "Calorie" is responsible for most of the mismatch people experience between food labels and energy calculations. A banana labeled "90 Calories" contains 90 kilocalories = 376,560 joules.',
     sections: [
@@ -3527,7 +3527,7 @@ export const blogPosts = [
     slug: 'mpg-to-l100km-eu-vs-us-fuel-economy',
     title: 'MPG to L/100km — EU vs US Fuel Economy Explained',
     tag: 'How-To Guide',
-    date: '2026-05-31',
+    date: '2026-05-29',
     description: 'MPG and L/100km measure fuel economy on opposite scales — higher MPG is better, lower L/100km is better. Formula, conversion table, and real car examples inside.',
     intro: 'MPG (miles per gallon) and L/100km (liters per 100 kilometers) are inverse measurements. Higher MPG means better efficiency; lower L/100km means better efficiency. To convert: L/100km = 235.215 ÷ MPG (US gallon). To go back: MPG = 235.215 ÷ L/100km.',
     sections: [
@@ -3603,7 +3603,7 @@ export const blogPosts = [
     slug: 'metric-vs-imperial-cheat-sheet',
     title: 'Metric vs Imperial: The Complete Cheat Sheet',
     tag: 'Quick Reference',
-    date: '2026-06-01',
+    date: '2026-05-30',
     description: 'The essential metric-to-imperial conversions for length, weight, volume, and temperature — with mental shortcuts that work without a calculator.',
     intro: 'Metric and imperial units cover the same four everyday dimensions: length, weight, volume, and temperature. This cheat sheet gives you the key conversion factors, the mental shortcuts that work without a calculator, and the anchor points that are worth memorizing.',
     sections: [
@@ -3690,7 +3690,7 @@ export const blogPosts = [
     slug: 'mars-climate-orbiter-crash',
     title: 'The Mars Climate Orbiter Crash — A $327M Unit Mistake',
     tag: 'Conversion Fail',
-    date: '2026-06-02',
+    date: '2026-05-31',
     description: 'How a unit conversion error between metric and imperial destroyed NASA\'s Mars Climate Orbiter in 1999 — and what engineers learned from a $327 million mistake.',
     intro: 'On September 23, 1999, NASA\'s Mars Climate Orbiter fired its main engine to enter orbit around Mars — and was never heard from again. The spacecraft, which had traveled 655 million kilometers over 10 months, burned up in the Martian atmosphere because one engineering team had used imperial units while the other used metric. The cost: $327.6 million and a lost mission.',
     sections: [
@@ -3759,7 +3759,7 @@ export const blogPosts = [
     slug: 'columbus-miscalculation',
     title: 'Columbus\'s Miscalculation That Discovered America',
     tag: 'Conversion Fail',
-    date: '2026-06-03',
+    date: '2026-06-01',
     description: 'Columbus confused Roman miles with Arabic miles when estimating Earth\'s size — and underestimated the distance to Asia by 25%. A continent saved his life.',
     intro: 'Christopher Columbus sailed west in 1492 confident he could reach Asia in about 3,700 kilometers. The actual distance to Asia from the Canary Islands going west is approximately 19,600 kilometers. He was wrong by a factor of more than five — and the only reason he survived is that two continents happened to sit exactly where he thought Asia would be.',
     sections: [
@@ -3827,7 +3827,7 @@ export const blogPosts = [
     slug: 'gimli-glider-boeing-767',
     title: 'The Gimli Glider: When a Boeing 767 Ran Out of Fuel Mid-Air',
     tag: 'Conversion Fail',
-    date: '2026-06-04',
+    date: '2026-06-02',
     description: 'Air Canada Flight 143 ran out of fuel at 41,000 feet in 1983 because ground crew used pounds instead of kilograms to calculate the fuel load. Both engines failed over Manitoba.',
     intro: 'On July 23, 1983, Air Canada Flight 143 — a brand-new Boeing 767 — ran out of fuel at 41,000 feet over Red Lake, Ontario. Both engines flamed out. The pilots glided the aircraft 100 km to an abandoned airstrip in Gimli, Manitoba, and landed without power on a runway being used as a drag racing track. All 69 people on board survived.',
     sections: [
@@ -3893,7 +3893,7 @@ export const blogPosts = [
     slug: 'vasa-warship-disaster',
     title: 'The Vasa Warship Disaster — Asymmetric Measurements Sank a Navy',
     tag: 'Conversion Fail',
-    date: '2026-06-05',
+    date: '2026-06-03',
     description: 'The Vasa warship sank on its maiden voyage in 1628 after two construction teams used different measurement systems — one Swedish foot, one Amsterdam foot — and built a lopsided hull.',
     intro: 'On August 10, 1628, the Swedish warship Vasa sailed 1,300 meters from its dock in Stockholm harbor before a gust of wind heeled it over and it sank in 32 meters of water. The cause: two different measurement systems were used on opposite sides of the ship during construction, producing a hull that was heavier on the port side than the starboard side.',
     sections: [
@@ -3957,7 +3957,7 @@ export const blogPosts = [
     slug: 'hospital-medication-dose-error',
     title: 'When a Hospital Gave 10x the Medication Dose',
     tag: 'Conversion Fail',
-    date: '2026-06-06',
+    date: '2026-06-04',
     description: 'Microgram and milligram confusion in hospitals has caused serious patient harm. Learn how mcg/mg errors happen, documented cases, and the safeguards that now prevent them.',
     intro: '1 milligram (mg) = 1,000 micrograms (mcg or µg). This factor of 1,000 is the source of one of the most dangerous recurring errors in clinical medicine. A dose ordered in micrograms dispensed in milligrams delivers 1,000 times the intended amount. A dose ordered in milligrams but prepared in micrograms delivers one-thousandth of what was needed.',
     sections: [
