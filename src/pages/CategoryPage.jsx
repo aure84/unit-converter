@@ -2,8 +2,9 @@ import { useLocation } from 'react-router'
 import Converter from '../components/Converter.jsx'
 import CategoryContent from '../components/CategoryContent.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
-import { units } from '../data/units.js'
+import { units, getUnit } from '../data/units.js'
 import { categoryContent } from '../data/content.js'
+import InteractiveScale from '../components/InteractiveScale.jsx'
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -123,6 +124,14 @@ function CategoryPage() {
         defaultFrom={defaults.from}
         defaultTo={defaults.to}
         initialValue={initialValue}
+      />
+      <InteractiveScale
+        category={category}
+        fromUnit={defaults.from}
+        toUnit={defaults.to}
+        fromSymbol={getUnit(category, defaults.from)?.symbol ?? defaults.from}
+        toSymbol={getUnit(category, defaults.to)?.symbol ?? defaults.to}
+        fromLabel={getUnit(category, defaults.from)?.label ?? defaults.from}
       />
       <CategoryContent category={category} />
     </main>
