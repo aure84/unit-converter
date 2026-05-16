@@ -137,8 +137,8 @@ function BlogPostPage() {
           <section className="blog-post__faq">
             <h2>Frequently Asked Questions</h2>
             <div className="cat-content__faq-list">
-              {post.faqs.map(({ q, a }) => (
-                <details key={q} className="cat-content__faq-item">
+              {post.faqs.map(({ q, a }, i) => (
+                <details key={i} className="cat-content__faq-item">
                   <summary className="cat-content__faq-q">{q}</summary>
                   <p className="cat-content__faq-a">{a}</p>
                 </details>

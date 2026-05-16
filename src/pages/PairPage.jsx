@@ -8,6 +8,7 @@ import ValueResult from '../components/ValueResult.jsx'
 import { units, getUnit } from '../data/units.js'
 import { generatePairContent, PAIR_META, VALUE_ENRICHMENT } from '../data/pairContent.js'
 import { convert } from '../utils/convert.js'
+import { fmtNum } from '../utils/format.js'
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -83,10 +84,6 @@ function getUnitLabel(category, unitId) {
  */
 function toTitle(key) {
   return key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
-}
-
-function fmtNum(n) {
-  return parseFloat(n.toPrecision(6)).toLocaleString('en-US')
 }
 
 const VALUE_CONTEXT = {
@@ -241,6 +238,8 @@ function PairPage() {
     })),
   } : null
 
+  const hasEnrichment = !!VALUE_ENRICHMENT[`${category}|${from}|${to}`]
+
   return (
     <main>
       <SEOMeta
@@ -277,13 +276,13 @@ function PairPage() {
         fromUnit={from}
         toUnit={to}
       />
-      {valueFaq.length > 0 && (
+      {valueFaq.length > 0 && !hasEnrichment && (
         <section className="cat-content">
           <div className="cat-content__faq">
             <h2 className="cat-content__faq-title">Frequently Asked Questions</h2>
             <div className="cat-content__faq-list">
-              {valueFaq.map(({ q, a }) => (
-                <details key={q} className="cat-content__faq-item">
+              {valueFaq.map(({ q, a }, i) => (
+                <details key={i} className="cat-content__faq-item">
                   <summary className="cat-content__faq-q">{q}</summary>
                   <p className="cat-content__faq-a">{a}</p>
                 </details>

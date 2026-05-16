@@ -1,11 +1,8 @@
 import { Link } from 'react-router'
 import ScaleDiagram from './visuals/ScaleDiagram.jsx'
 import { VALUE_ENRICHMENT } from '../data/pairContent.js'
+import { fmtNum } from '../utils/format.js'
 import './ValueResult.css'
-
-function fmtNum(n) {
-  return parseFloat(n.toPrecision(6)).toLocaleString('en-US')
-}
 
 function ValueResult({ value, result, fromSymbol, toSymbol, fromLabel, toLabel, category, from, to, segment }) {
   const enrichment = VALUE_ENRICHMENT[`${category}|${from}|${to}`] ?? null
@@ -57,8 +54,8 @@ function ValueResult({ value, result, fromSymbol, toSymbol, fromLabel, toLabel, 
 
           {faqs.length > 0 && (
             <div className="value-result__faqs cat-content__faq-list">
-              {faqs.map(({ q, a }) => (
-                <details key={q} className="cat-content__faq-item">
+              {faqs.map(({ q, a }, i) => (
+                <details key={i} className="cat-content__faq-item">
                   <summary className="cat-content__faq-q">{q}</summary>
                   <p className="cat-content__faq-a">{a}</p>
                 </details>
