@@ -2,7 +2,10 @@
 // Props: value (number), unit (string), min (number), max (number),
 //        markers ([{value, label}]), label (string, figcaption)
 function ScaleDiagram({ value, unit, min, max, markers = [], label }) {
-  const toX = (v) => 30 + Math.min(1, Math.max(0, (v - min) / (max - min))) * 340
+  const toX = (v) => {
+    if (min === max) return 200
+    return 40 + Math.min(1, Math.max(0, (v - min) / (max - min))) * 320
+  }
   const vx = toX(value)
   const fmt = (n) =>
     n >= 1000 ? `${(n / 1000).toLocaleString('en-US')}k` : n.toLocaleString('en-US')
@@ -17,10 +20,11 @@ function ScaleDiagram({ value, unit, min, max, markers = [], label }) {
       <svg
         viewBox="0 0 400 90"
         role="img"
-        aria-label={label ?? `Scale: ${value} ${unit}`}
+        aria-label={label ? undefined : `Scale: ${value} ${unit}`}
+        aria-hidden={label ? true : undefined}
         style={{ width: '100%', maxWidth: 560, display: 'block', margin: '0 auto' }}
       >
-        <rect x="30" y="42" width="340" height="8" rx="4" fill="var(--border)" />
+        <rect x="40" y="42" width="320" height="8" rx="4" fill="var(--border)" />
         {markers.map((m, i) => {
           const mx = toX(m.value)
           return (
