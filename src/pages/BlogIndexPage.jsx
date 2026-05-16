@@ -9,6 +9,7 @@ const TAG_CLASS = {
   'How-To Guide':    'blog-tag--how-to',
   'Quick Reference': 'blog-tag--quick-ref',
   'Conversion Fail': 'blog-tag--fail',
+  'Context':         'blog-tag--context',
 }
 
 function BlogTag({ tag }) {
@@ -29,7 +30,10 @@ function BlogIndexPage() {
         Conversion guides, quick references, and the stories of when unit errors changed history.
       </p>
       <ul className="blog-index__list">
-        {[...blogPosts].sort((a, b) => b.date.localeCompare(a.date)).map((post) => (
+        {[...blogPosts]
+          .filter((p) => p.date <= new Date().toISOString().slice(0, 10))
+          .sort((a, b) => b.date.localeCompare(a.date))
+          .map((post) => (
           <li key={post.slug} className="blog-index__item">
             <Link to={`/blog/${post.slug}`} className="blog-index__link">
               <BlogTag tag={post.tag} />

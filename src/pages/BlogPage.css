@@ -282,3 +282,13 @@
     padding: 16px 18px;
   }
 }
+
+.blog-tag--context {
+  background: rgba(22, 163, 74, 0.12);
+  color: var(--currency);
+  border: 1px solid rgba(22, 163, 74, 0.3);
+}
+
+.blog-post__faq {
+  margin-top: 2rem;
+}
