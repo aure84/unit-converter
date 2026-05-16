@@ -10,7 +10,10 @@ const TAG_CLASS = {
   'Conversion Fail': 'blog-tag--fail',
 }
 
+const TODAY = new Date().toISOString().slice(0, 10)
+
 const FEATURED_POSTS = [...blogPosts]
+  .filter((p) => p.date <= TODAY)
   .sort((a, b) => b.date.localeCompare(a.date))
   .slice(0, 3)
 
