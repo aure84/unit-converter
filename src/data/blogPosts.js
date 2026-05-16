@@ -2566,6 +2566,1463 @@ export const blogPosts = [
       { label: 'Number Base Converter', path: '/number-base' },
     ],
   },
+  {
+    slug: 'what-is-2-5-bar-in-psi-tire-pressure',
+    title: 'What Is 2.5 Bar in PSI? Tire Pressure Guide',
+    tag: 'Context',
+    date: '2026-05-18',
+    description: '2.5 bar equals 36.3 PSI. Learn what this means for your tires, how to check tire pressure correctly, and what the ideal range is for most cars.',
+    intro: '2.5 bar equals approximately 36.3 PSI (pounds per square inch). For most passenger cars, the recommended tire pressure falls between 30 and 35 PSI (2.1–2.4 bar) — so 2.5 bar is at the high end of normal, or slightly above recommended for some vehicles. Always check your car\'s door jamb sticker for the exact figure.',
+    sections: [
+      {
+        heading: 'Bar vs PSI: What\'s the Difference?',
+        paragraphs: [
+          'Bar and PSI both measure pressure, but they come from different unit systems. The bar is a metric unit roughly equal to atmospheric pressure at sea level (1 bar ≈ 14.5 PSI). PSI — pounds per square inch — is the standard in the United States and is still widely used in the UK for tire pressure.',
+          'The conversion is straightforward: 1 bar = 14.5038 PSI. So to convert bar to PSI, multiply by 14.5038. For 2.5 bar: 2.5 × 14.5038 = 36.26 PSI.',
+          'European car manufacturers typically list tire pressure in bar. American manufacturers use PSI. If your car was made in Europe but sold in the US, you may see both on the door sticker.',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Common tire pressures: bar vs PSI',
+            items: [
+              { label: 'Economy car (front)', value: 30, unit: 'PSI' },
+              { label: 'SUV (front)', value: 33, unit: 'PSI' },
+              { label: '2.5 bar', value: 36.3, unit: 'PSI', highlight: true },
+              { label: 'Truck (rear)', value: 40, unit: 'PSI' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Is 2.5 Bar the Right Pressure for Your Car?',
+        paragraphs: [
+          'That depends on your specific vehicle. Most passenger cars recommend 2.1–2.4 bar (30–35 PSI) for front tires and slightly higher for rear tires when carrying a full load. Sports cars and performance vehicles sometimes require 2.5 bar or more.',
+          'Check the sticker inside your driver\'s door jamb — it lists the manufacturer\'s recommended cold tire pressure in both PSI and bar (on most modern cars). Do not rely on the maximum pressure printed on the tire sidewall; that is the tire\'s physical limit, not the recommended operating pressure.',
+          '2.5 bar is fine if that is what your manufacturer specifies. It is slightly high for vehicles that recommend 2.2–2.3 bar, which can cause the center of the tire to wear faster and may reduce grip slightly.',
+        ],
+      },
+      {
+        heading: 'How to Check and Adjust Tire Pressure',
+        paragraphs: [
+          'Check tire pressure when the tires are cold — meaning the car has been parked for at least three hours or driven less than 1 mile. Driving heats the air inside the tire, which raises pressure by 4–8 PSI. Hot readings are not reliable for adjustment.',
+          'Use a quality digital tire gauge or the gauge at a service station. Remove the valve cap, press the gauge firmly onto the valve stem, and read the pressure. If it\'s above your target, release air with the small pin inside the valve stem. If it\'s below, add air with a pump.',
+        ],
+        visual: {
+          type: 'StepDiagram',
+          props: {
+            label: 'How to check tire pressure correctly',
+            steps: [
+              { title: 'Park and wait', description: 'Let tires cool for 3 hours or drive less than 1 mile' },
+              { title: 'Remove valve cap', description: 'Unscrew the small cap on each tire\'s valve stem' },
+              { title: 'Press gauge firmly', description: 'Hold the gauge flat against the valve — no hissing' },
+              { title: 'Read the pressure', description: 'Compare to the door jamb sticker recommendation' },
+              { title: 'Inflate or deflate', description: 'Add air at a pump or press the valve pin to release' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'kPa: The Third Pressure Unit',
+        paragraphs: [
+          'Some gauges and car manuals also show kilopascals (kPa). 1 bar = 100 kPa, so 2.5 bar = 250 kPa. Japanese and some European vehicles commonly list pressure in kPa on the door sticker.',
+          'The three units cover the same measurement — they are just different scales. A pressure of 2.5 bar = 36.3 PSI = 250 kPa. Memorizing one anchor point (1 bar ≈ 14.5 PSI ≈ 100 kPa) lets you convert between all three.',
+        ],
+      },
+    ],
+    conclusion: 'At 2.5 bar (36.3 PSI), your tires are at the high end of the normal range for most passenger cars. If your vehicle\'s door sticker specifies 2.5 bar, that is exactly right. If it specifies 2.1–2.3 bar, reduce pressure slightly to protect tread life and handling. Always check cold and always trust the manufacturer spec over general guidelines.',
+    faqs: [
+      { q: 'What is 2.5 bar in PSI?', a: '2.5 bar equals 36.26 PSI. Multiply bar by 14.5038 to convert.' },
+      { q: 'Is 2.5 bar tire pressure too high?', a: 'It depends on your vehicle. Most passenger cars recommend 2.1–2.4 bar (30–35 PSI). Check the sticker inside your driver\'s door jamb for the manufacturer\'s figure.' },
+      { q: 'What is 2.5 bar in kPa?', a: '2.5 bar equals 250 kPa. 1 bar = 100 kPa.' },
+      { q: 'How do I convert bar to PSI without a calculator?', a: 'Multiply bar by 14.5 for a close estimate. For 2.5 bar: 2.5 × 14.5 = 36.25 PSI.' },
+      { q: 'Should I check tire pressure hot or cold?', a: 'Always cold — after parking for at least 3 hours or driving less than 1 mile. Driving heats the air and raises pressure by 4–8 PSI, which gives a misleading reading.' },
+    ],
+    relatedLinks: [
+      { label: 'Bar to PSI Converter', path: '/pressure/bar-to-psi' },
+      { label: 'PSI to Bar Converter', path: '/pressure/psi-to-bar' },
+      { label: 'Pressure Converter', path: '/pressure' },
+      { label: 'kPa to PSI Converter', path: '/pressure/kilopascal-to-psi' },
+    ],
+  },
+  {
+    slug: 'bar-to-psi-conversion-chart',
+    title: 'Bar to PSI Conversion Chart (Full Reference)',
+    tag: 'Quick Reference',
+    date: '2026-05-19',
+    description: 'Complete bar to PSI conversion chart from 0.5 to 10 bar. Includes the exact formula, tire pressure ranges, and industrial pressure reference points.',
+    intro: 'To convert bar to PSI, multiply by 14.5038. This chart covers the full range from 0.5 to 10 bar — the range that covers bicycle tires, car tires, truck tires, and common industrial applications.',
+    sections: [
+      {
+        heading: 'The Conversion Formula',
+        paragraphs: [
+          '1 bar = 14.5038 PSI. The bar is defined as exactly 100,000 pascals. PSI (pounds per square inch) is derived from the imperial unit system. The two units are used interchangeably in automotive and industrial settings.',
+          'For quick mental math: multiply bar by 14.5. This gives a result within 0.03% of the exact answer — accurate enough for any practical purpose.',
+        ],
+      },
+      {
+        heading: 'Bar to PSI Reference Table',
+        paragraphs: ['All values rounded to two decimal places.'],
+        list: [
+          '0.5 bar = 7.25 PSI (bicycle suspension fork)',
+          '1.0 bar = 14.50 PSI (road bike tire minimum)',
+          '1.5 bar = 21.76 PSI (mountain bike tire)',
+          '2.0 bar = 29.01 PSI (passenger car minimum)',
+          '2.2 bar = 31.91 PSI (typical passenger car front)',
+          '2.3 bar = 33.36 PSI (typical passenger car front)',
+          '2.4 bar = 34.81 PSI (typical SUV front)',
+          '2.5 bar = 36.26 PSI (high end passenger / some sports cars)',
+          '2.8 bar = 40.61 PSI (van or light truck)',
+          '3.0 bar = 43.51 PSI (road bike — high pressure)',
+          '4.0 bar = 58.02 PSI (heavy truck)',
+          '6.0 bar = 87.02 PSI (hydraulic tools, air compressors)',
+          '10.0 bar = 145.04 PSI (industrial pneumatics)',
+        ],
+        visual: {
+          type: 'ScaleDiagram',
+          props: {
+            label: 'Common pressure ranges (PSI)',
+            min: 0,
+            max: 150,
+            value: 36.26,
+            unit: 'PSI',
+            markers: [
+              { value: 30, label: 'car min' },
+              { value: 36.26, label: '2.5 bar' },
+              { value: 80, label: 'road bike' },
+              { value: 145, label: '10 bar' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'PSI to Bar (Reverse Reference)',
+        paragraphs: [
+          'To convert PSI to bar, divide by 14.5038. For example: 35 PSI ÷ 14.5038 = 2.41 bar.',
+        ],
+        list: [
+          '28 PSI = 1.93 bar',
+          '30 PSI = 2.07 bar',
+          '32 PSI = 2.21 bar',
+          '35 PSI = 2.41 bar',
+          '36 PSI = 2.48 bar',
+          '38 PSI = 2.62 bar',
+          '40 PSI = 2.76 bar',
+          '44 PSI = 3.03 bar',
+          '51 PSI = 3.52 bar',
+          '60 PSI = 4.14 bar',
+        ],
+      },
+    ],
+    conclusion: 'The bar-to-PSI conversion is one of the most practical unit conversions for anyone who services their own vehicle or works with pneumatic equipment. The 14.5 multiplier is easy to remember and accurate enough for all real-world purposes.',
+    faqs: [
+      { q: 'How many PSI is 1 bar?', a: '1 bar equals 14.5038 PSI.' },
+      { q: 'How do I convert bar to PSI quickly?', a: 'Multiply the bar value by 14.5. This is accurate to within 0.03%.' },
+      { q: 'What bar pressure is 35 PSI?', a: '35 PSI equals approximately 2.41 bar. Divide PSI by 14.5038 to convert.' },
+      { q: 'Is bar or PSI more common for tire pressure?', a: 'PSI is standard in the US. Bar is common in Europe and on European vehicles. Most modern cars list both on the door jamb sticker.' },
+    ],
+    relatedLinks: [
+      { label: 'Bar to PSI Converter', path: '/pressure/bar-to-psi' },
+      { label: 'PSI to Bar Converter', path: '/pressure/psi-to-bar' },
+      { label: 'Pressure Converter', path: '/pressure' },
+    ],
+  },
+  {
+    slug: 'how-big-is-1-hectare',
+    title: 'How Big Is 1 Hectare? Comparisons + Examples',
+    tag: 'Context',
+    date: '2026-05-20',
+    description: '1 hectare equals 10,000 square meters — about 1.5 American football fields or 2.47 acres. See real-world comparisons to understand exactly how big a hectare is.',
+    intro: 'One hectare equals 10,000 square meters (100 m × 100 m). To picture it: roughly one and a half American football fields, or a square just a little bigger than a city block. It is the standard unit for measuring agricultural land and forest area across most of the world.',
+    sections: [
+      {
+        heading: 'What Is a Hectare?',
+        paragraphs: [
+          'The hectare (ha) is a metric unit of area equal to 10,000 square meters or 0.01 square kilometers. The name comes from the Greek "hekaton" (hundred) combined with "are" — an older metric unit equal to 100 m². So 1 hectare = 100 ares = 10,000 m².',
+          'The hectare was introduced alongside the metric system during the French Revolution and has been the primary unit for land measurement in most of the world since the 19th century. It is not technically an SI unit, but it is accepted for use with the SI system because of its practical importance in agriculture, forestry, and land law.',
+          'In everyday terms: if you paced out a square with sides of 100 meters (about 110 yards), the area inside would be exactly 1 hectare. A standard 400-meter athletic track encloses roughly 1 hectare inside the inner lane.',
+        ],
+      },
+      {
+        heading: 'Relatable Comparisons',
+        paragraphs: [
+          'Abstract units become real when anchored to familiar objects. An American football field (including end zones) covers about 0.535 hectares — so 1 hectare is roughly 1.87 football fields. A soccer pitch ranges from 0.62 to 0.82 hectares, so 1 hectare is slightly larger than a full-size soccer field.',
+          'A typical city block in Manhattan is about 0.8 hectares; in Chicago\'s grid, roughly 1.6 hectares. A large supermarket floor plan is usually 0.4–0.8 hectares. Two tennis courts side by side total about 0.15 hectares — so you would need more than 60 tennis courts to fill one hectare.',
+          'At the agricultural scale: a small family farm might be 2–5 hectares; a single wheat field on a commercial farm in the US Great Plains is often 40–80 hectares; the entire island of Manhattan is 5,913 hectares.',
+        ],
+        visual: {
+          type: 'SizeComparison',
+          props: {
+            label: 'How 1 hectare compares',
+            items: [
+              { label: 'Tennis court', emoji: '🎾', relativeSize: 0.04 },
+              { label: 'Soccer pitch', emoji: '⚽', relativeSize: 0.72 },
+              { label: '1 Hectare', emoji: '📐', relativeSize: 1 },
+              { label: 'City block (NYC)', emoji: '🏙️', relativeSize: 0.8 },
+              { label: 'Football field', emoji: '🏈', relativeSize: 0.54 },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Hectare vs Acre vs Square Kilometer',
+        paragraphs: [
+          'The acre is the customary unit for land in the United States and United Kingdom. One hectare equals 2.471 acres. Conversely, 1 acre = 0.4047 hectares. A rough mental shortcut: "1 hectare ≈ 2.5 acres."',
+          'For larger areas, the square kilometer (km²) is used. One square kilometer equals 100 hectares. So 1 hectare is 1% of a square kilometer. Countries and national parks are measured in km²; individual farms and parcels are measured in hectares.',
+          'In the United States, the acre remains the legal standard for real estate. International agricultural trade and scientific land surveys almost universally use hectares. If you read about deforestation in the Amazon — it is always reported in hectares.',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Area units in square meters',
+            items: [
+              { label: '1 Acre', value: 4047, unit: 'm²' },
+              { label: '1 Hectare', value: 10000, unit: 'm²', highlight: true },
+              { label: '1 sq km', value: 1000000, unit: 'm²' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'When to Use Hectares',
+        paragraphs: [
+          'Use hectares when discussing agricultural land, forest cover, national parks, urban planning zones, or environmental data. The unit fits the scale perfectly: a smallholder farm (2–20 ha), a nature reserve (100–10,000 ha), or a country\'s total arable land (millions of ha) all read naturally in hectares.',
+          'For real estate within cities, square meters or square feet are more common. For geographic comparisons between countries or regions, square kilometers take over. Hectares occupy the middle ground — too small for continents, too large for apartments.',
+        ],
+      },
+    ],
+    conclusion: 'One hectare is 10,000 square meters — about 1.87 American football fields, 2.47 acres, or 1% of a square kilometer. It is the global standard for measuring farmland, forests, and land parcels. The quickest mental anchor: picture a square with 100-meter sides.',
+    faqs: [
+      { q: 'How many football fields are in 1 hectare?', a: 'About 1.87 American football fields (including end zones). A standard football field is roughly 0.535 hectares.' },
+      { q: 'How many acres is 1 hectare?', a: '1 hectare equals 2.471 acres. A quick estimate: multiply hectares by 2.5.' },
+      { q: 'How many square meters is 1 hectare?', a: 'Exactly 10,000 square meters — a square with sides of 100 meters.' },
+      { q: 'When should I use hectares instead of acres?', a: 'Hectares are the international standard used in science, agriculture, and most countries. Acres are used in the US and UK for real estate and farming. If you\'re communicating internationally, use hectares.' },
+      { q: 'How many hectares in a square kilometer?', a: 'Exactly 100 hectares. 1 km² = 100 ha.' },
+    ],
+    relatedLinks: [
+      { label: 'Hectare to Square Kilometer', path: '/area/hectare-to-square-kilometer' },
+      { label: 'Hectare to Acre', path: '/area/hectare-to-acre' },
+      { label: 'Area Converter', path: '/area' },
+    ],
+  },
+  {
+    slug: 'hectare-to-square-km',
+    title: 'Hectare to Square Kilometer — When and Why It Matters',
+    tag: 'How-To Guide',
+    date: '2026-05-21',
+    description: 'Divide hectares by 100 to get square kilometers. Learn the formula, when each unit applies, and how to compare areas of cities, parks, and countries.',
+    intro: 'To convert hectares to square kilometers, divide by 100. One square kilometer equals exactly 100 hectares. This is one of the cleanest conversions in the metric system — no messy decimals, no approximations needed.',
+    sections: [
+      {
+        heading: 'The Formula and Why It Works',
+        paragraphs: [
+          '1 kilometer = 1,000 meters. A square kilometer is therefore 1,000 m × 1,000 m = 1,000,000 m². A hectare is 100 m × 100 m = 10,000 m². Dividing: 1,000,000 ÷ 10,000 = 100. So 100 hectares fit perfectly inside 1 square kilometer.',
+          'To convert hectares → km²: divide by 100 (or move the decimal two places left). To convert km² → hectares: multiply by 100 (move the decimal two places right). Examples: 250 ha = 2.5 km². 3.7 km² = 370 ha.',
+          'This is the cleanest unit step in the metric area system. Unlike some conversions that require irrational factors or memorized decimals, hectares and km² are related by a round factor of 100 — making mental arithmetic reliable.',
+        ],
+      },
+      {
+        heading: 'When Each Unit Is Used',
+        paragraphs: [
+          'Hectares work best at the human scale of land use: a farm field, a city park, a development plot, a nature reserve section. Most agricultural data — crop area, land deforestation, irrigation coverage — is published in hectares because the numbers stay readable. A 500-hectare farm is more intuitive than a 5-square-kilometer farm.',
+          'Square kilometers suit geographic comparisons: country sizes, city areas, ocean zones, national park totals. Singapore is 728 km². The Amazon rainforest covers roughly 5.5 million km². Reporting these in hectares (72,800 ha and 550 million ha respectively) would work mathematically but produces numbers that are hard to compare at a glance.',
+          'The practical rule: under 10 km², think in hectares. Above 10 km², think in square kilometers. Many datasets use both — a land registry might record individual parcels in hectares and report total municipal coverage in km².',
+        ],
+      },
+      {
+        heading: 'Real-World Area Examples',
+        paragraphs: [
+          'Central Park in New York City is 341 hectares (3.41 km²). Hyde Park in London is 142 hectares (1.42 km²). The Vatican — the world\'s smallest country — is 44 hectares (0.44 km²). Monaco, the second smallest, is 202 hectares (2.02 km²).',
+          'At a larger scale: Yellowstone National Park covers 898,317 hectares (8,983 km²). The city of Paris covers about 10,500 hectares (105 km²). Australia\'s total land area is approximately 769 million hectares (7.69 million km²).',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Famous areas in hectares',
+            items: [
+              { label: 'Vatican City', value: 44, unit: 'ha' },
+              { label: 'Central Park', value: 341, unit: 'ha' },
+              { label: 'Monaco', value: 202, unit: 'ha' },
+              { label: 'Hyde Park', value: 142, unit: 'ha', highlight: true },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Quick Conversion Trick',
+        paragraphs: [
+          'The easiest mental shortcut: slide the decimal point. 450 ha → move decimal 2 left → 4.50 km². Working in reverse: 12.8 km² → move decimal 2 right → 1,280 ha.',
+          'For rough estimates without pen and paper: divide the hectare number by 100 and you have km². If you remember that a 100-hectare block is exactly 1 km × 1 km, you can visualize the area without any calculation.',
+        ],
+      },
+    ],
+    conclusion: 'Hectares to km²: divide by 100. Km² to hectares: multiply by 100. The metric system makes this exact and effortless. Use hectares for individual plots, farms, and parks; use km² for cities, regions, and countries. Both units are globally standard and used daily in environmental science, real estate, and geography.',
+    faqs: [
+      { q: 'How do I convert hectares to square kilometers?', a: 'Divide by 100. Move the decimal point two places to the left. Example: 350 ha = 3.5 km².' },
+      { q: 'How many hectares are in 1 square kilometer?', a: 'Exactly 100 hectares.' },
+      { q: 'When is hectare used instead of square kilometer?', a: 'Hectares are used for farm parcels, urban parks, nature reserves, and any area where square kilometers would give a number smaller than 1. Square kilometers suit cities, regions, and countries.' },
+      { q: 'What is a quick way to convert without a calculator?', a: 'Move the decimal two places left to go from ha to km², or two places right to go from km² to ha. 750 ha = 7.50 km². 2.3 km² = 230 ha.' },
+    ],
+    relatedLinks: [
+      { label: 'Hectare to Square Kilometer', path: '/area/hectare-to-square-kilometer' },
+      { label: 'Square Kilometer to Hectare', path: '/area/square-kilometer-to-hectare' },
+      { label: 'Area Converter', path: '/area' },
+    ],
+  },
+  {
+    slug: 'pounds-to-kilograms-complete-guide',
+    title: 'Pounds to Kilograms: The Complete Guide',
+    tag: 'How-To Guide',
+    date: '2026-05-22',
+    description: 'Multiply pounds by 0.4536 to get kilograms. Includes a reference table from 100–220 lbs, body weight examples, and a quick mental shortcut.',
+    intro: 'To convert pounds to kilograms, multiply by 0.453592. One pound equals exactly 0.453592 kg — this is the international definition. For quick mental math, dividing by 2.2 gives a result accurate to within 0.1%.',
+    sections: [
+      {
+        heading: 'The Formula and Mental Shortcut',
+        paragraphs: [
+          'The exact conversion factor is 1 lb = 0.453592 kg, defined by international agreement in 1959. To go the other way: 1 kg = 2.20462 lbs.',
+          'For mental arithmetic, the "divide by 2.2" shortcut works well. 150 lbs ÷ 2.2 = 68.2 kg (exact: 68.04 kg — error of 0.2%). For body weight comparisons and casual use, this level of precision is more than sufficient.',
+          'To go from kg to lbs mentally, multiply by 2.2. 70 kg × 2.2 = 154 lbs (exact: 154.3 lbs). Again, accurate enough for almost any non-scientific purpose.',
+        ],
+        visual: {
+          type: 'StepDiagram',
+          props: {
+            label: 'How to convert pounds to kilograms',
+            steps: [
+              { title: 'Start with pounds', description: 'Write down the weight in lbs — e.g. 175 lbs' },
+              { title: 'Divide by 2.2', description: '175 ÷ 2.2 = 79.5 kg (quick method)' },
+              { title: 'Or multiply by 0.4536', description: '175 × 0.4536 = 79.4 kg (exact method)' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Reference Table: 100–220 lbs in kg',
+        paragraphs: ['Common body weight range converted to kilograms.'],
+        list: [
+          '100 lbs = 45.4 kg',
+          '110 lbs = 49.9 kg',
+          '120 lbs = 54.4 kg',
+          '130 lbs = 59.0 kg',
+          '140 lbs = 63.5 kg',
+          '150 lbs = 68.0 kg',
+          '160 lbs = 72.6 kg',
+          '170 lbs = 77.1 kg',
+          '180 lbs = 81.6 kg',
+          '190 lbs = 86.2 kg',
+          '200 lbs = 90.7 kg',
+          '210 lbs = 95.3 kg',
+          '220 lbs = 99.8 kg',
+        ],
+        visual: {
+          type: 'ScaleDiagram',
+          props: {
+            label: 'Body weight scale (lbs)',
+            min: 80,
+            max: 280,
+            value: 150,
+            unit: 'lbs',
+            markers: [
+              { value: 110, label: 'child (10)' },
+              { value: 150, label: '68 kg' },
+              { value: 180, label: 'avg adult' },
+              { value: 220, label: '100 kg' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Body Weight and International Context',
+        paragraphs: [
+          'The United States, Liberia, and Myanmar are the only countries that use pounds as the primary unit for body weight. Everywhere else — including the UK for clinical settings — kilograms are standard. This matters for medical records, nutrition apps, and international fitness communities.',
+          'Body mass index (BMI) formulas use kg and meters. If your fitness app or doctor\'s chart asks for kg and you only know your weight in pounds, divide by 2.2. 160 lbs ÷ 2.2 = 72.7 kg.',
+          'In powerlifting and Olympic weightlifting, competition weight classes are set in kilograms (59 kg, 66 kg, 74 kg, 83 kg, etc.). If your gym posts weights in lbs on the plates, multiply by 0.4536 to find the kg equivalent.',
+        ],
+      },
+      {
+        heading: 'Shipping, Food, and Other Uses',
+        paragraphs: [
+          'Shipping carriers (FedEx, UPS, DHL) charge by weight. International shipments are typically billed in kilograms. If you\'re quoting a package weight from a US scale (in lbs), divide by 2.2 for the kg equivalent before entering it into international shipping forms.',
+          'Recipes from the US use cups and ounces; European and UK recipes use grams and kilograms. For baking conversions: 1 lb flour = 454 g. 1 lb butter = 454 g. Most kitchen scales now display both units — a toggle switch converts instantly.',
+        ],
+      },
+    ],
+    conclusion: 'Pounds to kilograms: multiply by 0.4536, or divide by 2.2 for quick estimates. The divide-by-2.2 shortcut works for body weight, fitness, and shipping with error under 0.2%. For medical and scientific use, the exact factor 0.453592 is the standard.',
+    faqs: [
+      { q: 'How do I convert pounds to kilograms?', a: 'Multiply by 0.453592. Or divide by 2.2 for a quick, close estimate.' },
+      { q: 'What is 150 lbs in kg?', a: '150 lbs = 68.04 kg. Using the shortcut: 150 ÷ 2.2 = 68.2 kg.' },
+      { q: 'What is 200 lbs in kg?', a: '200 lbs = 90.72 kg. Using the shortcut: 200 ÷ 2.2 = 90.9 kg.' },
+      { q: 'Is there a quick mental shortcut for lbs to kg?', a: 'Divide by 2.2. It\'s accurate to within 0.1–0.2%, which is fine for all everyday uses.' },
+      { q: 'Why does most of the world use kilograms instead of pounds?', a: 'Kilograms are part of the metric system, which is the international standard for science, medicine, and trade. The US is one of only three countries that has not officially adopted metric as its primary system.' },
+    ],
+    relatedLinks: [
+      { label: 'Pound to Kilogram Converter', path: '/weight/pound-to-kilogram' },
+      { label: 'Kilogram to Pound Converter', path: '/weight/kilogram-to-pound' },
+      { label: 'Weight Converter', path: '/weight' },
+    ],
+  },
+  {
+    slug: 'how-many-steps-is-1-km',
+    title: 'How Many Steps Is 1 km? Walking, Running, and Height',
+    tag: 'Context',
+    date: '2026-05-23',
+    description: 'Walking 1 km takes about 1,300 steps for an average adult. Learn how stride length, height, and pace affect step count — and how fitness trackers calculate it.',
+    intro: 'Walking 1 kilometer takes roughly 1,300 to 1,500 steps for an average adult. The exact number depends on your height, stride length, and walking pace. A taller person with a longer stride will reach 1 km in fewer steps than a shorter person walking the same distance.',
+    sections: [
+      {
+        heading: 'Why Step Count Varies',
+        paragraphs: [
+          'A "step" is counted each time either foot contacts the ground. A "stride" is two steps — the distance from one heel strike to the next heel strike on the same foot. Average stride length is roughly 0.76 meters (2.5 feet) for walking, meaning about 1,316 steps per kilometer.',
+          'Height is the single biggest factor. Taller people tend to have longer legs and longer natural strides. A person who is 5\'2" (157 cm) typically takes about 1,400–1,500 steps per km. Someone who is 6\'2" (188 cm) might take only 1,100–1,200 steps for the same kilometer.',
+          'Pace matters too. At a brisk walking pace (5–6 km/h), stride length increases slightly — reducing step count per km. When jogging (8–10 km/h), stride length increases substantially, dropping step count to 1,000–1,100 per km. Running fast (above 12 km/h) can bring it down to 900 steps per km.',
+        ],
+      },
+      {
+        heading: 'Step Counts for Common Fitness Goals',
+        paragraphs: [
+          'The 10,000-steps-per-day target is widely cited in fitness culture — originally as a marketing figure from a 1960s Japanese pedometer campaign, but since validated by health research as a meaningful activity benchmark. At 1,300 steps/km, 10,000 steps equals roughly 7.7 km.',
+          'Race distances in steps (approximate, for average adult walking pace): a 5K run = 6,500 steps; a 10K = 13,000 steps; a half-marathon (21.1 km) = 27,400 steps; a full marathon (42.2 km) = 54,900 steps. Running strides are longer, so runners will hit lower step counts for these same distances.',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Steps for common distances (avg adult walking)',
+            items: [
+              { label: '1 km', value: 1300, unit: 'steps' },
+              { label: '5K', value: 6500, unit: 'steps' },
+              { label: '10K', value: 13000, unit: 'steps', highlight: true },
+              { label: 'Half marathon', value: 27400, unit: 'steps' },
+              { label: 'Marathon', value: 54900, unit: 'steps' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Km vs Miles in Fitness Trackers',
+        paragraphs: [
+          'Most fitness trackers (Fitbit, Apple Watch, Garmin) let you choose between km and miles for distance display. The step count is always the same — only the displayed distance unit changes. 10,000 steps is 10,000 steps whether your watch shows 7.7 km or 4.8 miles.',
+          'The tracker estimates distance by multiplying your step count by your stored stride length. You can improve accuracy by doing a calibration walk: measure a known distance (a running track is ideal at 400 m), walk it, and let the tracker calculate your personal stride length. This is more accurate than using the height-based estimate the app sets by default.',
+          'For running, trackers with GPS measure actual ground distance directly rather than relying on step counting — GPS distance is more accurate for runs on varied terrain, but step counting is more accurate indoors (where GPS signals are blocked).',
+        ],
+      },
+      {
+        heading: 'Miles vs Kilometers: The Step Math',
+        paragraphs: [
+          '1 mile = 1.60934 km. If 1 km is about 1,300 steps, then 1 mile is about 2,093 steps at the same pace. The "2,000 steps per mile" figure is commonly cited as a round number approximation — it is slightly low for shorter people and roughly right for taller people.',
+          'To reach 10,000 steps: that is about 7.7 km or 4.8 miles of walking. Spread across a day of regular activity (errands, office movement, intentional walks), this is achievable without dedicated exercise sessions for most people.',
+        ],
+      },
+    ],
+    conclusion: '1 km equals approximately 1,300 steps for an average adult, with variation based on height (shorter = more steps) and pace (faster = fewer steps per km). Fitness tracker accuracy improves with personal stride calibration. The 10,000-step daily target translates to about 7.7 km of walking.',
+    faqs: [
+      { q: 'How many steps is 1 km?', a: 'About 1,300 steps for an average adult walking at a normal pace. Taller people take fewer steps; shorter people take more.' },
+      { q: 'How many steps is 1 mile?', a: 'About 2,000–2,100 steps at a walking pace. 1 mile = 1.609 km, so multiply your per-km step count by 1.609.' },
+      { q: 'How many km is 10,000 steps?', a: 'Roughly 7.7 km (about 4.8 miles) for an average adult. The exact distance depends on your stride length.' },
+      { q: 'What is the average step length?', a: 'About 0.76 meters (2.5 feet) per step when walking normally. Stride length (two steps) averages about 1.52 meters.' },
+    ],
+    relatedLinks: [
+      { label: 'Kilometer to Mile Converter', path: '/length/kilometer-to-mile' },
+      { label: 'Mile to Kilometer Converter', path: '/length/mile-to-kilometer' },
+      { label: 'Length Converter', path: '/length' },
+    ],
+  },
+  {
+    slug: 'celsius-to-fahrenheit-quick-reference',
+    title: 'Celsius to Fahrenheit: Quick Reference + Formula',
+    tag: 'Quick Reference',
+    date: '2026-05-24',
+    description: 'Multiply °C by 1.8 then add 32 to get °F. Full reference table, key anchor points (freezing, body temp, boiling), and the reverse formula.',
+    intro: 'To convert Celsius to Fahrenheit: multiply by 1.8 (or 9/5), then add 32. To go the other way, subtract 32 then divide by 1.8. The two scales share one anchor point: −40°C = −40°F.',
+    sections: [
+      {
+        heading: 'The Formula — Both Directions',
+        paragraphs: [
+          'Celsius to Fahrenheit: °F = (°C × 1.8) + 32. Example: 20°C → (20 × 1.8) + 32 = 36 + 32 = 68°F.',
+          'Fahrenheit to Celsius: °C = (°F − 32) ÷ 1.8. Example: 98.6°F → (98.6 − 32) ÷ 1.8 = 66.6 ÷ 1.8 = 37°C.',
+          'The 1.8 factor comes from the ratio of the two scales\' degree sizes. A Fahrenheit degree is exactly 5/9 the size of a Celsius degree — meaning 1°C of temperature change equals 1.8°F of change.',
+        ],
+        visual: {
+          type: 'ScaleDiagram',
+          props: {
+            label: 'Temperature scale with key reference points (°C)',
+            min: -40,
+            max: 100,
+            value: 20,
+            unit: '°C',
+            markers: [
+              { value: -40, label: '-40°F too' },
+              { value: 0, label: 'freezing' },
+              { value: 20, label: '68°F' },
+              { value: 37, label: 'body temp' },
+              { value: 100, label: 'boiling' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Key Anchor Points to Memorize',
+        paragraphs: [
+          'Rather than using the formula every time, memorizing a handful of anchor points lets you estimate any temperature quickly.',
+        ],
+        list: [
+          '−40°C = −40°F (the only point where both scales meet)',
+          '0°C = 32°F (water freezes)',
+          '10°C = 50°F (cool autumn day)',
+          '20°C = 68°F (comfortable room temperature)',
+          '25°C = 77°F (warm summer day)',
+          '30°C = 86°F (hot day)',
+          '37°C = 98.6°F (normal human body temperature)',
+          '40°C = 104°F (dangerous fever / very hot day)',
+          '100°C = 212°F (water boils at sea level)',
+        ],
+      },
+      {
+        heading: 'Weather Reference Table',
+        paragraphs: ['Common weather temperatures in both scales.'],
+        list: [
+          '−10°C = 14°F (freezing, heavy winter)',
+          '−5°C = 23°F (below freezing, icy roads)',
+          '0°C = 32°F (freezing point)',
+          '5°C = 41°F (cold, coat required)',
+          '10°C = 50°F (cool, light jacket)',
+          '15°C = 59°F (mild, spring/autumn)',
+          '20°C = 68°F (pleasant, warm)',
+          '25°C = 77°F (warm, summer)',
+          '30°C = 86°F (hot)',
+          '35°C = 95°F (very hot)',
+          '40°C = 104°F (heat wave conditions)',
+        ],
+      },
+      {
+        heading: 'Why Does the US Use Fahrenheit?',
+        paragraphs: [
+          'Daniel Gabriel Fahrenheit established his scale in 1724, calibrating 0°F to the coldest temperature he could reliably reproduce (a brine and ice mixture) and 96°F to human body temperature. The scale was refined later — body temperature ended up at 98.6°F on the adjusted scale.',
+          'Celsius (originally "centigrade") was proposed by Anders Celsius in 1742 and used water\'s freezing and boiling points as its anchors. Most of the world adopted Celsius when metrication happened in the 19th and 20th centuries. The United States kept Fahrenheit because consumer adoption never happened — the same political and economic inertia that kept miles and pounds also kept Fahrenheit.',
+          'From a scientific standpoint, neither scale is used for serious work — both have been replaced by Kelvin (which starts at absolute zero, −273.15°C). But for daily weather forecasting and household use, Celsius is the clear international standard.',
+        ],
+      },
+    ],
+    conclusion: 'Celsius to Fahrenheit: multiply by 1.8 and add 32. Fahrenheit to Celsius: subtract 32 and divide by 1.8. The five most useful anchors: 0°C = 32°F (freezing), 20°C = 68°F (room temp), 37°C = 98.6°F (body temp), 100°C = 212°F (boiling), and −40 where both scales meet.',
+    faqs: [
+      { q: 'What is the formula for Celsius to Fahrenheit?', a: '°F = (°C × 1.8) + 32. Example: 25°C = (25 × 1.8) + 32 = 77°F.' },
+      { q: 'What is 37°C in Fahrenheit?', a: '37°C = 98.6°F. This is normal human body temperature.' },
+      { q: 'What is 100°F in Celsius?', a: '100°F = (100 − 32) ÷ 1.8 = 37.8°C. This is a low-grade fever.' },
+      { q: 'Why does the US use Fahrenheit?', a: 'Historical adoption in the 18th century and failure to metricate. The US never switched when most of the world adopted Celsius in the 19th and 20th centuries.' },
+    ],
+    relatedLinks: [
+      { label: 'Celsius to Fahrenheit Converter', path: '/temperature/celsius-to-fahrenheit' },
+      { label: 'Fahrenheit to Celsius Converter', path: '/temperature/fahrenheit-to-celsius' },
+      { label: 'Temperature Converter', path: '/temperature' },
+    ],
+  },
+  {
+    slug: 'inches-to-cm-chart-clothes-height-screens',
+    title: 'Inches to cm Chart — Clothes, Height, and Screens',
+    tag: 'Quick Reference',
+    date: '2026-05-25',
+    description: 'Multiply inches by 2.54 to get centimeters. Height chart from 5\'0\" to 6\'5\", screen size reference, and clothing inseam/waist conversions.',
+    intro: 'To convert inches to centimeters, multiply by 2.54. One inch equals exactly 2.54 cm — this is the international definition, established in 1959. For height: 6 feet = 72 inches = 182.88 cm.',
+    sections: [
+      {
+        heading: 'The Formula and Quick Conversions',
+        paragraphs: [
+          'Inches × 2.54 = centimeters. Centimeters ÷ 2.54 = inches. The conversion is exact — not an approximation. 1 inch = 2.54 cm by international definition.',
+          'For mental math: 1 inch ≈ 2.5 cm is a useful approximation. It gives a result within 1.6% — close enough for clothes shopping and screen size comparisons.',
+          'Common quick conversions: 6 inches = 15.24 cm. 12 inches (1 foot) = 30.48 cm. 36 inches (1 yard) = 91.44 cm. 1 meter = 39.37 inches.',
+        ],
+      },
+      {
+        heading: 'Height Conversion Chart',
+        paragraphs: ['Heights from 5\'0" to 6\'5" in feet/inches and centimeters.'],
+        list: [
+          '5\'0" (60") = 152.4 cm',
+          '5\'1" (61") = 154.9 cm',
+          '5\'2" (62") = 157.5 cm',
+          '5\'3" (63") = 160.0 cm',
+          '5\'4" (64") = 162.6 cm',
+          '5\'5" (65") = 165.1 cm',
+          '5\'6" (66") = 167.6 cm',
+          '5\'7" (67") = 170.2 cm',
+          '5\'8" (68") = 172.7 cm',
+          '5\'9" (69") = 175.3 cm',
+          '5\'10" (70") = 177.8 cm',
+          '5\'11" (71") = 180.3 cm',
+          '6\'0" (72") = 182.9 cm',
+          '6\'1" (73") = 185.4 cm',
+          '6\'2" (74") = 188.0 cm',
+          '6\'3" (75") = 190.5 cm',
+          '6\'4" (76") = 193.0 cm',
+          '6\'5" (77") = 195.6 cm',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Reference heights in cm',
+            items: [
+              { label: '5\'9" (avg US man)', value: 175.3, unit: 'cm' },
+              { label: '6\'0"', value: 182.9, unit: 'cm', highlight: true },
+              { label: '6\'3"', value: 190.5, unit: 'cm' },
+              { label: '6\'7" (NBA avg)', value: 200.7, unit: 'cm' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Screen Sizes in Inches and cm',
+        paragraphs: [
+          'Screen sizes are measured diagonally — from corner to corner. A 55-inch TV screen has a diagonal of 55 × 2.54 = 139.7 cm. This is a standard measurement used worldwide, even in metric countries, because the convention was established by US manufacturers.',
+          'Common screen sizes: 27-inch monitor = 68.6 cm. 32-inch TV = 81.3 cm. 43-inch TV = 109.2 cm. 55-inch TV = 139.7 cm. 65-inch TV = 165.1 cm. 75-inch TV = 190.5 cm.',
+          'Laptop screens follow the same convention. A 13-inch laptop = 33.0 cm diagonal. 15-inch = 38.1 cm. 16-inch = 40.6 cm. Phone screen sizes: 6.1 inches = 15.5 cm. 6.7 inches = 17.0 cm.',
+        ],
+      },
+      {
+        heading: 'Clothing: Inseam and Waist Measurements',
+        paragraphs: [
+          'US clothing sizes typically use inches for waist (jeans waist size) and inseam (leg length). European sizing uses centimeters. To convert a 32-inch waist to cm: 32 × 2.54 = 81.3 cm. A 30-inch inseam = 76.2 cm.',
+          'For international online shopping: if a garment lists a waist of 82 cm, that is roughly a 32-inch US waist. A 76 cm inseam is a 30-inch inseam. Shoe sizes work differently — they use separate sizing systems — but foot length in cm is often the most reliable international comparison.',
+        ],
+      },
+    ],
+    conclusion: 'Inches × 2.54 = centimeters. For height, screen sizes, and clothing measurements, this single formula covers every everyday conversion. Key anchors: 1 foot = 30.48 cm, 6 feet = 182.88 cm, 1 meter = 39.37 inches. Screen sizes worldwide still use inches, regardless of the metric system.',
+    faqs: [
+      { q: 'How do I convert inches to centimeters?', a: 'Multiply by 2.54. Example: 70 inches × 2.54 = 177.8 cm.' },
+      { q: 'What is 6 feet in cm?', a: '6 feet = 72 inches × 2.54 = 182.88 cm.' },
+      { q: 'What is 5\'9" in cm?', a: '5\'9" = 69 inches = 175.26 cm.' },
+      { q: 'How big is a 32-inch screen in cm?', a: 'A 32-inch screen has a diagonal of 81.3 cm (32 × 2.54).' },
+      { q: 'How do I measure inseam in cm?', a: 'Measure from the crotch seam to the bottom of the leg in inches, then multiply by 2.54. A 30-inch inseam = 76.2 cm.' },
+    ],
+    relatedLinks: [
+      { label: 'Inch to Centimeter Converter', path: '/length/inch-to-centimeter' },
+      { label: 'Centimeter to Inch Converter', path: '/length/centimeter-to-inch' },
+      { label: 'Length Converter', path: '/length' },
+    ],
+  },
+  {
+    slug: 'what-is-a-kilowatt-hour',
+    title: 'What Is a Kilowatt-Hour? Energy Explained Simply',
+    tag: 'Context',
+    date: '2026-05-26',
+    description: 'A kilowatt-hour is the energy used by a 1,000-watt device running for one hour. Learn how kWh shows up on your electricity bill and in EV charging.',
+    intro: 'A kilowatt-hour (kWh) is the amount of energy consumed by a 1,000-watt device running for one hour. It is the standard unit on your electricity bill. A 100-watt light bulb left on for 10 hours uses 1 kWh. Your EV battery holds 40–100 kWh.',
+    sections: [
+      {
+        heading: 'Power vs Energy: The kW/kWh Distinction',
+        paragraphs: [
+          'Power (measured in watts or kilowatts) is the rate at which energy is used at any instant. Energy (measured in kWh) is the total amount used over time. The relationship: Energy (kWh) = Power (kW) × Time (hours).',
+          'A 2,000-watt (2 kW) electric heater running for 3 hours uses 6 kWh of energy. A 50-watt laptop charger running for 8 hours uses 0.4 kWh. The wattage tells you the rate; the kWh tells you the total.',
+          'On an electricity bill, you are charged per kWh. In the US, the average residential rate is about $0.13–0.17 per kWh (varies widely by state). In Europe, rates are typically €0.20–0.40 per kWh. Knowing your appliances\' wattage lets you estimate daily energy costs.',
+        ],
+      },
+      {
+        heading: 'Everyday Appliance Energy Use',
+        paragraphs: [
+          'Most home appliances have a wattage label (look for the "W" rating). Multiply the wattage by daily hours of use to estimate daily kWh consumption.',
+          'A typical household in the US uses about 30 kWh per day (900 kWh per month). Most of this comes from heating/cooling (HVAC), water heating, and large appliances like refrigerators and washing machines.',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Daily energy use of common appliances (kWh/day)',
+            items: [
+              { label: 'LED bulb (8h)', value: 0.08, unit: 'kWh' },
+              { label: 'Laptop (8h)', value: 0.4, unit: 'kWh' },
+              { label: 'Refrigerator (24h)', value: 1.5, unit: 'kWh', highlight: true },
+              { label: 'Washing machine (1 cycle)', value: 0.5, unit: 'kWh' },
+              { label: 'EV charge (full)', value: 60, unit: 'kWh' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'kWh and Electric Vehicles',
+        paragraphs: [
+          'EV batteries are rated in kWh — this is their energy storage capacity, analogous to the fuel tank size on a gasoline car. A Tesla Model 3 Standard Range has a 57.5 kWh battery; a Long Range version has 82 kWh. A Nissan Leaf has 40 kWh (standard) or 62 kWh (extended range).',
+          'Efficiency is measured in miles per kWh (or km per kWh). A typical EV gets 3–4 miles per kWh. So a 60 kWh battery gives roughly 180–240 miles of range. Charging speed is measured in kW: a standard home charger delivers 7–11 kW; a fast public charger can deliver 50–350 kW.',
+          'To estimate charging cost: battery size (kWh) × electricity rate ($/kWh) = cost to fully charge. A 60 kWh battery at $0.15/kWh costs $9.00 to charge from empty. At a commercial charger at $0.30/kWh, the same charge costs $18.00.',
+        ],
+      },
+      {
+        heading: 'kWh vs Joules: The Scientific Relationship',
+        paragraphs: [
+          'The joule (J) is the SI unit of energy. 1 kWh = 3,600,000 joules (3.6 megajoules). The kWh is simply a more convenient scale for household and industrial energy use — a joule is a very small amount of energy (about the energy needed to lift an apple 10 cm), while a kWh is a practical everyday quantity.',
+          'In scientific contexts, you may also see megajoules (MJ) and gigajoules (GJ). 1 kWh = 3.6 MJ. 1 GJ = 277.8 kWh. Energy prices for natural gas are sometimes quoted in GJ in Canada and Australia.',
+        ],
+      },
+    ],
+    conclusion: 'A kilowatt-hour is power times time: a 1 kW device running for 1 hour. It is the unit on your electricity bill, the battery capacity unit of EVs, and the standard measure of household energy consumption. Knowing your appliances\' wattage and your electricity rate lets you calculate the cost of anything you plug in.',
+    faqs: [
+      { q: 'What is 1 kWh?', a: '1 kilowatt-hour is the energy consumed by a 1,000-watt device running for 1 hour. A 100-watt bulb needs 10 hours to use 1 kWh.' },
+      { q: 'How many kWh does a house use per day?', a: 'The US average is about 30 kWh per day (900 kWh/month). Homes in hot climates with heavy air conditioning use more; well-insulated homes use less.' },
+      { q: 'How much does 1 kWh cost?', a: 'In the US, about $0.13–0.17. In Europe, typically €0.20–0.40. Prices vary by country, region, and time of day.' },
+      { q: 'What is the difference between kW and kWh?', a: 'kW is the rate of energy use (power). kWh is the total energy used. A 2 kW heater used for 3 hours consumes 6 kWh.' },
+    ],
+    relatedLinks: [
+      { label: 'Kilowatt-Hour to Joule Converter', path: '/energy/kilowatt-hour-to-joule' },
+      { label: 'Joule to Kilowatt-Hour Converter', path: '/energy/joule-to-kilowatt-hour' },
+      { label: 'Energy Converter', path: '/energy' },
+    ],
+  },
+  {
+    slug: 'horsepower-vs-kw-vs-ps',
+    title: 'Horsepower vs kW vs PS — What\'s the Difference?',
+    tag: 'Context',
+    date: '2026-05-27',
+    description: '1 horsepower = 0.7457 kW = 1.014 PS. Learn the history of each power unit, exact conversion factors, and why European specs list kW while the US uses hp.',
+    intro: '1 mechanical horsepower equals 745.7 watts (0.7457 kW). PS (Pferdestärke, metric horsepower) equals 735.5 watts — slightly less. These three units all measure engine power, just on slightly different scales. The gap between hp and PS is under 2%, but it shows up in spec sheets.',
+    sections: [
+      {
+        heading: 'Where Each Unit Comes From',
+        paragraphs: [
+          'Horsepower was defined by James Watt in the 1780s to help sell steam engines. Watt needed to convince customers that his engines could replace horses — so he measured how much work a horse could do and defined 1 hp as 33,000 foot-pounds of work per minute. This is still the definition of mechanical (or imperial) horsepower today.',
+          'The metric equivalent — PS (Pferdestärke, German for "horsepower") — was standardized later using metric units: 1 PS = the power needed to lift 75 kilograms by 1 meter in 1 second = 735.499 watts. Because PS is defined with slightly different round numbers, 1 PS = 0.98632 hp. The two are close enough that they are often used interchangeably, but performance car buyers notice the difference.',
+          'Kilowatts are simply SI units applied to power. 1 kW = 1,000 joules per second. The European Union mandated kW as the primary power unit for cars in 1992, which is why every European car spec sheet lists power in kW (with hp or PS in parentheses).',
+        ],
+      },
+      {
+        heading: 'Conversion Factors',
+        paragraphs: [
+          '1 hp (mechanical) = 745.7 W = 0.7457 kW = 1.0139 PS.',
+          '1 PS = 735.5 W = 0.7355 kW = 0.9863 hp.',
+          '1 kW = 1,000 W = 1.341 hp = 1.360 PS.',
+          'For quick mental math: hp × 0.75 ≈ kW. kW × 1.34 ≈ hp. The error is under 1% using these rounded factors.',
+        ],
+      },
+      {
+        heading: 'Real Cars: Power in Three Units',
+        paragraphs: [
+          'A few reference cars show how the numbers look across all three units.',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Engine power of reference cars (hp)',
+            items: [
+              { label: 'Toyota Corolla 1.8', value: 139, unit: 'hp' },
+              { label: 'VW Golf GTI 2.0T', value: 241, unit: 'hp', highlight: true },
+              { label: 'BMW M3 Competition', value: 503, unit: 'hp' },
+              { label: 'Bugatti Chiron', value: 1479, unit: 'hp' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Why Electric Cars Use kW',
+        paragraphs: [
+          'Electric motors are rated in kW because it is the natural electrical unit — power in an electrical circuit equals voltage times current, both of which are measured in SI units. Converting to hp is possible but adds no technical value; the hp unit was invented for combustion engines and horses, not electrons.',
+          'Tesla lists the Model 3 Performance at 358 kW (480 hp equivalent). Rivian\'s R1T truck peaks at 522 kW (700 hp). The shift to EV specs published primarily in kW is gradually making European car buyers more comfortable with the unit — which was the EU\'s intent when it mandated kW in 1992.',
+          'For consumers comparing a gasoline car to an EV: multiply the EV\'s kW rating by 1.34 to get the hp equivalent. 150 kW EV = 201 hp equivalent. This is a rough comparison — electric motors deliver peak torque instantly from 0 rpm, which makes the same kW feel more powerful off the line than a combustion engine with the same peak rating.',
+        ],
+      },
+    ],
+    conclusion: 'hp, PS, and kW all measure the same thing — engine output — with slightly different origins and scale factors. 1 hp = 0.7457 kW = 1.014 PS. For everyday comparison, use hp × 0.75 ≈ kW and kW × 1.34 ≈ hp. Electric car specs increasingly appear in kW, making fluency in both units increasingly useful.',
+    faqs: [
+      { q: 'How many kW is 1 horsepower?', a: '1 mechanical horsepower = 745.7 watts = 0.7457 kW.' },
+      { q: 'What is the difference between hp and PS?', a: 'PS is the metric version of horsepower. 1 PS = 735.5 W; 1 hp = 745.7 W. 1 hp = 1.014 PS — about 1.4% more powerful.' },
+      { q: 'What is 100 kW in horsepower?', a: '100 kW × 1.341 = 134.1 hp.' },
+      { q: 'Why do electric cars use kW instead of hp?', a: 'kW is the natural SI unit for electrical power. Electric motors are designed, built, and measured in kW — converting to hp is possible but adds no technical meaning.' },
+      { q: 'Which unit is biggest — hp, PS, or kW?', a: 'kW is the largest unit per number. 1 kW = 1.341 hp = 1.360 PS. A car with "100 kW" has more power than one with "100 hp".' },
+    ],
+    relatedLinks: [
+      { label: 'Horsepower to Watt Converter', path: '/power/horsepower-to-watt' },
+      { label: 'Kilowatt to Horsepower Converter', path: '/power/kilowatt-to-horsepower' },
+      { label: 'Power Converter', path: '/power' },
+    ],
+  },
+  {
+    slug: 'liters-to-gallons-us-vs-uk',
+    title: 'Liters to Gallons: US vs UK — What\'s the Difference?',
+    tag: 'Context',
+    date: '2026-05-28',
+    description: '1 US gallon = 3.785 liters. 1 UK gallon = 4.546 liters. Learn why there are two gallons, which countries use which, and how it affects fuel economy comparisons.',
+    intro: 'There are two gallons: the US gallon (3.785 liters) and the imperial (UK) gallon (4.546 liters). They differ by about 20%. If someone tells you their car gets "40 MPG" and you do not know which gallon they mean, you cannot compare it to a European fuel economy figure.',
+    sections: [
+      {
+        heading: 'Why Two Gallons Exist',
+        paragraphs: [
+          'Both gallons trace back to English wine and ale measures from the medieval period. The British standardized the "imperial gallon" in 1824 as part of their Weights and Measures Act, defining it as the volume of exactly 10 pounds of water at a specific temperature. This gave 4.54609 liters.',
+          'The American gallon was inherited from earlier English wine measures — before the British standardized their imperial system. The US never adopted the imperial gallon after independence, so the two systems diverged. The US gallon of 231 cubic inches (3.785 liters) was codified in US law in the 19th century.',
+          'Both gallons are still in active use. The US gallon is used in the United States for fuel, beverages, and liquid products. The imperial gallon is used in the United Kingdom and Ireland for fuel pricing (price per liter is now dominant in retail, but MPG figures still use the imperial gallon) and in a few other Commonwealth countries.',
+        ],
+      },
+      {
+        heading: 'Conversion Factors',
+        paragraphs: [
+          '1 US gallon = 3.78541 liters. 1 imperial (UK) gallon = 4.54609 liters. To go the other way: 1 liter = 0.264172 US gallons = 0.219969 imperial gallons.',
+          'For mental math: 1 US gallon ≈ 3.8 liters. 1 UK gallon ≈ 4.5 liters.',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Volume comparison in mL',
+            items: [
+              { label: '1 Liter', value: 1000, unit: 'mL' },
+              { label: '1 US gallon', value: 3785, unit: 'mL', highlight: true },
+              { label: '1 UK gallon', value: 4546, unit: 'mL' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Fuel Economy: The Gallon Problem',
+        paragraphs: [
+          'Fuel economy figures are not directly comparable between the US and UK because they use different gallons. A UK car rated at 40 MPG (imperial) uses 7.1 liters per 100 km. A US car rated at 40 MPG (US gallon) uses 5.9 liters per 100 km. The UK car is more fuel efficient, even though the MPG number is the same.',
+          'Europe and most of the world use liters per 100 km (L/100km) for fuel economy — which avoids the gallon ambiguity entirely. When comparing international fuel efficiency, always convert to L/100km for an apples-to-apples comparison.',
+          'Canada uses liters and kilometers, so Canadian fuel economy uses L/100km. Australia uses the same. Only the US and UK still publish official fuel economy in MPG — and they use different gallons.',
+        ],
+      },
+      {
+        heading: 'Everyday Volume Examples',
+        paragraphs: [
+          'US beverage sizes: a half-gallon of milk = 1.89 liters. A gallon of juice = 3.785 liters. Gas station fuel is sold by the US gallon — when US prices are quoted per gallon, remember this is 3.785 liters.',
+          'In the UK, beer was traditionally sold in pints. 1 imperial pint = 568 mL (vs. 473 mL for a US pint). This means a UK pint of beer is about 20% larger than a US pint — another divergence from the same gallon split.',
+          'Which gallon does Canada use? Neither. Canada uses liters for fuel and beverages. Despite its historical British connection, Canada metricated in the 1970s–80s and switched to liters. A Canadian gas station sells fuel in cents-per-liter.',
+        ],
+      },
+    ],
+    conclusion: 'The US gallon (3.785 L) and the UK imperial gallon (4.546 L) differ by about 20% — enough to make fuel economy figures incomparable without knowing which gallon is being used. For international comparisons, liters or L/100km are unambiguous. When a recipe, fuel spec, or product measurement cites "gallons," always check which country it comes from.',
+    faqs: [
+      { q: 'How many liters is a US gallon?', a: '1 US gallon = 3.78541 liters.' },
+      { q: 'How many liters is a UK (imperial) gallon?', a: '1 imperial gallon = 4.54609 liters.' },
+      { q: 'How many liters are in a gallon?', a: 'It depends which gallon. US gallon = 3.785 liters. UK imperial gallon = 4.546 liters.' },
+      { q: 'Which gallon does Canada use?', a: 'Canada uses liters. It has not used gallons since metrication in the 1970s–80s.' },
+    ],
+    relatedLinks: [
+      { label: 'Liter to Gallon Converter', path: '/volume/liter-to-gallon' },
+      { label: 'Gallon to Liter Converter', path: '/volume/gallon-to-liter' },
+      { label: 'Volume Converter', path: '/volume' },
+    ],
+  },
+  {
+    slug: 'how-to-read-tire-pressure-bar-psi-kpa',
+    title: 'How to Read Tire Pressure: Bar, PSI, and kPa Explained',
+    tag: 'Context',
+    date: '2026-05-29',
+    description: 'Tire pressure is shown in bar, PSI, or kPa depending on your car\'s origin. Learn what each unit means, where to find your car\'s spec, and how to check pressure correctly.',
+    intro: 'Tire pressure appears in three units depending on your car\'s country of manufacture: PSI (US), bar (Europe), or kPa (Japan, Australia). They all measure the same thing — how much air is in your tires — on different scales. 1 bar = 14.5 PSI = 100 kPa.',
+    sections: [
+      {
+        heading: 'The Three Pressure Units Explained',
+        paragraphs: [
+          'PSI (pounds per square inch) is the standard unit in the United States and is still widely used in the UK. A typical passenger car is inflated to 30–35 PSI. This is what US gas station air pumps display.',
+          'Bar is the metric unit common in Europe and Germany. 1 bar is roughly atmospheric pressure at sea level. Car pressure typically ranges from 2.1 to 2.6 bar. European cars and gauges display bar by default.',
+          'kPa (kilopascals) is used in Japan, South Korea, Australia, and Canada. 1 bar = 100 kPa, so a typical car at 2.3 bar = 230 kPa. Many modern digital gauges let you switch between all three units.',
+        ],
+      },
+      {
+        heading: 'Where to Find Your Car\'s Recommended Pressure',
+        paragraphs: [
+          'The manufacturer\'s recommended tire pressure is printed on a sticker inside the driver\'s door jamb — on the edge of the door or on the door frame itself. Open the driver\'s door and look along the edge closest to the car body. The sticker lists front and rear tire pressure separately, often with values in both PSI and bar (or kPa, depending on the car\'s market).',
+          'Do not use the pressure printed on the tire sidewall. That number (e.g., "MAX 51 PSI" or "MAX 3.5 bar") is the tire\'s physical maximum — not the recommended operating pressure. Running tires at maximum pressure makes the ride harsh and causes premature center tread wear.',
+          'Some cars have different recommended pressures for front and rear tires, or for different load conditions (solo driver vs. full passenger load). Check the sticker carefully — it usually lists both scenarios.',
+        ],
+        visual: {
+          type: 'StepDiagram',
+          props: {
+            label: 'Finding and checking your tire pressure',
+            steps: [
+              { title: 'Open driver\'s door', description: 'Look for the sticker on the door jamb or door edge' },
+              { title: 'Note recommended pressure', description: 'Find front and rear values in PSI, bar, or kPa' },
+              { title: 'Wait for cold tires', description: 'Park 3+ hours or drive under 1 mile before checking' },
+              { title: 'Use a gauge', description: 'Press firmly onto valve stem — digital gauges are most accurate' },
+              { title: 'Inflate or deflate', description: 'Add air at a pump or press the valve pin to release excess' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Seasonal Pressure Changes',
+        paragraphs: [
+          'Tire pressure drops in cold weather and rises in heat. For every 10°C (18°F) drop in temperature, tire pressure falls by approximately 0.07 bar (1 PSI). This means a tire that was correctly inflated in summer may be 0.2–0.3 bar low after the first cold snap in autumn — without any slow leak.',
+          'Check tire pressure when seasons change, not just when you get a flat or see the TPMS warning light. The TPMS (Tire Pressure Monitoring System) warning typically only triggers when pressure is 25% below recommended — by which point handling and fuel economy have already suffered.',
+          'After adding air in cold weather, the pressure will rise slightly once you start driving and the tires warm up. This is normal. Target the door sticker figure as a cold reading — do not compensate upward for warming.',
+        ],
+      },
+      {
+        heading: 'Quick Unit Conversion Reference',
+        paragraphs: [
+          '1 bar = 14.504 PSI = 100 kPa. Common passenger car pressures: 2.1 bar = 30.5 PSI = 210 kPa. 2.3 bar = 33.4 PSI = 230 kPa. 2.5 bar = 36.3 PSI = 250 kPa.',
+          'To convert PSI to bar: divide by 14.5. To convert bar to kPa: multiply by 100. These are exact relationships — no approximation needed.',
+        ],
+      },
+    ],
+    conclusion: 'Bar, PSI, and kPa all measure tire pressure — just on different scales. Find your car\'s recommended pressure on the door jamb sticker (not the tire sidewall). Check cold, after 3+ hours of parking. A digital gauge accurate to ±0.5 PSI / 0.03 bar is sufficient for all passenger vehicles. Recheck pressure each season change.',
+    faqs: [
+      { q: 'How do I read bar pressure on a tire gauge?', a: 'Bar gauges work identically to PSI gauges. Press the gauge onto the valve stem and read the display. 2.0–2.5 bar is the normal range for passenger cars.' },
+      { q: 'What do the tire pressure numbers mean?', a: 'The number is the air pressure inside the tire. Higher pressure = harder tire. Too low causes tire damage and poor handling. Too high causes center tread wear and reduced grip.' },
+      { q: 'When should I check tire pressure?', a: 'Monthly and when the season changes. Always check cold — after 3+ hours of parking or less than 1 mile of driving.' },
+      { q: 'What is the difference between cold and hot tire pressure?', a: 'Driving heats the air in your tires, raising pressure by 4–8 PSI (0.3–0.5 bar). Always target the manufacturer\'s spec as a cold reading.' },
+    ],
+    relatedLinks: [
+      { label: 'Bar to PSI Converter', path: '/pressure/bar-to-psi' },
+      { label: 'kPa to PSI Converter', path: '/pressure/kilopascal-to-psi' },
+      { label: 'Pressure Converter', path: '/pressure' },
+    ],
+  },
+  {
+    slug: 'joules-to-calories-food-energy',
+    title: 'Joules to Calories: Food Energy Explained',
+    tag: 'Context',
+    date: '2026-05-30',
+    description: '1 dietary Calorie (kcal) = 4,184 joules. Learn the difference between calories and kilocalories, why food labels use kJ, and how everyday foods compare in energy.',
+    intro: '1 dietary Calorie (written with a capital C on food labels) equals 1 kilocalorie = 4,184 joules. The confusion between "calorie" and "Calorie" is responsible for most of the mismatch people experience between food labels and energy calculations. A banana labeled "90 Calories" contains 90 kilocalories = 376,560 joules.',
+    sections: [
+      {
+        heading: 'Calorie vs Kilocalorie: The Capital C Problem',
+        paragraphs: [
+          'In thermodynamics, 1 calorie (lowercase c) is the energy needed to raise 1 gram of water by 1°C — a tiny amount, about 4.184 joules. Nutrition uses the kilocalorie (kcal) because a single small calorie is uselessly small for describing food energy.',
+          'The convention on food labels is to write "Calories" (capital C) when they mean kilocalories. So a label reading "200 Calories" means 200 kcal = 200,000 small calories = 836,800 joules. This convention — universal in US food labeling — creates enormous confusion when people read scientific literature that uses the lowercase calorie.',
+          'European food labels display both kcal and kJ (kilojoules). 1 kcal = 4.184 kJ. A food showing "250 kcal / 1046 kJ" is displaying the same energy in two units. The kJ figure is always about 4.18 times larger than the kcal figure.',
+        ],
+      },
+      {
+        heading: 'Common Food Energy Reference',
+        paragraphs: [
+          'A typical adult requires 1,800–2,500 kcal per day depending on size, age, and activity level. Knowing the approximate energy in common foods helps contextualize nutrition labels.',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Energy in common breakfast foods (kcal)',
+            items: [
+              { label: 'Black coffee', value: 2, unit: 'kcal' },
+              { label: 'Large egg (boiled)', value: 78, unit: 'kcal' },
+              { label: 'Banana (medium)', value: 90, unit: 'kcal', highlight: true },
+              { label: 'Slice of toast', value: 79, unit: 'kcal' },
+              { label: 'Coffee with milk + sugar', value: 50, unit: 'kcal' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Exercise and Energy Output',
+        paragraphs: [
+          'Exercise burns energy at rates that vary with body weight and intensity. A rough guide for a 70 kg (155 lb) person: walking at 5 km/h burns about 280 kcal/hour. Running at 10 km/h burns about 600 kcal/hour. Cycling at 20 km/h burns about 450 kcal/hour. Swimming (moderate pace) burns about 400 kcal/hour.',
+          'In joules: 280 kcal = 1,171,520 J ≈ 1.17 MJ. This is why exercise apps display kcal rather than joules — megajoule figures are unintuitive for most users.',
+          'The 3,500 kcal rule (approximately the caloric value of 1 pound of body fat) is a rough rule of thumb, not an exact physiological relationship. The actual relationship between caloric deficit and weight loss is more complex because the body adapts metabolic rate over time.',
+        ],
+      },
+      {
+        heading: 'Joules to kcal Conversion',
+        paragraphs: [
+          '1 kcal = 4,184 joules = 4.184 kJ. To convert joules to kcal: divide by 4,184. To convert kcal to joules: multiply by 4,184.',
+          'Example: 2,000 kcal (daily recommended intake) = 2,000 × 4,184 = 8,368,000 J = 8,368 kJ = 8.368 MJ. This is why some scientific nutrition papers express daily energy intake in megajoules — the MJ scale makes the numbers manageable.',
+          '1 food Calorie (kcal) = 4.184 kJ. European labels show both. US labels show only kcal (labeled as "Calories"). Memorizing 1 kcal ≈ 4.2 kJ is enough for any practical conversion.',
+        ],
+      },
+    ],
+    conclusion: '1 dietary Calorie = 1 kcal = 4,184 joules. The capital-C "Calorie" on US food labels is always a kilocalorie. European labels add kJ (divide kcal by 4.184 or multiply by 4.184 depending on direction). A typical 2,000 kcal diet equals 8.37 MJ — a figure used in scientific contexts but rarely on consumer packaging.',
+    faqs: [
+      { q: 'How many joules is 1 calorie?', a: '1 small calorie (thermodynamic) = 4.184 joules. 1 dietary Calorie (kcal) = 4,184 joules.' },
+      { q: 'What is the difference between kcal and cal?', a: '1 kcal = 1,000 small calories. Food labels use kcal (often written as "Calories" with a capital C in the US).' },
+      { q: 'How many joules are in 2,000 kcal?', a: '2,000 kcal × 4,184 = 8,368,000 joules = 8.37 MJ.' },
+      { q: 'Why do some food labels show kJ instead of kcal?', a: 'European Union regulations require both kJ and kcal on food labels. kJ is the SI-derived unit. 1 kcal = 4.184 kJ — so the kJ number is always about 4.2 times larger than the kcal number.' },
+    ],
+    relatedLinks: [
+      { label: 'Joule to Kilocalorie Converter', path: '/energy/joule-to-kilocalorie' },
+      { label: 'Kilocalorie to Joule Converter', path: '/energy/kilocalorie-to-joule' },
+      { label: 'Energy Converter', path: '/energy' },
+    ],
+  },
+  {
+    slug: 'mpg-to-l100km-eu-vs-us-fuel-economy',
+    title: 'MPG to L/100km — EU vs US Fuel Economy Explained',
+    tag: 'How-To Guide',
+    date: '2026-05-31',
+    description: 'MPG and L/100km measure fuel economy on opposite scales — higher MPG is better, lower L/100km is better. Formula, conversion table, and real car examples inside.',
+    intro: 'MPG (miles per gallon) and L/100km (liters per 100 kilometers) are inverse measurements. Higher MPG means better efficiency; lower L/100km means better efficiency. To convert: L/100km = 235.215 ÷ MPG (US gallon). To go back: MPG = 235.215 ÷ L/100km.',
+    sections: [
+      {
+        heading: 'Why the Scales Go in Opposite Directions',
+        paragraphs: [
+          'MPG asks "how far can you go on one unit of fuel?" More distance per gallon = better. L/100km asks "how much fuel do you need to travel 100 km?" Less fuel per 100 km = better.',
+          'This inverse relationship means you cannot compare numbers directly. A car rated at 30 MPG (US) is equivalent to 7.84 L/100km — not 30 anything in metric. A car rated at 5 L/100km converts to 47.0 MPG (US) — more fuel efficient than the 30 MPG car, despite the smaller number.',
+          'The conversion formula uses 235.215 because that is the result of converting 100 km to miles (62.137) multiplied by liters per US gallon (3.78541). The constant is exact given the definitions of km, miles, liters, and US gallons.',
+        ],
+      },
+      {
+        heading: 'Conversion Table',
+        paragraphs: ['US MPG to L/100km and back — common fuel economy values.'],
+        list: [
+          '15 MPG = 15.68 L/100km (large truck)',
+          '20 MPG = 11.76 L/100km (large SUV)',
+          '25 MPG = 9.41 L/100km (average sedan)',
+          '30 MPG = 7.84 L/100km (efficient compact)',
+          '35 MPG = 6.72 L/100km (hybrid)',
+          '40 MPG = 5.88 L/100km (efficient hybrid)',
+          '50 MPG = 4.70 L/100km (Toyota Prius)',
+          '4 L/100km = 58.8 MPG',
+          '6 L/100km = 39.2 MPG',
+          '8 L/100km = 29.4 MPG',
+          '10 L/100km = 23.5 MPG',
+          '12 L/100km = 19.6 MPG',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Fuel economy by vehicle type (L/100km)',
+            items: [
+              { label: 'Large truck', value: 15.7, unit: 'L/100km' },
+              { label: 'Family SUV', value: 11.8, unit: 'L/100km' },
+              { label: 'Average sedan', value: 9.4, unit: 'L/100km', highlight: true },
+              { label: 'Hybrid compact', value: 4.7, unit: 'L/100km' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'US Gallon vs UK Gallon in MPG',
+        paragraphs: [
+          'MPG in the US uses the US gallon (3.785 liters). MPG in the UK uses the imperial gallon (4.546 liters). This makes UK MPG figures about 20% higher than US MPG for the same car.',
+          'A car rated at 50 UK MPG converts to approximately 41.6 US MPG — or 5.65 L/100km. The formula for UK MPG to L/100km uses 282.48 instead of 235.215.',
+          'When reading automotive press from the UK, always check whether MPG figures are US or imperial. Car review sites from the UK universally use imperial MPG. US car reviews use US MPG. European reviews typically publish only L/100km to avoid the confusion entirely.',
+        ],
+      },
+      {
+        heading: 'Real-World vs Official Figures',
+        paragraphs: [
+          'Official fuel economy figures (EPA ratings in the US; WLTP in Europe) are measured on standardized test cycles, not real driving conditions. Real-world fuel economy typically runs 10–20% worse than official figures due to aggressive acceleration, highway speeds above the test cycle, climate control use, and cold weather.',
+          'Apps like Fuelly aggregate real-world fuel economy data submitted by owners. The gap between EPA city/highway ratings and actual owner-reported consumption is well-documented and consistent: expect to use 10–20% more fuel than the window sticker claims.',
+        ],
+      },
+    ],
+    conclusion: 'MPG and L/100km measure the same thing on inverse scales. Formula: L/100km = 235.215 ÷ MPG (US gallon). Better efficiency = higher MPG = lower L/100km. Always check whether an MPG figure uses US or UK (imperial) gallons before comparing — the 20% difference is enough to change the ranking of two cars.',
+    faqs: [
+      { q: 'How do I convert MPG to L/100km?', a: 'Divide 235.215 by the MPG figure. Example: 30 MPG = 235.215 ÷ 30 = 7.84 L/100km.' },
+      { q: 'What is 30 MPG in L/100km?', a: '30 MPG (US) = 7.84 L/100km.' },
+      { q: 'What is 7 L/100km in MPG?', a: '235.215 ÷ 7 = 33.6 MPG (US gallon).' },
+      { q: 'Is higher MPG or lower L/100km more fuel efficient?', a: 'Both mean better efficiency. Higher MPG = better. Lower L/100km = better. They are inverse scales of the same measurement.' },
+      { q: 'Does UK MPG equal US MPG?', a: 'No. UK MPG uses the imperial gallon (4.546 L); US MPG uses the US gallon (3.785 L). UK MPG figures are about 20% higher for the same car. Always check which gallon is used.' },
+    ],
+    relatedLinks: [
+      { label: 'MPG to L/100km Converter', path: '/fuel-economy/mile-per-gallon-to-liter-per-100km' },
+      { label: 'L/100km to MPG Converter', path: '/fuel-economy/liter-per-100km-to-mile-per-gallon' },
+      { label: 'Fuel Economy Converter', path: '/fuel-economy' },
+    ],
+  },
+  {
+    slug: 'metric-vs-imperial-cheat-sheet',
+    title: 'Metric vs Imperial: The Complete Cheat Sheet',
+    tag: 'Quick Reference',
+    date: '2026-06-01',
+    description: 'The essential metric-to-imperial conversions for length, weight, volume, and temperature — with mental shortcuts that work without a calculator.',
+    intro: 'Metric and imperial units cover the same four everyday dimensions: length, weight, volume, and temperature. This cheat sheet gives you the key conversion factors, the mental shortcuts that work without a calculator, and the anchor points that are worth memorizing.',
+    sections: [
+      {
+        heading: 'Length',
+        paragraphs: [
+          'The most-used length conversions: 1 inch = 2.54 cm. 1 foot = 30.48 cm. 1 meter = 3.281 feet = 39.37 inches. 1 kilometer = 0.6214 miles. 1 mile = 1.609 km.',
+          'Mental shortcuts: km × 0.6 ≈ miles (exact: 0.6214). Miles × 1.6 ≈ km (exact: 1.609). These work within 3% for any practical distance.',
+        ],
+        list: [
+          '1 in = 2.54 cm',
+          '1 ft = 30.48 cm',
+          '1 yd = 91.44 cm = 0.9144 m',
+          '1 mile = 1.609 km',
+          '1 km = 0.621 miles',
+          '1 m = 3.281 ft = 39.37 in',
+        ],
+      },
+      {
+        heading: 'Weight',
+        paragraphs: [
+          '1 pound = 0.4536 kg. 1 kilogram = 2.205 pounds. 1 ounce = 28.35 grams. 1 stone (UK) = 6.35 kg = 14 lbs.',
+          'Mental shortcut: lbs ÷ 2.2 ≈ kg. kg × 2.2 ≈ lbs. Accurate to within 0.2%.',
+        ],
+        list: [
+          '1 oz = 28.35 g',
+          '1 lb = 453.6 g = 0.4536 kg',
+          '1 stone = 6.35 kg',
+          '1 kg = 2.205 lb',
+          '1 tonne (metric) = 1,000 kg = 2,205 lb',
+          '1 ton (US short) = 2,000 lb = 907.2 kg',
+        ],
+      },
+      {
+        heading: 'Volume and Temperature',
+        paragraphs: [
+          'Volume: 1 US gallon = 3.785 liters. 1 liter = 0.264 US gallons. 1 US fluid ounce = 29.57 mL. 1 UK pint = 568 mL. 1 US cup = 237 mL.',
+          'Temperature: °F = (°C × 1.8) + 32. °C = (°F − 32) ÷ 1.8. Key anchors: 0°C = 32°F (freeze), 20°C = 68°F (room), 37°C = 98.6°F (body), 100°C = 212°F (boil).',
+        ],
+        list: [
+          '1 tsp = 4.93 mL',
+          '1 tbsp = 14.79 mL',
+          '1 US fl oz = 29.57 mL',
+          '1 US cup = 237 mL',
+          '1 US pint = 473 mL',
+          '1 US quart = 0.946 L',
+          '1 US gallon = 3.785 L',
+        ],
+      },
+      {
+        heading: 'A Four-Step Mental Conversion Method',
+        paragraphs: [
+          'When you encounter an unfamiliar unit and need a quick estimate, follow these four steps.',
+        ],
+        visual: {
+          type: 'StepDiagram',
+          props: {
+            label: 'Mental conversion method',
+            steps: [
+              { title: 'Identify the category', description: 'Is this length, weight, volume, or temperature?' },
+              { title: 'Recall the key factor', description: 'km × 0.6, lbs ÷ 2.2, gallons × 3.8, (°C × 1.8) + 32' },
+              { title: 'Apply the shortcut', description: 'Multiply or divide — no calculator needed for estimates' },
+              { title: 'Sanity-check the result', description: 'Does it make physical sense? 100 km ≈ 60 miles ✓' },
+            ],
+          },
+        },
+      },
+    ],
+    conclusion: 'Four categories, four mental shortcuts: km × 0.6 = miles, lbs ÷ 2.2 = kg, gallons × 3.8 = liters, (°C × 1.8) + 32 = °F. These cover 90% of everyday conversions without a calculator. The remaining 10% — cooking quantities, tire pressures, screen sizes — are better handled by a converter.',
+    faqs: [
+      { q: 'Why does the US use imperial units instead of metric?', a: 'Historical adoption at the time of independence (1776), before metric was standardized, combined with failed metrication attempts in the 1970s. Cost and political resistance blocked the switch.' },
+      { q: 'Which is easier — metric or imperial?', a: 'Metric is objectively simpler: all units relate by powers of 10. Imperial requires memorizing irregular conversion factors (12 inches in a foot, 3 feet in a yard, 5,280 feet in a mile, 16 ounces in a pound).' },
+      { q: 'Which countries still use imperial?', a: 'The United States uses imperial for most everyday purposes. The UK uses a mix (miles for roads, pints for beer, but kg in supermarkets). Myanmar and Liberia have also not fully adopted metric.' },
+      { q: 'How do I remember metric-to-imperial conversions?', a: 'Use four anchor shortcuts: km × 0.6 = miles, lbs ÷ 2.2 = kg, gallons × 3.8 = liters, and the temperature formula (°C × 1.8) + 32 = °F.' },
+    ],
+    relatedLinks: [
+      { label: 'Length Converter', path: '/length' },
+      { label: 'Weight Converter', path: '/weight' },
+      { label: 'Temperature Converter', path: '/temperature' },
+      { label: 'Volume Converter', path: '/volume' },
+    ],
+  },
+  {
+    slug: 'mars-climate-orbiter-crash',
+    title: 'The Mars Climate Orbiter Crash — A $327M Unit Mistake',
+    tag: 'Conversion Fail',
+    date: '2026-06-02',
+    description: 'How a unit conversion error between metric and imperial destroyed NASA\'s Mars Climate Orbiter in 1999 — and what engineers learned from a $327 million mistake.',
+    intro: 'On September 23, 1999, NASA\'s Mars Climate Orbiter fired its main engine to enter orbit around Mars — and was never heard from again. The spacecraft, which had traveled 655 million kilometers over 10 months, burned up in the Martian atmosphere because one engineering team had used imperial units while the other used metric. The cost: $327.6 million and a lost mission.',
+    sections: [
+      {
+        heading: 'The Mission',
+        paragraphs: [
+          'The Mars Climate Orbiter was designed to study Martian weather patterns and act as a communications relay for the Mars Polar Lander, which was to follow. It launched on December 11, 1998 aboard a Delta II rocket from Cape Canaveral — a textbook launch that gave no hint of the problem already embedded in the software.',
+          'For the next 286 days, the spacecraft traveled flawlessly. Navigation teams tracked it using small thruster firings. The spacecraft reported its position and orientation. Ground teams at Lockheed Martin\'s Astronautics division in Denver sent corrective commands. Everything appeared normal.',
+          'It was not until the final approach to Mars that the accumulated error became visible — and by then it was too late.',
+        ],
+      },
+      {
+        heading: 'The Mistake',
+        paragraphs: [
+          'The root cause was a mismatch in units between two software modules. Lockheed Martin\'s navigation software, called SM_FORCES, calculated thruster force data in imperial units: pound-force seconds per meter (lbf·s). NASA\'s trajectory software expected those values in SI units: newton-seconds (N·s). No conversion was performed. No alarm was triggered.',
+          '1 pound-force second equals 4.44822 newton-seconds. So every thruster firing was reported as roughly 4.45 times weaker than it actually was. Over 286 days of daily corrections, this discrepancy pushed the spacecraft roughly 170 kilometers off course — enough to send it into the thin upper atmosphere instead of a stable orbit.',
+          'The error was detectable. Navigation engineers had flagged anomalies in the trajectory data months earlier, noting that the spacecraft was tracking slightly off its predicted course. The warning was not escalated. The handoff between engineering teams — one using imperial, one using metric — was never audited.',
+        ],
+        visual: {
+          type: 'StepDiagram',
+          props: {
+            label: 'How the error accumulated over 286 days',
+            steps: [
+              { title: 'Thruster data generated', description: 'Lockheed Martin software outputs force in pound-force seconds (lbf·s)' },
+              { title: 'No unit conversion', description: 'NASA\'s system reads the value as newton-seconds — 4.45× too small' },
+              { title: 'Correction underfired', description: 'Each daily thruster correction is weaker than intended' },
+              { title: 'Trajectory drifts', description: 'After 286 days, cumulative error reaches ~170 km off course' },
+              { title: 'Atmospheric entry', description: 'Orbiter skims too deep into Mars atmosphere and disintegrates' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'The Aftermath',
+        paragraphs: [
+          'The official investigation concluded within weeks. The root cause was unambiguous: a unit mismatch between two software components at a system interface boundary. The failure review board called it "a process failure" — not a software bug in the traditional sense, but a failure of coordination between two organizations that assumed compatibility without verifying it.',
+          'The Mars Polar Lander, which had been counting on the Orbiter for communications relay, launched anyway and was lost during its own landing in December 1999. The combined loss of both spacecraft ended NASA\'s initial Mars program, which had been conceived as a series of affordable, faster-paced missions under the "faster, better, cheaper" initiative introduced by administrator Dan Goldin in the early 1990s.',
+          'The total program loss was $327.6 million: $193.1 million for the Orbiter itself plus $234.1 million attributed to the combined missions. In inflation-adjusted terms, it remains one of the most expensive unit conversion errors in history.',
+        ],
+      },
+      {
+        heading: 'What Engineers Learned',
+        paragraphs: [
+          'The investigation board recommended mandatory unit specification at all software interface boundaries — any value passed between two systems must carry an explicit unit label. This became standard practice in aerospace software development and influenced broader engineering documentation standards.',
+          'The SI unit system (metric) is now mandated for all NASA science and engineering calculations. Contracts with external vendors include explicit unit requirements and verification steps. Interface control documents — specifications that define exactly what each software module sends and receives — now include unit requirements as a first-class field.',
+          'The orbiter\'s loss also reinforced the value of independent verification. The navigation anomalies that appeared in the data months before the failure were noticed but not acted on. Modern mission operations procedures include formal anomaly escalation protocols that require sign-off before an unexplained deviation can be closed as benign.',
+        ],
+      },
+    ],
+    conclusion: 'The Mars Climate Orbiter teaches a simple lesson that engineering culture sometimes needs an expensive reminder of: assumptions about units are not safe. The values in a dataset mean nothing without their units, and two teams using different unit systems will calculate different trajectories for the same spacecraft. The $327 million cost of this particular assumption bought a rule that is now universal in aerospace: unit, always.',
+    faqs: [
+      { q: 'What caused the Mars Climate Orbiter to crash?', a: 'A unit mismatch between two software modules. One output thruster data in pound-force seconds (imperial), the other expected newton-seconds (metric). No conversion was applied.' },
+      { q: 'How much did the Mars Climate Orbiter mission cost?', a: 'The spacecraft and mission cost $193.1 million, with a combined program loss of $327.6 million when accounting for related missions.' },
+      { q: 'What units were confused in the Mars Orbiter failure?', a: 'Pound-force seconds (lbf·s) were confused with newton-seconds (N·s). 1 lbf·s = 4.44822 N·s, so every thruster reading was off by a factor of roughly 4.45.' },
+      { q: 'What changed after the Mars Orbiter failure?', a: 'NASA mandated metric (SI) units for all engineering calculations and introduced explicit unit requirements at all software interface boundaries. Interface control documents now require unit specifications.' },
+      { q: 'Could the crash have been prevented?', a: 'Yes — navigation engineers had flagged trajectory anomalies months before the failure but did not escalate them. The unit mismatch was detectable from the data. Better anomaly escalation processes would have caught it.' },
+    ],
+    relatedLinks: [
+      { label: 'Foot to Meter Converter', path: '/length/foot-to-meter' },
+      { label: 'Meter to Foot Converter', path: '/length/meter-to-foot' },
+      { label: 'Length Converter', path: '/length' },
+      { label: 'Weight Converter', path: '/weight' },
+    ],
+  },
+  {
+    slug: 'columbus-miscalculation',
+    title: 'Columbus\'s Miscalculation That Discovered America',
+    tag: 'Conversion Fail',
+    date: '2026-06-03',
+    description: 'Columbus confused Roman miles with Arabic miles when estimating Earth\'s size — and underestimated the distance to Asia by 25%. A continent saved his life.',
+    intro: 'Christopher Columbus sailed west in 1492 confident he could reach Asia in about 3,700 kilometers. The actual distance to Asia from the Canary Islands going west is approximately 19,600 kilometers. He was wrong by a factor of more than five — and the only reason he survived is that two continents happened to sit exactly where he thought Asia would be.',
+    sections: [
+      {
+        heading: 'The Unit Confusion Behind the Miscalculation',
+        paragraphs: [
+          'Columbus based his calculations on the work of the geographer Toscanelli, who used the Roman mile as his unit of distance. The Roman mile (mille passuum) was approximately 1.48 kilometers. Columbus, however, used the Arabic mile — which his primary source, the geographer al-Farghani, had used in his estimate of Earth\'s circumference. The Arabic mile was approximately 1.97 kilometers.',
+          'Al-Farghani had correctly calculated Earth\'s circumference as 20,400 Arabic miles — a remarkably accurate figure. When Columbus plugged those numbers into his calculations using the shorter Roman mile, the result shrunk Earth by 25%. He calculated Earth\'s circumference as about 30,200 km when the actual figure is 40,075 km.',
+          'Columbus also made a second error: he over-estimated the eastward extent of Asia. Marco Polo\'s accounts described China and Japan as extending much farther east than they actually do. Combining the shrunken Earth with an over-extended Asia, Columbus concluded that Japan lay only about 3,700 km west of the Canary Islands.',
+        ],
+        visual: {
+          type: 'ScaleDiagram',
+          props: {
+            label: 'Columbus\'s estimate vs actual distance to Asia (km)',
+            min: 0,
+            max: 22000,
+            value: 3700,
+            unit: 'km',
+            markers: [
+              { value: 3700, label: 'Columbus\'s estimate' },
+              { value: 7300, label: 'Width of Americas' },
+              { value: 19600, label: 'Actual Asia distance' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'The Voyage and the Lucky Continent',
+        paragraphs: [
+          'Columbus departed the Canary Islands on September 6, 1492. By early October, after 33 days at sea and roughly 3,500 km of westward travel, his crew was near mutiny. They had reached approximately the distance Columbus expected to find Japan — and found only open ocean.',
+          'On October 12, 1492, they reached the Bahamas — part of a continental landmass that Columbus\'s calculations said should not exist. He called the inhabitants "Indians" because he was convinced he was in the East Indies, near Asia. He died in 1506 still believing he had reached Asia, although by then most European geographers understood the land was a previously unknown continent.',
+          'Had the Americas not been in the way, Columbus\'s fleet almost certainly would have run out of food and water somewhere in the Pacific Ocean. The actual distance from the Canaries to Japan heading west is about 19,600 km — more than five times what Columbus expected and far beyond the range of his provisions.',
+        ],
+      },
+      {
+        heading: 'What Experts Knew at the Time',
+        paragraphs: [
+          'Columbus was not working with unknown information. The round Earth and its approximate size had been known since ancient Greek times. Eratosthenes calculated Earth\'s circumference with remarkable accuracy around 240 BCE — arriving at roughly 40,000 km using shadow angles in Egypt.',
+          'The Portuguese crown had reviewed Columbus\'s proposal and rejected it — not because they thought the Earth was flat, but because their own experts correctly identified that his distance estimates were far too short. The Spanish monarchs Ferdinand and Isabella funded the voyage partly as a calculated risk (the cost was relatively low) and partly because Portugal\'s eastern spice trade route around Africa was monopolizing access to Asian goods.',
+          'The irony is that the experts who rejected Columbus were right, and the man who got funded was wrong. Columbus succeeded not because his calculations were better, but because a continent happened to interrupt his fatal miscalculation.',
+        ],
+      },
+      {
+        heading: 'Unit Errors as a Historical Pattern',
+        paragraphs: [
+          'The Columbus case is one of many historical examples where unit ambiguity produced consequential errors. The Roman and Arabic miles had been used side by side in Mediterranean scholarship for centuries, with inconsistent labeling in manuscripts. A careful reader would have noticed the discrepancy; Columbus apparently did not, or chose to ignore it.',
+          'The lesson generalizes beyond the 15th century: when values from different sources are combined in a calculation, unit compatibility must be explicitly verified. Columbus had the right formula and the wrong unit — a combination that produces a confidently wrong answer.',
+        ],
+      },
+    ],
+    conclusion: 'Columbus\'s journey was built on a 25% underestimate of Earth\'s size, caused by confusing Roman miles (1.48 km) with Arabic miles (1.97 km) when interpreting al-Farghani\'s circumference calculation. The experts who rejected his proposal were correct. What saved him — and produced the European discovery of the Americas — was a continental landmass sitting exactly where his math said Asia should be.',
+    faqs: [
+      { q: 'What unit did Columbus confuse?', a: 'He used al-Farghani\'s Earth circumference figure (given in Arabic miles, ~1.97 km each) but calculated with Roman miles (~1.48 km each), shrinking his estimate of Earth\'s circumference by about 25%.' },
+      { q: 'How far off was Columbus\'s estimate?', a: 'He estimated about 3,700 km to Asia. The actual distance heading west from the Canaries to Japan is about 19,600 km — more than five times his figure.' },
+      { q: 'Would Columbus have survived without America?', a: 'Almost certainly not. His provisions were calculated for the ~3,700 km voyage he expected. The actual distance to Asia would have required crossing the entire Pacific Ocean.' },
+      { q: 'What did Columbus think he found?', a: 'He believed he had reached the East Indies (the islands off the coast of Asia). He called the inhabitants "Indians" and died in 1506 still maintaining he had reached Asia, not a new continent.' },
+    ],
+    relatedLinks: [
+      { label: 'Mile to Kilometer Converter', path: '/length/mile-to-kilometer' },
+      { label: 'Kilometer to Mile Converter', path: '/length/kilometer-to-mile' },
+      { label: 'Length Converter', path: '/length' },
+    ],
+  },
+  {
+    slug: 'gimli-glider-boeing-767',
+    title: 'The Gimli Glider: When a Boeing 767 Ran Out of Fuel Mid-Air',
+    tag: 'Conversion Fail',
+    date: '2026-06-04',
+    description: 'Air Canada Flight 143 ran out of fuel at 41,000 feet in 1983 because ground crew used pounds instead of kilograms to calculate the fuel load. Both engines failed over Manitoba.',
+    intro: 'On July 23, 1983, Air Canada Flight 143 — a brand-new Boeing 767 — ran out of fuel at 41,000 feet over Red Lake, Ontario. Both engines flamed out. The pilots glided the aircraft 100 km to an abandoned airstrip in Gimli, Manitoba, and landed without power on a runway being used as a drag racing track. All 69 people on board survived.',
+    sections: [
+      {
+        heading: 'How the Fuel Was Calculated Wrong',
+        paragraphs: [
+          'The Boeing 767 was the first Canadian aircraft to require fuel to be measured in kilograms rather than pounds. This was part of Canada\'s transition to metric, which was underway in 1983. The 767\'s fuel quantity gauges were malfunctioning — a known issue that had not been resolved — so the fuel load had to be calculated manually.',
+          'The calculation required knowing the fuel density to convert volume (liters) to mass. Fuel density in aviation is the conversion factor between liters and the weight of fuel. The correct factor for jet fuel is approximately 0.803 kg/L. The ground crew used 1.77 — which is the conversion factor for pounds per liter, not kilograms per liter.',
+          '1.77 lbs/L is approximately correct in the pounds system. 0.803 kg/L is correct in the metric system. By using the pounds-per-liter factor in a calculation that expected kilograms, the crew calculated the fuel mass as roughly 2.2 times larger than it actually was. The aircraft departed with less than half the fuel required for the flight from Montreal to Edmonton.',
+        ],
+      },
+      {
+        heading: 'The Sequence of Events',
+        paragraphs: [
+          'The aircraft flew normally from Montreal to Ottawa, then Ottawa to Winnipeg. At Winnipeg, maintenance was done on the fuel gauges — the underlying fault was not corrected. The crew accepted a manual fuel calculation and departed for Edmonton.',
+          'At 41,000 feet over Red Lake, Ontario, the left engine flamed out. Minutes later, the right engine followed. The 767 became a glider with no hydraulic power (which runs off the engines), only a ram air turbine deploying from the fuselage to provide minimal electrical and hydraulic power for controls.',
+          'Captain Robert Pearson, an experienced glider pilot in his spare time, executed a textbook dead-stick approach. He aimed for the closed airstrip at Gimli, Manitoba — the closest suitable landing area. The aircraft was moving too fast with no engine braking and no thrust reversers. Pearson executed a maneuver called a sideslip to bleed speed, which is extremely rare in jet aircraft.',
+        ],
+        visual: {
+          type: 'StepDiagram',
+          props: {
+            label: 'How the Gimli Glider error unfolded',
+            steps: [
+              { title: 'Fuel gauge fault', description: 'Fuel quantity gauges malfunctioning — manual calculation required' },
+              { title: 'Wrong density factor', description: 'Crew used 1.77 lbs/L instead of 0.803 kg/L — calculating 2.2× too much fuel' },
+              { title: 'Departed with half fuel', description: 'Aircraft left Winnipeg with ~9,900 lbs instead of required ~22,300 lbs' },
+              { title: 'Both engines flamed out', description: 'Left engine at 41,000 ft; right engine minutes later over Ontario' },
+              { title: 'Dead-stick landing', description: 'Glided 100 km; landed on drag-racing track in Gimli, Manitoba' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'The Landing and the Outcome',
+        paragraphs: [
+          'The Gimli airstrip was not just abandoned — it was hosting a drag racing event. The drag racers had parked on the runway. As the 767 approached with no power and no radio contact with Gimli\'s unmanned tower, spectators scattered. The aircraft touched down hard, the nose gear collapsed, and the aircraft slid to a stop. There were minor injuries from the evacuation — twisted ankles, a few burns from the emergency slides — but no fatalities.',
+          'The investigation found multiple layers of failure. The fuel gauges had a known defect. The dispatch paperwork passed through multiple hands without anyone catching the unit error. The minimum equipment list — which governs what faults are acceptable for flight — was incorrectly interpreted to allow flight with the gauge fault. The unit error itself was a product of an undertrained crew during Canada\'s metric transition.',
+          'Captain Pearson and First Officer Maurice Quintal were initially suspended by Air Canada, then had their penalties reduced after the investigation clarified the systemic nature of the failures. Both returned to flying.',
+        ],
+      },
+      {
+        heading: 'What Changed After Gimli',
+        paragraphs: [
+          'The Gimli incident accelerated changes to Canadian aviation fuel handling procedures. Cross-checks between manual fuel calculations and fuel-uplifted records were made mandatory. The specific calculation sheet that led to the error was redesigned to make the unit (kg or lbs) explicit in every field.',
+          'The 767 "Gimli Glider" aircraft was repaired and returned to service. It flew for Air Canada until 2008 and was then operated by charter carriers until 2013 before being scrapped. Its registration, C-GAUN, became one of the most recognized in Canadian aviation history.',
+        ],
+      },
+    ],
+    conclusion: 'The Gimli Glider ran out of fuel because a density conversion factor in pounds (1.77 lbs/L) was used in a calculation that expected kilograms (0.803 kg/L) — overstating the fuel load by a factor of 2.2. The aircraft glided 100 km and landed safely on a drag racing track thanks to exceptional piloting. The incident became a landmark case in aviation safety for its illustration of how unit errors in critical calculations cascade into catastrophic outcomes.',
+    faqs: [
+      { q: 'What happened to Air Canada Flight 143?', a: 'It ran out of fuel at 41,000 feet due to a kg/lbs unit error in the fuel calculation. Both engines flamed out. The aircraft glided 100 km and made an emergency landing at Gimli, Manitoba.' },
+      { q: 'Which unit was confused in the Gimli Glider incident?', a: 'Pounds per liter (1.77 lbs/L) was used instead of kilograms per liter (0.803 kg/L) when calculating fuel mass from volume. The error made the fuel load appear 2.2 times larger than it actually was.' },
+      { q: 'How did the crew calculate fuel without working gauges?', a: 'They calculated manually: liters on board × density factor = mass. The error was using the wrong density factor (lbs/L instead of kg/L).' },
+      { q: 'Was anyone hurt in the Gimli Glider incident?', a: 'All 69 people on board survived. There were minor injuries — twisted ankles and a few minor burns during the evacuation — but no fatalities.' },
+    ],
+    relatedLinks: [
+      { label: 'Kilogram to Pound Converter', path: '/weight/kilogram-to-pound' },
+      { label: 'Pound to Kilogram Converter', path: '/weight/pound-to-kilogram' },
+      { label: 'Weight Converter', path: '/weight' },
+    ],
+  },
+  {
+    slug: 'vasa-warship-disaster',
+    title: 'The Vasa Warship Disaster — Asymmetric Measurements Sank a Navy',
+    tag: 'Conversion Fail',
+    date: '2026-06-05',
+    description: 'The Vasa warship sank on its maiden voyage in 1628 after two construction teams used different measurement systems — one Swedish foot, one Amsterdam foot — and built a lopsided hull.',
+    intro: 'On August 10, 1628, the Swedish warship Vasa sailed 1,300 meters from its dock in Stockholm harbor before a gust of wind heeled it over and it sank in 32 meters of water. The cause: two different measurement systems were used on opposite sides of the ship during construction, producing a hull that was heavier on the port side than the starboard side.',
+    sections: [
+      {
+        heading: 'The Construction of the Vasa',
+        paragraphs: [
+          'The Vasa was commissioned by King Gustav II Adolf of Sweden as the flagship of the Swedish Navy. Construction began in 1626 at the royal shipyard in Stockholm under master shipwright Henrik Hybertsson, a Dutch craftsman. The ship was one of the largest and most heavily armed warships of its time — 69 meters long, carrying 64 bronze cannons on two gun decks.',
+          'Hybertsson fell seriously ill during construction and handed off supervision to his colleague Hein Jacobsson. Multiple teams of carpenters worked simultaneously on different sections of the ship. The teams on the port (left) side were Swedish craftsmen; the team on the starboard (right) side included Dutch craftsmen.',
+          'When archaeologists recovered the ship in 1961 and took measurements, they found that the port side of the hull was built using a ruler with 12 inches to the Swedish foot, while the starboard side was built with a ruler with 11 inches to the Amsterdam foot. The two sides of the ship were built to different scales.',
+        ],
+      },
+      {
+        heading: 'Two Measurement Systems, One Ship',
+        paragraphs: [
+          'The Swedish foot in the 17th century was approximately 26.0 cm. The Amsterdam foot was approximately 28.3 cm. The difference is small — about 8% — but applied over an entire warship hull, it produced measurable asymmetry in the thickness of hull planking and framing.',
+          'Archaeological measurements found 702 weights (measuring stones used by the carpenters as reference weights) on board. The port side had stones calibrated to Swedish measurements; the starboard had stones calibrated to Amsterdam measurements. This is physical evidence that the two measurement systems were actively in use simultaneously during construction.',
+        ],
+        visual: {
+          type: 'ComparisonChart',
+          props: {
+            label: 'Foot measurement units in cm',
+            items: [
+              { label: 'Amsterdam foot (~1628)', value: 28.3, unit: 'cm' },
+              { label: 'Swedish foot (~1628)', value: 26.0, unit: 'cm' },
+              { label: 'Modern foot (international)', value: 30.48, unit: 'cm', highlight: true },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'The Sinking and Recovery',
+        paragraphs: [
+          'The Vasa\'s maiden voyage lasted approximately 20 minutes. A gust of wind heeled the ship to port. The lower gun ports — which had been opened for a salute — were only 1 meter above the waterline in the heeled position. Water flooded in immediately. The ship righted briefly, then heeled again and sank rapidly. Approximately 30 of the 150 crew members on board drowned.',
+          'The Vasa lay in the cold, low-salinity water of Stockholm harbor for 333 years, preserved from rot by the lack of the wood-boring worms that would have destroyed it in saltier water. Swedish engineer Anders Franzén located it in 1956 using a core sampler. Salvage operations began in 1957, and the ship was raised intact on April 24, 1961.',
+          'After 17 years of preservation treatment — the waterlogged timber had to be slowly replaced with polyethylene glycol to prevent collapse on drying — the Vasa was placed in a permanent museum in Stockholm. The Vasa Museum opened in 1990 and has since become Sweden\'s most visited museum, with over 1.5 million visitors per year.',
+        ],
+      },
+      {
+        heading: 'Was Measurement the Only Problem?',
+        paragraphs: [
+          'The measurement asymmetry is the most famous finding from the Vasa investigation, but historians note that the ship had additional stability problems. The Vasa was top-heavy: its upper gun deck was added late in the design process at King Gustav\'s insistence, increasing the weight high on the ship and raising the center of gravity.',
+          'A stability test conducted before the voyage — which involved 30 men running back and forth across the deck to rock the ship — was stopped after three passes because the rocking was already alarming. The captain reported the results to the admiral; the admiral noted that the ship was the king\'s design and no one stopped the launch.',
+          'The measurement unit discrepancy compounded an already marginal design. Either problem alone might have been survivable; together, they produced a ship that could not right itself after a moderate wind gust in harbor.',
+        ],
+      },
+    ],
+    conclusion: 'The Vasa sank because two construction teams built opposite sides of the same hull using different measurement standards — Swedish feet (26 cm) on the port side and Amsterdam feet (28.3 cm) on the starboard side. Combined with a top-heavy design added at the king\'s insistence, the ship was unstable from launch. The Vasa is now perfectly preserved in a Stockholm museum — a 400-year-old lesson in the cost of measurement inconsistency.',
+    faqs: [
+      { q: 'What caused the Vasa to sink?', a: 'Two construction teams used different measurement units — Swedish feet on the port side, Amsterdam feet on the starboard side — producing an asymmetric hull. The ship was also top-heavy due to a last-minute extra gun deck.' },
+      { q: 'What measurement units were used on the Vasa?', a: 'Swedish feet (approximately 26.0 cm) and Amsterdam feet (approximately 28.3 cm) — a difference of about 8%.' },
+      { q: 'When was the Vasa recovered?', a: 'The ship was raised on April 24, 1961, after 333 years on the harbor floor. It had been located in 1956 by engineer Anders Franzén.' },
+      { q: 'Where can you see the Vasa today?', a: 'The Vasa Museum in Stockholm, Sweden. It opened in 1990 and is Sweden\'s most visited museum, receiving over 1.5 million visitors per year.' },
+    ],
+    relatedLinks: [
+      { label: 'Foot to Meter Converter', path: '/length/foot-to-meter' },
+      { label: 'Inch to Centimeter Converter', path: '/length/inch-to-centimeter' },
+      { label: 'Length Converter', path: '/length' },
+    ],
+  },
+  {
+    slug: 'hospital-medication-dose-error',
+    title: 'When a Hospital Gave 10x the Medication Dose',
+    tag: 'Conversion Fail',
+    date: '2026-06-06',
+    description: 'Microgram and milligram confusion in hospitals has caused serious patient harm. Learn how mcg/mg errors happen, documented cases, and the safeguards that now prevent them.',
+    intro: '1 milligram (mg) = 1,000 micrograms (mcg or µg). This factor of 1,000 is the source of one of the most dangerous recurring errors in clinical medicine. A dose ordered in micrograms dispensed in milligrams delivers 1,000 times the intended amount. A dose ordered in milligrams but prepared in micrograms delivers one-thousandth of what was needed.',
+    sections: [
+      {
+        heading: 'How Microgram/Milligram Errors Happen',
+        paragraphs: [
+          'Medication errors involving mcg/mg confusion typically occur at three points: when a prescriber writes the order, when a pharmacist interprets it, or when a nurse prepares or administers the dose. Handwritten orders are the most dangerous — the abbreviation "µg" (microgram) looks similar to "mg" (milligram) in hurried handwriting, especially when the µ symbol is written quickly.',
+          'The Institute for Safe Medication Practices (ISMP) has documented this error repeatedly and recommends that "µg" never be used as an abbreviation in clinical settings. The preferred abbreviation is "mcg" — written in plain letters, impossible to confuse with "mg" when read carefully.',
+          'A second common failure mode: a drug is manufactured and labeled in one unit, but clinical protocols refer to it in another. If a vial label says "2 mg/mL" and a nurse calculates the dose in mcg without converting, the prepared dose will be 1,000 times too concentrated.',
+        ],
+      },
+      {
+        heading: 'Documented Cases',
+        paragraphs: [
+          'In 1994, a 39-year-old patient in a Texas hospital died after receiving a morphine overdose when a nurse misread "0.5 mg" as "5 mg" — a tenfold error compounded by a decimal point that was too faint to read clearly. The ISMP used this case to push for the elimination of trailing zeros after decimal points (writing 0.5 mg, not .5 mg).',
+          'Neonatal intensive care units (NICUs) have documented repeated errors with medications where the therapeutic dose for a premature infant is measured in micrograms and the drug is stocked in milligrams. A weight-based calculation (mcg per kg of body weight) with an inadvertent mg/mcg unit swap produces a 1,000-fold overdose. Several case reports in the medical literature describe such errors resulting in cardiac arrest in neonatal patients.',
+          'Digoxin, a heart medication with a very narrow therapeutic window, has been frequently involved in unit errors. Therapeutic doses are measured in micrograms (typical adult dose: 125–250 mcg). Prescribing in mg instead of mcg by a clinician unfamiliar with the convention — or misreading mcg as mg during dispensing — has caused toxicity and death in multiple documented cases.',
+        ],
+        visual: {
+          type: 'ScaleDiagram',
+          props: {
+            label: 'Medication dose scale',
+            min: 0,
+            max: 10000,
+            value: 250,
+            unit: 'mcg',
+            markers: [
+              { value: 1, label: '1 mcg' },
+              { value: 250, label: 'digoxin dose' },
+              { value: 1000, label: '= 1 mg' },
+              { value: 10000, label: '= 10 mg' },
+            ],
+          },
+        },
+      },
+      {
+        heading: 'Modern Safeguards',
+        paragraphs: [
+          'Electronic prescribing (CPOE — Computerized Physician Order Entry) has substantially reduced handwriting-related unit errors. Modern hospital information systems require the prescriber to select a unit from a dropdown rather than write it freehand. Alert systems flag orders where the dose falls outside the expected range for the patient\'s weight or age.',
+          'Barcode medication administration (BCMA) requires nurses to scan both the patient\'s wristband and the medication before administering it. The system cross-checks the scanned dose against the order and alerts if the unit or quantity does not match. BCMA implementation has been shown to reduce medication errors by 50–80% in studies across multiple hospital systems.',
+          'Smart infusion pumps contain drug libraries with preset dose limits. If a nurse programs a pump to deliver a dose above the library\'s maximum, the pump issues a hard or soft stop. These libraries are specifically tuned to catch unit errors — an entry of "250 mg" for a drug normally dosed in mcg triggers an alert before the infusion starts.',
+        ],
+      },
+      {
+        heading: 'The Metric System in Medicine',
+        paragraphs: [
+          'Medicine uses the metric system exclusively because it is the only system with the precision and scalability that clinical dosing requires. The range from a microgram-level hormone dose to a gram-level antibiotic dose spans six orders of magnitude — yet the metric system handles this with a consistent naming convention (micro-, milli-, centi-, deci-, base, kilo-).',
+          'No imperial equivalent exists for micrograms in common clinical use. The grain — an ancient unit still used in some US pharmacy contexts — equals about 64.8 mg. But medications like digoxin, fentanyl, and many hormones are dosed in quantities where the grain is unusably large. The metric system\'s granularity down to micrograms is not optional for modern pharmacology.',
+          'The ongoing challenge is not the metric system itself — it is the human tendency to skip unit labels when writing quickly. Every medication error report involving mcg/mg confusion traces back to a moment where someone wrote, read, or transcribed a number without its unit — and assumed compatibility with the reader\'s mental context.',
+        ],
+      },
+    ],
+    conclusion: '1 mg = 1,000 mcg. This single conversion factor is responsible for a category of medication errors that has caused patient deaths in hospitals worldwide. The solution is not more complex calculations — it is explicit unit labeling at every step: in the prescription, in the pharmacy, on the vial, and in the administration record. Electronic prescribing, barcode scanning, and smart pump libraries have substantially reduced these errors, but the underlying risk remains wherever handwriting and verbal orders are still used.',
+    faqs: [
+      { q: 'What are the most common medication dose unit errors?', a: 'Microgram (mcg) and milligram (mg) confusion is the most documented. The two abbreviations (µg and mg) look similar in handwriting, and the 1,000-fold difference between them makes errors extremely dangerous.' },
+      { q: 'How do mcg and mg errors happen in hospitals?', a: 'Through handwriting ambiguity (µg misread as mg), unit assumption errors in calculations, and stock medications labeled in different units than the clinical protocol uses.' },
+      { q: 'How do hospitals prevent dose unit errors today?', a: 'Electronic prescribing (CPOE), barcode medication administration (BCMA), and smart infusion pumps with drug libraries. These systems require explicit unit selection and alert on out-of-range doses.' },
+      { q: 'Why does medicine use metric units?', a: 'Metric units handle the full range of clinical doses — from micrograms to grams — with a consistent, predictable naming system. No comparable imperial system exists for microgram-level dosing.' },
+    ],
+    relatedLinks: [
+      { label: 'Milligram to Gram Converter', path: '/weight/milligram-to-gram' },
+      { label: 'Weight Converter', path: '/weight' },
+      { label: 'Microgram to Milligram Converter', path: '/weight/microgram-to-milligram' },
+    ],
+  },
 ]
 
 /** Return a post by slug, or undefined if not found. */

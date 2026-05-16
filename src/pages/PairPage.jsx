@@ -1,4 +1,4 @@
-import { useLocation, useParams } from 'react-router'
+import { useLocation, useParams, Link } from 'react-router'
 import Converter from '../components/Converter.jsx'
 import ReferenceTable from '../components/ReferenceTable.jsx'
 import PairContent from '../components/PairContent.jsx'
@@ -6,8 +6,9 @@ import RelatedConverters from '../components/RelatedConverters.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
 import ValueResult from '../components/ValueResult.jsx'
 import { units, getUnit } from '../data/units.js'
-import { generatePairContent, PAIR_META } from '../data/pairContent.js'
+import { generatePairContent, PAIR_META, VALUE_ENRICHMENT } from '../data/pairContent.js'
 import { convert } from '../utils/convert.js'
+import { fmtNum } from '../utils/format.js'
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -83,10 +84,6 @@ function getUnitLabel(category, unitId) {
  */
 function toTitle(key) {
   return key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
-}
-
-function fmtNum(n) {
-  return parseFloat(n.toPrecision(6)).toLocaleString('en-US')
 }
 
 const VALUE_CONTEXT = {
@@ -241,6 +238,10 @@ function PairPage() {
     })),
   } : null
 
+  const enrichment = !isValuePage ? (VALUE_ENRICHMENT[`${category}|${from}|${to}`] ?? null) : null
+  const hasEnrichment = !!VALUE_ENRICHMENT[`${category}|${from}|${to}`]
+  const commonValues = enrichment?.commonValues ?? []
+
   return (
     <main>
       <SEOMeta
@@ -255,6 +256,12 @@ function PairPage() {
           result={valueResult}
           fromSymbol={fromObj.symbol}
           toSymbol={toObj.symbol}
+          fromLabel={fromLabel}
+          toLabel={toLabel}
+          category={category}
+          from={from}
+          to={to}
+          segment={segment}
         />
       ) : (
         <h1>{h1}</h1>
@@ -271,13 +278,13 @@ function PairPage() {
         fromUnit={from}
         toUnit={to}
       />
-      {valueFaq.length > 0 && (
+      {valueFaq.length > 0 && !hasEnrichment && (
         <section className="cat-content">
           <div className="cat-content__faq">
             <h2 className="cat-content__faq-title">Frequently Asked Questions</h2>
             <div className="cat-content__faq-list">
-              {valueFaq.map(({ q, a }) => (
-                <details key={q} className="cat-content__faq-item">
+              {valueFaq.map(({ q, a }, i) => (
+                <details key={i} className="cat-content__faq-item">
                   <summary className="cat-content__faq-q">{q}</summary>
                   <p className="cat-content__faq-a">{a}</p>
                 </details>
@@ -297,6 +304,28 @@ function PairPage() {
         fromUnit={from}
         toUnit={to}
       />
+      {commonValues.length > 0 && !isValuePage && (
+        <section className="cat-content">
+          <div className="cat-content__featured">
+            <h2 className="cat-content__section-title">Common values</h2>
+            <div className="cat-content__featured-grid">
+              {commonValues.map((v) => {
+                const res = (() => { try { return convert(v, from, to, category) } catch { return null } })()
+                if (res === null) return null
+                return (
+                  <Link
+                    key={String(v)}
+                    to={`/${segment}/${v}-${from.replace(/_/g, '-')}-to-${to.replace(/_/g, '-')}`}
+                    className="cat-content__featured-link"
+                  >
+                    {fmtNum(v)} {fromObj?.symbol} = {fmtNum(res)} {toObj?.symbol}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
     </main>
   )
 }

@@ -715,3 +715,384 @@ export function generatePairContent(category, fromUnit, toUnit) {
 
   return { intro, faq: [...faq, ...extraFaq, ...categoryFaq] }
 }
+
+/**
+ * Enrichment data for value-specific pages.
+ * Key: "category|from|to"
+ * getContext(value, result) → string sentence
+ * faqs(value, result) → [{q, a}]
+ * getRelated(value) → array of 5 nearby numeric values
+ * scale → ScaleDiagram props (min, max, unit, markers)
+ * commonValues → 5 values to link from generic pair page
+ */
+export const VALUE_ENRICHMENT = {
+  'weight|pound|kilogram': {
+    formula: 'kg = lb ÷ 2.205',
+    formulaNote: 'Divide pounds by 2.205 to get kilograms.',
+    getContext: (value) => {
+      let ref
+      if (value < 10) ref = 'a bag of groceries'
+      else if (value < 50) ref = 'a large dog'
+      else if (value < 100) ref = 'a child or small adult'
+      else if (value < 200) ref = 'an average adult'
+      else if (value < 400) ref = 'a grand piano'
+      else if (value < 1500) ref = 'a large horse'
+      else if (value < 4000) ref = 'a mid-size car'
+      else ref = 'a large commercial truck'
+      return `${value.toLocaleString('en-US')} lbs is roughly the weight of ${ref}.`
+    },
+    faqs: (value, result) => [
+      { q: `How do you convert ${value.toLocaleString('en-US')} pounds to kilograms?`, a: `Divide by 2.205: ${value.toLocaleString('en-US')} ÷ 2.205 = ${result.toLocaleString('en-US', { maximumFractionDigits: 2 })} kg.` },
+      { q: `Is ${value.toLocaleString('en-US')} lbs heavy?`, a: `${value.toLocaleString('en-US')} lbs (${result.toLocaleString('en-US', { maximumFractionDigits: 2 })} kg) is about the weight of a mid-size car if above 3,000 lbs, or an adult if around 150–200 lbs.` },
+      { q: `What is ${value.toLocaleString('en-US')} lbs in stones?`, a: `Divide by 14: ${(value / 14).toLocaleString('en-US', { maximumFractionDigits: 1 })} stone.` },
+    ],
+    getRelated: (value) => {
+      const step = value < 50 ? 5 : value < 500 ? 50 : 500
+      return [
+        Math.max(1, value - step * 2),
+        Math.max(1, value - step),
+        value + step,
+        value + step * 2,
+        value + step * 5,
+      ]
+    },
+    scale: {
+      min: 0, max: 8000, unit: 'lb',
+      markers: [
+        { value: 10, label: 'groceries' },
+        { value: 150, label: 'adult' },
+        { value: 1500, label: 'horse' },
+        { value: 3500, label: 'car' },
+      ],
+    },
+    commonValues: [150, 180, 200, 3300, 5000],
+  },
+
+  'weight|kilogram|pound': {
+    formula: 'lb = kg × 2.205',
+    formulaNote: 'Multiply kilograms by 2.205 to get pounds.',
+    getContext: (value) => {
+      let ref
+      if (value < 5) ref = 'a bag of sugar'
+      else if (value < 25) ref = 'a large dog'
+      else if (value < 90) ref = 'an average adult'
+      else if (value < 180) ref = 'a grand piano'
+      else if (value < 700) ref = 'a large horse'
+      else if (value < 2000) ref = 'a mid-size car'
+      else ref = 'a large commercial truck'
+      return `${value.toLocaleString('en-US')} kg is roughly the weight of ${ref}.`
+    },
+    faqs: (value, result) => [
+      { q: `How many pounds is ${value.toLocaleString('en-US')} kg?`, a: `${value.toLocaleString('en-US')} kg × 2.205 = ${result.toLocaleString('en-US', { maximumFractionDigits: 2 })} lbs.` },
+      { q: `Is ${value.toLocaleString('en-US')} kg a healthy weight?`, a: `Weight health depends on height (BMI) and body composition. ${value.toLocaleString('en-US')} kg is ${result.toLocaleString('en-US', { maximumFractionDigits: 1 })} lbs. Consult a doctor for personal advice.` },
+    ],
+    getRelated: (value) => {
+      const step = value < 25 ? 2 : value < 200 ? 10 : 100
+      return [
+        Math.max(1, value - step * 2),
+        Math.max(1, value - step),
+        value + step,
+        value + step * 2,
+        value + step * 5,
+      ]
+    },
+    scale: {
+      min: 0, max: 3000, unit: 'kg',
+      markers: [
+        { value: 5, label: 'sugar' },
+        { value: 70, label: 'adult' },
+        { value: 600, label: 'horse' },
+        { value: 1500, label: 'car' },
+      ],
+    },
+    commonValues: [70, 80, 100, 1500, 2000],
+  },
+
+  'length|inch|centimeter': {
+    formula: 'cm = in × 2.54',
+    formulaNote: 'Multiply inches by 2.54 to get centimeters.',
+    getContext: (value) => {
+      let ref
+      if (value <= 1) ref = 'a thumb width'
+      else if (value <= 6) ref = 'the width of a smartphone'
+      else if (value <= 12) ref = 'a standard ruler'
+      else if (value <= 24) ref = 'the width of a laptop screen'
+      else if (value <= 72) ref = 'the height of an average adult (6 feet)'
+      else ref = 'taller than most people'
+      return `${value} inches is about ${ref}.`
+    },
+    faqs: (value, result) => [
+      { q: `How many cm is ${value} inches?`, a: `${value} inches × 2.54 = ${result.toLocaleString('en-US', { maximumFractionDigits: 2 })} cm.` },
+      { q: `What is ${value} inches in feet and inches?`, a: `${Math.floor(value / 12)} feet ${value % 12} inches.` },
+    ],
+    getRelated: (value) => {
+      const step = value < 12 ? 1 : value < 72 ? 6 : 12
+      return [
+        Math.max(1, value - step * 2),
+        Math.max(1, value - step),
+        value + step,
+        value + step * 2,
+        value + step * 5,
+      ]
+    },
+    scale: {
+      min: 0, max: 120, unit: 'in',
+      markers: [
+        { value: 12, label: '1 foot' },
+        { value: 36, label: '1 yard' },
+        { value: 72, label: '6 feet' },
+      ],
+    },
+    commonValues: [5, 12, 36, 60, 72],
+  },
+
+  'length|kilometer|mile': {
+    formula: 'mi = km × 0.621371',
+    formulaNote: 'Multiply kilometers by 0.621371 to get miles.',
+    getContext: (value) => {
+      let ref
+      if (value < 1) ref = 'a short walk'
+      else if (value < 5) ref = 'a morning jog'
+      else if (value < 20) ref = 'a brisk cycling session'
+      else if (value < 100) ref = 'a short road trip'
+      else if (value < 500) ref = 'a drive between major cities'
+      else ref = 'a cross-country journey'
+      return `${value.toLocaleString('en-US')} km is about the distance of ${ref}.`
+    },
+    faqs: (value, result) => [
+      { q: `How many miles is ${value.toLocaleString('en-US')} km?`, a: `${value.toLocaleString('en-US')} km × 0.621371 = ${result.toLocaleString('en-US', { maximumFractionDigits: 2 })} miles.` },
+      { q: `How long does it take to drive ${value.toLocaleString('en-US')} km?`, a: `At 100 km/h (62 mph), ${value.toLocaleString('en-US')} km takes about ${(value / 100).toLocaleString('en-US', { maximumFractionDigits: 1 })} hour(s).` },
+    ],
+    getRelated: (value) => {
+      const step = value < 10 ? 1 : value < 100 ? 10 : 100
+      return [
+        Math.max(1, value - step * 2),
+        Math.max(1, value - step),
+        value + step,
+        value + step * 2,
+        value + step * 5,
+      ]
+    },
+    scale: {
+      min: 0, max: 1000, unit: 'km',
+      markers: [
+        { value: 5, label: '5K run' },
+        { value: 42, label: 'marathon' },
+        { value: 400, label: 'city-to-city' },
+      ],
+    },
+    commonValues: [1, 5, 10, 42, 100],
+  },
+
+  'temperature|fahrenheit|celsius': {
+    formula: '°C = (°F − 32) × 5/9',
+    formulaNote: 'Subtract 32, then multiply by 5/9.',
+    getContext: (value) => {
+      let desc
+      if (value <= 32) desc = 'at or below freezing — water turns to ice at 32°F'
+      else if (value < 50) desc = 'very cold — heavy coat weather'
+      else if (value < 65) desc = 'cool — a light jacket is useful'
+      else if (value < 80) desc = 'mild and comfortable'
+      else if (value < 95) desc = 'warm — a hot summer day'
+      else if (value < 105) desc = 'hot — stay hydrated'
+      else if (value < 212) desc = 'extremely hot — above normal body temperature (98.6°F)'
+      else desc = 'at or above the boiling point of water'
+      return `${value}°F is ${desc}.`
+    },
+    faqs: (value, result) => [
+      { q: `What is ${value}°F in Celsius?`, a: `(${value} − 32) × 5/9 = ${result.toLocaleString('en-US', { maximumFractionDigits: 1 })}°C.` },
+      { q: `Is ${value}°F hot or cold?`, a: value >= 80 ? `${value}°F (${result.toFixed(1)}°C) is warm to hot — appropriate for summer weather.` : value <= 32 ? `${value}°F (${result.toFixed(1)}°C) is at or below freezing.` : `${value}°F (${result.toFixed(1)}°C) is cool to mild.` },
+    ],
+    getRelated: (value) => {
+      const step = 5
+      return [value - step * 2, value - step, value + step, value + step * 2, value + step * 4]
+    },
+    scale: {
+      min: -40, max: 220, unit: '°F',
+      markers: [
+        { value: 32, label: 'freezing' },
+        { value: 72, label: 'room temp' },
+        { value: 98.6, label: 'body' },
+        { value: 212, label: 'boiling' },
+      ],
+    },
+    commonValues: [32, 72, 98, 100, 212],
+  },
+
+  'temperature|celsius|fahrenheit': {
+    formula: '°F = °C × 9/5 + 32',
+    formulaNote: 'Multiply by 9/5 (1.8), then add 32.',
+    getContext: (value) => {
+      let desc
+      if (value <= 0) desc = 'at or below freezing'
+      else if (value < 10) desc = 'cold — coat weather'
+      else if (value < 20) desc = 'cool to mild'
+      else if (value < 30) desc = 'comfortable and warm'
+      else if (value < 40) desc = 'hot — a very warm summer day'
+      else desc = 'extremely hot'
+      return `${value}°C is ${desc}.`
+    },
+    faqs: (value, result) => [
+      { q: `What is ${value}°C in Fahrenheit?`, a: `${value} × 1.8 + 32 = ${result.toLocaleString('en-US', { maximumFractionDigits: 1 })}°F.` },
+      { q: `Is ${value}°C cold?`, a: value <= 10 ? `Yes, ${value}°C (${result.toFixed(1)}°F) is cold — you need a coat.` : value >= 30 ? `No, ${value}°C (${result.toFixed(1)}°F) is hot.` : `${value}°C (${result.toFixed(1)}°F) is mild.` },
+    ],
+    getRelated: (value) => {
+      const step = 5
+      return [value - step * 2, value - step, value + step, value + step * 2, value + step * 4]
+    },
+    scale: {
+      min: -40, max: 100, unit: '°C',
+      markers: [
+        { value: 0, label: 'freezing' },
+        { value: 20, label: 'room temp' },
+        { value: 37, label: 'body' },
+        { value: 100, label: 'boiling' },
+      ],
+    },
+    commonValues: [-10, 0, 20, 37, 100],
+  },
+
+  'length|centimeter|inch': {
+    formula: 'in = cm ÷ 2.54',
+    formulaNote: 'Divide centimeters by 2.54 to get inches.',
+    getContext: (value) => {
+      let ref
+      if (value <= 2.54) ref = 'about 1 inch — the width of a thumb'
+      else if (value <= 15) ref = 'shorter than a standard ruler (30 cm)'
+      else if (value <= 30) ref = 'about one foot (30.48 cm)'
+      else if (value <= 100) ref = 'a small table dimension'
+      else ref = 'a room-scale measurement'
+      return `${value} cm is ${ref}.`
+    },
+    faqs: (value, result) => [
+      { q: `How many inches is ${value} cm?`, a: `${value} ÷ 2.54 = ${result.toLocaleString('en-US', { maximumFractionDigits: 2 })} inches.` },
+    ],
+    getRelated: (value) => {
+      const step = value < 30 ? 2 : value < 100 ? 10 : 25
+      return [
+        Math.max(1, value - step * 2),
+        Math.max(1, value - step),
+        value + step,
+        value + step * 2,
+        value + step * 5,
+      ]
+    },
+    scale: {
+      min: 0, max: 200, unit: 'cm',
+      markers: [
+        { value: 30, label: '1 foot' },
+        { value: 91, label: '1 yard' },
+        { value: 170, label: 'avg. height' },
+      ],
+    },
+    commonValues: [10, 30, 60, 100, 170],
+  },
+
+  'length|foot|meter': {
+    formula: 'm = ft × 0.3048',
+    formulaNote: 'Multiply feet by 0.3048 to get meters.',
+    getContext: (value) => {
+      let ref
+      if (value <= 1) ref = 'about one large step'
+      else if (value <= 6) ref = 'about the height of an average adult'
+      else if (value <= 30) ref = 'a small building height'
+      else ref = 'a multi-story building'
+      return `${value} feet is roughly ${ref}.`
+    },
+    faqs: (value, result) => [
+      { q: `How many meters is ${value} feet?`, a: `${value} × 0.3048 = ${result.toLocaleString('en-US', { maximumFractionDigits: 3 })} meters.` },
+    ],
+    getRelated: (value) => {
+      const step = value < 10 ? 1 : 5
+      return [
+        Math.max(1, value - step * 2),
+        Math.max(1, value - step),
+        value + step,
+        value + step * 2,
+        value + step * 5,
+      ]
+    },
+    scale: {
+      min: 0, max: 100, unit: 'ft',
+      markers: [
+        { value: 6, label: 'adult' },
+        { value: 30, label: '3-story' },
+        { value: 60, label: '6-story' },
+      ],
+    },
+    commonValues: [5, 6, 10, 30, 100],
+  },
+
+  'length|mile|kilometer': {
+    formula: 'km = mi × 1.60934',
+    formulaNote: 'Multiply miles by 1.60934 to get kilometers.',
+    getContext: (value) => {
+      let ref
+      if (value < 1) ref = 'a short walk'
+      else if (value < 3) ref = 'a morning jog'
+      else if (value < 10) ref = 'a brisk bike ride'
+      else if (value < 50) ref = 'a short road trip'
+      else ref = 'a long drive'
+      return `${value.toLocaleString('en-US')} miles is about ${ref}.`
+    },
+    faqs: (value, result) => [
+      { q: `How many km is ${value.toLocaleString('en-US')} miles?`, a: `${value.toLocaleString('en-US')} × 1.60934 = ${result.toLocaleString('en-US', { maximumFractionDigits: 2 })} km.` },
+    ],
+    getRelated: (value) => {
+      const step = value < 10 ? 1 : value < 100 ? 10 : 100
+      return [
+        Math.max(1, value - step * 2),
+        Math.max(1, value - step),
+        value + step,
+        value + step * 2,
+        value + step * 5,
+      ]
+    },
+    scale: {
+      min: 0, max: 500, unit: 'mi',
+      markers: [
+        { value: 3.1, label: '5K' },
+        { value: 26.2, label: 'marathon' },
+        { value: 100, label: 'road trip' },
+      ],
+    },
+    commonValues: [1, 5, 26, 100, 500],
+  },
+
+  'area|hectare|square_kilometer': {
+    formula: 'sq km = ha ÷ 100',
+    formulaNote: 'Divide hectares by 100 to get square kilometers.',
+    getContext: (value) => {
+      let ref
+      if (value < 1) ref = 'smaller than a standard soccer pitch'
+      else if (value < 5) ref = 'about the size of a city block'
+      else if (value < 50) ref = 'a large park or golf course'
+      else if (value < 500) ref = 'a small town\'s land area'
+      else ref = 'a large agricultural region'
+      return `${value.toLocaleString('en-US')} hectares is about ${ref}.`
+    },
+    faqs: (value, result) => [
+      { q: `How many square kilometers is ${value.toLocaleString('en-US')} hectares?`, a: `${value.toLocaleString('en-US')} ÷ 100 = ${result.toLocaleString('en-US', { maximumFractionDigits: 3 })} km².` },
+      { q: `How many acres is ${value.toLocaleString('en-US')} hectares?`, a: `${value.toLocaleString('en-US')} × 2.471 = ${(value * 2.471).toLocaleString('en-US', { maximumFractionDigits: 1 })} acres.` },
+    ],
+    getRelated: (value) => {
+      const step = value < 10 ? 1 : value < 100 ? 10 : 100
+      return [
+        Math.max(1, value - step * 2),
+        Math.max(1, value - step),
+        value + step,
+        value + step * 2,
+        value + step * 5,
+      ]
+    },
+    scale: {
+      min: 0, max: 1000, unit: 'ha',
+      markers: [
+        { value: 1, label: 'city block' },
+        { value: 50, label: 'golf course' },
+        { value: 500, label: 'small town' },
+      ],
+    },
+    commonValues: [1, 5, 10, 100, 500],
+  },
+}
