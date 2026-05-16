@@ -757,9 +757,8 @@ export const VALUE_ENRICHMENT = {
       ]
     },
     scale: {
-      min: 0, max: 8000, unit: 'lb',
+      min: 0, max: 5000, unit: 'lb',
       markers: [
-        { value: 10, label: 'groceries' },
         { value: 150, label: 'adult' },
         { value: 1500, label: 'horse' },
         { value: 3500, label: 'car' },
@@ -797,9 +796,8 @@ export const VALUE_ENRICHMENT = {
       ]
     },
     scale: {
-      min: 0, max: 3000, unit: 'kg',
+      min: 0, max: 2000, unit: 'kg',
       markers: [
-        { value: 5, label: 'sugar' },
         { value: 70, label: 'adult' },
         { value: 600, label: 'horse' },
         { value: 1500, label: 'car' },
@@ -876,7 +874,6 @@ export const VALUE_ENRICHMENT = {
     scale: {
       min: 0, max: 1000, unit: 'km',
       markers: [
-        { value: 5, label: '5K run' },
         { value: 42, label: 'marathon' },
         { value: 400, label: 'city-to-city' },
       ],
@@ -1051,7 +1048,6 @@ export const VALUE_ENRICHMENT = {
     scale: {
       min: 0, max: 500, unit: 'mi',
       markers: [
-        { value: 3.1, label: '5K' },
         { value: 26.2, label: 'marathon' },
         { value: 100, label: 'road trip' },
       ],
@@ -1088,7 +1084,6 @@ export const VALUE_ENRICHMENT = {
     scale: {
       min: 0, max: 1000, unit: 'ha',
       markers: [
-        { value: 1, label: 'city block' },
         { value: 50, label: 'golf course' },
         { value: 500, label: 'small town' },
       ],
