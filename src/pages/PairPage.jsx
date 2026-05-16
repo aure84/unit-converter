@@ -9,6 +9,7 @@ import { units, getUnit } from '../data/units.js'
 import { generatePairContent, PAIR_META, VALUE_ENRICHMENT } from '../data/pairContent.js'
 import { convert } from '../utils/convert.js'
 import { fmtNum } from '../utils/format.js'
+import InteractiveScale from '../components/InteractiveScale.jsx'
 
 const SITE_URL = 'https://convert-fast.com'
 
@@ -278,6 +279,16 @@ function PairPage() {
         fromUnit={from}
         toUnit={to}
       />
+      {!isValuePage && (
+        <InteractiveScale
+          category={category}
+          fromUnit={from}
+          toUnit={to}
+          fromSymbol={fromObj?.symbol ?? from}
+          toSymbol={toObj?.symbol ?? to}
+          fromLabel={fromLabel}
+        />
+      )}
       {valueFaq.length > 0 && !hasEnrichment && (
         <section className="cat-content">
           <div className="cat-content__faq">
