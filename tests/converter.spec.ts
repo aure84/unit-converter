@@ -248,3 +248,31 @@ test('internal linking: common values block on generic pair page', async ({ page
   const links = page.locator('a[href*="pound-to-kilogram"]')
   expect(await links.count()).toBeGreaterThan(1)
 })
+
+test('interactive scale renders on weight pair page', async ({ page }) => {
+  await page.goto(`${BASE}/weight/pound-to-kilogram`)
+  await expect(page.getByRole('heading', { name: /explore pound/i })).toBeVisible()
+  const buttons = page.locator('.interactive-scale__obj')
+  expect(await buttons.count()).toBeGreaterThan(4)
+  await expect(page.locator('.interactive-scale__conversion')).toContainText('=')
+})
+
+test('interactive scale updates conversion when grid button clicked', async ({ page }) => {
+  await page.goto(`${BASE}/weight/pound-to-kilogram`)
+  await page.locator('.interactive-scale__slider').waitFor()
+  const initialText = await page.locator('.interactive-scale__conversion').textContent()
+  // Click the first grid button (index 0 — feather), which differs from the midpoint default
+  await page.locator('.interactive-scale__obj').first().click()
+  const updatedText = await page.locator('.interactive-scale__conversion').textContent()
+  expect(updatedText).not.toBe(initialText)
+})
+
+test('interactive scale not rendered on value-specific page', async ({ page }) => {
+  await page.goto(`${BASE}/weight/3300-pound-to-kilogram`)
+  await expect(page.locator('.interactive-scale')).not.toBeVisible()
+})
+
+test('interactive scale not rendered for unsupported pair', async ({ page }) => {
+  await page.goto(`${BASE}/torque/newton_meter-to-foot_pound`)
+  await expect(page.locator('.interactive-scale')).not.toBeVisible()
+})
