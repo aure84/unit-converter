@@ -8,6 +8,7 @@ const TAG_CLASS = {
   'How-To Guide':    'blog-tag--how-to',
   'Quick Reference': 'blog-tag--quick-ref',
   'Conversion Fail': 'blog-tag--fail',
+  'Context':         'blog-tag--context',
 }
 
 const TODAY = new Date().toISOString().slice(0, 10)
