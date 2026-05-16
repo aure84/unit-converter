@@ -23,7 +23,7 @@ function StepDiagram({ steps, label }) {
           const y = 10 + i * rowH
           const isLast = i === steps.length - 1
           return (
-            <g key={i}>
+            <g key={step.title ?? i}>
               {!isLast && (
                 <line
                   x1="22" y1={y + 42} x2="22" y2={y + rowH}
