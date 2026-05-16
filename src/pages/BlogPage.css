@@ -284,10 +284,11 @@
 }
 
 .blog-tag--context {
-  background: rgba(22, 163, 74, 0.12);
-  color: var(--currency);
-  border: 1px solid rgba(22, 163, 74, 0.3);
+  background: #fef3c7;
+  color: #92400e;
 }
+
+[data-theme="dark"] .blog-tag--context { background: #451a03; color: #fcd34d; }
 
 .blog-post__faq {
   margin-top: 2rem;
