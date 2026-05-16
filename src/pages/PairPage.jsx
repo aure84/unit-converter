@@ -6,7 +6,7 @@ import RelatedConverters from '../components/RelatedConverters.jsx'
 import SEOMeta from '../components/SEOMeta.jsx'
 import ValueResult from '../components/ValueResult.jsx'
 import { units, getUnit } from '../data/units.js'
-import { generatePairContent, PAIR_META } from '../data/pairContent.js'
+import { generatePairContent, PAIR_META, VALUE_ENRICHMENT } from '../data/pairContent.js'
 import { convert } from '../utils/convert.js'
 
 const SITE_URL = 'https://convert-fast.com'
@@ -255,6 +255,12 @@ function PairPage() {
           result={valueResult}
           fromSymbol={fromObj.symbol}
           toSymbol={toObj.symbol}
+          fromLabel={fromLabel}
+          toLabel={toLabel}
+          category={category}
+          from={from}
+          to={to}
+          segment={segment}
         />
       ) : (
         <h1>{h1}</h1>
