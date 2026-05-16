@@ -269,10 +269,10 @@ test('interactive scale updates conversion when grid button clicked', async ({ p
 
 test('interactive scale not rendered on value-specific page', async ({ page }) => {
   await page.goto(`${BASE}/weight/3300-pound-to-kilogram`)
-  await expect(page.locator('.interactive-scale')).not.toBeVisible()
+  await expect(page.locator('.interactive-scale')).not.toBeAttached()
 })
 
 test('interactive scale not rendered for unsupported pair', async ({ page }) => {
   await page.goto(`${BASE}/torque/newton_meter-to-foot_pound`)
-  await expect(page.locator('.interactive-scale')).not.toBeVisible()
+  await expect(page.locator('.interactive-scale')).not.toBeAttached()
 })

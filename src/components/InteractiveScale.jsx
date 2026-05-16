@@ -44,7 +44,6 @@ function InteractiveScale({ category, fromUnit, toUnit, fromSymbol, toSymbol, fr
         className="interactive-scale__slider"
         style={{ '--fill': fillPct }}
         aria-label={`Select ${fromLabel} reference object`}
-        aria-valuetext={`${obj.label}: ${fmtNum(obj.value)} ${fromSymbol}`}
       />
 
       <div className="interactive-scale__grid" role="group" aria-label={`${fromLabel} reference objects`}>
