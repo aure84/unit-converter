@@ -2687,7 +2687,6 @@ export const blogPosts = [
             value: 36.26,
             unit: 'PSI',
             markers: [
-              { value: 30, label: 'car min' },
               { value: 36.26, label: '2.5 bar' },
               { value: 80, label: 'road bike' },
               { value: 145, label: '10 bar' },
@@ -3779,9 +3778,9 @@ export const blogPosts = [
             value: 3700,
             unit: 'km',
             markers: [
-              { value: 3700, label: 'Columbus\'s estimate' },
-              { value: 7300, label: 'Width of Americas' },
-              { value: 19600, label: 'Actual Asia distance' },
+              { value: 3700, label: 'Columbus' },
+              { value: 7300, label: 'Americas' },
+              { value: 19600, label: 'actual' },
             ],
           },
         },
@@ -3979,16 +3978,15 @@ export const blogPosts = [
         visual: {
           type: 'ScaleDiagram',
           props: {
-            label: 'Medication dose scale',
+            label: 'Digoxin dose vs overdose (mcg)',
             min: 0,
-            max: 10000,
+            max: 3000,
             value: 250,
             unit: 'mcg',
             markers: [
-              { value: 1, label: '1 mcg' },
-              { value: 250, label: 'digoxin dose' },
+              { value: 250, label: 'safe dose' },
               { value: 1000, label: '= 1 mg' },
-              { value: 10000, label: '= 10 mg' },
+              { value: 2500, label: 'x10 error' },
             ],
           },
         },
