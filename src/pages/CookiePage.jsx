@@ -1,7 +1,7 @@
 import SEOMeta from '../components/SEOMeta.jsx'
 
 const SITE_URL = 'https://convert-fast.com'
-const CONTACT  = 'contact@convert-fast.com'
+const CONTACT  = 'aure84@gmail.com'
 
 function CookiePage() {
   return (
@@ -13,7 +13,7 @@ function CookiePage() {
       />
 
       <h1>Cookie Policy</h1>
-      <p className="legal-page__meta">Last updated: May 10, 2026</p>
+      <p className="legal-page__meta">Last updated: 2026-05-24</p>
 
       <section>
         <h2>1. What are cookies?</h2>
@@ -35,10 +35,43 @@ function CookiePage() {
       </section>
 
       <section>
-        <h2>3. Analytics cookies — Google Analytics 4</h2>
+        <h2>3. Essential cookies</h2>
+        <p>
+          We store two items in your browser's local storage that are necessary for the site to
+          work correctly. These do not require consent and are not cookies in the traditional
+          sense — they never leave your device.
+        </p>
+        <div className="legal-page__table-wrap">
+          <table className="legal-page__table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Purpose</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>cf-theme</code></td>
+                <td>Stores your light/dark mode preference (localStorage, not a cookie).</td>
+                <td>Persistent</td>
+              </tr>
+              <tr>
+                <td><code>cookieConsent</code></td>
+                <td>Stores whether you have accepted or rejected analytics and advertising cookies (localStorage).</td>
+                <td>Persistent</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. Analytics cookies — Google Analytics 4</h2>
         <p>
           We use Google Analytics 4 (measurement ID: <code>G-NGFSH2W20K</code>) to understand
-          how visitors use the site. Google Analytics sets the following cookies:
+          how visitors use the site. These cookies are only set after you give consent. Google
+          Analytics sets the following cookies:
         </p>
         <div className="legal-page__table-wrap">
           <table className="legal-page__table">
@@ -84,12 +117,13 @@ function CookiePage() {
       </section>
 
       <section>
-        <h2>4. Advertising cookies — Google AdSense / DoubleClick</h2>
+        <h2>5. Advertising cookies — Google AdSense / DoubleClick</h2>
         <p>
           We display ads through Google AdSense (publisher ID: <code>ca-pub-6164838820338976</code>).
-          Google and its advertising partners use cookies to serve ads that may be relevant to
-          your interests based on your browsing history. These cookies are set by Google's
-          advertising infrastructure, including DoubleClick/Google Ad Manager domains.
+          These cookies are only set after you give consent. Google and its advertising partners
+          use cookies to serve ads that may be relevant to your interests based on your browsing
+          history. These cookies are set by Google's advertising infrastructure, including
+          DoubleClick/Google Ad Manager domains.
         </p>
         <div className="legal-page__table-wrap">
           <table className="legal-page__table">
@@ -139,39 +173,11 @@ function CookiePage() {
             rel="noopener noreferrer"
           >
             Google's advertising cookie list
+          </a>. For Google's general privacy practices, see{' '}
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+            policies.google.com/privacy
           </a>.
         </p>
-      </section>
-
-      <section>
-        <h2>5. Functional storage</h2>
-        <p>
-          We store your theme preference (light or dark mode) in your browser's local storage.
-          This is a functional setting that does not track or identify you.
-        </p>
-        <div className="legal-page__table-wrap">
-          <table className="legal-page__table">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Purpose</th>
-                <th>Duration</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>cf-theme</code></td>
-                <td>Stores your light/dark mode preference (localStorage, not a cookie).</td>
-                <td>Persistent</td>
-              </tr>
-              <tr>
-                <td><code>cookieConsent</code></td>
-                <td>Stores whether you have accepted or rejected analytics and advertising cookies (localStorage).</td>
-                <td>Persistent</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </section>
 
       <section>
@@ -180,7 +186,8 @@ function CookiePage() {
           If you are visiting from the European Union, European Economic Area, or another
           jurisdiction that requires consent for non-essential cookies, a consent banner is
           displayed on your first visit. Analytics and advertising cookies are only activated
-          after you accept.
+          after you explicitly accept. If you decline, only essential local storage entries
+          (listed in Section 3) are used.
         </p>
         <p>
           To withdraw or change your consent,{' '}
@@ -191,7 +198,7 @@ function CookiePage() {
             reset your cookie preferences
           </button>{' '}
           (this will clear your saved choice and show the consent banner again), or use the
-          opt-out tools listed in section 7 below.
+          opt-out tools listed in Section 7 below.
         </p>
       </section>
 

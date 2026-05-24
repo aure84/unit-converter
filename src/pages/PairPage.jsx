@@ -30,6 +30,10 @@ const PATH_TO_REGISTRY = {
   power:           'power',
   'fuel-economy':  'fuel_economy',
   cooking:         'cooking',
+  angle:           'angle',
+  frequency:       'frequency',
+  'shoe-size':     'shoe_size',
+  torque:          'torque',
 }
 
 /**

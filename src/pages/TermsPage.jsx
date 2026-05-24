@@ -1,7 +1,7 @@
 import SEOMeta from '../components/SEOMeta.jsx'
 
 const SITE_URL = 'https://convert-fast.com'
-const CONTACT  = 'contact@convert-fast.com'
+const CONTACT  = 'aure84@gmail.com'
 
 function TermsPage() {
   return (
@@ -13,7 +13,7 @@ function TermsPage() {
       />
 
       <h1>Terms of Service</h1>
-      <p className="legal-page__meta">Last updated: April 14, 2026</p>
+      <p className="legal-page__meta">Last updated: 2026-05-24</p>
 
       <section>
         <h2>1. Acceptance of terms</h2>
@@ -44,9 +44,9 @@ function TermsPage() {
           merchantability, fitness for a particular purpose, or non-infringement.
         </p>
         <p>
-          Conversion results should not be relied upon for safety-critical, medical, legal,
-          financial, or engineering applications without independent verification. Always
-          cross-check results when precision matters.
+          Conversion results are for informational purposes only. They should not be relied upon
+          for safety-critical, medical, legal, financial, or engineering applications without
+          independent verification. Always cross-check results when precision matters.
         </p>
       </section>
 

@@ -1,7 +1,7 @@
 import SEOMeta from '../components/SEOMeta.jsx'
 
 const SITE_URL = 'https://convert-fast.com'
-const CONTACT  = 'contact@convert-fast.com'
+const CONTACT  = 'aure84@gmail.com'
 
 function PrivacyPage() {
   return (
@@ -13,7 +13,7 @@ function PrivacyPage() {
       />
 
       <h1>Privacy Policy</h1>
-      <p className="legal-page__meta">Last updated: May 10, 2026</p>
+      <p className="legal-page__meta">Last updated: 2026-05-24</p>
 
       <section>
         <h2>1. Who we are</h2>
@@ -22,6 +22,10 @@ function PrivacyPage() {
           operated by <strong>Stromájer László</strong>, an individual based in Hungary. If you
           have any questions about this policy, please contact us at{' '}
           <a href={`mailto:${CONTACT}`}>{CONTACT}</a>.
+        </p>
+        <p>
+          For the purposes of the EU General Data Protection Regulation (GDPR), Stromájer László
+          is the data controller for personal data collected through this site.
         </p>
       </section>
 
@@ -98,10 +102,46 @@ function PrivacyPage() {
           Our consent mechanism uses Google Consent Mode v2, which defaults all signals to
           denied until you make an explicit choice.
         </p>
+        <p>
+          For more information about how Google uses data from advertising services, see{' '}
+          <a
+            href="https://policies.google.com/technologies/ads"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            How Google uses information from sites or apps that use our services
+          </a>.
+        </p>
       </section>
 
       <section>
-        <h2>5. Legal basis for processing (GDPR)</h2>
+        <h2>5. Cookie types</h2>
+        <p>
+          We use the following categories of cookies on this site:
+        </p>
+        <ul>
+          <li>
+            <strong>Essential / functional</strong> — localStorage entries that store your
+            theme preference and your cookie consent choice. These are necessary for the site
+            to function correctly and do not require consent.
+          </li>
+          <li>
+            <strong>Analytics cookies</strong> — set by Google Analytics 4 to collect aggregate
+            usage statistics. These are only activated after you give consent. See Section 3.
+          </li>
+          <li>
+            <strong>Advertising cookies</strong> — set by Google AdSense and DoubleClick to
+            serve personalised ads. These are only activated after you give consent. See Section 4.
+          </li>
+        </ul>
+        <p>
+          For the full cookie list including names and durations, see our{' '}
+          <a href="/cookies">Cookie Policy</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Legal basis for processing (GDPR)</h2>
         <p>
           If you are located in the European Economic Area, our legal basis for collecting and
           using the data described above is as follows:
@@ -119,7 +159,7 @@ function PrivacyPage() {
       </section>
 
       <section>
-        <h2>6. Your rights under GDPR</h2>
+        <h2>7. Your rights under GDPR</h2>
         <p>
           If you are based in the EU/EEA, you have the following rights regarding your personal
           data:
@@ -131,7 +171,7 @@ function PrivacyPage() {
           <li><strong>Right to restrict processing</strong> — you can ask us to limit how we use your data.</li>
           <li><strong>Right to data portability</strong> — you can ask for your data in a structured, machine-readable format.</li>
           <li><strong>Right to object</strong> — you can object to processing based on our legitimate interests.</li>
-          <li><strong>Right to withdraw consent</strong> — where processing is based on consent, you can withdraw it at any time without affecting the lawfulness of processing before withdrawal.</li>
+          <li><strong>Right to withdraw consent</strong> — where processing is based on consent, you can withdraw it at any time without affecting the lawfulness of processing before withdrawal. To withdraw consent, visit our <a href="/cookies">Cookie Policy</a> page and reset your cookie preferences.</li>
         </ul>
         <p>
           To exercise any of these rights, please contact us at{' '}
@@ -140,16 +180,20 @@ function PrivacyPage() {
       </section>
 
       <section>
-        <h2>7. Data retention</h2>
+        <h2>8. Data retention</h2>
         <p>
           We do not store personal data on our own servers. Google Analytics data is retained for
-          14 months by default, after which it is automatically deleted. You can request earlier
-          deletion by contacting us.
+          14 months by default, after which it is automatically deleted by Google. AdSense-related
+          data is retained according to Google's own retention schedules, which you can review at{' '}
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+            policies.google.com/privacy
+          </a>. You can request earlier deletion of any data associated with your use by
+          contacting us.
         </p>
       </section>
 
       <section>
-        <h2>8. International data transfers</h2>
+        <h2>9. International data transfers</h2>
         <p>
           Google may transfer and process your data in the United States and other countries.
           These transfers are covered by Google's Standard Contractual Clauses approved by the
@@ -158,7 +202,7 @@ function PrivacyPage() {
       </section>
 
       <section>
-        <h2>9. We do not sell your data</h2>
+        <h2>10. We do not sell your data</h2>
         <p>
           We do not sell, rent, or trade your personal data to any third party for their own
           marketing purposes.
@@ -166,7 +210,7 @@ function PrivacyPage() {
       </section>
 
       <section>
-        <h2>10. Children's privacy</h2>
+        <h2>11. Children's privacy</h2>
         <p>
           This site is not directed at children under 13 years of age. We do not knowingly collect
           personal data from children. If you believe a child has provided us personal information,
@@ -175,7 +219,7 @@ function PrivacyPage() {
       </section>
 
       <section>
-        <h2>11. Changes to this policy</h2>
+        <h2>12. Changes to this policy</h2>
         <p>
           We may update this policy from time to time. The "last updated" date at the top of this
           page will reflect any changes. Continued use of the site after changes are posted
@@ -184,7 +228,7 @@ function PrivacyPage() {
       </section>
 
       <section>
-        <h2>12. Contact</h2>
+        <h2>13. Contact</h2>
         <p>
           For any privacy-related questions or requests, please email us at{' '}
           <a href={`mailto:${CONTACT}`}>{CONTACT}</a>.
