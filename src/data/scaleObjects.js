@@ -135,4 +135,93 @@ export const SCALE_OBJECTS = {
     { value: 400,   emoji: '🛫', label: 'propeller plane' },
     { value: 575,   emoji: '✈️', label: 'jet airliner' },
   ],
+
+  'volume|liter': [
+    { value: 0.025, emoji: '💊', label: 'shot glass' },
+    { value: 0.25,  emoji: '🥤', label: 'cup' },
+    { value: 0.33,  emoji: '🍺', label: 'beer can' },
+    { value: 0.5,   emoji: '🍾', label: 'wine bottle' },
+    { value: 1,     emoji: '🧴', label: 'water bottle' },
+    { value: 2,     emoji: '🥛', label: 'milk jug' },
+    { value: 10,    emoji: '🪣', label: 'bucket' },
+    { value: 70,    emoji: '🛁', label: 'bathtub' },
+    { value: 1000,  emoji: '🏊', label: 'small pool' },
+  ],
+
+  'volume|milliliter': [
+    { value: 1,     emoji: '💧', label: 'drop' },
+    { value: 5,     emoji: '🥄', label: 'teaspoon' },
+    { value: 15,    emoji: '🥄', label: 'tablespoon' },
+    { value: 30,    emoji: '💊', label: 'shot glass' },
+    { value: 240,   emoji: '🥤', label: 'cup' },
+    { value: 330,   emoji: '🍺', label: 'beer can' },
+    { value: 500,   emoji: '🧴', label: 'water bottle' },
+    { value: 1000,  emoji: '🥛', label: 'milk jug' },
+  ],
+
+  'time|second': [
+    { value: 0.3,   emoji: '👁️', label: 'eye blink' },
+    { value: 1,     emoji: '⏱️', label: 'one second' },
+    { value: 10,    emoji: '🏃', label: '100m sprint' },
+    { value: 60,    emoji: '⏰', label: 'one minute' },
+    { value: 600,   emoji: '☕', label: 'coffee break' },
+    { value: 3600,  emoji: '🕐', label: 'one hour' },
+    { value: 28800, emoji: '💼', label: 'work day' },
+    { value: 86400, emoji: '📅', label: 'one day' },
+  ],
+
+  'time|minute': [
+    { value: 1,     emoji: '⏱️', label: 'one minute' },
+    { value: 5,     emoji: '☕', label: 'quick coffee' },
+    { value: 20,    emoji: '🏃', label: 'jog' },
+    { value: 60,    emoji: '🕐', label: 'one hour' },
+    { value: 90,    emoji: '⚽', label: 'football match' },
+    { value: 480,   emoji: '💼', label: 'work day' },
+    { value: 1440,  emoji: '📅', label: 'one day' },
+    { value: 10080, emoji: '📆', label: 'one week' },
+  ],
+
+  'time|hour': [
+    { value: 0.5,   emoji: '🍿', label: 'short film' },
+    { value: 1,     emoji: '🕐', label: 'one hour' },
+    { value: 2,     emoji: '🎬', label: 'movie' },
+    { value: 8,     emoji: '💼', label: 'work day' },
+    { value: 24,    emoji: '📅', label: 'one day' },
+    { value: 168,   emoji: '📆', label: 'one week' },
+    { value: 720,   emoji: '🗓️', label: 'one month' },
+    { value: 8760,  emoji: '🎂', label: 'one year' },
+  ],
+
+  'data_storage|megabyte': [
+    { value: 0.001, emoji: '📝', label: 'text file' },
+    { value: 0.1,   emoji: '🖼️', label: 'photo thumbnail' },
+    { value: 3,     emoji: '🎵', label: 'MP3 song' },
+    { value: 10,    emoji: '📸', label: 'DSLR photo' },
+    { value: 100,   emoji: '📱', label: 'app install' },
+    { value: 700,   emoji: '💿', label: 'CD' },
+    { value: 4700,  emoji: '📀', label: 'DVD' },
+    { value: 45000, emoji: '🎬', label: '4K movie' },
+  ],
+
+  'data_storage|gigabyte': [
+    { value: 0.003, emoji: '🎵', label: 'MP3 song' },
+    { value: 0.01,  emoji: '📸', label: 'DSLR photo' },
+    { value: 0.7,   emoji: '💿', label: 'CD' },
+    { value: 4.7,   emoji: '📀', label: 'DVD' },
+    { value: 15,    emoji: '🎮', label: 'video game' },
+    { value: 50,    emoji: '🎬', label: '4K movie' },
+    { value: 256,   emoji: '📱', label: 'smartphone storage' },
+    { value: 1000,  emoji: '💾', label: '1 TB drive' },
+  ],
+
+  'energy|kilocalorie': [
+    { value: 5,    emoji: '🫐', label: 'blueberries (handful)' },
+    { value: 52,   emoji: '🍎', label: 'apple' },
+    { value: 89,   emoji: '🍌', label: 'banana' },
+    { value: 240,  emoji: '🍕', label: 'pizza slice' },
+    { value: 300,  emoji: '🏃', label: '30-min run burn' },
+    { value: 500,  emoji: '🍔', label: 'cheeseburger' },
+    { value: 800,  emoji: '🍝', label: 'pasta meal' },
+    { value: 2000, emoji: '📊', label: 'daily intake' },
+  ],
 }
