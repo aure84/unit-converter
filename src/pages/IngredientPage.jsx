@@ -225,6 +225,37 @@ const INGREDIENT_DATA = {
     ],
     internalLinks: [],
   },
+  water: {
+    title: 'Water mL to Grams Converter',
+    metaTitle: 'Water mL to Grams Converter — 1 mL = 1 g | Convert Fast',
+    metaDesc: 'Convert milliliters of water to grams instantly. 1 mL of water = 1 gram exactly. Free reference table for any volume.',
+    slug: 'water-ml-to-grams',
+    tableRows: [5, 10, 25, 50, 100, 150, 200, 250, 500, 1000],
+    content: (
+      <>
+        <p>
+          Water has a density of exactly <strong>1 gram per milliliter</strong> at 4°C — meaning 1 mL of water weighs 1 gram. This makes water the simplest liquid to convert between volume and weight: the numbers are always identical.
+        </p>
+        <p>
+          At room temperature (20°C), water's density is approximately 0.998 g/mL — still effectively 1:1 for all practical purposes. For cooking, chemistry, and everyday use, 1 mL of water always equals 1 gram.
+        </p>
+        <p>
+          This 1:1 relationship is specific to water. Other liquids have different densities: 1 mL of honey weighs about 1.4 g, 1 mL of vegetable oil weighs about 0.92 g, and 1 mL of milk weighs approximately 1.03 g.
+        </p>
+      </>
+    ),
+    faq: [
+      { q: 'Is 1 mL of water exactly 1 gram?', a: 'Yes — at 4°C, water has a density of exactly 1 g/mL. At room temperature (20°C), it is 0.998 g/mL, which rounds to 1 g for all practical purposes.' },
+      { q: 'How many grams is 100 mL of water?', a: '100 mL of water weighs 100 grams.' },
+      { q: 'How many grams is 250 mL of water?', a: '250 mL of water weighs 250 grams. One US cup is 236 mL, so 1 cup of water ≈ 236 grams.' },
+      { q: 'Does boiling water weigh the same as cold water?', a: 'Nearly — at 100°C, water\'s density drops to 0.958 g/mL, so 1 mL weighs 0.958 g. For cooking, this difference is negligible.' },
+      { q: 'Does this work for other liquids?', a: 'Only for water. Other liquids have different densities: milk ≈ 1.03 g/mL, vegetable oil ≈ 0.92 g/mL, honey ≈ 1.4 g/mL.' },
+    ],
+    internalLinks: [
+      { to: '/cooking', label: 'Cooking Unit Converter' },
+      { to: '/cooking/honey-grams-to-cups', label: 'Honey Grams to Cups' },
+    ],
+  },
 }
 
 function IngredientPage({ ingredient }) {
@@ -234,7 +265,7 @@ function IngredientPage({ ingredient }) {
   const data = INGREDIENT_DATA[ingredient]
   if (!data) return null
 
-  const density = INGREDIENT_DENSITIES[ingredient]
+  const isWater = ingredient === 'water'
   const canonical = `${SITE_URL}/cooking/${data.slug}`
 
   return (
@@ -247,7 +278,7 @@ function IngredientPage({ ingredient }) {
 
       <h1>{data.title}</h1>
 
-      <IngredientConverter ingredient={ingredient} initialGrams={initialGrams} />
+      {!isWater && <IngredientConverter ingredient={ingredient} initialGrams={initialGrams} />}
 
       {/* Quick reference table */}
       <section className="ingredient-page__table-section">
@@ -255,19 +286,27 @@ function IngredientPage({ ingredient }) {
         <table className="ingredient-page__table">
           <thead>
             <tr>
-              <th>Grams</th>
-              <th>Cups (US)</th>
+              <th>{isWater ? 'Milliliters (mL)' : 'Grams'}</th>
+              <th>{isWater ? 'Grams' : 'Cups (US)'}</th>
             </tr>
           </thead>
           <tbody>
-            {data.tableRows.map((g) => {
-              const cups = gramsToIngredientCups(g, ingredient)
+            {data.tableRows.map((v) => {
+              if (isWater) {
+                return (
+                  <tr key={v}>
+                    <td>{v} mL</td>
+                    <td>{v} g</td>
+                  </tr>
+                )
+              }
+              const cups = gramsToIngredientCups(v, ingredient)
               const formatted = cups < 1
                 ? `${parseFloat(cups.toFixed(3))}`
                 : `${parseFloat(cups.toFixed(2))}`
               return (
-                <tr key={g}>
-                  <td>{g} g</td>
+                <tr key={v}>
+                  <td>{v} g</td>
                   <td>{formatted} cups</td>
                 </tr>
               )

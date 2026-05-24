@@ -185,6 +185,7 @@ sections.push([
   `  <url><loc>${BASE}/cooking/cocoa-powder-grams-to-cups</loc><lastmod>${TODAY}</lastmod><priority>0.7</priority></url>`,
   `  <url><loc>${BASE}/cooking/powdered-sugar-grams-to-cups</loc><lastmod>${TODAY}</lastmod><priority>0.7</priority></url>`,
   `  <url><loc>${BASE}/cooking/honey-grams-to-cups</loc><lastmod>${TODAY}</lastmod><priority>0.7</priority></url>`,
+  `  <url><loc>${BASE}/cooking/water-ml-to-grams</loc><lastmod>${TODAY}</lastmod><priority>0.8</priority></url>`,
   // Pairs
   pairs('cooking', cookingUnits),
 ].join('\n'));

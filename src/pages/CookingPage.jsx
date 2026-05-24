@@ -15,6 +15,7 @@ const INGREDIENT_LINKS = [
   { to: '/cooking/brown-sugar-grams-to-cups',   label: 'Brown Sugar',    icon: '🟫' },
   { to: '/cooking/almond-flour-grams-to-cups',  label: 'Almond Flour',   icon: '🫘' },
   { to: '/cooking/cocoa-powder-grams-to-cups',  label: 'Cocoa Powder',   icon: '🍫' },
+  { to: '/cooking/water-ml-to-grams',           label: 'Water',          icon: '💧', sub: 'mL ↔ g' },
 ]
 
 function CookingPage() {
@@ -45,11 +46,11 @@ function CookingPage() {
           Volume measurements vary by ingredient. Use these density-based converters for accurate grams ↔ cups conversions.
         </p>
         <div className="cooking-page__ingredient-grid">
-          {INGREDIENT_LINKS.map(({ to, label, icon }) => (
+          {INGREDIENT_LINKS.map(({ to, label, icon, sub }) => (
             <Link key={to} to={to} className="cooking-page__ingredient-card">
               <span className="cooking-page__ingredient-icon" aria-hidden="true">{icon}</span>
               <span className="cooking-page__ingredient-label">{label}</span>
-              <span className="cooking-page__ingredient-sub">g ↔ cups</span>
+              <span className="cooking-page__ingredient-sub">{sub ?? 'g ↔ cups'}</span>
             </Link>
           ))}
         </div>

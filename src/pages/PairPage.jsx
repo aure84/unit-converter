@@ -128,6 +128,20 @@ const VALUE_CONTEXT = {
       a: `${value}°F (${fmtNum(result)}°C) is ${desc}.`,
     }
   },
+  pressure: (value, result, fromUnit, toUnit) => {
+    if (fromUnit !== 'psi' || toUnit !== 'bar') return null
+    let ref
+    if (value <= 15)       ref = 'below or near atmospheric pressure (14.7 psi = 1 atm at sea level)'
+    else if (value <= 36)  ref = 'standard car or truck tire pressure (most vehicles: 30–36 psi)'
+    else if (value <= 80)  ref = 'city bicycle tire or typical residential water supply pressure'
+    else if (value <= 160) ref = 'road bicycle racing tire (80–130 psi is common for road bikes)'
+    else if (value <= 500) ref = 'industrial pneumatic systems or high-pressure air compressors'
+    else                   ref = 'heavy industrial, hydraulic, or high-pressure equipment'
+    return {
+      q: `What is ${fmtNum(value)} psi used for?`,
+      a: `${fmtNum(value)} psi (${fmtNum(result)} bar) falls in the range of ${ref}.`,
+    }
+  },
 }
 
 function generateValueFaq(value, result, fromLabel, toLabel, fromSymbol, toSymbol, from, to, category) {
