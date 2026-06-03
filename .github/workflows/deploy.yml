@@ -1,13 +1,14 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to Cloudflare
 
-# Builds the site WITH the Playwright prerender step (which Cloudflare Pages'
-# own build environment can't run — it has no chromium) and direct-uploads the
-# result to the Pages project. Runs only on push to main or when triggered by
-# hand, so it never fires from a feature branch.
+# Builds the site WITH the Playwright prerender step (which Cloudflare's own
+# build environment can't run — it has no chromium) and deploys the result.
+# This is a Workers + Static Assets project (wrangler.toml has an [assets]
+# block, deployed via `wrangler deploy`), not a classic Pages project.
+# Runs only on push to main or when triggered by hand.
 #
-# IMPORTANT: disable Cloudflare Pages' own automatic git build for this project
-# (CF dashboard → the project → Settings → Builds & deployments), otherwise CF
-# will also try to build on push to main and fail for lack of chromium.
+# IMPORTANT: disconnect this project's Git integration in the Cloudflare
+# dashboard (Workers & Pages → unit-converter → Settings → Build → Disconnect),
+# otherwise CF also auto-builds on push and fails for lack of chromium.
 
 on:
   push:
@@ -34,9 +35,9 @@ jobs:
       - name: Build + prerender
         run: npm run build
 
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare (Workers + Static Assets)
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=unit-converter --branch=main --commit-dirty=true
+          command: deploy
