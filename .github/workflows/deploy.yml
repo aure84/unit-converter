@@ -1,0 +1,42 @@
+name: Deploy to Cloudflare Pages
+
+# Builds the site WITH the Playwright prerender step (which Cloudflare Pages'
+# own build environment can't run — it has no chromium) and direct-uploads the
+# result to the Pages project. Runs only on push to main or when triggered by
+# hand, so it never fires from a feature branch.
+#
+# IMPORTANT: disable Cloudflare Pages' own automatic git build for this project
+# (CF dashboard → the project → Settings → Builds & deployments), otherwise CF
+# will also try to build on push to main and fail for lack of chromium.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Build + prerender
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=unit-converter --branch=main --commit-dirty=true
