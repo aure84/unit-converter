@@ -4,3 +4,7 @@ compatibility_date = "2026-04-14"
 [assets]
 directory = "./dist"
 not_found_handling = "single-page-application"
+# Serve canonical URLs without a trailing slash directly (200), matching the
+# sitemap + <link rel="canonical">. Default "auto-trailing-slash" 307-redirected
+# /foo -> /foo/, creating a redirect + canonical mismatch on every indexed URL.
+html_handling = "drop-trailing-slash"
