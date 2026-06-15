@@ -32,7 +32,7 @@ const SITE = 'https://convert-fast.com'
 
 // Real routes that aren't in the sitemap (legal / info pages). Prerender them too
 // so they ship real content instead of an empty CSR shell.
-const STATIC_EXTRA = ['/about', '/contact', '/privacy', '/terms', '/cookies']
+const STATIC_EXTRA = ['/about', '/contact', '/privacy', '/terms', '/cookies', '/disclaimer']
 
 // --- Collect routes from the built sitemap ---------------------------------
 function readRoutes() {
