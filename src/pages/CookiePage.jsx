@@ -1,7 +1,7 @@
 import SEOMeta from '../components/SEOMeta.jsx'
 
 const SITE_URL = 'https://convert-fast.com'
-const CONTACT  = 'aure84@gmail.com'
+const CONTACT  = 'privacy@convert-fast.com'
 
 function CookiePage() {
   return (

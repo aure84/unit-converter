@@ -3119,7 +3119,7 @@ export const blogPosts = [
     title: 'Inches to cm Chart — Clothes, Height, and Screens',
     tag: 'Quick Reference',
     date: '2026-05-23',
-    description: 'Multiply inches by 2.54 to get centimeters. Height chart from 5\'0\" to 6\'5\", screen size reference, and clothing inseam/waist conversions.',
+    description: 'Multiply inches by 2.54 to get centimeters. Height chart from 5\'0" to 6\'5", screen size reference, and clothing inseam/waist conversions.',
     intro: 'To convert inches to centimeters, multiply by 2.54. One inch equals exactly 2.54 cm — this is the international definition, established in 1959. For height: 6 feet = 72 inches = 182.88 cm.',
     sections: [
       {

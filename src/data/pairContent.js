@@ -713,7 +713,13 @@ export function generatePairContent(category, fromUnit, toUnit) {
   // Inject category-level real-world FAQ items
   const categoryFaq = CATEGORY_FAQ[category] ?? []
 
-  return { intro, faq: [...faq, ...extraFaq, ...categoryFaq] }
+  // Merge generated + pair-specific + category FAQ, deduping by question so the
+  // rendered list never has two children with the same React key.
+  const mergedFaq = [...faq, ...extraFaq, ...categoryFaq].filter(
+    (item, i, arr) => arr.findIndex((x) => x.q === item.q) === i,
+  )
+
+  return { intro, faq: mergedFaq }
 }
 
 /**

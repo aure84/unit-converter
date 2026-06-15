@@ -1,7 +1,7 @@
 import SEOMeta from '../components/SEOMeta.jsx'
 
 const SITE_URL = 'https://convert-fast.com'
-const CONTACT  = 'aure84@gmail.com'
+const CONTACT  = 'privacy@convert-fast.com'
 
 function PrivacyPage() {
   return (
@@ -202,10 +202,26 @@ function PrivacyPage() {
       </section>
 
       <section>
-        <h2>10. We do not sell your data</h2>
+        <h2 id="ccpa">10. California Privacy Rights (CCPA/CPRA) &amp; Do Not Sell</h2>
         <p>
           We do not sell, rent, or trade your personal data to any third party for their own
           marketing purposes.
+        </p>
+        <p>
+          If you are a California resident, the California Consumer Privacy Act (CCPA), as amended by
+          the CPRA, gives you the right to know what personal information is collected about you, to
+          request its deletion, to correct inaccurate information, and to opt out of the "sale" or
+          "sharing" of personal information. <strong>We do not sell your personal information.</strong>{' '}
+          Some advertising cookies (Google AdSense) may constitute "sharing" for cross-context
+          behavioural advertising under the CPRA; these are only activated after you consent via the
+          cookie banner, and you can withdraw consent at any time via our{' '}
+          <a href="/cookies">Cookie Policy</a> page or{' '}
+          <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ad Settings</a>.
+        </p>
+        <p>
+          To exercise any of these rights, contact us at{' '}
+          <a href={`mailto:${CONTACT}`}>{CONTACT}</a>. We will not discriminate against you for
+          exercising your privacy rights.
         </p>
       </section>
 

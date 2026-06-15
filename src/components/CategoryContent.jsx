@@ -7,7 +7,10 @@ function CategoryContent({ category }) {
   const content = categoryContent[category]
   if (!content) return null
 
+  // content.faq and CATEGORY_FAQ can list the same question; dedupe by `q` so
+  // the FAQ list never renders two children with the same React key.
   const faq = [...(content.faq ?? []), ...(CATEGORY_FAQ[category] ?? [])]
+    .filter((item, i, arr) => arr.findIndex((x) => x.q === item.q) === i)
 
   return (
     <section className="cat-content">
@@ -38,7 +41,7 @@ function CategoryContent({ category }) {
           <h2 className="cat-content__section-title">Quick reference</h2>
           <div className="cat-content__examples-grid">
             {content.examples.map(({ label, to }) => (
-              <div key={label} className="cat-content__example-card">
+              <div key={`${label}->${to}`} className="cat-content__example-card">
                 <div className="cat-content__example-from">{label}</div>
                 <div className="cat-content__example-arrow">→</div>
                 <div className="cat-content__example-to">{to}</div>

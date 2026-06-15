@@ -3,8 +3,8 @@ import { Link } from 'react-router'
 import styles from './CookieBanner.module.css'
 
 function updateConsent(state) {
-  if (typeof gtag !== 'undefined') {
-    gtag('consent', 'update', {
+  if (typeof window.gtag !== 'undefined') {
+    window.gtag('consent', 'update', {
       ad_storage:         state,
       analytics_storage:  state,
       ad_user_data:       state,
@@ -17,7 +17,10 @@ export default function CookieBanner() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
+    // localStorage read must run in an effect — this component is prerendered
+    // in Node where localStorage does not exist.
     if (!localStorage.getItem('cookieConsent')) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setVisible(true)
     }
   }, [])

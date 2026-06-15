@@ -13,6 +13,7 @@ import BlogPostPage from './pages/BlogPostPage.jsx'
 import PrivacyPage from './pages/PrivacyPage.jsx'
 import TermsPage from './pages/TermsPage.jsx'
 import CookiePage from './pages/CookiePage.jsx'
+import DisclaimerPage from './pages/DisclaimerPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
@@ -90,6 +91,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms"   element={<TermsPage />} />
         <Route path="/cookies" element={<CookiePage />} />
+        <Route path="/disclaimer" element={<DisclaimerPage />} />
 
         {/* 404 catch-all */}
         <Route path="*" element={<NotFoundPage />} />

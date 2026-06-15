@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import CopyIcon from './CopyIcon.jsx'
 import './Converter.css'
 import './CurrencyConverter.css'
 
@@ -38,7 +39,9 @@ function loadCache() {
 function saveCache(rates, date) {
   try {
     localStorage.setItem(CACHE_KEY, JSON.stringify({ rates, date, cachedAt: Date.now() }))
-  } catch {}
+  } catch {
+    /* localStorage unavailable (private mode / quota) — caching is best-effort */
+  }
 }
 
 function convertCurrency(amount, from, to, rates) {
@@ -66,8 +69,11 @@ function CurrencyConverter({ defaultFrom = 'USD', defaultTo = 'EUR', initialValu
   const copyTimerRef = useRef(null)
 
   useEffect(() => {
+    // Reads localStorage/network, so it must run in an effect (not lazy useState
+    // init) — this component is prerendered in Node where neither exists.
     const cached = loadCache()
     if (cached) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setRates(cached.rates)
       setRateDate(cached.date)
       setLoading(false)
@@ -134,15 +140,6 @@ function CurrencyConverter({ defaultFrom = 'USD', defaultTo = 'EUR', initialValu
     setCopiedSide(side)
     copyTimerRef.current = setTimeout(() => setCopiedSide(null), 2000)
   }
-
-  const CopyIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-      fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-      strokeLinejoin="round" aria-hidden="true">
-      <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-    </svg>
-  )
 
   return (
     <div className="currency-converter">

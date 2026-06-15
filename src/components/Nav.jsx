@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { NavLink, Link } from 'react-router'
 import './Nav.css'
 
@@ -45,6 +45,8 @@ const LEGAL_LINKS = [
   { path: '/privacy', label: 'Privacy Policy' },
   { path: '/terms',   label: 'Terms of Service' },
   { path: '/cookies', label: 'Cookie Policy' },
+  { path: '/disclaimer', label: 'Disclaimer' },
+  { path: '/privacy#ccpa', label: 'Do Not Sell My Personal Information' },
 ]
 
 function Nav() {

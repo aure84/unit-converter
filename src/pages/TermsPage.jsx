@@ -1,7 +1,7 @@
 import SEOMeta from '../components/SEOMeta.jsx'
 
 const SITE_URL = 'https://convert-fast.com'
-const CONTACT  = 'aure84@gmail.com'
+const CONTACT  = 'contact@convert-fast.com'
 
 function TermsPage() {
   return (
